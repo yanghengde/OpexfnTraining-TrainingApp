@@ -1,0 +1,26 @@
+<sit-scroll sit-enable="{{itemCtrl.type == 'static'}}" sit-on-reload="common.sidebar.sitSidebar.initilize">
+    <div class="sidebar-items" ng-if="itemCtrl.source && itemCtrl.source.length">
+        <div ng-class="itemCtrl.type">
+            <ul class="nav nav-sidebar">
+                <li ng-repeat="item in itemCtrl.source track by $index"
+                    ng-click="itemCtrl.click(itemCtrl,item)"
+                    data-toggle="sidebar" ng-hide="item.display==false"
+                    title="{{item.translatedTitle}}"
+                    class="sidebar-item-{{item.id}}"
+                    ng-class="{select: item.id===itemCtrl.selected || itemCtrl.isChildrenSelected(item, itemCtrl.selected), parent: item.contents && item.contents.length}">
+                    <a ng-class="{'svg-icon-action': item.svgIcon}">
+                        <em class="fa" ng-class="item.icon" sit-class="svg-icon" sit-mom-icon="item.svgIcon"></em>
+                        <span class="text" ng-bind="item.translatedTitle" ng-if="item.title"></span>
+                        <span class="right-caret" ng-if="item.contents && item.contents.length"></span>
+                    </a>
+                    <div ng-if="item.contents && item.contents.length"
+                         ng-class="{'children':item.contents && item.contents.length}" style="top:25px">
+                        <h3 ng-bind="item.translatedTitle"></h3>
+                        <sit-sidebar-item sit-source="item.contents" sit-selected="itemCtrl.selected" sit-environment="itemCtrl.environment">
+                        </sit-sidebar-item>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</sit-scroll>

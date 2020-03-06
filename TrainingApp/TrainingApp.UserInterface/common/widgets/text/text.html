@@ -1,0 +1,21 @@
+<div ng-if="textCtrl.readOnly || textCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{textCtrl.value}} </div>
+
+<ng-form name='textForm' ng-if="!(textCtrl.readOnly || textCtrl.ngReadonly)" ng-class="{'isrequired' :(textCtrl.validation.required) && textCtrl.value!==undefined}">
+    <div class='property-grid-input-group'>
+        <input type='text'
+               ng-class="{'validator-control-invalid':((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+               'validator-control':!((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+               'ng-dirty':textForm.$dirty}"
+               ng-model='textCtrl.value'
+               ng-required='textCtrl.validation.required'
+               ng-minlength='textCtrl.validation.minlength'
+               ng-maxlength='textCtrl.validation.maxlength'
+               ng-pattern='textCtrl.validation.pattern'
+               ng-blur="textCtrl.ngBlur()"
+               sit-change="textCtrl.sitChange"
+               ng-disabled="textCtrl.ngDisabled"
+               ng-focus="textCtrl.ngFocus()"
+               placeholder={{textCtrl.placeholder}}
+               sit-form-input-validator />
+    </div>
+</ng-form>

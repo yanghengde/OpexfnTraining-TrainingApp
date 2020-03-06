@@ -1,0 +1,56 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Dark_gray" data-name="Siemens - Dark gray" x1="1.5" y1="1.5" x2="46.5" y2="46.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="12.75" y1="21.25" x2="35.25" y2="43.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_blue" data-name="Siemens - Mid blue" x1="22.524" y1="19.492" x2="25.272" y2="16.744" gradientTransform="matrix(1.029, 0, 0, -1.029, 2.919, 51.136)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="33" y1="11" x2="42" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray-2" x1="17.75" y1="9.25" x2="30.25" y2="21.75" xlink:href="#Siemens_-_Light_gray"/>
+    <linearGradient id="Siemens_-_Light_blue-2" x1="6" y1="11" x2="15" y2="20" xlink:href="#Siemens_-_Light_blue"/>
+  </defs>
+  <g>
+    <g>
+      <rect x="1.5" y="1.5" width="45" height="45" fill="url(#Siemens_-_Dark_gray)"/>
+      <path d="M46,2V46H2V2H46m1-1H1V47H47V1Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <g>
+        <rect x="5.5" y="28.5" width="37" height="8" fill="url(#Siemens_-_Light_gray)"/>
+        <path d="M42,29v7H6V29H42m1-1H5v9H43V28Z" fill="#4e4a48"/>
+      </g>
+      <rect x="8" y="32" width="32" height="1" fill="#4e4a48"/>
+      <g>
+        <circle cx="27.5" cy="32.5" r="2" fill="url(#Siemens_-_Mid_blue)"/>
+        <path d="M27.5,31A1.5,1.5,0,1,1,26,32.5,1.5,1.5,0,0,1,27.5,31m0-1A2.5,2.5,0,1,0,30,32.5,2.5,2.5,0,0,0,27.5,30Z" fill="#4e4a48"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="32.5" y="11.5" width="10" height="8" fill="url(#Siemens_-_Light_blue)"/>
+        <path d="M42,12v7H33V12h9m1-1H32v9H43V11Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <rect x="15.5" y="11.5" width="17" height="8" fill="url(#Siemens_-_Light_gray-2)"/>
+        <path d="M32,12v7H16V12H32m1-1H15v9H33V11Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <rect x="5.5" y="11.5" width="10" height="8" fill="url(#Siemens_-_Light_blue-2)"/>
+        <path d="M15,12v7H6V12h9m1-1H5v9H16V11Z" fill="#4e4a48"/>
+      </g>
+      <rect x="8" y="15" width="5" height="1" fill="#4e4a48"/>
+      <rect x="35" y="15" width="5" height="1" fill="#4e4a48"/>
+      <rect x="37" y="13" width="1" height="5" fill="#4e4a48"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<div class="sit-document-viewer">
+    <div class="doc-header">
+        <div class="doc-title" title="{{$ctrl.title}}">{{$ctrl.title}}</div>
+        <div class="doc-header-icons" ng-if="($ctrl.data.length > 0) ? true : false">
+            <div class="doc-viewer-default-btn" ng-if="!$ctrl.docContent">
+                <div ng-if="$ctrl.fullScreenMode==='toolbar'" class="header-icons">
+                    <em sit-mom-icon="{'path': 'common/icons/cmdFitToWindow24.svg'}" title={{'documentViewer.maximizeDocument'|translate}} aria-hidden="true"
+                        ng-click="$ctrl.maximizeClicked($ctrl.document)"></em>
+                </div>
+                <div class="header-icons max-doc-detail" title={{'documentViewer.maximizeDetails'|translate}}>
+                    <em sit-mom-icon="{'path': 'common/icons/cmdFullSizeVertical24.svg'}" ng-click="$ctrl.toggleViewer()"></em>
+                </div>
+            </div>
+
+            <div class="doc-viewer-custom-btn" ng-if="!$ctrl.docContent">
+                <div class="header-icons" ng-repeat="action in $ctrl.actions">
+                    <em ng-class="{momIcon:action.displayIcon!==null}"sit-mom-icon="action.displayIcon" title="{{action.label}}"
+                        ng-click="action.action()"></em>
+                </div>
+            </div>
+
+            <div class="doc-viewer-minimize-btn" ng-if="$ctrl.docContent">
+                <div class="header-icons min-doc-detail" title={{'documentViewer.minimizeDetails'|translate}}>
+                    <em sit-mom-icon="{'path': 'common/icons/cmdExitFullSizeVertical24.svg'}" ng-click="$ctrl.toggleViewer()"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doc-content" ng-if="!$ctrl.docContent" sit-document-plugin sit-plugins="$ctrl.config.plugins">
+    </div>
+    <div ng-class="{'doc-list':$ctrl.docContent === false , 'doc-details': $ctrl.docContent === true}">
+        <sit-tabset>
+            <sit-tab ng-repeat="tab in $ctrl.categories track by tab.id" heading="{{tab.label}}"
+                     select="$ctrl.enableTabs(tab.id)" active="tab.tabActive">
+                <sit-document-carousel sit-data="$ctrl.items" sit-config="$ctrl.config" ng-show="!$ctrl.docContent"></sit-document-carousel>
+                <sit-tile-view sit-tiles="$ctrl.tabContent" sit-options="$ctrl.options" ng-if="$ctrl.tabContent" 
+                               ng-show="$ctrl.docContent"></sit-tile-view>
+            </sit-tab>
+        </sit-tabset>
+    </div>
+</div>

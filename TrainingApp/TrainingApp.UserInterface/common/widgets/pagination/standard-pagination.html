@@ -1,0 +1,27 @@
+<div class="pl-buttons-square-group">
+    <button type="button" id="goToFirst" class="pl-button-square" ng-click="standardPagerCtrl.goToFirst()"
+            ng-disabled="standardPagerCtrl.options.currentPage === 1">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscGoToFirst16.svg'}"></span>
+    </button>
+
+    <button type="button" id="prev" class="pl-button-square" ng-click="standardPagerCtrl.stepBackward()"
+            ng-disabled="standardPagerCtrl.options.currentPage === 1">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscChevronLeft24.svg', size: '16'}"></span>
+    </button>
+
+    <button ng-repeat="pageButton in standardPagerCtrl.pageNumbers" ng-class="{'selected': pageButton === standardPagerCtrl.options.currentPage}"
+            class="pl-button-square" ng-click="standardPagerCtrl.onPageChanged(pageButton,$index)">
+        {{pageButton}}
+    </button>
+
+    <button type="button" id="next" class="pl-button-square" ng-click="standardPagerCtrl.stepForward()"
+            ng-disabled="standardPagerCtrl.options.currentPage === standardPagerCtrl.totalPages">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscChevronRight16.svg'}"></span>
+    </button>
+
+    <button type="button" id="goToLast" class="pl-button-square"
+            ng-click="standardPagerCtrl.goToLast()"
+            ng-disabled="standardPagerCtrl.options.currentPage === standardPagerCtrl.totalPages">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscGoToLast16.svg'}"></span>
+    </button>
+</div>

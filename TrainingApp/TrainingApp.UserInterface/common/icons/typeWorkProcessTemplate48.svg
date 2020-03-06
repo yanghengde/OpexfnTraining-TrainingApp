@@ -1,0 +1,102 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="32.684" y1="109.692" x2="45.475" y2="96.9" gradientTransform="matrix(1, 0, 0, -1, 0, 108)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue-2" x1="28.825" y1="8" x2="41.825" y2="8" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#Siemens_-_Light_blue"/>
+    <linearGradient id="linear-gradient" x1="0.212" y1="1470.962" x2="40.788" y2="1511.538" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fdfdfe"/>
+      <stop offset="0.496" stop-color="#f3f3f4"/>
+      <stop offset="0.775" stop-color="#dfdede"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="25.575" y1="1468.906" x2="38.575" y2="1481.906" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_5" data-name="Sfumatura senza nome 5" x1="12.762" y1="29.374" x2="35.238" y2="6.898" gradientTransform="matrix(1, 0, 0, -1, 0, 48.72)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f9f9f9"/>
+      <stop offset="0.541" stop-color="#e5e5e4"/>
+      <stop offset="0.92" stop-color="#c7c6c6"/>
+      <stop offset="1" stop-color="#bebdbe"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="14.513" y1="27.623" x2="33.487" y2="8.649" gradientTransform="matrix(1, 0, 0, -1, 0, 48.72)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.335" stop-color="#f9f9f9"/>
+      <stop offset="0.82" stop-color="#e5e5e4"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="24" y1="28.061" x2="24" y2="33.315" gradientTransform="matrix(1, 0, 0, -1, 0, 48.72)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bebdbe"/>
+      <stop offset="0.045" stop-color="#c5c5c4"/>
+      <stop offset="0.268" stop-color="#dedede"/>
+      <stop offset="0.497" stop-color="#f0f0f0"/>
+      <stop offset="0.736" stop-color="#fcfcfc"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <g id="Layer_3" data-name="Layer 3">
+        <polygon points="42.325 14.3 42.325 1.5 29.425 1.5 42.325 14.3" fill="url(#Siemens_-_Light_blue)"/>
+        <g>
+          <rect x="28.825" y="1.5" width="13" height="13" fill="url(#Siemens_-_Light_blue-2)"/>
+          <path d="M42.325,15h-14V1h14Zm-13-1h12V2h-12Z" fill="#4e4a48"/>
+        </g>
+      </g>
+      <g>
+        <polygon points="28.771 1.5 5.675 1.5 5.675 46.5 41.825 46.5 41.825 14.5 28.771 1.5" fill="url(#linear-gradient)"/>
+        <path d="M42.325,47H5.175V1h23.8L42.325,14.292ZM6.175,46h35.15V14.708L28.564,2H6.175Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <polygon points="28.825 1.656 28.825 14.656 41.825 14.656 28.825 1.656" fill="url(#linear-gradient-2)"/>
+        <path d="M41.825,15.156h-13a.5.5,0,0,1-.5-.5v-13a.5.5,0,0,1,.854-.354l13,13a.5.5,0,0,1-.354.854Zm-12.5-1H40.618L29.325,2.863Z" fill="#4e4a48"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="13.783" y="18.324" width="20.433" height="24.52" fill="url(#Sfumatura_senza_nome_5)"/>
+        <path d="M34.717,43.344H13.283V17.824H34.717Zm-20.434-1H33.717V18.824H14.283Z" fill="#474647"/>
+      </g>
+      <g>
+        <rect x="15.535" y="20.075" width="16.93" height="21.017" fill="url(#Sfumatura_senza_nome_2)"/>
+        <path d="M32.965,41.593H15.035V19.575h17.93Zm-16.93-1h15.93V20.575H16.035Z" fill="#bebdbe"/>
+      </g>
+      <g>
+        <path d="M27.8,17.74H26.627v-.584a1.751,1.751,0,0,0-1.751-1.751H23.124a1.751,1.751,0,0,0-1.751,1.751v.584H20.2a1.167,1.167,0,0,0-1.167,1.168v1.751h9.924V18.908A1.167,1.167,0,0,0,27.8,17.74Z" fill="url(#Sfumatura_senza_nome_3)"/>
+        <path d="M29.462,21.159H18.538V18.908A1.669,1.669,0,0,1,20.2,17.24h.668v-.084a2.254,2.254,0,0,1,2.251-2.251h1.752a2.254,2.254,0,0,1,2.251,2.251v.084H27.8a1.669,1.669,0,0,1,1.667,1.668Zm-9.924-1h8.924V18.908a.668.668,0,0,0-.667-.668H26.127V17.156a1.253,1.253,0,0,0-1.251-1.251H23.124a1.253,1.253,0,0,0-1.251,1.251V18.24H20.2a.668.668,0,0,0-.667.668Z" fill="#474647"/>
+      </g>
+      <circle cx="24" cy="17.448" r="0.584" fill="#474647"/>
+      <g>
+        <rect x="23.124" y="24.162" width="1.751" height="3.503" fill="#3f91af"/>
+        <path d="M25.376,28.165H22.624v-4.5h2.752Zm-1.752-1h.752v-2.5h-.752Z" fill="#197492"/>
+      </g>
+      <g>
+        <rect x="23.124" y="28.832" width="1.751" height="3.503" fill="#3f91af"/>
+        <path d="M25.376,32.835H22.624v-4.5h2.752Zm-1.752-1h.752v-2.5h-.752Z" fill="#197492"/>
+      </g>
+      <g>
+        <rect x="17.286" y="28.249" width="2.335" height="4.67" fill="#3f91af"/>
+        <path d="M20.121,33.419H16.786v-5.67h3.335Zm-2.335-1h1.335v-3.67H17.786Z" fill="#197492"/>
+      </g>
+      <g>
+        <rect x="28.379" y="28.249" width="2.335" height="4.67" fill="#3f91af"/>
+        <path d="M31.214,33.419H27.879v-5.67h3.335Zm-2.335-1h1.335v-3.67H28.879Z" fill="#197492"/>
+      </g>
+      <g>
+        <rect x="23.124" y="33.503" width="1.751" height="3.503" fill="#3f91af"/>
+        <path d="M25.376,37.506H22.624V33h2.752Zm-1.752-1h.752V34h-.752Z" fill="#197492"/>
+      </g>
+      <rect x="19.329" y="30.084" width="3.503" height="1" fill="#197492"/>
+      <rect x="24.584" y="30.084" width="3.503" height="1" fill="#197492"/>
+      <polygon points="27.127 35.754 25.168 35.754 25.168 34.754 26.127 34.754 26.127 26.413 25.168 26.413 25.168 25.413 27.127 25.413 27.127 35.754" fill="#197492"/>
+      <polygon points="22.832 35.754 20.873 35.754 20.873 25.413 22.832 25.413 22.832 26.413 21.873 26.413 21.873 34.754 22.832 34.754 22.832 35.754" fill="#197492"/>
+    </g>
+  </g>
+</svg>

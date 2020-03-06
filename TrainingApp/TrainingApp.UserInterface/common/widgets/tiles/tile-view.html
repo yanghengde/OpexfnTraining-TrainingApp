@@ -1,0 +1,43 @@
+<div data-internal-type="tileViewContainerDiv">
+    <div data-internal-type="tileContainerDiv" ng-class="tileViewCtrl.options.tileContainerClass" class="tile-container">
+        <div data-internal-type="showHideView" ng-switch="tileViewCtrl.options.tileType" ng-if="tileViewCtrl.showView">
+            <div ng-switch-when="action">
+                <sit-action-tile ng-repeat="tile in tileViewCtrl.tiles" sit-tile-content="tile">
+                </sit-action-tile>
+            </div>
+
+            <div ng-switch-when="item">
+                <sit-tile-group sit-format="tileViewCtrl.sitFormat" ng-if="tileViewCtrl.groups.length > 0"
+                                ng-repeat="group in tileViewCtrl.groups"
+                                data-sit-group="group"
+                                data-sit-groups-length="{{tileViewCtrl.groups.length}}"
+                                sit-group-expanding="tileViewCtrl.groupExpanding(groupCount)"
+                                sit-tile-options="tileViewCtrl.tileOptions"
+                                sit-multi-select="tileViewCtrl.options.multiSelect"
+                                sit-selection-mode="tileViewCtrl.options.selectionMode">
+                </sit-tile-group>
+            </div>
+
+            <div ng-switch-when="notification">
+                {{'tiles.notificationTiles'|translate}}
+            </div>
+
+            <div ng-switch-default>
+                {{'tiles.unknownTileType'|translate}}: {{tileViewCtrl.options.tileType}}.
+            </div>
+        </div>
+        <div data-internal-type="showHideMessage" ng-if="tileViewCtrl.showMessage" class="no-data-content">
+            {{tileViewCtrl.messageText}}
+        </div>
+    </div>
+    <div data-internal-type="loading-container-xxx" ng-if="tileViewCtrl.loadingMany" style="position:absolute;left:50%;top:50%; width:300px; height:100px; margin:-50px auto auto -150px; overflow:hidden; text-align:center; background-color:white;">
+        <span style="line-height:100px;"></span>
+        <div style="display:inline-block; font-size:xx-large;">{{tileViewCtrl.loadingMessage}}</div>
+    </div>
+    <div ng-if="tileViewCtrl.options.enablePaging && tileViewCtrl.totalDataItems && !tileViewCtrl.grouping">
+        <sit-pagination ng-show="tileViewCtrl.options.enablePaging" sit-options="tileViewCtrl.paginationOptions"></sit-pagination>
+    </div>
+    <div class="sit-icv-footer-infinite-scroll" ng-if="!tileViewCtrl.options.enablePaging && tileViewCtrl.options.tileViewMode !== 'c'">
+        <span class="sit-icv-footer-infinite-scroll-label">{{'pagination.selected-items'|translate}} {{tileViewCtrl.paginationOptions.selectedItemsCount}}</span>
+    </div>
+</div>

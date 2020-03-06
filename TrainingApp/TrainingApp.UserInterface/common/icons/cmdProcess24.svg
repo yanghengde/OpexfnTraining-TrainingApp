@@ -1,0 +1,9 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g822">
+    <path id="rect837" d="M1,1V7H9V1ZM2,2H8V6H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect839" d="M11,7v8H22V7Zm1,1h9v6H12Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect837-8" d="M15,17v6h8V17Zm1,1h6v4H16Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path856" d="M14.55,7.006A9.383,9.383,0,0,0,13.367,5.99,9.551,9.551,0,0,0,9.448,4.517c-.2-.028-.48-.051-.505-.051S8.9,4.292,8.9,3.723V2.98l.391.025a11.673,11.673,0,0,1,1.74.332,11.2,11.2,0,0,1,4.063,2.086,13.871,13.871,0,0,1,1.451,1.406l.119.253H15.641C14.645,7.082,14.617,7.08,14.55,7.006Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path860" d="M18.44,16.591c-.025-.393-.114-1.261-.152-1.475l-.021-.216H19.78l.019.2c.024.12.117,1.085.148,1.547l.023.432h-1.5Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

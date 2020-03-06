@@ -1,0 +1,37 @@
+<div ng-if="typeaheadCtrl.readOnly || typeaheadCtrl.ngReadonly" class='label-property-grid-control-readonly property-value-ellipsis'>{{typeaheadCtrl.value}}</div>
+
+<ng-form ng-if="!(typeaheadCtrl.readOnly || typeaheadCtrl.ngReadonly)" name='typeaheadForm' ng-class="{'isrequired' : (typeaheadCtrl.validation.required) && typeaheadCtrl.value===undefined}">
+    <div class='property-grid-input-group property-grid-list' ng-if="typeaheadCtrl.toDisplay != null">
+        <input type='text'
+               name='{{typeaheadCtrl.value}}'
+               ng-class="{'validator-control-invalid':((typeaheadForm.$invalid && typeaheadForm.$dirty) || (typeaheadForm.$invalid && typeaheadForm.$visited)),
+               'validator-control':!((typeaheadForm.$invalid && typeaheadForm.$dirty) || (typeaheadForm.$invalid && typeaheadForm.$visited)),
+               'ng-dirty':typeaheadForm.$dirty}"
+               ng-model='typeaheadCtrl.value'
+               ng-required='typeaheadCtrl.validation.required'
+               ng-pattern='typeaheadCtrl.validation.pattern'
+               uib-typeahead='option as option[typeaheadCtrl.toDisplay] for option in typeaheadCtrl.options | filter:$viewValue'
+               ng-blur="typeaheadCtrl.ngBlur()"
+               sit-change="typeaheadCtrl.sitChange"
+               ng-disabled="typeaheadCtrl.ngDisabled"
+               ng-focus="typeaheadCtrl.ngFocus()"
+               sit-form-input-validator />
+    </div>
+
+    <div class='property-grid-input-group property-grid-list' ng-if="typeaheadCtrl.toDisplay == null">
+        <input type='text'
+               name='{{typeaheadCtrl.value}}'
+               ng-class="{'validator-control-invalid':((typeaheadForm.$invalid && typeaheadForm.$dirty) || (typeaheadForm.$invalid && typeaheadForm.$visited)),
+               'validator-control':!((typeaheadForm.$invalid && typeaheadForm.$dirty) || (typeaheadForm.$invalid && typeaheadForm.$visited)),
+               'ng-dirty':typeaheadForm.$dirty}"
+               ng-model='typeaheadCtrl.value'
+               ng-required='typeaheadCtrl.validation.required'
+               ng-pattern='typeaheadCtrl.validation.pattern'
+               uib-typeahead='val for val in typeaheadCtrl.options | filter:$viewValue'
+               ng-blur="typeaheadCtrl.ngBlur()"
+               sit-change="typeaheadCtrl.sitChange"
+               ng-disabled="typeaheadCtrl.ngDisabled"
+               ng-focus="typeaheadCtrl.ngFocus()"
+               sit-form-input-validator />
+    </div>
+</ng-form>

@@ -1,0 +1,9 @@
+<tbody>
+    <tr ng-repeat-start="row in rowCollection" sit-freez>
+        <td ng-click="show = !show">
+            > {{row.key}} ({{row.items.length}})
+        </td>
+    </tr>
+    <tr ng-if="show" sit-select-row="row"></tr>
+    <tr ng-repeat-end="" ng-if="false"></tr>
+</tbody>

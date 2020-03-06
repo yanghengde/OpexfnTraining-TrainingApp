@@ -1,0 +1,30 @@
+<div ng-show="uploadCtrl.readOnly || uploadCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{uploadCtrl.selectedFile.name}} </div>
+<ng-form name="fileForm" ng-hide="uploadCtrl.readOnly || uploadCtrl.ngReadonly">
+    <div>
+        <span ng-transclude></span>
+        <div class="textboxHolder">            
+            <span ng-show="uploadCtrl.currentPercentage!=='' && uploadCtrl.currentPercentage!=='100%'"
+                  class="btn btn-primary progressBar" ng-style="{'width': uploadCtrl.currentPercentage}">{{uploadCtrl.currentPercentage}}</span>
+            <div class="form-control uploadSection" tabindex="1" ng-class="{'form-control-invalid':((fileForm.$invalid && fileForm.$dirty) || (fileForm.$invalid && fileForm.$visited))}">
+                <input type="text" 
+                       class="showStatus" 
+                       data-internal-type="fileStatus" 
+                       title={{uploadCtrl.selectedFile.name}} 
+                       ng-model="uploadCtrl.uploadedFile.name" 
+                       placeholder="{{uploadCtrl.selectedFile.name}}" 
+                       ng-required="uploadCtrl.validation.required"
+                       sit-change="uploadCtrl.sitChange" 
+                       ng-class="{'ng-dirty':fileForm.$dirty}" 
+                       sit-form-input-validator readonly />
+                <a class="upload-delete-button" data-internal-type="deleteButton" ng-show="uploadCtrl.isFileLoaded" ng-click="uploadCtrl.removeFile($event)" role="button" title="{{'fileUploader.tooltip.remove'| translate}}">
+                    <em sit-mom-icon="uploadCtrl.deleteAction" sit-class="upload-delete-fill"></em>
+                </a>
+                <input type="file" data-internal-type="fileInput"
+                       class="btn actionButton File" style="display:none" ng-model="uploadCtrl.selectedFile" accept="{{uploadCtrl.accept}}" ng-disabled="uploadCtrl.ngDisabled">
+                <a class="upload-button" data-internal-type="uploadButton" role="button" title="{{'fileUploader.tooltip.browse'| translate}}" ng-class="{disable:uploadCtrl.isFileLoaded}" ng-disabled="uploadCtrl.ngDisabled">
+                    <em sit-mom-icon="uploadCtrl.openAction" sit-class="upload-fill" ng-class="{disable:uploadCtrl.isFileLoaded ||uploadCtrl.ngDisabled}"></em>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-form>

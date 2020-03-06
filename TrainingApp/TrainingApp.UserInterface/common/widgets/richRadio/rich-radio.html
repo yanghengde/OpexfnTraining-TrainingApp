@@ -1,0 +1,52 @@
+<div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="richRadioCtrl.readOnly || richRadioCtrl.ngReadonly">
+    <div class="sit-radio">
+        <ng-form ng-if="(richRadioCtrl.readOnly || richRadioCtrl.ngReadonly || richRadioCtrl.ngDisabled)" name="radioForm" ng-class="{'isrequired' :(richRadioCtrl.validation.required) && richRadioCtrl.value===undefined}">
+            <div class="property-grid-span-group-block " ng-model="richRadioCtrl.value">
+                <div class="radiogroup group-control" ng-repeat="val in richRadioCtrl.options" ng-checked="richRadioCtrl.value === val.value">
+                    <div class="group-control-data radio-button" ng-class="!richRadioCtrl.ngDisabled && !richRadioCtrl.readOnly && !richRadioCtrl.ngReadonly ? 'radio-enabled' : 'radio-disabled'">
+                        <input type='radio'
+                               name='{{richRadioCtrl.name}}'
+                               ng-model='richRadioCtrl.value'
+                               ng-required="richRadioCtrl.validation.required"
+                               ng-value='val.value'
+                               ng-blur="richRadioCtrl.ngBlur()"
+                               sit-change="richRadioCtrl.sitChange"
+                               ng-disabled="richRadioCtrl.ngDisabled"
+                               ng-focus="richRadioCtrl.ngFocus()"
+                               ng-readonly="richRadioCtrl.ngReadOnly"
+                               shared-model="true"
+                               sit-form-input-validator
+                               style="vertical-align:top" />
+                        <span class="radio-text radio-title">{{val.label}}<br /><span ng-if="val.description" class="radio-description">{{val.description}}</span></span>
+                    </div>
+                </div>
+            </div>
+        </ng-form>
+    </div>
+</div>
+
+<div class="sit-radio">
+    <ng-form ng-if="!(richRadioCtrl.readOnly || richRadioCtrl.ngReadonly || richRadioCtrl.ngDisabled)" name="radioForm" ng-class="{'isrequired' :(richRadioCtrl.validation.required) && richRadioCtrl.value===undefined}">
+        <div class="property-grid-span-group-block validator-control" ng-model="richRadioCtrl.value">
+            <div class="radiogroup group-control" ng-repeat="val in richRadioCtrl.options" ng-checked="richRadioCtrl.value === val.value">
+                <div class="group-control-data radio-button" ng-class="!richRadioCtrl.ngDisabled ? 'radio-enabled' : 'radio-disabled'">
+                    <input type='radio'
+                           name='{{richRadioCtrl.name}}'
+                           ng-model='richRadioCtrl.value'
+                           ng-required="richRadioCtrl.validation.required"
+                           ng-value='val.value'
+                           ng-blur="richRadioCtrl.ngBlur()"
+                           sit-change="richRadioCtrl.sitChange"
+                           ng-disabled="richRadioCtrl.ngDisabled"
+                           ng-focus="richRadioCtrl.ngFocus()"
+                           ng-readonly="richRadioCtrl.ngReadOnly"
+                           shared-model="true"
+                           sit-form-input-validator
+                           style="vertical-align:top" />
+                    <span class="radio-text radio-title">{{val.label}}<br /><span ng-if="val.description" class="radio-description">{{val.description}}</span></span>
+                </div>
+            </div>
+        </div>
+    </ng-form>
+</div>
+

@@ -1,0 +1,7 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g829">
+    <path id="rect1213" d="M0,10V24H14V10Zm5,3h7v4H9v1h3v3H5Zm1,1v6h5V19H8V16h3V14Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path2" d="M17.86,18.047H16.337l2.575-2.574a.409.409,0,0,0-.579-.579L15.06,18.166a.54.54,0,0,0,0,.679l3.273,3.273a.41.41,0,0,0,.579-.58l-2.575-2.573H17.86A3.112,3.112,0,0,0,21,16V9l-.978,0v6.982A2.082,2.082,0,0,1,17.86,18.047Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect818" d="M17,0V8h7V5H21V4h3V0H17Zm1,1h5V3H20V6h3V7H18Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

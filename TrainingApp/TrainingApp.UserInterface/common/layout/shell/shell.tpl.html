@@ -1,0 +1,33 @@
+<div class="canvas" ng-controller="layoutController as lc">
+    <div data-internal-type="property-area-container-modal" ng-class="lc.typeClass + 'Modal'" ng-style="lc.swacEnabled===true && {'top':'0px',left:'0px'}"
+         ng-show="lc.currentPAreaType === lc.propertyAreaTypes.edit" ng-click="lc.closeSidepanel()"></div>
+    <div class="global-vertical-command-bar" ng-if="lc.isGlobalCommandBarShown">
+        <sit-command-bar sit-commands="lc.globalCommandBarData" sit-layout="vertical"></sit-command-bar>
+    </div>
+    <div ng-hide="lc.hide" class="property-are-parent">
+        <div data-internal-type="property-area-container" class="side-panel-{{lc.layoutSize}}-layout" ng-class="[lc.typeClass , {'property-area-container-margin-right' : lc.isVerticalCommandBarPresent }]" ng-style="lc.swacEnabled===true && {'top':'0px'}">
+            <div class="title" ng-if="lc.title">
+                {{lc.title}}
+            </div>
+            <div ui-view="property-area-container" class="content">
+
+            </div>
+        </div>
+    </div>
+    <div ng-if="lc.swacEnabled!==true" class="breadcrumb-div canvas-ui-view" ng-show="lc.isBreadcrumbShown">
+        <div ng-if="lc.isGridsterEnabled !== true">
+            <sit-breadcrumb></sit-breadcrumb>
+        </div>
+        <div ng-if="lc.isGridsterEnabled !==false" ng-style="{'width': lc.isLargeScreen ? 'calc(100% - 200px)' : '100%' }" style="float:left">
+            <sit-breadcrumb></sit-breadcrumb>
+        </div>
+        <div ng-if="(lc.isGridsterEnabled && lc.isLargeScreen)">
+            <div style="width:190px; float:right; margin-right: 10px;">
+                <sit-command-bar sit-commands="lc.commandBarData"></sit-command-bar>
+            </div>
+        </div>
+        <div style="clear:both">
+        </div>
+    </div>
+    <div ui-view="Canvas" class="canvas-ui-view" h-adapter=".breadcrumb-div" ng-class="{'canvas-transparent' : $root.$state.current.data.afxBackground, 'canvas-background' : !$root.$state.current.data.afxBackground}"></div>
+</div>

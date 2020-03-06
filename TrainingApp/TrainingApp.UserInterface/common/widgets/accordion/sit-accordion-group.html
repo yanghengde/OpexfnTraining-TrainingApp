@@ -1,0 +1,22 @@
+<div class="sit-panel-default" ng-style="paddingStyle">
+    <div ng-click="accGrpCtrl.itemClicked($event)" id={{accGrpCtrl.menuItemId}} data-internal-type="{{accGrpCtrl.internalType}}" class="sit-panel-heading sit-panel-cont {{accGrpCtrl.itemSpaceClass}}" ng-class="{'highlight-selected-menu': (accGrpCtrl.isSelected === 'true')}">
+        <div class="{{accGrpCtrl.imgLevelClass}} sit-panel-fa fa" ng-class="accGrpCtrl.isOpen ? accGrpCtrl.faOpenIcon: accGrpCtrl.faIcon" ng-click="accGrpCtrl.toggleOpen($event)" ng-style="accGrpCtrl.displayIcon!==null?{'font-size':'0px'}:''">
+            <img alt="" ng-if="accGrpCtrl.displayIcon!==null" ng-src="{{accGrpCtrl.displayIcon}}" height="16px" width="16px" />
+        </div>
+        <div class="sit-panel-title" ng-class="accGrpCtrl.txtLevelClass">
+            <h2 class="panel-title sit-title">
+               
+                <a tabindex="0" class="accordion-toggle"  sit-accordion-transclude="heading">
+                    <span ng-class="{'text-muted': accGrpCtrl.isDisabled}"></span>
+                </a>
+            </h2>
+        </div>
+      
+
+    </div>
+    <div class="panel-collapse" ng-class="{'collapse' : !accGrpCtrl.isOpen}">
+        <div class="sit-panel-body" ng-transclude></div>
+    </div>
+</div>
+
+

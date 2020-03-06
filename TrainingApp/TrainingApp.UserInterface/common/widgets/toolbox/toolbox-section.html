@@ -1,0 +1,12 @@
+<div class="toolbox-section">
+    <div ng-class="toolboxSecCtrl.isExpanded ? 'toolbox-section-header-open' : 'toolbox-section-header'" >
+        <em class="{{toolboxSecCtrl.sitIcon}}" sit-mom-icon="toolboxSecCtrl.displayIcon" ng-class="{momIcon: toolboxSecCtrl.displayIcon !== null}"></em>
+        <span class="toolbox-section-title"> {{toolboxSecCtrl.sitTitle}}</span>
+        <div  ng-click="toolboxSecCtrl.toggleSection()" class="toolbox-section-toggle" ng-hide="toolboxSecCtrl.isDisabled">
+            <span ng-class="toolboxSecCtrl.isExpanded ? 'fa fa-angle-down' : 'fa fa-angle-left'"></span>
+        </div>
+    </div>
+    <div class="toolbox-section-content" ng-class="toolboxSecCtrl.isExpanded ? 'toolbox-section-content-show' : 'toolbox-section-content-hide'" ng-transclude></div>
+
+</div>
+

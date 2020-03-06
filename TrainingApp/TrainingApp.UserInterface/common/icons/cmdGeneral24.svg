@@ -1,0 +1,11 @@
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path class="aw-theme-iconOutline" fill="#464646" d="M11.5,23C5.159,23,0,17.841,0,11.5C0,5.159,5.159,0,11.5,0C17.841,0,23,5.159,23,11.5
+	C23,17.841,17.841,23,11.5,23z M11.5,1C5.71,1,1,5.71,1,11.5C1,17.29,5.71,22,11.5,22C17.29,22,22,17.29,22,11.5
+	C22,5.71,17.29,1,11.5,1z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M11.5,23C8.416,23,6,17.948,6,11.5C6,5.051,8.416,0,11.5,0S17,5.051,17,11.5C17,17.948,14.584,23,11.5,23z
+	 M11.5,1C9.061,1,7,5.809,7,11.5S9.061,22,11.5,22S16,17.191,16,11.5S13.939,1,11.5,1z"/>
+<rect y="11" class="aw-theme-iconOutline" fill="#464646" width="22" height="1"/>
+<rect x="2" y="5" class="aw-theme-iconOutline" fill="#464646" width="19" height="1"/>
+<rect x="2" y="17" class="aw-theme-iconOutline" fill="#464646" width="19" height="1"/>
+</svg>

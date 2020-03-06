@@ -1,0 +1,28 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="3.755" y1="14.857" x2="5.175" y2="13.626" gradientTransform="matrix(1, 0, 0, -1, 0, 18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="7.858" y1="13.914" x2="13.081" y2="11.852" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="7.432" y1="7.732" x2="14.685" y2="3.297" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="g868">
+    <path id="rect4-8" d="M2.43,1.7H4.486V4.068H2.43Z" fill="url(#linear-gradient)"/>
+    <path id="path840" d="M2.458,5.126C2.613,4.98,7.775.9,7.833.874c.033-.012,1.164.847,2.758,2.1,1.486,1.166,2.729,2.145,2.763,2.176.051.046-.83.055-5.459.055C2.5,5.2,2.377,5.2,2.458,5.126Z" fill="url(#linear-gradient-2)"/>
+    <path id="rect4" d="M2.426,5.676H13.608v9.9H2.426Z" fill="url(#linear-gradient-3)"/>
+    <path id="rect822" d="M2,5H3V15H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect824" d="M13,5h1V15H13Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect826" d="M1,15H15v1H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect826-6" d="M2,5H14V6H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect826-6-0" d="M0,6,8,.017l.864.661L.7,6.8Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect876" d="M7,12H9.126v3H7Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect826-6-0-9" d="M16,6,7.983.029,7.118.69,15.3,6.8Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect822-5" d="M2,1H3V5H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect826-1" d="M2,1H5V2H2Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect822-5-7" d="M4,1H5V3H4Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

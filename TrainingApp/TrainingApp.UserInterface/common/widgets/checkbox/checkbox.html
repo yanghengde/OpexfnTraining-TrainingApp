@@ -1,0 +1,58 @@
+<div class="sit-checkbox">
+    <div class="label label-property-grid-control-readonly checkbox-noborder" ng-if="checkboxCtrl.readOnly || checkboxCtrl.ngReadonly || checkboxCtrl.ngDisabled">
+        <ng-form name="checkboxForm" ng-class="{'isrequired' : (checkboxCtrl.validation.required) && (checkboxForm.$error.required.length===checkboxCtrl.value.length) }">
+            <div class="property-grid-span-group-block">
+                <div class="group-control property-grid-no-border-items"
+                     ng-repeat="item in checkboxCtrl.value"
+                     ng-class="checkboxCtrl.layout === 'horizontal' ? 'horizontal-layout':'vertical-layout'">
+                    <div class="check-box" ng-class="!(checkboxCtrl.readOnly || checkboxCtrl.ngReadonly || checkboxCtrl.ngDisabled) ? 'checkbox-enabled' : 'checkbox-disabled'">
+                        <label>
+                            <input type='checkbox'
+                                   name='{{item.label}}'
+                                   ng-model='item.checked'
+                                   ng-blur="checkboxCtrl.ngBlur()"
+                                   ng-checked="item.checked"
+                                   sit-change="checkboxCtrl.sitChange"
+                                   ng-disabled="true"
+                                   ng-focus="checkboxCtrl.ngFocus()"
+                                   ng-required="checkboxCtrl.validation.required"
+                                   sit-form-input-validator />
+                            <span class="property-label-ellipsis">
+                                <span class="check"></span>
+                                {{item.label}}
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </ng-form>
+    </div>
+
+    <ng-form ng-if="!(checkboxCtrl.readOnly || checkboxCtrl.ngReadonly || checkboxCtrl.ngDisabled)"
+             name="checkboxForm" ng-class="{'isrequired' : (checkboxCtrl.validation.required) && (checkboxForm.$error.required.length===checkboxCtrl.value.length) }">
+        <div class="property-grid-span-group-block validator-control checkbox-noborder">
+            <div class="group-control" ng-repeat="item in checkboxCtrl.value" ng-class="checkboxCtrl.layout === 'horizontal' ? 'horizontal-layout' : 'vertical-layout'">
+                <div class="check-box" ng-class="!checkboxCtrl.ngDisabled ? 'checkbox-enabled' : 'checkbox-disabled'">
+                    <label>
+                        <input type='checkbox'
+                               name='{{item.label}}'
+                               ng-model='item.checked'
+                               ng-blur="checkboxCtrl.ngBlur()"
+                               ng-checked="item.checked"
+                               sit-change="checkboxCtrl.sitChange"
+                               ng-disabled="checkboxCtrl.ngDisabled"
+                               ng-focus="checkboxCtrl.ngFocus()"
+                               ng-required="checkboxCtrl.validation.required"
+                               sit-form-input-validator />
+                        <span class="property-label-ellipsis">
+                            <span class="check"></span>
+                            {{item.label}}
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </ng-form>
+</div>
+
+

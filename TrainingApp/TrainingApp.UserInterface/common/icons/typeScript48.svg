@@ -1,0 +1,22 @@
+<svg version="1.1" id="Livello_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<linearGradient id="polygon35_1_" gradientUnits="userSpaceOnUse" x1="291.0566" y1="-324.959" x2="320.751" y2="-347.2614" gradientTransform="matrix(1 0 0 -1 -273.5996 -300.9902)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="0.175" style="stop-color:#6BAEC3"/>
+	<stop  offset="0.457" style="stop-color:#539EB5"/>
+	<stop  offset="0.809" style="stop-color:#2F849F"/>
+	<stop  offset="1" style="stop-color:#187491"/>
+</linearGradient>
+<path id="polygon35" fill="url(#polygon35_1_)" stroke="#474747" stroke-miterlimit="10" d="M29,0.5H6v47h36v-34L29,0.5z"/>
+<linearGradient id="polyline37_1_" gradientUnits="userSpaceOnUse" x1="299.4756" y1="353.1162" x2="311.9756" y2="365.6163" gradientTransform="matrix(1 0 0 1 -273.5996 -348.9902)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.221" style="stop-color:#F7F8F8"/>
+	<stop  offset="0.541" style="stop-color:#E5E5E5"/>
+	<stop  offset="0.92" style="stop-color:#C7C6C6"/>
+	<stop  offset="1" style="stop-color:#BFBEBE"/>
+</linearGradient>
+<path id="polyline37" fill="url(#polyline37_1_)" stroke="#474747" stroke-miterlimit="10" d="M29,1v12.5h12.5"/>
+<path id="polygon41" fill="#F1F0F0" d="M10.408,27.568l7.889-4.719v-2.331l-10,5.982v2.133l10,6v-2.332L10.408,27.568z"/>
+<path id="polygon43" fill="#F1F0F0" d="M37.186,27.585l-7.889,4.719v2.33l10-5.981v-2.134l-10-6v2.333L37.186,27.585z"/>
+<path id="polygon45" fill="#F1F0F0" d="M28.52,18.068h-2.136l-7.166,19h2.137L28.52,18.068z"/>
+</svg>

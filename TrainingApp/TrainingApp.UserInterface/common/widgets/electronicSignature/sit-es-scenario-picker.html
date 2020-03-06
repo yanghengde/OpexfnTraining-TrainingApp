@@ -1,0 +1,35 @@
+<div class="entity-picker-container" ng-if="vm.isEnabled">
+    <div class="container-fluid" style="width: 100%; height: 100%;">
+        <div data-internal-type="entity-picker-container" id="entity-picker-container" class="property-grid-input-group entity-picker-container">
+            <div ng-if ="vm.mode === 'Horizontal'" style="display: flex; width: 100%; height: 32px;">
+                <label class="es-scenario-label-horizontal">{{'electronicSignature.scenarioConfiguration' | translate}}</label>
+                <div style="display: flex; width: 100%; height: 32px;">
+                    <input type="text"
+                           class="es-scenario-picker-input validator-control"
+                           placeholder="{{'electronicSignature.pickerPlaceHolder' | translate}}"
+                           ng-model="vm.displayName" 
+                           ng-readonly="vm.config.IsReadOnly===true"
+                           ng-class="{'readonly-bg-color': (vm.config.IsReadOnly===true)}" />
+                    <div class="btn property-grid-addon-icon" style="position: relative !IMPORTANT; border: 1px solid #969696;" ng-click="vm.browsScenarios(vm)" 
+                         ng-disabled="vm.config.IsReadOnly===true || vm.ready===false">
+                        <em sit-mom-icon="{path: 'common/icons/cmdMore16.svg', size: '16px'}"></em>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="vm.mode === 'Vertical'" style="width: 100%; height: 32px;">
+                <label class="es-scenario-label-vertical">{{'electronicSignature.scenarioConfiguration' | translate}}</label>
+                <div style="display: flex; width: 100%; height: 32px;">
+                    <input type="text"
+                           class="es-scenario-picker-input validator-control"
+                           placeholder="{{'electronicSignature.pickerPlaceHolder' | translate}}"
+                           ng-model="vm.displayName" 
+                           ng-readonly="vm.config.IsReadOnly===true"
+                           ng-class="{'readonly-bg-color': (vm.config.IsReadOnly===true)}" />
+                    <div class="btn property-grid-addon-icon" style="position: relative !IMPORTANT; border: 1px solid #969696;" ng-click="vm.browsScenarios(vm)" ng-disabled="vm.config.IsReadOnly===true || vm.ready===false">
+                        <em sit-mom-icon="{path: 'common/icons/cmdMore16.svg', size: '16px'}"></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

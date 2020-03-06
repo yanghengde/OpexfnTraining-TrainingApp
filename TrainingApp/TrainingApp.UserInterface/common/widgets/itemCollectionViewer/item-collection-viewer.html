@@ -1,0 +1,27 @@
+<div id="itemCollectionViewerContainer" class="sit-item-collection-viewer" data-internal-type="itemCollectionViewerContainer" ng-style="ICVController.compactStyle" mode="{{ICVController.viewMode}}">
+    <div ng-if="ICVController.resetView">
+        <div id="topCommandBars" data-internal-type="topCommandBars" class="top-command-bars">
+            <div id="filterBar" data-internal-type="filterBar" class="filterBar-container">
+                <sit-filter-bar sit-filter-options="ICVController.filterOptions"></sit-filter-bar>
+            </div>
+
+            <div id="filter" class="filter-container" ng-class="ICVController.showFilter && ICVController.sitOptions.filterFields.type !== 'filterPanel' ? 'open' : 'closed'" data-internal-type="filter">
+                <sit-filter-panel ng-if="ICVController.sitOptions.filterFields.type === 'filterPanel' && ICVController.showFilter" sit-data="ICVController.sitOptions.filterFields" sit-user-preference="ICVController.sitOptions.userPrefId"></sit-filter-panel>
+                <sit-filter ng-if="!ICVController.sitOptions.filterFields.type" sit-filter-fields="ICVController.sitOptions.filterFields" sit-filter-server-side="ICVController.sitOptions.serverDataOptions" sit-user-preference="ICVController.sitOptions.userPrefId" sit-filter-options="ICVController.sitFilterOptions" sit-apply-callback="ICVController.applyFilter(clauses)" sit-reset-callback="ICVController.resetFilter()" sit-allow-grouping="ICVController.sitFilterOptions.groupEnabled"></sit-filter>
+            </div>
+        </div>
+        <div id="itemCollectionCanvas" data-internal-type="itemCollectionCanvas" ng-style="ICVController.collectionStyle">
+            <div id="noDataDiv" data-internal-type="noDataDiv" ng-style="ICVController.collectionStyle" 
+                 ng-if="ICVController.noData && !ICVController.pageManager.isServerData()" 
+                 style="font-size: 10.5pt;font-weight: 600; padding-left: 10px;">{{ICVController.noDataMessage}}</div>
+            <div id="gridViewDiv" data-internal-type="gridViewDiv" ng-style="ICVController.collectionStyle" 
+                 ng-if="(!ICVController.noData || ICVController.pageManager.isServerData()) && ICVController.viewMode == 'grid'">
+                <sit-grid data-sit-grid-data="ICVController.sitData" data-sit-grid-options="ICVController.gridOptions"></sit-grid>
+            </div>
+            <div id="tileViewDiv" data-internal-type="tileViewDiv" ng-style="ICVController.collectionStyle" 
+                 ng-if="(!ICVController.noData || ICVController.pageManager.isServerData()) && ICVController.viewMode != 'grid'">
+                <sit-tile-view data-sit-tiles="ICVController.sitData" data-sit-options="ICVController.tileViewOptions"></sit-tile-view>
+            </div>
+        </div>
+    </div>
+</div>

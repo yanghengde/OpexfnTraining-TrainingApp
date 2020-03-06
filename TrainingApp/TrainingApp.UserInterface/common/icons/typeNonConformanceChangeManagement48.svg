@@ -1,0 +1,39 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_9" data-name="Sfumatura senza nome 9" x1="6.741" y1="14.812" x2="29.846" y2="37.917" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="14.685" y1="15.3" x2="21.901" y2="22.516" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray-2" x1="17.029" y1="27.338" x2="19.557" y2="29.867" xlink:href="#Siemens_-_Mid_gray"/>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="19.438" y1="21.694" x2="40.896" y2="0.236" gradientTransform="matrix(1, 0, 0, -1, 0, 48.72)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f9f9f9"/>
+      <stop offset="0.541" stop-color="#e5e5e4"/>
+      <stop offset="0.92" stop-color="#c7c6c6"/>
+      <stop offset="1" stop-color="#bebdbe"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path d="M16.561,5.09,1.719,30.8a2,2,0,0,0,1.732,3H33.136a2,2,0,0,0,1.732-3L20.025,5.09A2,2,0,0,0,16.561,5.09Z" stroke="#177491" stroke-linecap="round" stroke-linejoin="round" fill="url(#Sfumatura_senza_nome_9)"/>
+      <g>
+        <g>
+          <path d="M16.5,24.335V13.73a.6.6,0,0,1,.6-.6h2.372a.6.6,0,0,1,.6.6V24.335Z" fill="url(#Siemens_-_Mid_gray)"/>
+          <path d="M19.48,13.627a.1.1,0,0,1,.1.1V23.835H17V13.73a.1.1,0,0,1,.1-.1H19.48m0-1H17.107a1.1,1.1,0,0,0-1.1,1.1V24.835h4.578V13.73a1.1,1.1,0,0,0-1.1-1.1Z" fill="#6f6e6e"/>
+        </g>
+        <g>
+          <circle cx="18.293" cy="28.603" r="1.789" fill="url(#Siemens_-_Mid_gray-2)"/>
+          <path d="M18.293,27.314A1.289,1.289,0,1,1,17,28.6a1.29,1.29,0,0,1,1.289-1.289m0-1A2.289,2.289,0,1,0,20.582,28.6a2.289,2.289,0,0,0-2.289-2.289Z" fill="#6f6e6e"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <polygon points="14.448 43.494 24.013 27.026 26.425 31.185 21.767 39.335 38.567 39.335 27.755 20.456 30.167 16.297 45.886 43.494 14.448 43.494" fill="url(#Sfumatura_senza_nome_2)"/>
+      <path d="M30.167,17.129,45.138,43.078H15.2l8.816-15.22,1.913,3.327-4.907,8.566h18.3L28.254,20.456l1.913-3.327m0-1.663-.748,1.247L27.506,20.04l-.25.416.25.416L37.9,38.919H22.433L26.674,31.6l.25-.415-.25-.416-1.913-3.327-.748-1.248-.749,1.248-8.816,15.22-.665,1.248H46.552L45.8,42.662,30.833,16.713l-.666-1.247Z" fill="#474647"/>
+    </g>
+  </g>
+</svg>

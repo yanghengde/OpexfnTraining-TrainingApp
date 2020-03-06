@@ -1,0 +1,41 @@
+<div class="tile" ng-switch on="actnTileCtrl.tileContent.size" ng-click="actnTileCtrl.tileClicked()">
+    <div data-internal-type="wideActionTile" class='wide wide-action' ng-switch-when='wide' ng-style="{color: actnTileCtrl.color, 'background-color': actnTileCtrl.bgColor}">
+        <div class="image-container-96x96" data-internal-type="image-container">
+            <div class="image-vcenter-96x96" data-internal-type="image-vcenter" ng-class="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon ? 'remove-font-awesome':''">
+                <em ng-if="actnTileCtrl.tileContent.image || actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon" class="fa {{actnTileCtrl.tileContent.image}}" sit-mom-icon="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon"></em>
+            </div>
+        </div>
+
+        <span class="wide-action-text" data-internal-type="title">{{actnTileCtrl.getDisplayText()}}</span>
+        <span class="wide-action-counter" data-internal-type="counter">{{actnTileCtrl.tileContent.count | limitTo:4}}</span>
+    </div>
+
+    <div data-internal-type="squareActionTile" class='square' ng-switch-when='square' ng-style="{color: actnTileCtrl.color, 'background-color': actnTileCtrl.bgColor}">
+        <div class="image-container-96x96" data-internal-type="image-container">
+            <div class="image-vcenter-96x96" data-internal-type="image-vcenter" ng-class="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon ? 'remove-font-awesome':''">
+                <em ng-if="actnTileCtrl.tileContent.image || actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon" class="fa {{actnTileCtrl.tileContent.image}}" sit-mom-icon="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon" ></em>
+            </div>
+        </div>
+        <div class="square-text" data-internal-type="title">{{actnTileCtrl.getDisplayText()}}</div>
+    </div>
+
+    <div data-internal-type="squareShortcutActionTile" class='square-shortcut' ng-switch-when='square-shortcut' ng-style="{color: actnTileCtrl.color, 'background-color': actnTileCtrl.bgColor}">
+        <div class="square-text square-shortcut-text" data-internal-type="title">{{actnTileCtrl.getDisplayText()}}</div>
+        <div class="shortcut-image-container" data-internal-type="image-container">
+            <em sit-mom-icon="actnTileCtrl.tileContent.shortCutImage"></em>
+        </div>
+    </div>
+
+    <div data-internal-type="squareSummaryActionTile" class='square-summary' ng-switch-when='square-summary' ng-style="{color: actnTileCtrl.color, 'background-color': actnTileCtrl.bgColor}">
+        <div class="summary-text" data-internal-type="counter">{{actnTileCtrl.getSummaryCountText()}}</div>
+        <div class="category-text" data-internal-type="title">{{actnTileCtrl.getDisplayText()}}</div>
+    </div>
+
+    <div data-internal-type="smallActionTile" class='small small-action' ng-switch-when="small" ng-style="{color: actnTileCtrl.color, 'background-color': actnTileCtrl.bgColor}">
+        <div class="image-container-48x48" data-internal-type="image-container">
+            <div class="image-vcenter-48x48" data-internal-type="image-vcenter" ng-class="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon ? 'remove-font-awesome':''">
+                <em ng-if="actnTileCtrl.tileContent.image || actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon" class="fa {{actnTileCtrl.tileContent.image}} fa-3x" sit-mom-icon="actnTileCtrl.tileContent.svgIcon || actnTileCtrl.tileContent.typeIcon"></em>
+            </div>
+        </div>
+    </div>
+</div>

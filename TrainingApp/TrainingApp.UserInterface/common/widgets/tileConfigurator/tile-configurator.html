@@ -1,0 +1,54 @@
+<div class="table-column-configuration">
+    <div class="columns">
+        <div class="header">
+            <h2 class="sit-h2">
+                {{ tileConfiguratorCtrl.sitConfig.data.inputFieldsHeader || 'userPrefrences.tileConfigurator.inputFieldsHeader'|translate }}
+            </h2>
+        </div>
+        <div class="no-border frame">
+            <sit-property-grid sit-id="propertyGrid_verticalNew" sit-data="" sit-layout="Vertical" sit-type="" sit-mode="Edit"
+                               sit-columns="">
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.titleField" sit-options="tileConfiguratorCtrl.titleDescriptionValues"
+                              sit-to-display="tileConfiguratorCtrl.select.toDisplay" sit-change="tileConfiguratorCtrl.updateUserTitle"
+                              sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.title'|translate}}:</sit-property>
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.descriptionField" sit-options="tileConfiguratorCtrl.titleDescriptionValues"
+                              sit-to-display="tileConfiguratorCtrl.select.toDisplay" sit-change="tileConfiguratorCtrl.updateUserDesc"
+                              sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.description'|translate}}:</sit-property>
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.sitConfig.data.userPreferences.propertyFields[0]"
+                              sit-options="tileConfiguratorCtrl.initialTileFields" sit-to-display="tileConfiguratorCtrl.select.toDisplay"
+                              sit-change="tileConfiguratorCtrl.updateUserPropone" sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.property1'|translate}}:</sit-property>
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.sitConfig.data.userPreferences.propertyFields[1]"
+                              sit-options="tileConfiguratorCtrl.initialTileFields" sit-to-display="tileConfiguratorCtrl.select.toDisplay"
+                              sit-change="tileConfiguratorCtrl.updateUserProptwo"
+                              sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.property2'|translate}}:</sit-property>
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.sitConfig.data.userPreferences.propertyFields[2]"
+                              sit-options="tileConfiguratorCtrl.initialTileFields" sit-to-display="tileConfiguratorCtrl.select.toDisplay"
+                              sit-change="tileConfiguratorCtrl.updateUserPropthree"
+                              sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.property3'|translate}}:</sit-property>
+                <sit-property sit-widget="sit-select" sit-value="tileConfiguratorCtrl.sitConfig.data.userPreferences.propertyFields[3]"
+                              sit-options="tileConfiguratorCtrl.initialTileFields" sit-change="tileConfiguratorCtrl.updateUserPropfour"
+                              sit-to-display="tileConfiguratorCtrl.select.toDisplay" sit-to-keep="tileConfiguratorCtrl.select.toKeep">{{'userPrefrences.tileConfigurator.property4'|translate}}:</sit-property>
+
+            </sit-property-grid>
+        </div>
+    </div>
+    <div class="command-buttons">
+        <button type="button" class="sit-command-icon-button" ng-click="tileConfiguratorCtrl.resetColumns()" title="{{tileConfiguratorCtrl.sitConfig.data.resetButtonLabel || 'userPrefrences.tileConfigurator.resetButtonLabel'|translate}}">
+            <em sit-class="svg-icon" sit-mom-icon="tileConfiguratorCtrl.svgIcons.reset"></em>
+        </button>
+    </div>
+    <div class="columns">
+        <div class="header">
+            <h2 class="sit-h2">
+                {{ tileConfiguratorCtrl.sitConfig.data.liveTilePreviewHeader || 'userPrefrences.tileConfigurator.liveTilePreviewHeader'|translate }}
+            </h2>
+        </div>
+        <div class="frame-two no-border">
+            <div id="tile-container">
+                <div class="tile-view">
+                    <sit-tile-view sit-tiles="tileConfiguratorCtrl.tiles" sit-options="tileConfiguratorCtrl.options"></sit-tile-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

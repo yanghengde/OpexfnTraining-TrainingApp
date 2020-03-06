@@ -1,0 +1,8 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g828">
+    <path id="circle4" d="M16,8A8,8,0,1,1,8,0,8,8,0,0,1,16,8Z" fill="#dc0000"/>
+    <path id="path6" d="M8,1a6.957,6.957,0,0,1,7,7,6.957,6.957,0,0,1-7,7A6.957,6.957,0,0,1,1,8,6.957,6.957,0,0,1,8,1M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect827" d="M7,9H9V3.53H7Z" fill="#fff"/>
+    <path id="path831" d="M7.975,12.5l1.487-1.765,1.487-1.766H5l1.487,1.766Z" fill="#fff"/>
+  </g>
+</svg>

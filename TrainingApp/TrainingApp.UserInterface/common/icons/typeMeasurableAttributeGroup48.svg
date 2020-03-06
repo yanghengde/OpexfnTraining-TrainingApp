@@ -1,0 +1,33 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.086" y1="45.414" x2="43.5" y2="4" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="14.541" y1="30.627" x2="33.483" y2="11.686" gradientTransform="matrix(1, 0, 0, -1, 0, 48.724)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="22.589" y1="22.649" x2="25.411" y2="19.828" gradientTransform="matrix(1, 0, 0, -1, 0, 48.724)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6caec3"/>
+      <stop offset="0.457" stop-color="#549eb4"/>
+      <stop offset="0.809" stop-color="#2f84a0"/>
+      <stop offset="1" stop-color="#197492"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g id="Folder">
+      <path d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" fill="url(#linear-gradient)"/>
+      <path d="M47,43.5H1V6A2.5,2.5,0,0,1,3.5,3.5H14.43a2.493,2.493,0,0,1,2.08,1.114L19.768,9.5H47Zm-45-1H46v-32H19.232L15.678,5.168A1.5,1.5,0,0,0,14.43,4.5H3.5A1.5,1.5,0,0,0,2,6Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <path d="M16.305,38.6l2.85-2.85h9.69L31.7,38.6a14.109,14.109,0,0,0,5.7-11.059,13.4,13.4,0,1,0-26.792.114A13.889,13.889,0,0,0,16.305,38.6Z" stroke="#474647" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+      <line x1="22.575" y1="26.06" x2="18.3" y2="21.785" fill="none" stroke="#197492"/>
+      <path d="M24,29.481h0a2.02,2.02,0,0,1-2-2h0a2.02,2.02,0,0,1,2-2h0a2.02,2.02,0,0,1,2,2h0A2.02,2.02,0,0,1,24,29.481Z" stroke="#197492" stroke-miterlimit="10" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>

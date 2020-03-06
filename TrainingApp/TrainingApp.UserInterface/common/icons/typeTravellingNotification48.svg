@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.948" y1="42.068" x2="46.315" y2="11.752" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d5"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="24.759" y1="28.854" x2="47.62" y2="44.563" gradientTransform="translate(0 2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+  </defs>
+  <g id="g912">
+    <path id="rect13-9-3-7" d="M1.5,5.5h45v31H1.5Z" stroke="#464646" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="path15-5-6" d="M4.761,8.644l15.361,12.54a6.576,6.576,0,0,0,8.507-.108L43.114,8.644" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <path id="line17-6-0" d="M20.2,21.3,4.761,32.722" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <path id="line19-5-0" d="M43.842,32.768,28.768,21.05" fill="none" stroke="#6e6e6e" stroke-miterlimit="10"/>
+    <g id="g34">
+      <path id="path22" d="M45.44,30.405H26.547a2.042,2.042,0,0,0-2.042,2.042V44.7a2.043,2.043,0,0,0,2.042,2.043H45.44A2.043,2.043,0,0,0,47.483,44.7V32.447a2.042,2.042,0,0,0-2.042-2.042Z" fill="url(#linear-gradient-2)"/>
+      <path id="path24" d="M43.653,45.106H32.164v-1H43.653a1.033,1.033,0,0,0,1.03-1.032V37.2h1v5.872A2.035,2.035,0,0,1,43.653,45.106Z" fill="#464646"/>
+      <g id="g30">
+        <path id="path26" d="M40.845,30.405H39.824V28.022a1.192,1.192,0,0,0-1.19-1.194H33.356a1.192,1.192,0,0,0-1.192,1.192V30.4H31.143V28.022a2.213,2.213,0,0,1,2.213-2.213h5.276a2.215,2.215,0,0,1,2.213,2.213Z" fill="#6f6f6e"/>
+        <path id="path28" d="M45.44,29.9h-4.1V28.022a2.716,2.716,0,0,0-2.713-2.713H33.356a2.717,2.717,0,0,0-2.713,2.713V29.9h-4.1A2.546,2.546,0,0,0,24,32.447V44.7a2.546,2.546,0,0,0,2.543,2.543H26.8V48h1.533v-.755H43.653V48h1.53v-.755h.255A2.546,2.546,0,0,0,47.983,44.7V32.447A2.546,2.546,0,0,0,45.44,29.9ZM33.356,26.309h5.275a1.714,1.714,0,0,1,1.713,1.713V29.9l.321-.068L40.6,27.544c-.028-.935-.28-1.625-1.215-1.626L33.424,26c-.934,0-2.1.471-2.1,1.405l.068,2.429c.084-.6.305-.053.389-1.336C31.782,27.553,32.411,26.311,33.356,26.309Zm1.616,2.84V29.9H32.664V28.022a.692.692,0,0,1,.692-.692h5.275a.694.694,0,0,1,.693.692V29.9H37.015v-.755ZM46.983,44.7a1.545,1.545,0,0,1-1.543,1.543h-.257V46h-1.53v.245H28.335V46H26.8v.245h-.255A1.545,1.545,0,0,1,25,44.7V32.447A1.547,1.547,0,0,1,26.547,30.9h8.425v.245h2.043V30.9H45.44a1.545,1.545,0,0,1,1.543,1.543Z" fill="#464646"/>
+      </g>
+      <path id="path32" d="M27.3,39.083h-1V34.228A2.035,2.035,0,0,1,28.335,32.2H39.824v1H28.335A1.033,1.033,0,0,0,27.3,34.228Z" fill="#464646"/>
+    </g>
+  </g>
+</svg>

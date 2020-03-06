@@ -1,0 +1,13 @@
+﻿<div class="command-bar-side-panel">
+    <button ng-click="vm.cancel()" class="btn side-panel-button">Close</button>
+</div>
+<div class="side-panel-property-area-body">
+    <sit-property-grid sit-id="view_form"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-mode="view"
+                       sit-columns="1">
+        <!-- TODO: Put here the properties of the entity managed by the service -->
+        <sit-property sit-widget="sit-label" sit-value="vm.currentItem.Id">ID:</sit-property>
+    </sit-property-grid>
+</div>

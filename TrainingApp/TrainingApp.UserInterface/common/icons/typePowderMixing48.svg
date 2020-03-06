@@ -1,0 +1,129 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="9.948" y1="12.081" x2="38.052" y2="40.185" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_9" data-name="Sfumatura senza nome 9" x1="-24.881" y1="47.638" x2="-28.317" y2="44.202" gradientTransform="translate(14.847 51.136) rotate(180) scale(1.029 1.029)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177492"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_9-2" x1="-26.219" y1="41.44" x2="-29.655" y2="38.005" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-3" x1="-19.53" y1="42.796" x2="-22.966" y2="39.36" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-4" x1="-21.118" y1="36.841" x2="-24.554" y2="33.405" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-5" x1="-17.392" y1="31.433" x2="-20.828" y2="27.997" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-6" x1="-11.336" y1="33.177" x2="-14.772" y2="29.742" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-7" x1="-5.687" y1="30.756" x2="-9.123" y2="27.321" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-8" x1="-2.284" y1="35.795" x2="-5.72" y2="32.359" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-9" x1="7.275" y1="36.841" x2="3.84" y2="33.405" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-10" x1="3.501" y1="31.64" x2="0.066" y2="28.204" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-11" x1="-1.652" y1="26.293" x2="-5.088" y2="22.857" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-12" x1="1.699" y1="20.462" x2="-1.737" y2="17.026" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-13" x1="-4.88" y1="20.299" x2="-8.316" y2="16.863" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-14" x1="-10.218" y1="24.808" x2="-13.654" y2="21.372" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-15" x1="-17.109" y1="24.808" x2="-20.545" y2="21.372" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-16" x1="-13.054" y1="17.634" x2="-16.49" y2="14.198" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-17" x1="-7.532" y1="13.517" x2="-10.968" y2="10.081" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-18" x1="-11.953" y1="9.088" x2="-15.389" y2="5.652" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-19" x1="-2.996" y1="9.048" x2="-6.432" y2="5.612" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-20" x1="-0.845" y1="15.043" x2="-4.281" y2="11.607" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-21" x1="5.3" y1="43.89" x2="1.864" y2="40.454" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-22" x1="12.242" y1="41.612" x2="8.806" y2="38.176" xlink:href="#Sfumatura_senza_nome_9"/>
+    <linearGradient id="Sfumatura_senza_nome_9-23" x1="11.746" y1="47.638" x2="8.31" y2="44.202" xlink:href="#Sfumatura_senza_nome_9"/>
+  </defs>
+  <g>
+    <polyline points="42.5 16.529 31.237 47 16.763 47 5.5 16.529" stroke="#4e4a48" stroke-linecap="round" stroke-linejoin="round" fill="url(#Siemens_-_Mid_gray)"/>
+    <g>
+      <circle cx="42.206" cy="3.903" r="2.5" fill="url(#Sfumatura_senza_nome_9)"/>
+      <path d="M42.206,1.9a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="43.582" cy="10.278" r="2.5" fill="url(#Sfumatura_senza_nome_9-2)"/>
+      <path d="M43.582,8.278a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="36.702" cy="8.884" r="2.5" fill="url(#Sfumatura_senza_nome_9-3)"/>
+      <path d="M36.7,6.884a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="38.336" cy="15.009" r="2.5" fill="url(#Sfumatura_senza_nome_9-4)"/>
+      <path d="M38.336,13.009a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="34.503" cy="20.572" r="2.5" fill="url(#Sfumatura_senza_nome_9-5)"/>
+      <path d="M34.5,18.572a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="28.274" cy="18.777" r="2.5" fill="url(#Sfumatura_senza_nome_9-6)"/>
+      <path d="M28.274,16.777a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="22.464" cy="21.268" r="2.5" fill="url(#Sfumatura_senza_nome_9-7)"/>
+      <path d="M22.464,19.268a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="18.964" cy="16.085" r="2.5" fill="url(#Sfumatura_senza_nome_9-8)"/>
+      <path d="M18.964,14.085a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="9.131" cy="15.009" r="2.5" fill="url(#Sfumatura_senza_nome_9-9)"/>
+      <path d="M9.131,13.009a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="13.013" cy="20.358" r="2.5" fill="url(#Sfumatura_senza_nome_9-10)"/>
+      <path d="M13.013,18.358a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="18.313" cy="25.858" r="2.5" fill="url(#Sfumatura_senza_nome_9-11)"/>
+      <path d="M18.313,23.858a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="14.866" cy="31.856" r="2.5" fill="url(#Sfumatura_senza_nome_9-12)"/>
+      <path d="M14.866,29.857a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="21.634" cy="32.023" r="2.5" fill="url(#Sfumatura_senza_nome_9-13)"/>
+      <path d="M21.634,30.023a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <path d="M27.124,29.886a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,27.124,29.886Z" fill="url(#Sfumatura_senza_nome_9-14)"/>
+      <path d="M27.124,25.386a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <path d="M34.212,29.886a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,34.212,29.886Z" fill="url(#Sfumatura_senza_nome_9-15)"/>
+      <path d="M34.212,25.386a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="30.041" cy="34.765" r="2.5" fill="url(#Sfumatura_senza_nome_9-16)"/>
+      <path d="M30.041,32.765a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="24.361" cy="39" r="2.5" fill="url(#Sfumatura_senza_nome_9-17)"/>
+      <path d="M24.361,37a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="28.909" cy="43.555" r="2.5" fill="url(#Sfumatura_senza_nome_9-18)"/>
+      <path d="M28.909,41.555a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="19.695" cy="43.597" r="2.5" fill="url(#Sfumatura_senza_nome_9-19)"/>
+      <path d="M19.7,41.6a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="17.483" cy="37.43" r="2.5" fill="url(#Sfumatura_senza_nome_9-20)"/>
+      <path d="M17.483,35.43a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="11.163" cy="7.759" r="2.5" fill="url(#Sfumatura_senza_nome_9-21)"/>
+      <path d="M11.163,5.759a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="4.022" cy="10.102" r="2.5" fill="url(#Sfumatura_senza_nome_9-22)"/>
+      <path d="M4.023,8.1a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <circle cx="4.532" cy="3.903" r="2.5" fill="url(#Sfumatura_senza_nome_9-23)"/>
+      <path d="M4.532,1.9a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-1a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#4e4a48"/>
+    </g>
+  </g>
+</svg>

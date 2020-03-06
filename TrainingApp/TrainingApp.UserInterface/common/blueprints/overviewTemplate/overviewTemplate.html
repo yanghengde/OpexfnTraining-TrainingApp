@@ -1,0 +1,38 @@
+<sit-side-panel sit-title="{{vm.sidepanelConfig.title}}"
+                sit-messages="vm.sidepanelConfig.messages"
+                sit-actions="vm.sidepanelConfig.actionButtons"
+                sit-close="vm.sidepanelConfig.closeButton">
+
+    <sit-property-grid sit-id="itemPropertyGrid"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-columns="1"
+                       sit-mode="list">
+        <div ng-repeat="obj in vm.displayData">
+            <sit-property-group ng-if="obj.container === 'g'"
+                                sit-id="{{obj.groupDetails.id}}"
+                                sit-name="obj.groupDetails.heading"
+                                sit-collapsible="obj.groupDetails.collapsible">
+                <sit-property ng-repeat="prop in obj.fields"
+                              sit-id="{{prop.name}}"
+                              sit-widget="{{prop.widget}}"
+                              ng-disabled="true"
+                              sit-widget-attributes="prop.widgetAttributes"
+                              sit-value="vm.currentItem[prop.name]">
+                    {{prop.label}}:
+                </sit-property>
+            </sit-property-group>
+            <sit-property-group ng-if="obj.container === 'f'"
+                                 sit-show-accordion="false">
+                <sit-property ng-repeat="prop in obj.fields"
+                              sit-id="{{prop.name}}"
+                              sit-widget="{{prop.widget}}"
+                              ng-disabled="true"
+                              sit-widget-attributes="prop.widgetAttributes"
+                              sit-value="vm.currentItem[prop.name]">
+                    {{prop.label}}:
+                </sit-property>
+        </div>
+
+    </sit-property-grid>
+</sit-side-panel>

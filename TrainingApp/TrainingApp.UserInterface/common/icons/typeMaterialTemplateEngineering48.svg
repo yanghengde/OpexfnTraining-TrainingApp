@@ -1,0 +1,58 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="33.29" y1="109.692" x2="46.081" y2="96.9" gradientTransform="matrix(1, 0, 0, -1, 0, 108)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue-2" x1="29.431" y1="8" x2="42.431" y2="8" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#Siemens_-_Light_blue"/>
+    <linearGradient id="linear-gradient" x1="0.818" y1="1470.962" x2="41.394" y2="1511.538" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fdfdfe"/>
+      <stop offset="0.496" stop-color="#f3f3f4"/>
+      <stop offset="0.775" stop-color="#dfdede"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="26.181" y1="1468.906" x2="39.181" y2="1481.906" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="17.03" y1="34.851" x2="29.531" y2="22.351" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9ecf1"/>
+      <stop offset="0.221" stop-color="#d3e8ee"/>
+      <stop offset="0.542" stop-color="#c3dfe8"/>
+      <stop offset="0.921" stop-color="#a2ccdb"/>
+      <stop offset="1" stop-color="#9bc8d7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="8.501" y1="26.322" x2="25.56" y2="9.264" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bfdee8"/>
+      <stop offset="0.159" stop-color="#b3d6e2"/>
+      <stop offset="0.706" stop-color="#8ec1d3"/>
+      <stop offset="1" stop-color="#7fb8cd"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g id="Layer_3" data-name="Layer 3">
+      <polygon points="42.931 14.3 42.931 1.5 30.031 1.5 42.931 14.3" fill="url(#Siemens_-_Light_blue)"/>
+      <rect x="29.431" y="1.5" width="13" height="13" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#Siemens_-_Light_blue-2)"/>
+    </g>
+    <g>
+      <polygon points="29.377 1.5 6.281 1.5 6.281 46.5 42.431 46.5 42.431 14.5 29.377 1.5" fill="url(#linear-gradient)"/>
+      <path d="M42.932,47H5.78V1h23.8L42.932,14.292ZM6.78,46H41.932V14.708L29.171,2H6.78Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <polygon points="29.431 1.656 29.431 14.656 42.431 14.656 29.431 1.656" fill="url(#linear-gradient-2)"/>
+      <path d="M42.432,15.156h-13a.5.5,0,0,1-.5-.5v-13a.5.5,0,0,1,.853-.354l13,13a.5.5,0,0,1-.353.854Zm-12.5-1H41.225L29.932,2.863Z" fill="#4e4a48"/>
+    </g>
+    <polygon points="23.281 28.628 35.781 21.399 35.781 35.787 23.281 43.015 23.281 28.628" fill="#3b90b2"/>
+    <polygon points="10.781 21.398 23.259 14.17 35.781 21.399 23.281 28.628 10.781 21.398" fill="url(#linear-gradient-3)"/>
+    <polygon points="23.281 28.628 23.281 43.015 10.781 35.786 10.781 21.398 23.281 28.628" fill="url(#linear-gradient-4)"/>
+    <polyline points="35.781 21.399 23.281 28.628 10.781 21.398" fill="none" stroke="#0e7191" stroke-linejoin="round"/>
+    <line x1="23.281" y1="28.628" x2="23.281" y2="43.015" fill="none" stroke="#0e7191" stroke-linejoin="round"/>
+    <polygon points="23.259 14.17 10.781 21.398 10.781 35.786 23.281 43.015 35.781 35.787 35.781 21.399 23.259 14.17" fill="none" stroke="#4e4a48" stroke-linejoin="round"/>
+    <polyline points="30.781 24.277 23.281 28.613 15.781 24.277" fill="none" stroke="#0e7191" stroke-linejoin="round"/>
+    <line x1="23.281" y1="28.613" x2="23.281" y2="37.247" fill="none" stroke="#0e7191" stroke-linejoin="round"/>
+  </g>
+</svg>

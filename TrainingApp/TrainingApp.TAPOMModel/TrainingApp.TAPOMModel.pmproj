@@ -1,0 +1,116 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c3aa2a9c-460d-4455-a203-8efe6408f391</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Siemens.Mom.Presales.Training.TrainingApp.TrainingApp.TAPOMModel</RootNamespace>
+    <AssemblyName>Siemens.Mom.Presales.Training.TrainingApp.TrainingApp.TAPOMModel</AssemblyName>
+    <Name>TrainingApp.TAPOMModel</Name>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.02.01</FunctionalBlockVersion>
+    <FunctionalBlockName>TrainingApp</FunctionalBlockName>
+    <FunctionalBlockDomain>TrainingApp</FunctionalBlockDomain>
+    <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
+    <SitPlatformVersion>3.1</SitPlatformVersion>
+    <DocumentationFolder>
+    </DocumentationFolder>
+    <DocumentationCompilerOption>True</DocumentationCompilerOption>
+    <ParallelCompilerOption>False</ParallelCompilerOption>
+    <FunctionalBlockDomainPrefix>TA</FunctionalBlockDomainPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Diagrams\" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Project.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataSource.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Command" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Command\Command.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\DataModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataModel\DataModel.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Event" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Event\Event.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\ReadingFunction" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ReadingFunction\ReadingFunction.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Security\Security.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Alias" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Alias\Alias.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Type" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Type\Type.ul" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Diagrams\Siemens_Mom_Presales_Training_TA_TrainingApp.dm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Siemens_Mom_Presales_Training_MS_TrainingLib.um">
+      <Name>Siemens_Mom_Presales_Training_MS_TrainingLib.um</Name>
+      <FileModelName>Siemens_Mom_Presales_Training_MS_TrainingLib.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.Mom.Presales.Training.TrainingLib_01.02.01\model\manufacturingModel\Siemens_Mom_Presales_Training_MS_TrainingLib.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siemens_Mom_Presales_Training_TN_TrainingLibView.um">
+      <Name>Siemens_Mom_Presales_Training_TN_TrainingLibView.um</Name>
+      <FileModelName>Siemens_Mom_Presales_Training_TN_TrainingLibView.um</FileModelName>
+      <HintPath>..\..\SimaticITPackages\Siemens.Mom.Presales.Training.TrainingLibView_01.00.00\model\manufacturingModel\Siemens_Mom_Presales_Training_TN_TrainingLibView.um</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.DSL.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

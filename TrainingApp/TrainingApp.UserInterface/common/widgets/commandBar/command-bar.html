@@ -1,0 +1,137 @@
+<div data-internal-type="command-bar" class="sit-command-bar"
+     ng-class="{'commandBarContainerAction':commandBarCtrl.commands.barType === 'Action' && commandBarCtrl.layout === 'horizontal',
+     'commandBarContainerTool': commandBarCtrl.commands.barType === 'Tool' && commandBarCtrl.layout === 'horizontal',
+     'commandbar-container-vertical': commandBarCtrl.layout === 'vertical',
+     'commandbar-container-contextual': commandBarCtrl.layout === 'contextual'}">
+
+    <div data-internal-type="command-menu-command-bar" ng-class="{right: 'right-align-align'}[commandBarCtrl.labelAlign]">
+
+        <div class="container-fluid">
+            <ul data-internal-type="command-bar-collapse-1"
+                ng-class="{'commandBarContainerList': commandBarCtrl.layout === 'horizontal',
+                'commandBar-container-list-vertical': commandBarCtrl.layout === 'vertical',
+                'commandBar-container-list-contextual' : commandBarCtrl.layout === 'contextual'}">
+                <li data-internal-type="command-bar-collapse-button" class="btn-group command-hide">
+                    <!-- Collapse button -->
+
+                    <button data-internal-type="collapse-button-command-bar" id="collapse-button-command-bar" ng-class="{Action:'dropdown-toggle CommandActionDropdown',Tool:'dropdown-toggle CommandToolDropdown'}[commandBarCtrl.commands.barType]" data-toggle="dropdown" title="Other commands">
+                        <div style="display:inline">
+                            <div class="more-button">
+                                <span sit-mom-icon="commandBarCtrl.svgIcons.bar"> </span>
+                            </div>
+                            <div class="caret"></div>
+                        </div>
+                        <div ng-if="commandBarCtrl.commands.barType=='Tool'" class="CommandToolDropdownLabel">{{commandBarCtrl.otherCommandsText}}</div>
+                    </button>
+
+                    <ul data-internal-type="collapse-menu-command-bar" id="sit-commandbar-collapse-menu" class="dropdown-menu commandBarDropdownMenu" ng-class="{'commandBarDropdownMenuAlignRight':!commandBarCtrl.openLeft}" role="menu" data-toggle="dropdown">
+                        <li ng-repeat="command in commandBarCtrl.commands.bar" class="commandBarDropdownItem" ng-show="$index<=commandBarCtrl.MaxIndexNumber">
+
+                            <div ng-switch="command.type">
+
+
+                                <div ng-switch-when="Command" data-internal-type="collapse-menu-item-command-bar">
+                                    <!-- Action button -->
+                                    <sit-command sit-showas="Menu" sit-command="command" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                                </div>
+
+                                <div ng-switch-when="toggle" data-internal-type="collapse-menu-item-command-bar">
+                                    <!-- Toggle button -->
+                                    <sit-command sit-showas="Menu" sit-command="command" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                                </div>
+
+                                <div ng-switch-when="Sep">
+                                    <!-- Separator button -->
+                                    <div data-internal-type="collapse-menu-separator-command-bar" class="divider menuDivider"></div>
+                                </div>
+
+                                <div ng-switch-when="Group" data-internal-type="collapse-submenu-command-bar">
+                                    <!-- Group Button button -->
+                                    <sit-command-group sit-showas="Menu" sit-group="command" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command-group>
+
+                                </div>
+
+                                <div ng-switch-when="MainCommand">
+                                    <sit-command sit-showas="Menu" sit-command="command" sit-type="main" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                                </div>
+
+
+                                <div ng-switch-when="search" ng-if="commandBarCtrl.layout === 'contextual' && command.visibility">
+
+                                    <sit-search sit-command="command" 
+                                                sit-type="search"
+                                                ng-click="command.clickCallback"
+                                                ng-focus="command.focusCallback"
+                                                sit-change="command.changeCallback"
+                                                ng-blur="command.blurCallback"
+                                                ng-disabled="command.disableSearch"
+                                                sit-search-value="{{command.quickSearchText}}"
+                                                sit-placeholder="{{command.placeholder}}">
+                                    </sit-search>
+                                </div>
+                                <div ng-switch-default>
+                                   {{'commandBar.unknownCommandSep' | translate}}
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>                
+                <li ng-repeat="command in commandBarCtrl.commands.bar">
+
+                    <div ng-switch="command.type" ng-show="!commandBarCtrl.DisplayMenu || ($index>commandBarCtrl.MaxIndexNumber)">
+
+                        <div ng-switch-when="Command">
+                            <!-- Action button -->
+                            <sit-command sit-command="command" sit-showas="Button" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                        </div>
+
+                        <div ng-switch-when="toggle">
+                            <!-- Toggle button -->
+                            <sit-command sit-command="command" sit-showas="Button" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                        </div>
+
+                        <div ng-switch-when="Sep">
+                            <!-- Separator button -->
+                            <div data-internal-type="separator-command-bar" ng-class="{Tool:'commandBarDividerTool',Action:'commandBarDivider'}[commandBarCtrl.commands.barType]">
+                                <div class="commandBarDividerIcon" />
+                            </div>
+                        </div>
+
+                        <div ng-switch-when="Group">
+                            <!-- Group Button button -->
+                            <sit-command-group sit-label-align="{{commandBarCtrl.labelAlign}}" sit-group="command" sit-showas="Button" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command-group>
+
+                        </div>
+
+                        <div ng-switch-when="MainCommand">
+                            <sit-command sit-command="command" sit-showas="Button" sit-bartype="{{commandBarCtrl.commands.barType}}"></sit-command>
+                        </div>
+
+                        <div ng-switch-when="search" ng-if="commandBarCtrl.layout === 'contextual' && command.visibility">
+
+                            <sit-search index="{{$index}}"
+                                        sit-command="command" 
+                                        sit-type="search"
+                                        ng-click="command.clickCallback"
+                                        ng-focus="command.focusCallback"
+                                        sit-change="command.changeCallback"
+                                        ng-disabled="command.disableSearch"
+                                        ng-blur="command.blurCallback"
+                                        sit-search-value="{{command.quickSearchText}}"
+                                        sit-placeholder="{{command.placeholder}}">
+                            </sit-search>
+                        </div>
+                        <div ng-switch-default>
+                            {{'commandBar.unknownCommand' | translate}}
+                        </div>
+
+                    </div>
+                </li>
+                <ng-transclude ng-show=false></ng-transclude>
+                <div ng-show="(commandBarCtrl.commands.barType === 'Tool' || commandBarCtrl.commands.barType === 'Action') && commandBarCtrl.layout !== 'contextual'" class="commandBarRightMarginForActionButton"></div>
+            </ul>
+        </div>
+    </div>
+</div>

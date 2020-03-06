@@ -1,0 +1,34 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8.347" y1="12.268" x2="39.653" y2="43.573" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <polygon points="10.148 45.374 1.588 19.027 24 2.744 46.412 19.027 37.852 45.374 10.148 45.374" fill="url(#linear-gradient)"/>
+      <path d="M24,3.362,45.824,19.218,37.488,44.874H10.512L2.176,19.218,24,3.362m0-1.236L1,18.836,9.785,45.874h28.43L47,18.836,24,2.126Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <path d="M19,11.5l5-4m5,4-5-4m0,0V25.791" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+      <path d="M19,11.5l5-4m5,4-5-4m0,0V25.791" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <g>
+      <path d="M36.8,17.329,42,21.066M39.5,26.959,42,21.066m0,0L24,25.791" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+      <path d="M36.8,17.329,42,21.066M39.5,26.959,42,21.066m0,0L24,25.791" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <g>
+      <path d="M7.334,21.066l5.2-3.737m-2.694,9.63L7.334,21.066m0,0L24,25.791" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+      <path d="M7.334,21.066l5.2-3.737m-2.694,9.63L7.334,21.066m0,0L24,25.791" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <g>
+      <path d="M34.713,40.976l1.76-6.156M28.32,40.611l6.393.365m0,0L24,25.791" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+      <path d="M34.713,40.976l1.76-6.156M28.32,40.611l6.393.365m0,0L24,25.791" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <g>
+      <path d="M12.106,34.82l1.76,6.156m0,0,6.393-.365m-6.393.365L24,25.791" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+      <path d="M12.106,34.82l1.76,6.156m0,0,6.393-.365m-6.393.365L24,25.791" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

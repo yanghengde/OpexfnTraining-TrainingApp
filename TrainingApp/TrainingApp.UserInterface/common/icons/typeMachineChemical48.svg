@@ -1,0 +1,34 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="10.497" y1="28.503" x2="34.711" y2="52.718" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Dark_gray" data-name="Siemens - Dark gray" x1="30.446" y1="10.117" x2="37.679" y2="17.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="2.286" y1="-0.286" x2="30.286" y2="27.714" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177492"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Dark_gray-2" x1="-238.527" y1="-238.802" x2="-229.952" y2="-238.802" gradientTransform="translate(-204.74 252.74) rotate(90)" xlink:href="#Siemens_-_Dark_gray"/>
+  </defs>
+  <g>
+    <g>
+      <path d="M1.5,46.5v-9H46.488A9.513,9.513,0,0,1,37,46.5Z" fill="url(#Siemens_-_Mid_gray)"/>
+      <path d="M45.945,38A9.013,9.013,0,0,1,37,46H2V38H45.945M47,37H1V47H37A10,10,0,0,0,47,37Z" fill="#464646"/>
+    </g>
+    <polyline points="35.027 16.466 38.563 16.466 38.563 11 29.563 11 29.563 16.466 35.027 16.466" fill="url(#Siemens_-_Dark_gray)"/>
+    <g>
+      <path d="M47,11A10,10,0,0,0,37,1H1V36H11V11Z" fill="url(#New_Gradient_Swatch_1)"/>
+      <path d="M37,2a9.013,9.013,0,0,1,8.945,8H10V35H2V2H37m0-1H1V36H11V11H47A10,10,0,0,0,37,1Z" fill="#177491"/>
+    </g>
+    <polygon points="33.424 19.343 34.063 20.592 34.701 19.343 34.701 16.966 33.424 16.966 33.424 19.343" fill="url(#Siemens_-_Dark_gray-2)"/>
+    <g>
+      <rect x="30.063" y="11" width="8" height="4.966" fill="none"/>
+      <polygon points="33.424 19.343 34.063 20.592 34.701 19.343 34.701 16.966 33.424 16.966 33.424 19.343" fill="none"/>
+      <path d="M38.062,11v4.966h-8V11h-1v5.966h3.362v2.618l1.638,3.2,1.639-3.2V16.966h3.361V11ZM34.7,19.343l-.639,1.249-.638-1.249V16.966H34.7Z" fill="#464646"/>
+    </g>
+  </g>
+</svg>

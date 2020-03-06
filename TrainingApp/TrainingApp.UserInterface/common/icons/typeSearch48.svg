@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="17.479" y1="6.479" x2="20.479" y2="3.479" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b3c7"/>
+      <stop offset="0.177" stop-color="#6badc2"/>
+      <stop offset="0.464" stop-color="#539db4"/>
+      <stop offset="0.822" stop-color="#2d839d"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="14.236" y1="43.752" x2="43.914" y2="13.904" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fafafa"/>
+      <stop offset="0.496" stop-color="#ededed"/>
+      <stop offset="0.775" stop-color="#d6d6d6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+  </defs>
+  <g id="g959">
+    <path id="_Compound_Path_" data-name=" Compound Path " d="M16.828,27.535,5.207,39.156a2.424,2.424,0,0,0,0,3.429l.208.208a2.424,2.424,0,0,0,3.429,0L20.465,31.172" stroke="#464646" stroke-miterlimit="10" stroke-width="0.825" fill="url(#linear-gradient)"/>
+    <circle id="circle58" cx="28.952" cy="19.048" r="14.548" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.825" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

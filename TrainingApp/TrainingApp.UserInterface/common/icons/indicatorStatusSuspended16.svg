@@ -1,0 +1,13 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g842">
+    <path id="rect4" d="M1,1H15V15H1Z" fill="#fff7cd"/>
+    <path id="rect819" d="M0,0H1V16H0Z" fill="#db780b"/>
+    <path id="rect819-5" d="M15,0h1V16H15Z" fill="#db780b"/>
+    <path id="rect836" d="M1,15H15v1H1Z" fill="#db780b"/>
+    <path id="rect838" d="M1,0H15V1H1Z" fill="#db780b"/>
+    <path id="rect825" d="M7,6H9v5H7Z" fill="#db780b"/>
+    <path id="rect825-6" d="M11,6h2v5H11Z" fill="#db780b"/>
+    <path id="path820" d="M8,2.548A5.867,5.867,0,0,0,2,8.274H2A5.868,5.868,0,0,0,8,14a6.314,6.314,0,0,0,1-.082v-.973a5.243,5.243,0,0,1-1,.1A4.891,4.891,0,0,1,3,8.274H3A4.89,4.89,0,0,1,8,3.5H8a5.239,5.239,0,0,1,1,.1V2.633A6.317,6.317,0,0,0,8,2.548Z" fill="#db780b"/>
+    <path id="path857" d="M11.332,3.728l-1.4.473-1.4.474.3-1.481.3-1.482,1.1,1.008Z" fill="#db780b"/>
+  </g>
+</svg>

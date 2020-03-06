@@ -1,0 +1,25 @@
+<style>
+    .centering {
+        float:none;
+         margin:5px 5px 0 0;
+    }
+    .row-fluid {
+        margin:5px 5px 0 0;
+        vertical-align: middle;
+    }
+    .header {
+        font-size: 20px;
+        font-weight:bold;
+    }
+
+</style>
+<div style="padding-left: 8px; padding-top: 16px" ng-controller="homeController as lc">
+    <div>
+        <div>
+            <div class="header">Main</div><sit-item-tile sit-tile-content="area" id="homeSettings" ng-repeat="area in lc.areas"></sit-item-tile>
+        </div>
+        <div>
+            <div class="header"></div><sit-item-tile sit-tile-content="doc" id="homeDocuments" ng-repeat="doc in lc.documents"></sit-item-tile>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="composition-details-container" ng-show="vm.ready">
+    <div class="summary">
+        <div class="message">
+            {{'auditTrail.summary.message' | translate: vm.data.summary }}
+        </div>
+    </div>
+
+    <div class="composition-details">
+        <div class="list">
+            <div class="container">
+                <sit-at-parts-tree sit-data="vm.accordion.data" sit-config="vm.accordion.config"></sit-at-parts-tree>
+            </div>
+        </div>
+        <div class="details" ng-if="vm.currentPart">
+            <sit-at-record-details sit-data="vm.currentPart" sit-config="vm.currentPartConfig"></sit-at-record-details>
+        </div>
+    </div>
+</div>

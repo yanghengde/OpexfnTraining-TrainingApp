@@ -1,0 +1,17 @@
+<div class="sit-filter-panel-container">
+    <sit-property-grid sit-id="filterPanelSaveForm"
+                       sit-layout="Vertical"
+                       sit-type="Fixed"
+                       sit-mode="edit"
+                       sit-state-change="Dialog.templatedata.onValidityChangeCallback"
+                       sit-columns="1">
+
+        <sit-property sit-widget="sit-text" sit-value="Dialog.templatedata.name.value" sit-placeholder="Dialog.templatedata.name.placeholder"
+                      sit-validation="Dialog.templatedata.name.validation">{{'filterPanel.name'| translate}}:
+        </sit-property>
+
+        <sit-property sit-widget="sit-textarea" sit-value="Dialog.templatedata.description.value"
+                      sit-placeholder="Dialog.templatedata.description.placeholder">{{'filterPanel.description'| translate}}:
+        </sit-property>
+    </sit-property-grid>
+</div>

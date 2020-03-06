@@ -1,0 +1,11 @@
+<div class="swac-ui-module">
+    <div ng-if="swacUIMCtrl.isCreationFailed===true">
+        <div class="creationFailedDiv">
+            <i class="fa fa-exclamation-circle fa-3x creationFailedIcon" aria-hidden="true"></i>
+            <h2 class="creationFailedTitle">{{swacUIMCtrl.title}}</h2>
+            <div style="clear:both"></div>
+        </div>
+
+        <div style="padding-left:60px;">{{swacUIMCtrl.message}}</div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div id="toolbox" class='toolbox'>
+    <div class='sit-flow-toolbox-content'>
+        <div data-ng-repeat='block in blocks' class='sit-flow-toolbox-group-background'>
+            <div data-ng-click='block.Collapsed= !block.Collapsed' ng-show='block[0].Group!= ""' class='sit-flow-toolbox-group-header'>
+                <img ng-if="!block.Collapsed" data-ng-src="common/icons/miscDownArrow16.svg" width="16" height="16" alt="Down Arrow">
+                <img ng-if="block.Collapsed" data-ng-src="common/icons/miscRightArrow16.svg" width="16" height="16" alt="Down Right">
+                <span name='lnk_{{block[0].Group}}' class='sit-flow-toolbox-group-label'>{{block[0].Group}}</span>
+            </div>
+            <div data-ng-hide='block.Collapsed' class='sit-flow-toolbox-group-content'>
+                <div id='{{item.Type}}' sit-flow-toolbox-drag-on-click sit-flow-toolbox-draggable ng-repeat='item in block' class='sit-flow-toolbox-item' ng-class='{"sit-flow-toolbox-item-list" : sitMode == "list", "sit-flow-toolbox-item-tiles" : sitMode == "tiles"}'>
+                    <div sit-flow-toolbox-icon title=''> </div>
+                    <div class='sit-flow-toolbox-item-label' ng-show='sitMode == "list"'>{{item.Label}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

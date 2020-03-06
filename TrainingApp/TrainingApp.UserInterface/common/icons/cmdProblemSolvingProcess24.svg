@@ -1,0 +1,16 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g1007">
+    <path id="path2" d="M17.49,24a6.5,6.5,0,1,1,6.5-6.5A6.5,6.5,0,0,1,17.49,24Zm0-12a5.5,5.5,0,1,0,5.5,5.5A5.5,5.5,0,0,0,17.49,12Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path827" d="M2,.029v24l11.658,0c-.147-.083-.291-.172-.431-.265a7.477,7.477,0,0,1-.6-.453c-.113-.1-.222-.2-.328-.307H3.158L3.1,1.037H14.213V7.029h6.658V10.9q.29.144.565.314c.187.119.37.247.546.383V6.029h-.007L22,6.016,15.324.039H14.209ZM15.322,1.5l5.063,4.533H15.322Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path825" d="M14.7,12.713v.037a.058.058,0,0,1,0-.019.021.021,0,0,1,0-.008h0l0,0Z" class="aw-theme-iconOutline" fill="#464646" fill-rule="evenodd"/>
+    <path id="path821" d="M19.383,13.863a1.8,1.8,0,0,0-1.282.508l-1.007.979.759.656.946-.918a.8.8,0,1,1,1.113,1.146v0l-1.363,1.323a.787.787,0,0,1-1,.076c-.019,0-.031.016-.049.019l-1.088.2a1.793,1.793,0,0,0,1.551.935h0a1.786,1.786,0,0,0,1.279-.508l1.361-1.324a1.8,1.8,0,0,0-1.226-3.092Z" class="aw-theme-iconOutline" fill="#464646" fill-rule="evenodd"/>
+    <path id="path835" d="M17.123,16.065a1.787,1.787,0,0,0-1.279.507L14.482,17.9a1.8,1.8,0,0,0,2.508,2.584L18,19.5l-.76-.656-.945.918a.8.8,0,1,1-1.115-1.147v0l1.363-1.322a.787.787,0,0,1,1-.076c.017,0,.031-.016.049-.02l1.088-.2a1.824,1.824,0,0,0-.285-.389,1.8,1.8,0,0,0-1.266-.547Z" class="aw-theme-iconOutline" fill="#464646" fill-rule="evenodd"/>
+    <path id="rect893" d="M4,2V6H8V2ZM5,3H7V5H5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect901" d="M5,6H6V20H5Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect903" d="M6,9H8v1H6Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect893-2" d="M8,7.5v4h4v-4Zm1,1h2v2H9Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path972" d="M11.363,13H8v4H9.885c.007-.156.02-.312.037-.467.025-.179.057-.356.1-.533H9V14h1.736c.048-.1.1-.192.149-.287a7.417,7.417,0,0,1,.41-.627C11.317,13.057,11.34,13.028,11.363,13Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect903-2" d="M6,14.5H8v1H6Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect903-2-9" d="M6,19v1h4a7.933,7.933,0,0,1-.259-1Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<div class='sit-flow-toolbar-container'>
+
+    <div class='sit-flow-toolbar'>
+        <span id="btnRefresh" class='fa fa-refresh sit-flow-clickable sit-flow-toolbar-element' ng-click='refresh()' title='Refresh' ng-show='sitShowRefresh'></span>
+        <span id="btnAutoGenerationAll" class='vm vm-generate-big-block-phase sit-flow-clickable sit-flow-toolbar-element' ng-click='autoGenerate()' title='Auto-generate' ng-show='sitShowAutogenerate'></span>
+        <span id="btnUndo" class='fa fa-reply sit-flow-clickable sit-flow-toolbar-element' ng-click='undo()' data-ng-show='canUndo' title='Undo'></span>
+        <span id="btnRedo" class='fa fa-share sit-flow-clickable sit-flow-toolbar-element' ng-click='redo()' data-ng-show='canRedo' title='Redo'></span>
+        <span id="btnEditElement" class='fa fa-pencil sit-flow-clickable sit-flow-toolbar-element' ng-click='edit()' data-ng-show='canEdit' title='Edit'></span>
+        <span id="btnRemoveElement" class='fa fa-trash sit-flow-clickable sit-flow-toolbar-element' ng-click='remove()' data-ng-show='canRemove' title='Remove'></span>
+        <span id="btnBringToFront" class='vm vm-bring-to-front sit-flow-clickable sit-flow-toolbar-element' ng-click='bringToFront()' title='Bring To Front' ng-show='canBringToFront'></span>
+        <span id="btnSendToBack" class='vm vm-send-to-back sit-flow-clickable sit-flow-toolbar-element' ng-click='sendToBack()' title='Send To Back' ng-show='canSendToBack'></span>
+        <span id="btnPan" class='fa fa-arrows sit-flow-clickable sit-flow-toolbar-element' ng-class='{"sit-flow-toolbar-toggle-down": panChecked, "sit-flow-toolbar-toggle-up": !panChecked}' ng-click='togglePan()' title='Pan' ng-show='sitShowPan'></span>
+        <span id="btnZoomIn" class='fa fa-search-plus sit-flow-clickable sit-flow-toolbar-element' ng-click='zoomin()' title='Zoom In' ng-show='sitShowZoom'></span>
+        <span id="btnZoomOut" class='fa fa-search-minus sit-flow-clickable sit-flow-toolbar-element' ng-click='zoomout()' title='Zoom Out' ng-show='sitShowZoom'></span>
+        <span id="btnZoomToFit" class='vm vm-shrink-to-fit sit-flow-clickable sit-flow-toolbar-element' ng-click='zoomfit()' title='Zoom To Fit' ng-show='sitShowZoom'></span>
+        <span id="btnSaveBB" class='fa fa-save sit-flow-clickable sit-flow-toolbar-element' ng-click='save()' title='Save' ng-show='sitShowSave'></span>
+        <span id="btnRenameBB" class='fa fa-pencil sit-flow-clickable sit-flow-toolbar-element' ng-click='rename()' title='Rename' ng-show='sitShowRename'></span>
+        <span id="btnSettings" class='fa fa-cog sit-flow-clickable sit-flow-toolbar-element' ng-click='editSettings()' title='Settings' ng-show='sitShowSettings'></span>
+    </div>
+</div>

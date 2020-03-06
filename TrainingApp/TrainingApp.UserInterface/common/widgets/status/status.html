@@ -1,0 +1,24 @@
+<div class="status">
+   <h3> {{statusCtrl.title}} </h3> 
+<div class="subdesc">
+    <div class="admonition admonition-info">{{statusCtrl.desc}}</div>
+    <div class="body">
+        <div class="chart-container" ng-if="statusCtrl.chart == 'true'">
+            <div class="pie-wrapper" ng-class="statusCtrl.progressCSSClass">
+                <span class="label">{{statusCtrl.progressValue}}<span class="smaller">%</span><span class="total">{{'status.total'|translate}}</span></span>
+                <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+
+        <div class="properties">
+            <ul>
+                <li ng-repeat="prop in statusCtrl.properties track by $index"> {{prop.name}} <span class="badge">{{prop.value}}</span></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>

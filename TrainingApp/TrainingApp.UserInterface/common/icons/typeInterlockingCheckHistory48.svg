@@ -1,0 +1,33 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="20.319" y1="17.585" x2="49.856" y2="45.045" gradientTransform="translate(-22.118 -26.409) scale(1.398 1.551)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="25.05" y1="22.999" x2="47.204" y2="45.255" gradientTransform="translate(0 2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#72b0c8"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+  </defs>
+  <g id="g845">
+    <g id="g830">
+      <path id="path28" d="M43.469,7.548A34.708,34.708,0,0,1,24.444,1.09L23.99.736l-.454.354A34.708,34.708,0,0,1,4.512,7.548H3.736v9.1C3.736,39.494,22.359,47.264,24,47.264s20.264-7.755,20.264-30.615v-9.1Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.472" fill="url(#linear-gradient)"/>
+      <path id="polygon51" d="M17.875,21.842,23,28,35.643,12.37l3.207,2.588L23.05,34.507,14.7,24.472Z" fill="#fff"/>
+      <path id="path53-1" d="M35.746,13.336l2.14,1.725L23.037,33.423,15.67,24.562l2.116-1.753,5.224,6.274L35.746,13.336M35.54,11.4l-.863,1.067L22.993,26.917,18.841,21.93l-.877-1.054-1.055.875L14.793,23.5l-1.059.878.879,1.058L21.981,34.3l1.071,1.289,1.054-1.3L38.955,15.924l.864-1.069-1.07-.864-2.14-1.726Z" fill="#147391"/>
+    </g>
+    <g id="g26">
+      <path id="circle22" d="M47.5,36A11.5,11.5,0,0,1,36,47.5h0A11.5,11.5,0,0,1,24.5,36h0a11.5,11.5,0,0,1,23,0Z" fill="url(#linear-gradient-2)"/>
+      <path id="path24" d="M36,25A11,11,0,1,1,25,36,11,11,0,0,1,36,25m0-1A12,12,0,1,0,48,36,12,12,0,0,0,36,24Z" fill="#4e4a48"/>
+    </g>
+    <g id="g32">
+      <path id="path28-9" d="M36,27.375a8.625,8.625,0,0,0,0,17.25,8.524,8.524,0,0,0,6.25-2.708v2h.958V40.125H39.417v.958h2.329A7.672,7.672,0,1,1,43.667,36a7.537,7.537,0,0,1-.487,2.788l-.043.111.869.386.046-.127A9.426,9.426,0,0,0,44.625,36,8.636,8.636,0,0,0,36,27.375Z" fill="#fff"/>
+      <path id="polygon30" d="M31.625,35.875v.958h5.208V30.208h-.958v5.667Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

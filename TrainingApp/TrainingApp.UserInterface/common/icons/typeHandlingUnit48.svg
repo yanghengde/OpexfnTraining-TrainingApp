@@ -1,0 +1,7 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <path d="M3,4V44M45,4V44m0,0H3" fill="none" stroke="#177491" stroke-linecap="round" stroke-miterlimit="10"/>
+  <g>
+    <path d="M40.57,41.5Zm-2.922,0Zm-3.921,0v-29h2v29Zm-2.422,0v-29h1v29Zm-2.422,0Zm-2.922,0Zm-2.922,0Zm-2.922,0Zm-3.422,0v-29h1v29Zm-2.422,0Zm-2.921,0Zm-3.922,0v-29h2v29Z" fill="#6f6e6e"/>
+    <path d="M35.227,13V41h-1V13h1m-3.422,0v0M17.2,13v0M8.93,13V41h-1V13h1m32.14-1h-1V42h1V12Zm-2.922,0h-1V42h1V12Zm-1.921,0h-3V42h3V12Zm-3.422,0h-2V42h2V12Zm-3.422,0h-1V42h1V12Zm-2.922,0h-1V42h1V12Zm-2.922,0h-1V42h1V12Zm-2.922,0h-1V42h1V12ZM18.2,12h-2V42h2V12Zm-3.422,0h-1V42h1V12Zm-2.921,0h-1V42h1V12ZM9.93,12h-3V42h3V12Z" fill="#6f6e6e"/>
+  </g>
+</svg>

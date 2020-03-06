@@ -1,0 +1,10 @@
+<div class="text-canvas" ng-click="$ctrl.showFullScreen()">
+    <p ng-bind-html="$ctrl.textData | textLineBreak"></p>
+</div>
+
+<div id="document-viewer-full-screen-text" ng-if="$ctrl.istextFullScreenMode" ng-click="$ctrl.closeFullScreen()">
+    <div id="full-screen-text" style="background: #f0f0f0; z-index: 9999999; top: 0; position: absolute; width: 100%; 
+    height: 100%; display: flex; overflow-y: auto;left: 0; right: 0; bottom: 0;">
+        <p class="full-screen-text" style="margin-left: auto; margin-right: auto;" ng-bind-html="$ctrl.textData | textLineBreak"></p>
+    </div>
+</div>

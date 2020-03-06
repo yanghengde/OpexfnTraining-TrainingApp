@@ -1,0 +1,21 @@
+<div ng-if="emailCtrl.readOnly || emailCtrl.ngReadonly" class="label label-property-grid-control-readonly property-value-ellipsis"> {{emailCtrl.value}} </div>
+
+<ng-form ng-if="!(emailCtrl.readOnly || emailCtrl.ngReadonly)" name='emailForm' ng-class="{'isrequired' : (emailCtrl.validation.required) && emailCtrl.value===undefined}">
+    <div class='property-grid-input-group'>
+        <input type='email'
+               name='{{emailCtrl.value}}'
+               ng-class="{'validator-control-invalid':((emailForm.$invalid && emailForm.$dirty) || (emailForm.$invalid && emailForm.$visited)),
+               'validator-control':!((emailForm.$invalid && emailForm.$dirty) || (emailForm.$invalid && emailForm.$visited)),
+               'ng-dirty':emailForm.$dirty}"
+               ng-model='emailCtrl.value'
+               ng-required='emailCtrl.validation.required'
+               ng-minlength='emailCtrl.validation.minlength'
+               ng-maxlength='emailCtrl.validation.maxlength'
+               ng-pattern='emailCtrl.validation.pattern'
+               sit-form-input-validator
+               ng-blur="emailCtrl.ngBlur()"
+               sit-change="emailCtrl.sitChange"
+               ng-disabled="emailCtrl.ngDisabled"
+               ng-focus="emailCtrl.ngFocus()" />
+    </div>
+</ng-form>

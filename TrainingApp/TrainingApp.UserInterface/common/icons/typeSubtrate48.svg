@@ -1,0 +1,35 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="6.807" y1="29.053" x2="-11.321" y2="45.161" gradientTransform="matrix(1, 0, 0, -1.003, 0, 48.026)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#73b4c8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="12.4" y1="43.946" x2="44.69" y2="21.636" gradientTransform="translate(-30.476 1.734)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a5d1dc"/>
+      <stop offset="0.706" stop-color="#82bdcf"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+  </defs>
+  <g id="g895">
+    <path id="rect13-9-3" d="M4,25.559H44.154V43H4Z" fill="url(#linear-gradient)"/>
+    <path id="rect847" d="M12,2H36.344L45,25H2.973Z" fill="url(#linear-gradient-2)"/>
+    <path id="rect850" d="M4,25.839H44V30H4Z" fill="#c9c6c5"/>
+    <path id="rect852" d="M4,33H44v3H4Z" fill="#c9c6c5"/>
+    <path id="rect854" d="M4,39H44v2H4Z" fill="#c9c6c5"/>
+    <path id="rect854-6" d="M4,43.976H44V45H4Z" fill="#c9c6c5"/>
+    <path id="rect989" d="M3,25H4V45H3Z" fill="#464646"/>
+    <path id="rect991" d="M44,25h1V45H44Z" fill="#464646"/>
+    <path id="rect993" d="M3,45H45v1H3Z" fill="#464646"/>
+    <path id="rect995" d="M12,1l1,.412-9,23.9L3,25Z" fill="#464646"/>
+    <path id="rect1014-4" d="M4,30H44v1H4Z" fill="#464646"/>
+    <path id="rect1014-4-0" d="M4,32H44v1H4Z" fill="#464646"/>
+    <path id="rect1014-4-0-9" d="M4,36H44v1H4Z" fill="#464646"/>
+    <path id="rect1014-4-0-9-3" d="M4,38H44v1H4Z" fill="#464646"/>
+    <path id="rect1014-4-0-9-3-8" d="M4,41H44v1H4Z" fill="#464646"/>
+    <path id="rect1014-4-0-9-3-8-6" d="M4,43H44v1H4Z" fill="#464646"/>
+    <path id="rect860" d="M12,1H36V2H12Z" fill="#464646"/>
+    <path id="rect995-15" d="M36,1l-1,.412,9,23.9L45,25Z" fill="#464646"/>
+    <path id="rect1014-4-8" d="M4,25H44v1H4Z" fill="#464646"/>
+  </g>
+</svg>

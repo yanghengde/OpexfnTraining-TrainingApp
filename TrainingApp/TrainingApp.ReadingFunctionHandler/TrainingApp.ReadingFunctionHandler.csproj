@@ -1,0 +1,123 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}</ProjectGuid>
+    <ProjectTypeGuids>{5486C329-76F8-4363-9B23-421DD193F415};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Siemens.Mom.Presales.Training.TrainingApp.ReadingFunctionHandler</RootNamespace>
+    <AssemblyName>Siemens.Mom.Presales.Training.TrainingApp.ReadingFunctionHandler</AssemblyName>
+    <Name>TrainingApp.ReadingFunctionHandler</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.02.01</FunctionalBlockVersion>
+    <FunctionalBlockName>TrainingApp</FunctionalBlockName>
+    <SitPlatformVersion>3.1</SitPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(SITUnifiedVSToolingPlatformBin)\ServiceLayer.Host.exe</StartProgram>
+    <StartArguments>/mode:RUNTIME /debug:true /debugPath:"$(SolutionDir)$(SolutionName)\$(SolutionName).Installer\bin\Debug"  /debugPathFile:"$(SolutionDir)$(SolutionName)Paths.xml" /registryPath:"$(SolutionDir)$(SolutionName)\$(SolutionName).Installer\bin\Debug\Debugger"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types">
+      <HintPath>..\..\SimaticITPackages\Siemens.Mom.Presales.Training.TrainingLib_01.02.01\model\bin\Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types.ProjectionModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.Mom.Presales.Training.TrainingLib_01.02.01\model\bin\Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types.ReadingModel">
+      <HintPath>..\..\SimaticITPackages\Siemens.Mom.Presales.Training.TrainingLib_01.02.01\model\bin\Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types.ReadingModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.Types.ProjectionModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.Types.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.ProjectionModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.ProjectionModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Siemens.SimaticIT.SystemData.Foundation.ReadingModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIT.SystemData.Foundation.ReadingModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Handler">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Handler.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Unified">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Unified.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Unified.Common">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Unified.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.Unified.Lean">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.Unified.Lean.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.DataModel">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.DataModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimaticIT.SDK.Diagnostics">
+      <HintPath>$(SITUnifiedVSToolingPlatformBin)\SimaticIT.SDK.Diagnostics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadinigFunctionsHandler.coutput">
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeCompile">
+  </Target>
+  <Target Name="AfterCompile">
+  </Target>
+  -->
+</Project>

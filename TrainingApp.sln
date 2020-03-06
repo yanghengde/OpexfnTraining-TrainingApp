@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingApp.CommandHandler", "TrainingApp\TrainingApp.CommandHandler\TrainingApp.CommandHandler.csproj", "{B39850E7-4ABB-4296-B851-BF95597F7140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingApp.EventHandler", "TrainingApp\TrainingApp.EventHandler\TrainingApp.EventHandler.csproj", "{9BE55440-B0BE-439B-AB91-A374362009DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingApp.ReadingFunctionHandler", "TrainingApp\TrainingApp.ReadingFunctionHandler\TrainingApp.ReadingFunctionHandler.csproj", "{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingApp.UserInterface", "TrainingApp\TrainingApp.UserInterface\TrainingApp.UserInterface.csproj", "{809C36B8-660C-4D28-8F28-C64FBD3C7309}"
+EndProject
+Project("{DA7C07C8-D9F3-4A79-840F-611D1C5950A5}") = "TrainingApp.Installer", "TrainingApp\TrainingApp.Installer\TrainingApp.Installer.iproj", "{BC66ED9A-6F27-4EAA-BAD1-A141CED19CEF}"
+EndProject
+Project("{CA2279AF-CA6F-4B4B-98B3-8D49B8D38547}") = "TrainingApp.TAPOMModel", "TrainingApp\TrainingApp.TAPOMModel\TrainingApp.TAPOMModel.pmproj", "{C3AA2A9C-460D-4455-A203-8EFE6408F391}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81EA3D53-81E7-4215-B619-8C4C524BC9F6}"
+	ProjectSection(SolutionItems) = preProject
+		packages.reference = packages.reference
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B39850E7-4ABB-4296-B851-BF95597F7140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B39850E7-4ABB-4296-B851-BF95597F7140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B39850E7-4ABB-4296-B851-BF95597F7140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B39850E7-4ABB-4296-B851-BF95597F7140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE55440-B0BE-439B-AB91-A374362009DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE55440-B0BE-439B-AB91-A374362009DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE55440-B0BE-439B-AB91-A374362009DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE55440-B0BE-439B-AB91-A374362009DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF55A93-AF60-43D6-AB88-AE65252B6A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809C36B8-660C-4D28-8F28-C64FBD3C7309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809C36B8-660C-4D28-8F28-C64FBD3C7309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809C36B8-660C-4D28-8F28-C64FBD3C7309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809C36B8-660C-4D28-8F28-C64FBD3C7309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC66ED9A-6F27-4EAA-BAD1-A141CED19CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC66ED9A-6F27-4EAA-BAD1-A141CED19CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC66ED9A-6F27-4EAA-BAD1-A141CED19CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC66ED9A-6F27-4EAA-BAD1-A141CED19CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AA2A9C-460D-4455-A203-8EFE6408F391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AA2A9C-460D-4455-A203-8EFE6408F391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AA2A9C-460D-4455-A203-8EFE6408F391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AA2A9C-460D-4455-A203-8EFE6408F391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EEB8D74-D46C-41FF-96B8-522F722178FF}
+	EndGlobalSection
+EndGlobal

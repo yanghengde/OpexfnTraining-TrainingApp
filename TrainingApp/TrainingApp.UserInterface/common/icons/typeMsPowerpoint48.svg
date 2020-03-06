@@ -1,0 +1,37 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3.5" y1="-1038.5" x2="45" y2="-1080" gradientTransform="matrix(1 0 0 -1 0 -1032)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.2323" style="stop-color:#FAFAFA"/>
+	<stop  offset="0.4964" style="stop-color:#EDEDED"/>
+	<stop  offset="0.775" style="stop-color:#D6D6D6"/>
+	<stop  offset="1" style="stop-color:#BEBEBE"/>
+</linearGradient>
+<polygon fill="url(#SVGID_1_)" stroke="#464646" stroke-miterlimit="10" points="32.5,0.5 9.5,0.5 9.5,47.5 45.5,47.5 45.5,13.5 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="29.25" y1="-1035.75" x2="42.25" y2="-1048.75" gradientTransform="matrix(1 0 0 -1 0 -1032)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.2214" style="stop-color:#F8F8F8"/>
+	<stop  offset="0.5415" style="stop-color:#E5E5E5"/>
+	<stop  offset="0.92" style="stop-color:#C6C6C6"/>
+	<stop  offset="1" style="stop-color:#BEBEBE"/>
+</linearGradient>
+<polygon fill="url(#SVGID_2_)" stroke="#464646" stroke-linejoin="round" stroke-miterlimit="10" points="32.5,0.5 32.5,13.5 
+	45.5,13.5 "/>
+<line fill="none" stroke="#5A5A5A" x1="15" y1="34.5" x2="40" y2="34.5"/>
+<line fill="none" stroke="#5A5A5A" x1="15" y1="28.5" x2="26" y2="28.5"/>
+<line fill="none" stroke="#5A5A5A" x1="15" y1="40.5" x2="40" y2="40.5"/>
+<linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="4.7218" y1="6.7218" x2="20.2782" y2="22.2782">
+	<stop  offset="0" style="stop-color:#73B4C8"/>
+	<stop  offset="0.1747" style="stop-color:#6AAEC3"/>
+	<stop  offset="0.4567" style="stop-color:#529EB5"/>
+	<stop  offset="0.8089" style="stop-color:#2C839F"/>
+	<stop  offset="1" style="stop-color:#147391"/>
+</linearGradient>
+<circle id="XMLID_91_" fill="url(#XMLID_2_)" stroke="#464646" stroke-miterlimit="10" cx="12.5" cy="14.5" r="11"/>
+<path fill="#FFFFFF" d="M14,9H9v11h2v-4h3c1.7,0,3-1.3,3-3v-1C17,10.3,15.7,9,14,9z M15,13c0,0.6-0.4,1-1,1h-3v-3h3c0.6,0,1,0.4,1,1
+	V13z"/>
+<path fill="none" stroke="#5A5A5A" stroke-miterlimit="10" d="M34.5,25.5v-6c-3.3,0-6,2.7-6,6c0,3.3,2.7,6,6,6s6-2.7,6-6
+	c0,0,0,0,0,0H34.5z"/>
+<path fill="none" stroke="#5A5A5A" stroke-miterlimit="10" d="M42.5,23.5c0-1.7-0.7-3.2-1.8-4.2c-1.1-1.1-2.6-1.8-4.2-1.8v6H42.5z"
+	/>
+</svg>

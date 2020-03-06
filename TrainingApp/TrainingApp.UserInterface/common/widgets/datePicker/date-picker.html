@@ -1,0 +1,35 @@
+<div class="property-grid-input-group">
+    <div ng-if="datepickerCtrl.readOnly || datepickerCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{datepickerCtrl.value | date: 'shortDate'}} </div>
+</div>
+
+<ng-form ng-if="!(datepickerCtrl.readOnly || datepickerCtrl.ngReadonly)" 
+         name='datepickerForm' 
+         ng-class="{'isrequired' : (datepickerCtrl.validation.required) && (datepickerCtrl.value===undefined) }">
+    <div class="property-grid-input-group" style="border:0;">
+        <input type="text"
+               class="property-grid-control validator-control"
+               ng-click="datepickerCtrl.open($event)"
+               ng-class="{'validator-control-invalid':((datepickerForm.$invalid && datepickerForm.$dirty) || (datepickerForm.$invalid && datepickerForm.$visited)),
+               'validator-control':!((datepickerForm.$invalid && datepickerForm.$dirty) || (datepickerForm.$invalid && datepickerForm.$visited)),
+               'ng-dirty':datepickerForm.$dirty}"
+               uib-datepicker-popup="{{datepickerCtrl.format}}"
+               ng-model="datepickerCtrl.value"
+               is-open="datepickerCtrl.opened"
+               close-text="{{'dateTimePicker.close' | translate}}"
+               clear-text="{{'dateTimePicker.clear' | translate}}"
+               current-text="{{'dateTimePicker.today' | translate}}"
+               datepicker-options="datepickerCtrl.dateOptions"
+               ng-required="datepickerCtrl.validation.required"
+               show-button-bar="datepickerCtrl.showButtonBar"
+               style="cursor:pointer;"
+               datepicker-append-to-body="datepickerCtrl.appendToBody"
+               ng-blur="datepickerCtrl.ngBlur()"
+               sit-change="datepickerCtrl.sitChange"
+               ng-disabled="datepickerCtrl.ngDisabled"
+               ng-focus="datepickerCtrl.ngFocus()"
+               sit-form-input-validator readonly="readonly" />
+        <div class="btn property-grid-addon-icon" ng-click="datepickerCtrl.open($event)" ng-disabled="datepickerCtrl.ngDisabled">
+            <em class="fa fa-calendar" ng-disabled="datepickerCtrl.ngDisabled"></em>
+        </div>
+    </div>
+</ng-form>

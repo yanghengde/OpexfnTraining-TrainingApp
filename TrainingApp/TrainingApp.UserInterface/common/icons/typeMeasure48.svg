@@ -1,0 +1,12 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Dark_blue" data-name="Siemens - Dark blue" x1="2.79" y1="2.79" x2="45.21" y2="45.209" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon points="4.067 46.486 4.067 40.341 18.746 24 4.067 7.659 4.067 1.513 43.933 1.513 43.933 8.729 15.579 8.729 28.924 24 15.579 39.271 43.933 39.271 43.933 46.486 4.067 46.486" fill="url(#Siemens_-_Dark_blue)"/>
+    <path d="M43.433,2.013V8.229H14.477l1.449,1.658L28.259,24,15.926,38.113l-1.449,1.658H43.433v6.216H4.567V40.533L18.818,24.668l.6-.668-.6-.668L4.567,7.467V2.013H43.433m1-1H3.567V7.85L18.074,24,3.567,40.15v6.837H44.433V38.771H16.679L29.588,24,16.679,9.229H44.433V1.013Z" fill="#464646"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<div id="pagerContainer" data-internal-type="pagerContainer" class="ngGrid ngFooterPanel" ng-class="{'ui-widget-content': jqueryuitheme, 'ui-corner-bottom': jqueryuitheme}" ng-style="pagerCtrl.footerStyle()">
+    <div class="ngTotalSelectContainer">
+        <div class="ngFooterTotalItems" ng-class="{ngNoMultiSelect: !multiselect}">
+            <span class="ngLabel" ng-show="pagerCtrl.pagingOptions.showTotalItems">{{'pager.total-items' | translate}}: {{pagerCtrl.pagingOptions.totalItems}}</span>
+            <span class="ngLabel" ng-show="pagerCtrl.pagingOptions.showFilterItems">({{'pager.filtered-items' | translate}}: {{pagerCtrl.pagingOptions.filterItems}})</span>
+        </div>
+        <div class="ngFooterSelectedItems" ng-show="pagerCtrl.pagingOptions.showSelectedItems">
+            <span class="ngLabel">{{'pager.selected-items' | translate}}: {{pagerCtrl.pagingOptions.selectedItems}}</span>
+        </div>
+    </div>
+    <div class="ngPagerContainer" style="float: right; margin-top: 10px;">
+        <div style="float:left; margin-right: 10px;" class="ngRowCountPicker">
+            <span style="float: left; margin-top: 5px; margin-right:5px" class="ngLabel">{{'pager.page-size' | translate}}:</span>
+            <select style="float: left; height: 27px; width: 100px" ng-model="pagerCtrl.pagingOptions.pageSize" class="uyRowCountSelect" ng-options="pageSize for pageSize in pagerCtrl.pagingOptions.pageSizes">
+            </select>
+        </div>
+        <div style="float:left; margin-right: 10px; min-width: 135px;" class="ngPagerControl">
+            <button type="button" class="ngPagerButton" ng-click="pagerCtrl.pageToFirst()" ng-disabled="pagerCtrl.cantPageBackward()" title="{{'pager.page-first' | translate}}"><div class="ngPagerFirstTriangle"><div class="ngPagerFirstBar"></div></div></button>
+            <button type="button" class="ngPagerButton" ng-click="pagerCtrl.pageBackward()" ng-disabled="pagerCtrl.cantPageBackward()" title="{{'pager.page-prev' | translate}}"><div class="ngPagerFirstTriangle ngpagerprevtriangle"></div></button>
+            <div style="display:inline-block; vertical-align:top;">
+                <input ng-show="pagerCtrl.currentPage" class="ngPagerCurrent" min="1" max="{{pagerCtrl.maxPage}}" type="number" style="width:50px; padding: 0 4px 0 4px; height:25px; min-height: 25px; font-size: 12px;" ng-model="pagerCtrl.currentPage" />
+                <span class="ngGridMaxPagesNumber" ng-show="pagerCtrl.maxPage > 0">/ {{pagerCtrl.maxPage}}</span>
+            </div>
+            <button type="button" class="ngPagerButton" ng-click="pagerCtrl.pageForward()" ng-disabled="pagerCtrl.cantPageForward()" title="{{'pager.page-next' | translate}}"><div class="ngPagerLastTriangle ngpagernexttriangle"></div></button>
+            <button type="button" class="ngPagerButton" ng-click="pagerCtrl.pageToLast()" ng-disabled="pagerCtrl.cantPageToLast()" title="{{'pager.page-last' | translate}}"><div class="ngPagerLastTriangle"><div class="ngPagerLastBar"></div></div></button>
+        </div>
+    </div>
+</div>

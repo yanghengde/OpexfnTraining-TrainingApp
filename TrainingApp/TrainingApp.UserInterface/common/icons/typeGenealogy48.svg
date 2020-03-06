@@ -1,0 +1,39 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.5" y1="1.5" x2="11.5" y2="11.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#72b0c8"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="12.5" y1="26" x2="22.5" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray-2" x1="24.5" y1="26" x2="34.5" y2="36" xlink:href="#Siemens_-_Mid_gray"/>
+    <linearGradient id="Siemens_-_Mid_gray-3" x1="36.5" y1="36.5" x2="46.5" y2="46.5" xlink:href="#Siemens_-_Mid_gray"/>
+  </defs>
+  <g>
+    <g>
+      <rect x="1.5" y="1.5" width="10" height="10" fill="url(#linear-gradient)"/>
+      <path d="M11.5,12H1.5a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1h10a.5.5,0,0,1,.5.5v10A.5.5,0,0,1,11.5,12ZM2,11h9V2H2Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <rect x="12.5" y="26" width="10" height="10" fill="url(#Siemens_-_Mid_gray)"/>
+      <path d="M22.5,36.5h-10A.5.5,0,0,1,12,36V26a.5.5,0,0,1,.5-.5h10a.5.5,0,0,1,.5.5V36A.5.5,0,0,1,22.5,36.5Zm-9.5-1h9v-9H13Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <rect x="24.5" y="26" width="10" height="10" fill="url(#Siemens_-_Mid_gray-2)"/>
+      <path d="M34.5,36.5h-10A.5.5,0,0,1,24,36V26a.5.5,0,0,1,.5-.5h10a.5.5,0,0,1,.5.5V36A.5.5,0,0,1,34.5,36.5Zm-9.5-1h9v-9H25Z" fill="#4e4a48"/>
+    </g>
+    <g>
+      <rect x="36.5" y="36.5" width="10" height="10" fill="url(#Siemens_-_Mid_gray-3)"/>
+      <path d="M46.5,47h-10a.5.5,0,0,1-.5-.5v-10a.5.5,0,0,1,.5-.5h10a.5.5,0,0,1,.5.5v10A.5.5,0,0,1,46.5,47ZM37,46h9V37H37Z" fill="#4e4a48"/>
+    </g>
+    <path d="M36.458,42.438H7.5a1.5,1.5,0,0,1-1.5-1.5V12.03a.5.5,0,0,1,1,0V40.938a.5.5,0,0,0,.5.5H36.458a.5.5,0,0,1,0,1Z" fill="#4e4a48"/>
+    <rect x="17" y="18.5" width="1" height="7.5" fill="#4e4a48"/>
+    <rect x="28.979" y="18.5" width="1" height="7.5" fill="#4e4a48"/>
+    <path d="M29.479,19H6.5a.5.5,0,0,1,0-1H29.479a.5.5,0,0,1,0,1Z" fill="#4e4a48"/>
+  </g>
+</svg>

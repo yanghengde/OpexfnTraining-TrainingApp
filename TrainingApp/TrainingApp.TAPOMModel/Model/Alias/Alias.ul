@@ -1,0 +1,17 @@
+VERSION '01.13'
+
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.CreateTeam AS CreateTeam
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.DeleteTeam AS DeleteTeam
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.UpdateTeam AS UpdateTeam
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.AssignPersonToTeam AS AssignPersonToTeam
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.AssignTeamToGroup AS AssignTeamToGroup
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.CreateGroup AS CreateGroup
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.CreatePerson AS CreatePerson
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.RemovePersonFromTeam AS RemovePersonFromTeam
+[@AddedOnMinorVersion=01.02.00]
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.Commands.RemoveTeamFromGroup AS RemoveTeamFromGroup

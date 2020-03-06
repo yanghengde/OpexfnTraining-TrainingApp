@@ -1,0 +1,14 @@
+<section class="sit-home-card" ng-class="{'action-card': homeCardCtrl.options.callback}" ng-click="homeCardCtrl.options.callback(homeCardCtrl.options)">
+    <div class="image">
+        <img ng-src="{{homeCardCtrl.options.image}}" alt="{{homeCardCtrl.options.title}}" />
+    </div>
+    <div class="content">
+        <div class="title">{{homeCardCtrl.options.title}}</div>
+        <div class="description">{{ homeCardCtrl.options.description }}</div>
+        <div class="actions" ng-if="homeCardCtrl.options.action">
+            <div class="action-button" sit-class="svg-icon" title="{{homeCardCtrl.options.action.title}}"
+                  sit-mom-icon="homeCardCtrl.options.action.icon"
+                  ng-click="homeCardCtrl.options.action.callback(homeCardCtrl.options)"></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<span ng-if="iconpreviewCtrl.readOnly || iconpreviewCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis">
+    <em class="fa {{iconpreviewCtrl.value}} fa-lg"></em>
+</span>
+<ng-form name='iconpreviewForm' ng-if="!(iconpreviewCtrl.readOnly || iconpreviewCtrl.ngReadonly)" ng-class="{'isrequired' :(iconpreviewCtrl.validation.required) && iconpreviewCtrl.value===undefined}">
+    <span style="display: inline-block; width:95%" class='property-grid-input-group'>
+        <input type="text"
+               name='{{iconpreviewCtrl.value}}'
+               ng-class='((iconpreviewForm.$invalid && iconpreviewForm.$dirty) || (iconpreviewForm.$invalid && iconpreviewForm.$visited)) ? "validator-control-invalid" : "validator-control"'
+               ng-model='iconpreviewCtrl.value'
+               ng-required='iconpreviewCtrl.validation.required'
+               ng-minlength='iconpreviewCtrl.validation.minlength'
+               ng-maxlength='iconpreviewCtrl.validation.maxlength'
+               ng-pattern='iconpreviewCtrl.validation.pattern'
+               ng-blur="iconpreviewCtrl.ngBlur()"
+               sit-change="iconpreviewCtrl.sitChange"
+               ng-disabled="iconpreviewCtrl.ngDisabled"
+               ng-readonly="iconpreviewCtrl.ngReadOnly"
+               ng-focus="iconpreviewCtrl.ngFocus()"
+               sit-form-input-validator='{{iconpreviewCtrl.value}}' />
+    </span>
+    <span>
+        <em class="fa {{iconpreviewCtrl.value}} fa-lg"></em>
+    </span>
+</ng-form>

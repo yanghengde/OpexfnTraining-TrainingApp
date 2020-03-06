@@ -1,0 +1,30 @@
+<div class="carousel-container">
+    <div class="carousel-arrow-left" ng-click="$ctrl.prevItems()" ng-if="$ctrl.page>1">
+        <div class="carousel-arrow">
+            <em sit-mom-icon="{'path': 'common/icons/miscChevronRight16.svg'}" title={{'documentViewer.previousPage'|translate}}></em>
+        </div>
+    </div>
+
+    <div class="doc-group">
+        <div ng-repeat="documentData in $ctrl.carouselData">
+            <div class="doc-icon" ng-class="{active:documentData.name === $ctrl.parent.document.name}" ng-click="$ctrl.onThumbnailClick(documentData)">
+                <img class="img-view" ng-if="documentData.thumbnail && documentData.thumbnail!==undefined" 
+                     ng-src="{{documentData.thumbnail}}" ng-attr-title="{{documentData.name}}" alt="thumbnail"/>
+                <div ng-if="!documentData.thumbnail || documentData.thumbnail===undefined" ng-switch="documentData.format">
+                    <em ng-switch-when="image" class="fa fa-file-image-o" ng-attr-title="{{documentData.name}}"></em>
+                    <em ng-switch-when="pdf" sit-mom-icon="{path: 'common/icons/typePdf48.svg'}" ng-attr-title="{{documentData.name}}"></em>
+                    <em ng-switch-when="video" class="fa fa-file-video-o" ng-attr-title="{{documentData.name}}"></em>
+                    <em ng-switch-when="text" sit-mom-icon="{path: 'common/icons/typeTxt48.svg'}" ng-attr-title="{{documentData.name}}"></em>
+                    <em ng-switch-default class="fa fa-file" ng-attr-title="{{documentData.name}}"></em>
+                </div>
+            </div>
+        </div>
+        <p ng-if="$ctrl.carouselData.length===0">{{'documentViewer.documentCarousel.noData'|translate}}</p>
+    </div>
+
+    <div class="carousel-arrow-right" ng-click="$ctrl.nextItems()" ng-if="$ctrl.page!==$ctrl.last && $ctrl.carouselData.length!==0">
+        <div class="carousel-arrow">
+            <em sit-mom-icon="{'path': 'common/icons/miscChevronRight16.svg'}" title={{'documentViewer.nextPage'|translate}}></em>
+        </div>
+    </div>
+</div>

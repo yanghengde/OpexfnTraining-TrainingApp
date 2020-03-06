@@ -1,0 +1,43 @@
+<div ng-transclude class="command-hide"></div>
+<div ng-switch="cmdCtrl.showas" ng-show="cmdCtrl.command.visibility && !cmdCtrl.command.deniedFromAuthorization">
+    <div ng-switch-when="Button" id="Button{{cmdCtrl.command.type}}{{cmdCtrl.command.name}}" class="vertical-button">
+        <button data-internal-type="command-button-command-bar"
+                ng-class="{'{{cmdCtrl.command.type}}ActionButton': cmdCtrl.bartype === 'Action' && cmdCtrl.layout === 'horizontal',
+                '{{cmdCtrl.command.type}}ToolButton': cmdCtrl.bartype === 'Tool' && cmdCtrl.layout === 'horizontal',
+                'toggle': cmdCtrl.command.type === 'toggle' && cmdCtrl.command.selected,
+                'vertical-command-button': cmdCtrl.layout === 'vertical'}"
+                ng-click="cmdCtrl.commandClicked(cmdCtrl.command, $event)" title="{{cmdCtrl.command.tooltip || cmdCtrl.command.label}}" ng-disabled="cmdCtrl.command.disabled">
+            <span data-internal-type="image-container" ng-if="cmdCtrl.command.image && !cmdCtrl.command.imageTemplate" class="fa-lg MainCommandImage">
+                <em class="fa {{cmdCtrl.command.image}}" sit-mom-icon="cmdCtrl.command.displayIcon"
+                    ng-class="{'momIcon': cmdCtrl.command.displayIcon !== null,
+                   'vertical-command-image': cmdCtrl.layout === 'vertical' && (cmdCtrl.command.label.length===0 || !cmdCtrl.command.isVerticalCommandLabelShown),
+                   'vertical-command-label-image': cmdCtrl.layout=== 'vertical' && cmdCtrl.command.label.length!==0 && cmdCtrl.command.isVerticalCommandLabelShown }"></em>
+                <span ng-if="cmdCtrl.layout=== 'vertical' && cmdCtrl.command.label.length>0 && cmdCtrl.command.isVerticalCommandLabelShown" class="vertical-command-label">
+                    {{cmdCtrl.command.label}}
+                </span>
+            </span>
+            <span data-internal-type="image-container"
+                  ng-if="cmdCtrl.command.imageTemplate"
+                  class="fa-lg" ng-bind-html="cmdCtrl.command.imageTemplate"
+                  ng-class="{'{{cmdCtrl.command.type}}ToolImage' :cmdCtrl.bartype === 'Tool' && cmdCtrl.layout === 'horizontal',
+                  'right-align-Tool-image': cmdCtrl.labelAlign === 'right' && cmdCtrl.layout === 'horizontal',
+                  'vertical-image-template':cmdCtrl.layout === 'vertical' && (cmdCtrl.command.label.length === 0 || !cmdCtrl.command.isVerticalCommandLabelShown),
+                  'vertical-image-template-label':cmdCtrl.layout === 'vertical' && cmdCtrl.command.label.length !== 0 && cmdCtrl.command.isVerticalCommandLabelShown}"></span>
+            <span ng-if="cmdCtrl.command.imageTemplate && cmdCtrl.layout === 'vertical' && cmdCtrl.command.label.length>0 &&  cmdCtrl.command.isVerticalCommandLabelShown" class="vertical-command-label">
+                {{cmdCtrl.command.label}}
+            </span>
+            <span data-internal-type="text-container" ng-if="(cmdCtrl.bartype=='Tool' || cmdCtrl.command.type=='MainCommand')&& cmdCtrl.layout === 'horizontal'" class="{{cmdCtrl.command.type}}{{cmdCtrl.bartype}}Label">{{cmdCtrl.command.label}}</span>
+        </button>
+    </div>
+    <div ng-switch-when="Menu">
+        <div data-internal-type="command-menu-command-bar" type="button" ng-class="{'btnMainMenu btnMenu': cmdCtrl.command.type==='MainCommand','btnMenu': cmdCtrl.command.type!=='MainCommand'}" ng-click="cmdCtrl.commandClicked(cmdCtrl.command, $event)" title="{{cmdCtrl.command.tooltip || cmdCtrl.command.label}}" ng-disabled="cmdCtrl.command.disabled">
+            <span data-internal-type="image-container" sit-mom-icon="cmdCtrl.command.displayIcon" ng-class="{momIcon: cmdCtrl.command.displayIcon !== null }" ng-if="cmdCtrl.layout === 'horizontal' && cmdCtrl.command.image && !cmdCtrl.command.imageTemplate" class="fa {{cmdCtrl.command.image}}"></span>
+            <span data-internal-type="image-container" sit-mom-icon="cmdCtrl.command.displayIcon" ng-class="{momIcon: cmdCtrl.command.displayIcon !== null }" ng-if="cmdCtrl.layout === 'horizontal' && cmdCtrl.command.imageTemplate" ng-bind-html="cmdCtrl.command.imageTemplate">TTTT</span>
+            <label data-internal-type="text-container" class="menuLabel" onclick="event.preventDefault();" ng-class="!cmdCtrl.command.image && cmdCtrl.labelAlign === 'right' ? 'menu-label-icon-margin' : 'menu-label-margin'">
+                {{cmdCtrl.command.label}}
+                <input type="checkbox" style="float:right" ng-show="cmdCtrl.command.type === 'toggle'" ng-click="cmdCtrl.commandClicked(cmdCtrl.command, $event)" ng-checked="cmdCtrl.command.selected" />
+                <input type="checkbox" style="float:right" ng-show="cmdCtrl.command.type === 'toggle'" ng-click="cmdCtrl.commandClicked(cmdCtrl.command, $event)" ng-checked="cmdCtrl.command.selected" />
+            </label>
+        </div>
+    </div>
+</div>

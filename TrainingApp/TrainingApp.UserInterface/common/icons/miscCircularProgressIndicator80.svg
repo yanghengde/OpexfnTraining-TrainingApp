@@ -1,0 +1,12 @@
+<svg version="1.1" id="Verb_x5F_Zone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px"  viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.731" y1="11.729" x2="68.2739" y2="68.272">
+	<stop  offset="0" style="stop-color:#E6E6E6"/>
+	<stop  offset="0.5033" style="stop-color:#E6E6E6"/>
+	<stop  offset="0.5033" style="stop-color:#3296B9"/>
+	<stop  offset="1" style="stop-color:#3296B9"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M40.002,80c-22.055,0-40-17.941-40-40c0-22.056,17.944-40,40-40c22.059,0,40,17.944,40,40
+	C80.002,62.059,62.061,80,40.002,80z M40.002,3.2c-20.292,0-36.8,16.507-36.8,36.8c0,20.291,16.507,36.801,36.8,36.801
+	c20.291,0,36.801-16.51,36.801-36.801C76.803,19.707,60.293,3.2,40.002,3.2z"/>
+</svg>

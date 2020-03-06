@@ -1,0 +1,124 @@
+<div>
+    <div ng-switch="cmdBarGrpBtnCtrl.showas" ng-show="cmdBarGrpBtnCtrl.groupVisibility">
+        <div ng-switch-when="Button" class="btn-group" ng-class="{'MainCommanBtnGrp': cmdBarGrpBtnCtrl.isMainCommandGroup}">
+            <button ng-if="cmdBarGrpBtnCtrl.isMainCommandGroup" data-internal-type="group-button-command-bar" class="MainCommandGroupButton" ng-click="cmdBarGrpBtnCtrl.commandClicked(cmdBarGrpBtnCtrl.group, $event)" title="{{ cmdBarGrpBtnCtrl.group.tooltip || cmdBarGrpBtnCtrl.group.label }}" ng-class="{'dropdown-toggle': cmdBarGrpBtnCtrl.layout === 'vertical'}" data-toggle="{{cmdBarGrpBtnCtrl.layout === 'vertical' ? 'dropdown' : '' }}">
+                <img alt="" ng-if="cmdBarGrpBtnCtrl.layout === 'vertical'" src="common/icons/miscLeftArrow16.svg" height="16" width="16">
+                <span data-internal-type="image-container" class="fa-lg" ng-class="cmdBarGrpBtnCtrl.layout === 'vertical' && cmdBarGrpBtnCtrl.group.label.length !== 0? 'vertical-group-main-command-image-label': 'MainCommandImage'">
+                    <em class="fa {{cmdBarGrpBtnCtrl.group.image}} " sit-mom-icon="cmdBarGrpBtnCtrl.group.displayIcon" ng-class="{momIcon: cmdBarGrpBtnCtrl.group.displayIcon !== null }">
+                    </em>
+                    <span ng-if="cmdBarGrpBtnCtrl.layout === 'vertical' && cmdBarGrpBtnCtrl.group.label.length> 0" class="vertical-group-main-command-label">
+                        {{cmdBarGrpBtnCtrl.group.label}}
+                    </span>
+                </span>
+                <span ng-if="cmdBarGrpBtnCtrl.layout === 'horizontal'"  data-internal-type="text-container" class="MainCommandActionLabel">
+                    {{cmdBarGrpBtnCtrl.group.label}}                    
+                </span>
+                <button ng-if="cmdBarGrpBtnCtrl.isMainCommandGroup && cmdBarGrpBtnCtrl.layout ==='horizontal'" data-internal-type="group-button-command-bar" class="dropdown-toggle MainCmdGrpdropdown" data-toggle="dropdown" title="{{ cmdBarGrpBtnCtrl.group.tooltip || cmdBarGrpBtnCtrl.group.label }}">
+                    <span class="caret">
+                    </span>
+                </button>
+            </button>
+            <button ng-if="!cmdBarGrpBtnCtrl.isMainCommandGroup" data-internal-type="group-button-command-bar" ng-class="{Action:'dropdown-toggle CommandActionDropdown',Tool:'dropdown-toggle CommandToolDropdown'}[cmdBarGrpBtnCtrl.bartype]" data-toggle="dropdown" title="{{ cmdBarGrpBtnCtrl.group.tooltip || cmdBarGrpBtnCtrl.group.label }}">
+                <div ng-if="cmdBarGrpBtnCtrl.layout ==='vertical' || cmdBarGrpBtnCtrl.labelAlign !== 'right'">
+                   <img alt="" ng-if="cmdBarGrpBtnCtrl.layout === 'vertical'" src="common/icons/miscLeftArrow16.svg" height="16" width="16">
+                    <span style="line-height:1em" ng-if="cmdBarGrpBtnCtrl.group.image" class="fa-stack fa-lg" ng-class="{'vertical-group-command-image':cmdBarGrpBtnCtrl.layout === 'vertical' && cmdBarGrpBtnCtrl.group.label.length === 0,
+                      'vertical-group-command-image-label': cmdBarGrpBtnCtrl.layout === 'vertical'
+                      && cmdBarGrpBtnCtrl.group.label.length !== 0}">
+                        <em class="fa {{cmdBarGrpBtnCtrl.group.image}} fa-stack" sit-mom-icon="cmdBarGrpBtnCtrl.group.displayIcon" ng-class="{momIcon: cmdBarGrpBtnCtrl.group.displayIcon !== null }">
+                        </em>
+                    </span>
+                    <span ng-if="cmdBarGrpBtnCtrl.layout === 'vertical' && cmdBarGrpBtnCtrl.group.label.length> 0" class="vertical-group-command-label">
+                        {{cmdBarGrpBtnCtrl.group.label}}
+                    </span>
+                    <span style="width:24px!important" ng-if="cmdBarGrpBtnCtrl.layout ==='horizontal'">
+                        <span class="caret">
+                        </span>
+                    </span>
+                </div>
+                <div ng-if="cmdBarGrpBtnCtrl.layout === 'horizontal' && cmdBarGrpBtnCtrl.bartype=='Tool' && cmdBarGrpBtnCtrl.labelAlign !== 'right'" class="CommandToolDropdownLabel">
+                    {{cmdBarGrpBtnCtrl.group.label}}
+                </div>
+                <span ng-if="cmdBarGrpBtnCtrl.layout === 'horizontal' && cmdBarGrpBtnCtrl.group.image && cmdBarGrpBtnCtrl.labelAlign === 'right'" class="fa-lg right-align">
+                    <em class="fa {{cmdBarGrpBtnCtrl.group.image}} " sit-mom-icon="cmdBarGrpBtnCtrl.group.displayIcon" ng-class="{momIcon: cmdBarGrpBtnCtrl.group.displayIcon !== null }">
+                    </em>
+                </span>
+                <span class="caret" ng-if="cmdBarGrpBtnCtrl.layout === 'horizontal' && cmdBarGrpBtnCtrl.labelAlign === 'right'">
+                </span>
+                <span ng-if="cmdBarGrpBtnCtrl.layout === 'horizontal' && cmdBarGrpBtnCtrl.bartype=='Tool' && cmdBarGrpBtnCtrl.labelAlign === 'right' " class="CommandToolDropdownLabel">
+                    {{cmdBarGrpBtnCtrl.group.label}}
+                </span>
+            </button>
+
+            <ul data-internal-type="menu-command-bar" class="dropdown-menu commandBarDropdownMenu " ng-class="{'commandBarDropdownMenuAlignRight':cmdBarGrpBtnCtrl.openLeft,'mainCommandDropdownMenu': cmdBarGrpBtnCtrl.isMainCommandGroup}" role="menu" data-toggle="dropdown">
+                <li ng-repeat="subcommand in cmdBarGrpBtnCtrl.group.group" class="commandBarDropdownItem">
+                    <div ng-switch="subcommand.type">
+                        <div data-internal-type="menu-item-command-bar" ng-switch-when="MainCommand" class="btnMainMenu">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+                            </sit-command>
+                        </div>
+                        <div data-internal-type="menu-item-command-bar" ng-switch-when="Command">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+                            </sit-command>
+                        </div>
+
+                        <div ng-switch-when="Sep">
+                            <div data-internal-type="menu-separator-command-bar" class="divider menuDivider" />
+                        </div>
+
+                        <div data-internal-type="menu-item-command-bar" ng-switch-when="toggle">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+                            </sit-command>
+                        </div>
+
+                        <div ng-switch-default>
+                            {{'commandBar.unknownCommandSep' | translate}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div ng-switch-when="Menu" class="dropdown-submenu " ng-class="{'pull-left':cmdBarGrpBtnCtrl.openLeft}">
+            <div data-internal-type="group-submenu-command-bar" ng-class="{'btnMainMenu btnMenu': cmdBarGrpBtnCtrl.isMainCommandGroup,'btnMenu': !cmdBarGrpBtnCtrl.isMainCommandGroup}" style="text-align:left" title="{{cmdBarGrpBtnCtrl.group.tooltip || cmdBarGrpBtnCtrl.group.name}}">
+
+                <span ng-if="cmdBarGrpBtnCtrl.group.image" class="fa {{cmdBarGrpBtnCtrl.group.image}}  " sit-mom-icon="cmdBarGrpBtnCtrl.group.displayIcon" ng-class="{momIcon: cmdBarGrpBtnCtrl.group.displayIcon !== null }">
+                </span>
+                <label class="menuLabel">
+
+                    {{cmdBarGrpBtnCtrl.group.label}}
+                </label>
+                <span class="fa fa-caret-right">
+                </span>
+            </div>
+
+            <ul data-internal-type="submenu-command-bar" class="dropdown-menu commandBarDropdownMenu" ng-class="{'mainCommandDropdownMenu': cmdBarGrpBtnCtrl.isMainCommandGroup}" role="menu">
+                <li class="commandBarDropdownItem" ng-repeat="subcommand in cmdBarGrpBtnCtrl.group.group">
+                    <div ng-switch="subcommand.type">
+                        <div data-internal-type="submenu-item-command-bar" ng-switch-when="Command">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+                            </sit-command>
+                        </div>
+
+                        <div data-internal-type="menu-item-command-bar" ng-switch-when="MainCommand" class="btnMainMenu">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+                            </sit-command>
+                        </div>
+                        <div data-internal-type="submenu-separator-command-bar" ng-switch-when="Sep">
+                            <div class="divider menuDivider">
+                            </div>
+                        </div>
+                        <div data-internal-type="submenu-item-command-bar" ng-switch-when="toggle">
+                            <sit-command sit-command="subcommand" sit-showas="Menu" sit-bartype="{{cmdBarGrpBtnCtrl.bartype}}">
+
+                            </sit-command>
+                        </div>
+                        <div ng-switch-default>
+                            {{'commandBar.unknownCommandSep' | translate}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ng-transclude ng-show=false>
+        </ng-transclude>
+    </div>
+</div>

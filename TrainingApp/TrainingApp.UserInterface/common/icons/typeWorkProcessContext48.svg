@@ -1,0 +1,58 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome" data-name="Sfumatura senza nome" x1="1.569" y1="41.317" x2="38.431" y2="4.456" gradientTransform="matrix(1, 0, 0, -1, 0, 49.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="4.441" y1="38.445" x2="35.558" y2="7.328" gradientTransform="matrix(1, 0, 0, -1, 0, 49.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.335" stop-color="#f8f8f8"/>
+      <stop offset="0.82" stop-color="#e5e5e5"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="20" y1="39.163" x2="20" y2="47.78" gradientTransform="matrix(1, 0, 0, -1, 0, 49.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bebebe"/>
+      <stop offset="0.045" stop-color="#c4c4c4"/>
+      <stop offset="0.268" stop-color="#dedede"/>
+      <stop offset="0.497" stop-color="#f0f0f0"/>
+      <stop offset="0.736" stop-color="#fbfbfb"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_5" data-name="Sfumatura senza nome 5" x1="27.868" y1="21.412" x2="44.132" y2="5.148" gradientTransform="matrix(1, 0, 0, -1, 0, 49.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b2c7"/>
+      <stop offset="0.175" stop-color="#6badc2"/>
+      <stop offset="0.457" stop-color="#539cb3"/>
+      <stop offset="0.809" stop-color="#2d829f"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <rect x="3.244" y="6.287" width="33.511" height="40.213" stroke="#464646" stroke-miterlimit="10" fill="url(#Sfumatura_senza_nome)"/>
+      <rect x="6.117" y="9.16" width="27.766" height="34.468" stroke="#bebebe" stroke-miterlimit="10" fill="url(#Sfumatura_senza_nome_2)"/>
+      <path d="M26.223,5.33H24.308V4.372A2.872,2.872,0,0,0,21.436,1.5H18.564a2.872,2.872,0,0,0-2.873,2.872V5.33H13.776a1.915,1.915,0,0,0-1.915,1.915v2.872H28.138V7.245A1.915,1.915,0,0,0,26.223,5.33Z" stroke="#464646" stroke-miterlimit="10" fill="url(#Sfumatura_senza_nome_3)"/>
+      <circle cx="20" cy="4.851" r="0.957" fill="#464646"/>
+    </g>
+    <rect x="18.564" y="15.862" width="2.872" height="5.745" fill="#3c91af" stroke="#147391" stroke-miterlimit="10"/>
+    <rect x="18.564" y="23.521" width="2.872" height="5.745" fill="#3c91af" stroke="#147391" stroke-miterlimit="10"/>
+    <rect x="8.989" y="22.564" width="3.83" height="7.66" fill="#3c91af" stroke="#147391" stroke-miterlimit="10"/>
+    <rect x="27.181" y="22.564" width="3.83" height="7.66" fill="#3c91af" stroke="#147391" stroke-miterlimit="10"/>
+    <rect x="18.564" y="31.181" width="2.872" height="5.745" fill="#3c91af" stroke="#147391" stroke-miterlimit="10"/>
+    <line x1="12.34" y1="26.394" x2="18.085" y2="26.394" fill="none" stroke="#147391" stroke-miterlimit="10"/>
+    <line x1="20.957" y1="26.394" x2="26.702" y2="26.394" fill="none" stroke="#147391" stroke-miterlimit="10"/>
+    <polyline points="21.915 18.734 24.308 18.734 24.308 34.053 21.915 34.053" fill="none" stroke="#147391" stroke-miterlimit="10"/>
+    <polyline points="18.085 18.734 15.691 18.734 15.691 34.053 18.085 34.053" fill="none" stroke="#147391" stroke-miterlimit="10"/>
+    <circle cx="36" cy="36" r="11.5" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" fill="url(#Sfumatura_senza_nome_5)"/>
+    <g>
+      <path d="M34.889,45.366a.27.27,0,0,1-.27-.271V34.366h2.99V45.1a.27.27,0,0,1-.269.271Z" fill="#fff"/>
+      <path d="M37.109,34.866v10h-1.99v-10h1.99m1-1h-3.99V45.1a.769.769,0,0,0,.769.77H37.34a.769.769,0,0,0,.769-.77V33.866Z" fill="#177491"/>
+    </g>
+    <g>
+      <circle cx="36" cy="28.434" r="2" fill="#fff"/>
+      <path d="M36,26.934a1.5,1.5,0,1,1-1.5,1.5,1.5,1.5,0,0,1,1.5-1.5m0-1a2.5,2.5,0,1,0,2.5,2.5,2.5,2.5,0,0,0-2.5-2.5Z" fill="#177491"/>
+    </g>
+  </g>
+</svg>

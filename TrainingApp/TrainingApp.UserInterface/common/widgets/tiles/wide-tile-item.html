@@ -1,0 +1,54 @@
+<div data-internal-type="wideItemTile" class="tile" ng-click="itemTileCtrl.tileClicked()" sit-tile-height="true" ng-class="itemTileCtrl.isTagShown ? (itemTileCtrl.isTagContainerExpanded ? 'tags-enabled show-box-shadow' : 'tags-enabled hide-box-shadow') :'tags-disabled'">
+    <div class="medium-wide wide-item {{itemTileCtrl.selectClass}} " ng-style="{'color': itemTileCtrl.color, 'background-color': itemTileCtrl.bgColor}">
+        <div class="wide-select" ng-show="itemTileCtrl.showSelectCheck()"></div>
+        <div ng-show="itemTileCtrl.showSelectCheck()" class="top-right-corner-triangle" data-internal-type="selection-triangle"></div>
+        <span ng-show="itemTileCtrl.showSelectCheck()" class="top-right-select-img fa fa-check fa-inverse fa-lg" data-internal-type="selection-check"></span>
+        <div class="wide-item-left-col" data-internal-type="left-column">
+            <div class="image-container-40x40" data-internal-type="image-container">
+                <div class="image-vcenter-32x32" data-internal-type="image-vcenter" ng-class="itemTileCtrl.tileContent.svgIcon || itemTileCtrl.tileContent.typeIcon ? 'remove-font-awesome':''">
+                    <div ng-if="(itemTileCtrl.tileContent.image || itemTileCtrl.tileContent.svgIcon || itemTileCtrl.tileContent.typeIcon) && !itemTileCtrl.tileContent.imageTemplate" class="fa fa-2x {{itemTileCtrl.tileContent.image}} " sit-mom-icon="itemTileCtrl.tileContent.svgIcon || itemTileCtrl.tileContent.typeIcon"></div>
+                    <div ng-if="itemTileCtrl.tileContent.imageTemplate" class="fa fa-2x" ng-bind-html="itemTileCtrl.tileContent.imageTemplate"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wide-item-text" data-internal-type="text-container" ng-class="itemTileCtrl._commands.length > 0 ? 'wide-item-text-short' : 'wide-item-text-long'">
+            <div class="wide-item-title" data-internal-type="title" title="{{itemTileCtrl.displayTooltip}}"><strong>{{itemTileCtrl.displayTitle}}</strong></div>
+            <div class="{{itemTileCtrl.descriptionClass}}" title="{{itemTileCtrl.descriptionTooltip}}" data-internal-type="description">{{itemTileCtrl.displayDescription}}</div>
+        </div>
+
+        <div class="action-buttons" ng-if="itemTileCtrl.isCell && itemTileCtrl._commands.length > 0">
+
+            <div ng-repeat="command in itemTileCtrl._commands track by $index" class="action-button-item" ng-if="$index <= 1 && command.isVisible">
+                <div title="{{command.tooltip}}" ng-class="command.cmdIcon ? 'remove-font-awesome':'action-button-icon'">
+                    <em class="fa {{command.img}}" sit-mom-icon="command.cmdIcon" ng-click="itemTileCtrl.commandCallback($event, command)"></em>
+                </div>
+            </div>
+        </div>
+        <div class="wide-item-properties" ng-class="itemTileCtrl.getPropertiesDivHeight(); itemTileCtrl._commands.length > 1 ? 'wide-item-properties-short' : 'wide-item-properties-long'" data-internal-type="properties">
+            <div title="{{property.sanitizedVal}}" ng-repeat="property in itemTileCtrl.displayProperties track by $index" ng-if="property" class="wide-item-property">
+                <span class="displayProperty">{{property.name}}</span><span>{{property.sanitizedVal}}</span>
+            </div>
+        </div>
+        <div class="wide-item-indicators" ng-if="itemTileCtrl.isCell">
+            <span ng-if="itemTileCtrl.tileContent.contentStatus ==='editing'" class="bottom-left-status-img" sit-mom-icon="itemTileCtrl.svgIcons.certificate" />
+            <span ng-if="itemTileCtrl.tileContent.contentStatus ==='warning'" class="bottom-left-status-img" sit-mom-icon="itemTileCtrl.svgIcons.warning" />
+            <div ng-repeat="indicator in itemTileCtrl._indicators track by $index" ng-if="$index <= 9 && indicator.isVisible" class="fa fa-2x {{indicator.image}} indicator-icons" sit-mom-icon="indicator.svgIcon">
+            </div>
+        </div>
+        <div ng-if="itemTileCtrl.isTagShown" class="item-tile-tag-container">
+            <div class="item-tile-tag" ng-if="itemTileCtrl.isTagShown" ng-class="itemTileCtrl.isTagContainerExpanded ? 'wide-item-tag-expand' : 'wide-item-tag'" ng-click="$event.stopPropagation()">
+
+                <div class="tag-icon" ng-click="itemTileCtrl.toggleTagContainer()" ng-show="itemTileCtrl.showTagExpandIcon">
+                    <em ng-if="itemTileCtrl.isTagContainerExpanded" sit-mom-icon="itemTileCtrl.svgIcons.svgUp"></em>
+                    <em ng-if="!itemTileCtrl.isTagContainerExpanded" sit-mom-icon="itemTileCtrl.svgIcons.svgDown"></em>
+                </div>
+                <div class="tag-text-container" data-internal-type="tag-text-container">
+                    <span ng-repeat="tag in itemTileCtrl.tileContent[itemTileCtrl.tag] track by $index" class="tag-text" ng-show="tag.Name.length >0" title="{{tag.Name}}">
+                        <div ng-style="tag.style" class="tagbullet"></div>
+                        {{tag.ShortName}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g836">
+    <path id="rect816" d="M0,0H21V1H0V0Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect816-9" d="M0,6H21V7H0V6Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect816-9-0" d="M1,0V21H0V0H1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect816-9-0-7" d="M22,0V11.78l-1-.86V0h1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect816-9-0-7-3" d="M10.8,21H0V20H11v1Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect816-9-6" d="M8,7V20H7V7H8Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect4" d="M16.286,18.857h3.428v.857H16.286Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect6" d="M16.286,20.571h3.428v.858H16.286Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="path8-3" d="M21.171,12H12V24H24V14.829Zm-4.885.857H18v1.714h.857V12.857h.857v2.572H16.286Zm5.143,10.286H14.571V18.429A.405.405,0,0,1,15,18h6a.405.405,0,0,1,.429.429Zm1.714,0h-.857V18.429A1.318,1.318,0,0,0,21,17.143H15a1.318,1.318,0,0,0-1.286,1.286v4.714h-.857V12.857h2.572v3.429h5.142V12.857h.258l2.314,2.314Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

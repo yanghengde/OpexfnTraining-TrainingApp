@@ -1,0 +1,16 @@
+<div class="modal fade overlay-modal" id={{overlayCtrl.modalid}} tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="overlay-dialog">
+        <div class="overlay-content">
+            <div class="overlay-header">
+                <span data-internal-type="overlay-header-content" class="overlay-title">{{overlayCtrl.title}}</span>
+            </div>
+                <div data-internal-type="overlay-text-content" class="overlay-body" style="white-space:pre-wrap">{{overlayCtrl.modaltext}}</div>
+            <div class="overlay-footer">
+                <div data-internal-type="overlay-buttons-content" class="overlay-div-button" ng-repeat="button in overlayCtrl.buttons">
+                    <sit-dialog-button sit-button="button" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

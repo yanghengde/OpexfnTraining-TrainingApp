@@ -1,0 +1,10 @@
+<div class="home-card-screen-container">
+    <div class="unauth-message" ng-if="homeCardCtrl.cards.length === 0">
+        <h1>{{'common.unauthorize.title'| translate}}</h1>
+        <h6>{{'common.unauthorize.message'| translate}}</h6>
+    </div>
+    <div class="home-card" ng-if="homeCardCtrl.cards.length > 0" ng-repeat="card in homeCardCtrl.cards">
+        <sit-home-card options="card">
+        </sit-home-card>
+    </div>
+</div>

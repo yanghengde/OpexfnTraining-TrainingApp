@@ -1,0 +1,16 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.669" y1="17.547" x2="10.821" y2="6.993" gradientTransform="matrix(1, 0, 0, -1, 0, 18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.331" stop-color="#6aaec3"/>
+      <stop offset="0.564" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g827">
+    <path id="rect4-0" d="M.444,5.344,5.422.619l5.066,4.919L5.48,10.554Z" fill="url(#linear-gradient)"/>
+    <path id="path836" d="M6.534,11.5c.638-.657.227-.252.762-.8,2.5,2.659,1.555,1.647,3.274,3.474,2.068-3.636,2.587-4.66,4.474-7.853.494.365.441.3.956.661-1.433,2.482-4.781,8.3-5.213,9.019C8.679,13.77,6.693,11.682,6.534,11.5Z" fill="#0b9b01"/>
+    <path id="rect847" d="M.254,4.86A.837.837,0,0,0,.232,6.039l4.55,4.645a.836.836,0,0,0,1.182.005l4.719-4.6A.83.83,0,0,0,10.7,4.908L5.987.263A.836.836,0,0,0,4.805.258Zm.948.112L4.895,1.206a.684.684,0,0,1,.967,0l3.89,3.8a.68.68,0,0,1-.017.964L5.874,9.741a.685.685,0,0,1-.967,0l-3.723-3.8A.686.686,0,0,1,1.2,4.972Z" class="aw-theme-iconOutline" fill="#464646"/>
+  </g>
+</svg>

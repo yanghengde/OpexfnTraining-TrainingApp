@@ -1,0 +1,29 @@
+<div data-internal-type="breadcrumbContainerDiv">
+    <ol class="breadcrumb">
+        <li ng-if="ctrl.breadcrumbType=='Complete'" ng-repeat="current in ctrl.trails" ng-switch="$last">
+            <a ng-switch-when="false" href="{{current.sitBreadcrumbLink}}" data-internal-type="breadcrumb-item-{{$index+1}}">{{current.title}} </a>
+            <span class="lastItem" ng-switch-when="true" data-internal-type="breadcrumb-item-{{$index+1}}">{{current.title}} </span>
+        </li>
+        <li ng-if="ctrl.breadcrumbType=='HideMiddle'" ng-repeat="shown in ctrl.tobeShown">
+            <span ng-if="$middle" class="breadcrumbEllipsis" ng-class="{'breadcrumbEllipsisHighLight':ctrl.showFlyout==true}" data-internal-type="breadcrumb-ellipsis">{{shown.title}}</span>
+            <a ng-if="$first" href="{{shown.sitBreadcrumbLink}}" data-internal-type="breadcrumb-first-item">{{shown.title}}</a>
+            <span ng-if="$last" class="lastItem" data-internal-type="breadcrumb-last-item">{{shown.title}}</span>
+        </li>
+        <li ng-if="ctrl.breadcrumbType=='ShowOnlyLast'" ng-repeat="shown in ctrl.tobeShown">
+            <span ng-if="$first" class="breadcrumbEllipsis" ng-class="{'breadcrumbEllipsisHighLight':ctrl.showFlyout==true}" data-internal-type="breadcrumb-ellipsis">{{shown.title}}</span>
+            <span ng-if="$last" class="lastItem" title="{{ctrl.toolTipforLastItem}}" data-internal-type="breadcrumb-last-item">{{shown.title}}</span>
+        </li>
+    </ol>
+    <div class="divBreadcrumbFlyout" ng-show="ctrl.showFlyout" ng-style="{'top':ctrl.flyoutTop, 'left':ctrl.flyoutLeft, 'margin-left':ctrl.flyoutMarginLeft}">
+        <div class="divDropDownBreadcrumbExpander" ng-if="ctrl.showAsDropDown">
+            <a ng-repeat="hidden in ctrl.tobeHidden" class="dropdownItems" href="{{hidden.sitBreadcrumbLink}}" title="{{hidden.toolTip}}" data-internal-type="breadcrumb-flyout-menu-item-{{$index+1}}">{{hidden.title}}</a>
+        </div>
+        <div>
+            <ol class="breadcrumb" ng-if="!ctrl.showAsDropDown">
+                <li ng-repeat="hidden in ctrl.tobeHidden">
+                    <a href="{{hidden.sitBreadcrumbLink}}" data-internal-type="breadcrumb-flyout-item-{{$index+1}}">{{hidden.title}}</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

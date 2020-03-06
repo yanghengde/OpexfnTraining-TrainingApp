@@ -1,0 +1,93 @@
+<div class="at-record-details">
+    <div class="scalar-properties" ng-if="vm.record.ChangedEntity.ChangedScalarProperties.length">
+        <div class="title">
+            {{'auditTrail.properties.title' | translate}}:
+        </div>
+        <ul class="list">
+            <li class="item" ng-repeat="property in vm.record.ChangedEntity.ChangedScalarProperties track by $index">
+                <div ng-if="true === property.hasOwnProperty('OldValue') && true === property.hasOwnProperty('NewValue')">
+                    <span class="name">{{property.Name}}:</span>&nbsp;
+                    <span class="oldvalue">
+                        {{'auditTrail.properties.old' | translate}}:
+                        <span class="valid" ng-if="null !== property.OldValue">{{property.OldValue}};</span>
+                        <span class="null" ng-if="null === property.OldValue">null;</span>
+                    </span>&nbsp;
+                    <span class="newvalue">
+                        {{'auditTrail.properties.new' | translate}}:
+                        <span ng-if="null !== property.NewValue">{{property.NewValue}};</span>
+                        <span class="null" ng-if="null === property.NewValue">null;</span>
+                    </span>&nbsp;
+                </div>
+                <div ng-if="false === property.hasOwnProperty('OldValue') && false === property.hasOwnProperty('NewValue')">
+                    <span class="name">{{property.Name}}:</span>&nbsp;
+                    <span>{{'auditTrail.properties.bigdata' | translate}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="complex-properties" ng-if="vm.record.ChangedEntity.ChangedComplexProperties.length">
+        <div class="title">
+            {{'auditTrail.complex.title' | translate}}:
+        </div>
+        <ul class="list">
+            <li class="item" ng-repeat="complexProperty in vm.record.ChangedEntity.ChangedComplexProperties track by $index">
+                <span class="property-name">{{'auditTrail.complex.propName' | translate}}:&nbsp;{{complexProperty.Name}}</span>
+                <ul class="list">
+                    <li class="item" ng-repeat="property in complexProperty.ChangedScalarProperties track by $index">
+                        <div ng-if="true === property.hasOwnProperty('OldValue') && true === property.hasOwnProperty('NewValue')">
+                            <span class="name">{{property.Name}}:</span>&nbsp;
+                            <span class="oldvalue">
+                                {{'auditTrail.properties.old' | translate}}:
+                                <span class="valid" ng-if="null !== property.OldValue">{{property.OldValue}};</span>
+                                <span class="null" ng-if="null === property.OldValue">null;</span>
+                            </span>&nbsp;
+                            <span class="newvalue">
+                                {{'auditTrail.properties.new' | translate}}:
+                                <span ng-if="null !== property.NewValue">{{property.NewValue}};</span>
+                                <span class="null" ng-if="null === property.NewValue">null;</span>
+                            </span>&nbsp;
+                        </div>
+                        <div ng-if="false === property.hasOwnProperty('OldValue') && false === property.hasOwnProperty('NewValue')">
+                            <span class="name">{{property.Name}}:</span>&nbsp;
+                            <span>{{'auditTrail.properties.bigdata' | translate}}</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="relationships" ng-if="vm.record.isRootEntity && vm.record.relationships.length">
+        <div class="title">
+            {{'auditTrail.relationships.title' | translate}}:
+        </div>
+        <ul class="list">
+            <li class="item" ng-repeat="relationship in vm.record.relationships track by $index">
+                <span ng-if="'many' === relationship.type">
+                    {{'auditTrail.relationships.backwardNavigation' | translate: relationship}}
+                </span>
+                <span ng-if="'one' === relationship.type && 'Added' === relationship.action">
+                    {{'auditTrail.relationships.forwardNavigation.Added' | translate: relationship}}
+                </span>
+                <span ng-if="'one' === relationship.type && 'Removed' === relationship.action">
+                    {{'auditTrail.relationships.forwardNavigation.Removed' | translate: relationship}}
+                </span>
+                <span ng-if="'one' === relationship.type && 'Modified' === relationship.action">
+                    {{'auditTrail.relationships.forwardNavigation.Modified' | translate: relationship}}
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div ng-if="vm.record.ElectronicSignatureId && vm.record.ElectronicSignatureDetails.length">
+        <div class="title">
+            {{'auditTrail.electronicSignature.title' | translate}}:
+        </div>
+        <ul class="list">
+            <li class="item" ng-repeat="property in vm.record.ElectronicSignatureDetails track by $index">
+                <span class="name">{{property.Name}}:</span>&nbsp;
+                <span class="valid">{{property.Value}};</span>&nbsp;
+            </li>
+        </ul>
+    </div>
+</div>

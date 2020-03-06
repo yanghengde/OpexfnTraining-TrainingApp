@@ -1,0 +1,26 @@
+<div class="sit-pagination" ng-if="pgCtrl.pagerOptions.totalDataCount">
+    <div class="first-row" ng-if="pgCtrl.options.display === 'multiline'">
+        <div class="label">
+            <sit-pagination-label sit-options="pgCtrl.labelOptions"></sit-pagination-label>
+        </div>
+        <div class="page-size">
+            <sit-pagination-page-size sit-options="pgCtrl.pageSizeOptions"></sit-pagination-page-size>
+        </div>
+    </div>
+    <div class="second-row">
+        <div class="label" ng-if="pgCtrl.options.display === 'inline'">
+            <sit-pagination-label sit-options="pgCtrl.labelOptions"></sit-pagination-label>
+        </div>
+        <div class="page-navigation-section">
+            <div class="pager-section" ng-if="pgCtrl.pagerOptions.totalDataCount > pgCtrl.pagerOptions.pageSize ">
+                <sit-standard-pager ng-if="pgCtrl.pagerOptions.type === 'standard'" sit-options="pgCtrl.pagerOptions"></sit-standard-pager>
+                <sit-simple-pager ng-if="pgCtrl.pagerOptions.type === 'simple'" sit-options="pgCtrl.pagerOptions"></sit-simple-pager>
+                <sit-extended-pager ng-if="pgCtrl.pagerOptions.type === 'extended'" sit-options="pgCtrl.pagerOptions"></sit-extended-pager>
+            </div>
+            <div class="page-size" ng-if="pgCtrl.options.display === 'inline'">
+                <sit-pagination-page-size sit-options="pgCtrl.pageSizeOptions"></sit-pagination-page-size>
+            </div>
+        </div>
+
+    </div>
+</div> 

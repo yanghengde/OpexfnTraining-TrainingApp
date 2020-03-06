@@ -1,0 +1,119 @@
+
+<!--<style type="text/css">
+    /*uncomment the below style snippet if you want the component to be displayed above other components*/
+
+    div[name^="{{vm.name}}"] {
+        overflow: hidden !important;
+        width: 100%;
+        height: 100%;
+    }
+</style>-->
+
+    <div class="full-height full-width" style="width: calc(100%-25px); height: calc(100%-25px);  min-height: 400px;  min-width: 400px">
+            <!-- side-panel-property-area-body -->
+        <div id="tabContent" >
+            <sit-tabset class=" tab-view" ng-show="true">
+                <sit-tab id="tabOverview" heading="{{ 'taskContainer.details.properties'|translate}}" active="vm.isDetailTabActive" select="vm.selectDetailTab()">
+                        <!-- class="task-sidepanel" -->
+                    <div >
+                        <sit-property-grid sit-layout="Vertical" sit-type="Fixed" sit-mode="list" sit-columns="1">
+                            <sit-property sit-widget="sit-text"     ng-show="vm.isNIdVisible" sit-value="vm.selectedTask.NId" sit-read-only="true">{{'taskContainer.details.id'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isNameVisible"  sit-value="vm.selectedTask.Name" sit-read-only="true">{{'taskContainer.details.name'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isDescriptionVisible"  sit-value="vm.selectedTask.Description" sit-read-only="true">{{'taskContainer.details.description'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isTaskDefinitionNIdVisible" sit-value="vm.selectedTask.TaskDefinitionNId" sit-read-only="true">{{'taskContainer.details.taskDefinitionNId'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isTaskDefinitionRevisionVisible" sit-value="vm.selectedTask.TaskDefinitionRevision" sit-read-only="true">{{'taskContainer.details.taskDefinitionRevision'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isEquipmentNIdVisible" sit-value="vm.selectedTask.EquipmentNId" sit-read-only="true">{{'taskContainer.details.equipment'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isTaskFlowVisible" sit-value="vm.selectedTask.TaskFlow.TaskFlow" sit-read-only="true">{{'taskContainer.details.taskFlow'|translate}}</sit-property>
+                            <sit-property sit-widget="sit-textarea" ng-show="vm.isStatusNIdVisible" sit-value="vm.selectedTask.Status.StatusNId" sit-read-only="true">{{'taskContainer.details.status'|translate}}</sit-property>
+                            <!--<sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.NId" sit-read-only="true">{{'SIT.TSK.common.id'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.Name" sit-read-only="true">{{'SIT.TSK.common.name'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.Description" sit-read-only="true">{{'SIT.TSK.common.description'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.TaskDefinitionNId" sit-read-only="true">{{'task.TaskDefinitionNId'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.TaskDefinitionRevision" sit-read-only="true">{{'task.TaskDefinitionRevision'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.EquipmentNId" sit-read-only="true">{{'task.Equipment'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.WorkCenterNId" sit-read-only="true">{{'task.WorkCenterDeprecated'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.LocationNId" sit-read-only="true">{{'task.LocationDeprecated'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-checkbox" sit-value="vm.isSkippableValue" sit-read-only="true">{{'task.IsSkippable'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-checkbox" sit-value="vm.isTaskFlowPartValue" sit-read-only="true">{{'task.IsPartOfTaskFlow'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.TaskFlow.TaskFlow" sit-read-only="true" ng-show="vm.isTaskFlowPart">{{'task.TaskFlow'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.TaskFlow.Sequence" sit-read-only="true" ng-show="vm.isTaskFlowPart">{{'task.Sequence'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-textarea" sit-value="vm.selectedTask.TaskFlow.MaxIterations" sit-read-only="true" ng-show="vm.isTaskFlowPart">{{'task.MaxIterations'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-checkbox" sit-value="vm.continueOnSuccessValue" sit-read-only="true" ng-show="vm.isTaskFlowPart">{{'task.ContinueOnSuccess'|translate}}</sit-property>
+                                <sit-property sit-widget="sit-checkbox" sit-value="vm.continueOnFailureValue" sit-read-only="true" ng-show="vm.isTaskFlowPart">{{'task.ContinueOnFailure'|translate}}</sit-property>-->
+                        </sit-property-grid>
+                    </div>
+                </sit-tab>
+                <sit-tab heading="{{ 'taskContainer.parameters.parameter' | translate}}" active="vm.isParameterTabActive" select="vm.selectParameterTab()" id="taskParameterList">
+                    <div class="dataTable" ng-show="vm.taskParameterConfigData.data.length > 0">
+                        <table sit-table="overviewTaskParameterTable" sit-config="vm.taskParameterConfigData" class="table table-striped" sit-col-resize>
+                            <thead>
+                                <tr>
+                                    <th>{{'taskContainer.parameters.id'|translate}}</th>
+                                    <th>{{'taskContainer.parameters.type'|translate}}</th>
+                                    <th>{{'taskContainer.parameters.value'|translate}}</th>
+                                    <th>{{'taskContainer.parameters.uom'|translate}}</th>
+                                    <th>{{'taskContainer.parameters.direction'|translate}}</th>
+                                    <th>{{'taskContainer.parameters.isReadOnly'|translate}}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in vm.taskParameterConfigData.data">
+                                    <td>{{item.NId}}</td>
+                                    <td>{{item.ParameterType}}</td>
+                                    <td>{{item.ParameterValue}}</td>
+                                    <td>{{item.ParameterUoMNId}}</td>
+                                    <td>{{item.Direction}}</td>
+                                    <td>
+                                        <input type='checkbox' disabled ng-checked='item.IsReadOnly'>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div ng-show="!(vm.taskParameterConfigData.data.length > 0)" class="taskParameter-nodata">
+                        {{'taskContainer.parameters.noData' | translate}}
+                    </div>
+                </sit-tab>
+                <sit-tab heading="{{ 'taskContainer.context.context' | translate}}" active="vm.isContextTabActive" select="vm.selectContextTab()" id="contextList">
+                    <div class="context-table-view">
+                        <div ng-repeat="context in vm.taskContextConfigData">
+                            <div ng-if="!context.isUserFieldAvailable" class="table table-striped no-context-container">
+                                <div class="overview-context-header">
+                                    {{context.Context}}
+                                </div>
+                                <div class="no-context-message">
+                                    {{'taskContainer.context.noUserFieldAvailable'|translate}}
+                                </div>
+                            </div>
+                            <div ng-if="context.isUserFieldAvailable">
+                                <table sit-table="overviewTaskContextTable" sit-config="context.config" class="table table-striped" sit-col-resize>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                {{context.Context}}
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>{{'taskContainer.context.id'|translate}}</th>
+                                            <th>{{'taskContainer.context.type'|translate}}</th>
+                                            <th>{{'taskContainer.context.value'|translate}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in context.config.data">
+                                            <td>{{item.NId}}</td>
+                                            <td>{{item.UserFieldType}}</td>
+                                            <td>{{item.UserFieldValue}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div ng-show="!(vm.taskContextConfigData.length > 0)" class="process-nodata">
+                            {{'taskContainer.context.noData' | translate}}
+                        </div>
+                    </div>
+                </sit-tab>
+            </sit-tabset>
+        </div>
+    </div>

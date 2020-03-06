@@ -1,0 +1,60 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="33.29" y1="109.692" x2="46.081" y2="96.9" gradientTransform="matrix(1, 0, 0, -1, 0, 108)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue-2" x1="29.431" y1="8" x2="42.431" y2="8" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#Siemens_-_Light_blue"/>
+    <linearGradient id="linear-gradient" x1="0.818" y1="1470.962" x2="41.394" y2="1511.538" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fdfdfe"/>
+      <stop offset="0.496" stop-color="#f3f3f4"/>
+      <stop offset="0.775" stop-color="#dfdede"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="26.181" y1="1468.906" x2="39.181" y2="1481.906" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="18.241" y1="33.928" x2="29.759" y2="22.41" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9ecf1"/>
+      <stop offset="0.221" stop-color="#d3e8ee"/>
+      <stop offset="0.542" stop-color="#c3dfe8"/>
+      <stop offset="0.921" stop-color="#a2ccdb"/>
+      <stop offset="1" stop-color="#9bc8d7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="10.381" y1="26.069" x2="26.1" y2="10.35" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bfdee8"/>
+      <stop offset="0.159" stop-color="#b3d6e2"/>
+      <stop offset="0.706" stop-color="#8ec1d3"/>
+      <stop offset="1" stop-color="#7fb8cd"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g id="Layer_3" data-name="Layer 3">
+      <polygon points="42.931 14.3 42.931 1.5 30.031 1.5 42.931 14.3" fill="url(#Siemens_-_Light_blue)"/>
+      <rect x="29.431" y="1.5" width="13" height="13" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#Siemens_-_Light_blue-2)"/>
+    </g>
+    <g>
+      <polygon points="29.377 1.5 6.281 1.5 6.281 46.5 42.431 46.5 42.431 14.5 29.377 1.5" fill="url(#linear-gradient)"/>
+      <path d="M42.932,47H5.78V1h23.8L42.932,14.292ZM6.78,46H41.932V14.708L29.171,2H6.78Z" fill="#4e4a48"/>
+    </g>
+    <polygon points="29.431 1.656 29.431 14.656 42.431 14.656 29.431 1.656" stroke="#4e4a48" stroke-linejoin="round" fill="url(#linear-gradient-2)"/>
+    <g id="Plane">
+      <path d="M24.009,26.606l15.357,9.155L24.009,44.782,8.634,35.761l15.375-9.155m0-1.023a.86.86,0,0,0-.452.128L7.756,35.12a.746.746,0,0,0,0,1.287l15.8,9.273a.862.862,0,0,0,.894,0L40.24,36.407a.746.746,0,0,0,0-1.287L24.461,25.711a.86.86,0,0,0-.452-.128Z" fill="#474647"/>
+    </g>
+    <g>
+      <polygon points="24 28.492 35.518 21.831 35.518 35.09 24 41.75 24 28.492" fill="#3b90b2"/>
+      <polygon points="12.482 21.831 23.98 15.17 35.518 21.831 24 28.492 12.482 21.831" fill="url(#linear-gradient-3)"/>
+      <polygon points="24 28.492 24 41.75 12.482 35.088 12.482 21.831 24 28.492" fill="url(#linear-gradient-4)"/>
+      <path d="M24,28.992a.493.493,0,0,1-.25-.067L12.231,22.264l.5-.866L24,27.915,35.269,21.4l.5.865L24.25,28.925A.493.493,0,0,1,24,28.992Z" fill="#0e7191"/>
+      <rect x="23.5" y="28.492" width="1" height="13.258" fill="#0e7191"/>
+      <path d="M24,42.25a.493.493,0,0,1-.25-.067L12.231,35.521a.5.5,0,0,1-.25-.432V21.831a.5.5,0,0,1,.249-.433l11.5-6.66a.5.5,0,0,1,.5,0L35.769,21.4a.5.5,0,0,1,.25.434V35.09a.5.5,0,0,1-.25.432L24.25,42.183A.493.493,0,0,1,24,42.25ZM12.981,34.8,24,41.173,35.019,34.8V22.12L23.98,15.748l-11,6.371Z" fill="#4e4a48"/>
+      <path d="M24,28.979a.493.493,0,0,1-.25-.067l-6.911-4,.5-.866L24,27.9l6.661-3.852.5.866-6.911,4A.493.493,0,0,1,24,28.979Z" fill="#0e7191"/>
+      <rect x="23.5" y="28.479" width="1" height="7.955" fill="#0e7191"/>
+    </g>
+  </g>
+</svg>

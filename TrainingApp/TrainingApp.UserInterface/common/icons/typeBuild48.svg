@@ -1,0 +1,25 @@
+<svg version="1.1" id="Verb_x5F_Zone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px"  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<linearGradient id="rect893_1_" gradientUnits="userSpaceOnUse" x1="-51.9883" y1="-357.1919" x2="-48.3904" y2="-380.8588" gradientTransform="matrix(0.8368 -0.8074 -0.8103 -0.8339 -235.3911 -316.1426)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="0.3961" style="stop-color:#6BAEC3"/>
+	<stop  offset="0.4516" style="stop-color:#539EB5"/>
+	<stop  offset="0.7767" style="stop-color:#2F849F"/>
+	<stop  offset="1" style="stop-color:#187491"/>
+</linearGradient>
+<path id="rect893" fill="url(#rect893_1_)" stroke="#474747" stroke-width="1" d="M1.758,41.887l29.368-28.337l0,0l3.378,3.476l0,0
+	L5.136,45.363l0,0L1.758,41.887L1.758,41.887z"/>
+<path id="rect893-5" fill="#FFFFFF" stroke="#474747" stroke-width="1.0001" d="M31.075,13.574l9.643-9.474l0,0l3.356,3.518l0,0
+	l-9.643,9.474l0,0L31.075,13.574L31.075,13.574z"/>
+<linearGradient id="path910_1_" gradientUnits="userSpaceOnUse" x1="117.0078" y1="-234.6685" x2="115.5925" y2="-231.7212" gradientTransform="matrix(1.4138 -0.4098 -0.458 -1.448 -247.5 -283.5352)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="1" style="stop-color:#74B5C8;stop-opacity:0"/>
+</linearGradient>
+<path id="path910"  fill="url(#path910_1_)" stroke="#474747" stroke-width="0.602" d="
+	M28.089,11.665l-2.511-1.732l-2.418,1.725l0.763-2.894l-2.455-1.859L24.45,6.85l0.901-2.874l1.08,2.859l3.012,0.083L27.128,8.74
+	L28.089,11.665z"/>
+<path id="path910-2-2" fill="#474747" d="M33.945,2.637L33.49,4.141l-1.592-0.004l1.363,0.936l-0.438,1.453L34.123,5.6l1.318,0.902
+	l-0.561-1.506L36.135,4.1L34.49,4.094L33.945,2.637z M44.193,9.969l-0.389,1.379l-1.541,0.037l1.24,0.838l-0.385,1.443l1.156-0.863
+	l1.303,0.855l-0.527-1.371l1.191-0.914l-1.48,0.016L44.193,9.969z M40.389,18.566l-0.416,1.359l-1.514,0.064l1.223,0.854
+	l-0.35,1.418l1.172-0.834l1.297,0.813l-0.498-1.369l1.152-0.916l-1.48-0.012L40.389,18.566z"/>
+</svg>

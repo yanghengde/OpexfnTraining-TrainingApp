@@ -1,0 +1,110 @@
+<div class="property" ng-if="propertyCtrl.parentScope.mode !== 'list'" data-mode="{{propertyCtrl.parentScope.mode}}">
+    <div ng-class="[{ asterisk_req:propertyCtrl.sitRequired || (propertyCtrl.validation && propertyCtrl.validation.required)},
+         { VERTICAL: 'vertical-property-grid-control-label',
+           HORIZONTAL: { FLUID: ['property-grid-col-label-fluid',{true: 'property-group-col-width', false: 'property-grid-col-label-width'}[propertyCtrl.isWithinGroup]],
+                         FIXED: ['property-grid-col-label-fixed',{true: 'property-group-col-width', false: 'property-grid-col-label-width'}[propertyCtrl.isWithinGroup]]
+                        }[propertyCtrl.parentScope.type]
+        }[propertyCtrl.parentScope.layout]]"><span ng-class="propertyCtrl.ngDisabled? 'property-label-disabled' : 'property-label'" ng-transclude></span><sup ng-if="propertyCtrl.sitRequired || (propertyCtrl.validation && propertyCtrl.validation.required)">*</sup></div>
+    <div ng-if="propertyCtrl.isMultiValueWidget && propertyCtrl.value.length === 0 && !(propertyCtrl.readOnly || propertyCtrl.ngReadonly)">
+        <a class="btn btn-link" ng-click="propertyCtrl.addWidgetInstance(0)">{{'propertyGrid.property.addItem'|translate}}</a>
+    </div>
+    <div ng-if="propertyCtrl.isMultiValueWidget"
+         ng-class="[{HORIZONTAL:
+                        { FLUID: ['property-grid-col-value-fluid',{ true: 'property-group-col-width', false: 'property-grid-col-value-width'}[propertyCtrl.isWithinGroup]],
+                          FIXED: ['property-grid-col-value-fixed',{ true: 'property-group-col-width', false: 'property-grid-col-value-width'}[propertyCtrl.isWithinGroup]]
+                        }[propertyCtrl.parentScope.type]}[propertyCtrl.parentScope.layout]]">
+        <div ng-repeat="item in propertyCtrl.value track by $index" ng-class="{'property-grid-control-div': !(propertyCtrl.ngReadonly || propertyCtrl.readOnly)}">
+            <div ng-hide="propertyCtrl.ngReadonly || propertyCtrl.readOnly" class="property-grid-icons-div">
+                <span title="{{propertyCtrl.addBtnTitle}}" class="property-grid-icon-add" ng-click="propertyCtrl.addWidgetInstance($index)" ng-disabled="propertyCtrl.value.length === propertyCtrl.maxItems"><em class="fa fa-plus"></em></span>
+                <span title="{{propertyCtrl.removeBtnTitle}}" class="property-grid-icon-remove" ng-click="propertyCtrl.removeWidgetInstance($index)" ng-disabled="propertyCtrl.value.length <= propertyCtrl.minItems"><em class="fa fa-times"></em></span>
+            </div>
+            <div ng-class="{ 'property-grid-item-div': !(propertyCtrl.ngReadonly || propertyCtrl.readOnly), 'property-grid-item-div-readonly': (propertyCtrl.ngReadonly || propertyCtrl.readOnly) }">
+                <sit-property-item sit-widget="{{propertyCtrl.sitWidget}}" sit-id="{{propertyCtrl.sitId}}"
+                                   sit-name="{{propertyCtrl.name+$index}}"
+                                   sit-value="propertyCtrl.value[$index]"
+                                   sit-validation="propertyCtrl.validation"
+                                   sit-read-only="propertyCtrl.readOnly"
+                                   sit-placeholder="propertyCtrl.placeholder"
+                                   sit-limit="propertyCtrl.limit"
+                                   sit-template-url="propertyCtrl.templateUrl"
+                                   sit-selected-attribute-to-display="propertyCtrl.selectedAttributeToDisplay"
+                                   sit-attribute-to-search="propertyCtrl.attributeToSearch"
+                                   sit-options="propertyCtrl.options"
+                                   sit-to-display="propertyCtrl.toDisplay"
+                                   sit-to-keep="propertyCtrl.toKeep"
+                                   sit-datasource="propertyCtrl.sitDatasource"
+                                   sit-selected-object="propertyCtrl.sitSelectedObject"
+                                   sit-editable="propertyCtrl.sitEditable"
+                                   accept="propertyCtrl.accept"
+                                   sit-min-size="propertyCtrl.sitMinSize"
+                                   sit-max-size="propertyCtrl.sitMaxSize"
+                                   sit-selected-string="propertyCtrl.sitSelectedString"
+                                   sit-split-list="propertyCtrl.sitSplitList"
+                                   sit-done-callback="propertyCtrl.sitDoneCallback"
+                                   sit-format="propertyCtrl.format"
+                                   sit-append-to-body="propertyCtrl.appendToBody"
+                                   sit-show-button-bar="propertyCtrl.showButtonBar"
+                                   sit-show-weeks="propertyCtrl.showWeeks"
+                                   sit-show-meridian="propertyCtrl.showMeridian"
+                                   sit-widget-attributes="propertyCtrl.widgetAttributes"
+                                   ng-blur="propertyCtrl.ngBlur()"
+                                   sit-change="propertyCtrl.sitChange"
+                                   ng-disabled="propertyCtrl.ngDisabled"
+                                   ng-focus="propertyCtrl.ngFocus()"
+                                   ng-readonly="propertyCtrl.ngReadonly"
+                                   ng-model="propertyCtrl.value[$index]"
+                                   sit-required="propertyCtrl.sitRequired"
+                                   class="property-grid-input-group"
+                                   sit-allow-reset="propertyCtrl.sitAllowReset">
+                </sit-property-item>
+            </div>
+        </div>
+    </div>
+    <div ng-if="!propertyCtrl.isMultiValueWidget"
+         ng-class="[{HORIZONTAL: { FLUID: ['property-grid-col-value-fluid',{ true: 'property-group-col-width', false: 'property-grid-col-value-width'}[propertyCtrl.isWithinGroup]],
+                                   FIXED: ['property-grid-col-value-fixed',{ true: 'property-group-col-width', false: 'property-grid-col-value-width'}[propertyCtrl.isWithinGroup]]
+                                 }[propertyCtrl.parentScope.type]}[propertyCtrl.parentScope.layout]]">
+        <sit-property-item ng-if="propertyCtrl.parentScope.mode !== 'list'" sit-widget="{{propertyCtrl.sitWidget}}" sit-id="{{propertyCtrl.sitId}}"
+                           sit-name="{{propertyCtrl.name}}"
+                           sit-value="propertyCtrl.value"
+                           sit-validation="propertyCtrl.validation"
+                           sit-read-only="propertyCtrl.readOnly"
+                           sit-placeholder="propertyCtrl.placeholder"
+                           sit-limit="propertyCtrl.limit"
+                           sit-template-url="propertyCtrl.templateUrl"
+                           sit-selected-attribute-to-display="propertyCtrl.selectedAttributeToDisplay"
+                           sit-attribute-to-search="propertyCtrl.attributeToSearch"
+                           sit-options="propertyCtrl.options"
+                           sit-to-display="propertyCtrl.toDisplay"
+                           sit-to-keep="propertyCtrl.toKeep"
+                           sit-datasource="propertyCtrl.sitDatasource"
+                           sit-selected-object="propertyCtrl.sitSelectedObject"
+                           sit-editable="propertyCtrl.sitEditable"
+                           accept="propertyCtrl.accept"
+                           sit-min-size="propertyCtrl.sitMinSize"
+                           sit-max-size="propertyCtrl.sitMaxSize"
+                           sit-selected-string="propertyCtrl.sitSelectedString"
+                           sit-split-list="propertyCtrl.sitSplitList"
+                           sit-done-callback="propertyCtrl.sitDoneCallback"
+                           sit-format="propertyCtrl.format"
+                           sit-append-to-body="propertyCtrl.appendToBody"
+                           sit-show-button-bar="propertyCtrl.showButtonBar"
+                           sit-show-weeks="propertyCtrl.showWeeks"
+                           sit-show-meridian="propertyCtrl.showMeridian"
+                           sit-widget-attributes="propertyCtrl.widgetAttributes"
+                           ng-blur="propertyCtrl.ngBlur()"
+                           sit-change="propertyCtrl.sitChange"
+                           ng-disabled="propertyCtrl.ngDisabled"
+                           ng-focus="propertyCtrl.ngFocus()"
+                           ng-readonly="propertyCtrl.ngReadonly"
+                           ng-model="propertyCtrl.value"
+                           sit-required="propertyCtrl.sitRequired"
+                           class="property-grid-input-group"
+                           sit-allow-reset="propertyCtrl.sitAllowReset">
+        </sit-property-item>
+        <span class="pl-value" ng-if="propertyCtrl.parentScope.mode === 'list'" style="padding-left:16px; display: table-cell">{{propertyCtrl.parseValue(propertyCtrl)}}</span>
+    </div>
+</div>
+
+<div class="pl-label" ng-if="propertyCtrl.parentScope.mode === 'list'" style="display: table-cell"><span ng-transclude></span></div>
+<span class="pl-value" ng-if="propertyCtrl.parentScope.mode === 'list'" style="display: table-cell">{{propertyCtrl.listValue(propertyCtrl)}}</span>

@@ -1,0 +1,27 @@
+<div class="notification-tile"
+     ng-click="notificationCtrl.thisTileClick()"
+     ng-show="notificationCtrl.tileIsVisible"
+     ng-class="{'notification-tile-popup': notificationCtrl.tilePopup,
+                'notification-tile-color-info': notificationCtrl.tileType=='info',
+                'notification-tile-color-warning':  notificationCtrl.tileType=='warning',
+                'normalTile':notificationCtrl.format!=='wide',
+                'wideTile':notificationCtrl.format=='wide',
+                'topCenterPositioning':notificationCtrl.position=='topCenter',
+                'normalPositioning':notificationCtrl.position=='topRight',
+                'bottomRightPositioning':notificationCtrl.position=='bottomRight',
+                'topLeftPositioning':notificationCtrl.position=='topLeft',
+                'dropShadow':notificationCtrl.shadow!==false}"
+     ng-mouseenter="notificationCtrl.stpoInterval()"
+     ng-mouseleave="notificationCtrl.startInterval()">
+
+    <div class="notification-tile-container">
+        <div class="notification-tile-title" data-internal-type="title">{{notificationCtrl.cropedTitle}}</div>
+        <div class="notification-tile-description" data-internal-type="content">{{notificationCtrl.cropedContent}}</div>
+        <div class="notification-tile-icon" data-internal-type="icon">
+            <em class="fa" ng-class="{'fa-info': notificationCtrl.tileType=='info',
+                                     'fa-warning': notificationCtrl.tileType=='warning'}">
+            </em>
+        </div>
+        <div class="notification-tile-counter" data-internal-type="counter"> <span>{{notificationCtrl.tileCounter}}</span> </div>
+    </div>
+</div>

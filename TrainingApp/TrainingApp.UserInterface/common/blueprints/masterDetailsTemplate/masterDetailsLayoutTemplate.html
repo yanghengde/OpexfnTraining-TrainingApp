@@ -1,0 +1,41 @@
+
+<div class="content-area content-area-relative" style="height:100% !important" id="masterDetailsLayout" ng-if="vm.isInitComplete">
+    <h2>{{vm.screenTitle}}</h2>
+    <div id="masterList" style="height:100%">
+            <sit-command-bar sit-vertical-autofixed ="true" sit-commands="vm.newObj.actions" sit-layout="vertical"></sit-command-bar>
+        <div style="display:inline-block;vertical-align:top; height:99%">
+            <sit-item-collection-viewer sit-data="vm.newObj.master.runtimeData" sit-options="vm.newObj.master.runtimeConf"></sit-item-collection-viewer>
+        </div>
+        <div class="mdui-details"
+             ng-class="{noDrillDownPadding:!vm.isDrillDownState}">
+            <div class="mdui-breadcrumb" ng-if="vm.isDrillDownState"> <sit-mdui-breadcrumb sit-options="vm.breadcrumbOptions"></sit-mdui-breadcrumb></div>
+            <tabset ng-class="{'drill-down-tab':vm.isDrillDownState === true }">
+                <tab ng-repeat="detail in vm.newObj.details" index="{{$index}}" heading="{{detail.title || detail.id | translate}}" select="vm.setActiveTabIndex(detail.id)" active="detail.isActive" disabled="detail.isDisabled">
+                    <div id="detailList" ng-if="detail.multiplicity === 'many' && detail.id === vm.activeContentId" style="height:100%">
+                        <sit-item-collection-viewer sit-data="detail.runtimeData" sit-options="detail.runtimeConf"></sit-item-collection-viewer>
+                    </div>
+                    <div style="overflow-x:auto;overflow-y:auto;height:100%" ng-if="detail.multiplicity === 'one' && vm.ready && vm.propertiesLoaded">
+                        <sit-property-grid sit-id="itemPropertyGrid1"
+                                           sit-layout="Horizontal"
+                                           sit-type="{{detail.runtimeConf.type}}"
+                                           sit-columns="detail.runtimeConf.columns"
+                                           sit-mode="{{detail.runtimeConf.mode}}"
+                                           sit-data="detail.runtimeConf.data"
+                                           sit-groups="vm.groupDetails"
+                                           sit-show-groups="detail.runtimeConf.showGroups">
+                        </sit-property-grid>
+                    </div>
+                    <div style="height:100%" ng-if="detail.multiplicity === 'auditTrail' && detail.runtimeConf.filter.EntityId !==''">
+                        <sit-at-viewer sit-filter="detail.runtimeConf.filter"
+                                       sit-start-empty="detail.runtimeConf.startEmpty"
+                                       sit-config="detail.runtimeConf.config">
+                        </sit-at-viewer>
+                    </div>
+                    <div style="overflow-x:auto;overflow-y:auto;height:100%" ng-if="detail.multiplicity === 'custom'">
+                        <div init="{{activeContent = vm.activeContentId}}" ng-include="detail.templatePath"></div>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>

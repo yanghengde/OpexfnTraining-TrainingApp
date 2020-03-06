@@ -1,0 +1,67 @@
+<!--Old Configuration-->
+<div class="property-grid-container" ng-if="!propertyGridCtrl.transclusionIsSet">
+    <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Vertical' || (propertyGridCtrl.mode !== 'list' && propertyGridCtrl.showGroups) "
+                              sit-id="{{propertyGridCtrl.id}}"
+                              sit-mode="{{propertyGridCtrl.mode}}"
+                              sit-data="propertyGridCtrl.data"
+                              class="property-grid-vertical-layout" ng-class="{'pl-property-grid-list':(propertyGridCtrl.mode == 'list' && propertyGridCtrl.showGroups !== true) ,
+                                  'pl-property-grid-list pl-property-grid-group':  (propertyGridCtrl.mode == 'list' && propertyGridCtrl.showGroups === true)}"
+                              ng-transclude>
+    </sit-property-grid-layout>
+    <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Horizontal' && propertyGridCtrl.type === 'Fixed' && !propertyGridCtrl.showGroups"
+                              sit-id="{{propertyGridCtrl.id}}"
+                              sit-mode="{{propertyGridCtrl.mode}}"
+                              sit-data="propertyGridCtrl.data"
+                              ng-attr-class="{{propertyGridCtrl.columns !== 0 ? 'property-grid-horizontal-fixed-layout x' + propertyGridCtrl.columns : 'property-grid-horizontal-fixed-layout'}}"
+                              ng-class="{'pl-property-grid-list': propertyGridCtrl.mode == 'list',
+                              'pl-property-grid-group-list': (propertyGridCtrl.mode == 'list' && propertyGridCtrl.columns && propertyGridCtrl.columns !== 0)}">
+    </sit-property-grid-layout>
+
+    <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Horizontal'  && (propertyGridCtrl.type === 'Fixed' || propertyGridCtrl.type === 'Fluid') && propertyGridCtrl.showGroups && propertyGridCtrl.mode === 'list'"
+                              sit-id="{{propertyGridCtrl.id}}"
+                              sit-mode="{{propertyGridCtrl.mode}}"
+                              sit-data="propertyGridCtrl.data"
+                              ng-class="{'pl-property-grid-list': propertyGridCtrl.mode == 'list' }">
+    </sit-property-grid-layout>
+    <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Horizontal' && propertyGridCtrl.type === 'Fluid' && !propertyGridCtrl.showGroups"
+                              sit-id="{{propertyGridCtrl.id}}"
+                              sit-mode="{{propertyGridCtrl.mode}}"
+                              sit-data="propertyGridCtrl.data"
+                              class="property-grid-horizontal-fluid-layout" ng-class="{'pl-property-grid-list': propertyGridCtrl.mode == 'list' }">
+    </sit-property-grid-layout>
+
+    <div ng-if="propertyGridCtrl.layout === 'Horizontal' && (propertyGridCtrl.type !== 'Fixed' && propertyGridCtrl.type !== 'Fluid')">
+        {{'propertyGrid.invalidLayout'|translate}}
+    </div>
+</div>
+
+
+<!--New Configuration-->
+
+<div class="property-grid-container" ng-if="propertyGridCtrl.transclusionIsSet">
+    <form name="{{'Form'+propertyGridCtrl.id}}">
+        <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Vertical' || (propertyGridCtrl.mode !== 'list' && propertyGridCtrl.showGroups) "
+                                  sit-id="{{propertyGridCtrl.id}}"
+                                  sit-mode="{{propertyGridCtrl.mode}}"
+                                  class="property-grid-vertical-layout"
+                                  ng-class="{'pl-property-grid-list':(propertyGridCtrl.mode == 'list' && propertyGridCtrl.showGroups !== true) ,
+                                  'pl-property-grid-list pl-property-grid-group':  (propertyGridCtrl.mode == 'list' && propertyGridCtrl.showGroups === true)}"
+                                  ng-transclude>
+        </sit-property-grid-layout>
+        <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Horizontal' && propertyGridCtrl.type === 'Fixed' && !propertyGridCtrl.showGroups"
+                                  sit-id="{{propertyGridCtrl.id}}"
+                                  sit-mode="{{propertyGridCtrl.mode}}"
+                                  ng-attr-class="{{propertyGridCtrl.columns !== 0 ? 'property-grid-horizontal-fixed-layout x' + propertyGridCtrl.columns : 'property-grid-horizontal-fixed-layout'}}"
+                                  ng-class="{'pl-property-grid-list': propertyGridCtrl.mode == 'list' }" ng-transclude>
+        </sit-property-grid-layout>
+        <sit-property-grid-layout ng-if="propertyGridCtrl.layout === 'Horizontal' && propertyGridCtrl.type === 'Fluid' && !propertyGridCtrl.showGroups"
+                                  sit-id="{{propertyGridCtrl.id}}"
+                                  sit-mode="{{propertyGridCtrl.mode}}"
+                                  class="property-grid-horizontal-fluid-layout" ng-class="{'pl-property-grid-list': propertyGridCtrl.mode == 'list' }" ng-transclude>
+        </sit-property-grid-layout>
+        <div ng-if="propertyGridCtrl.layout === 'Horizontal' && (propertyGridCtrl.type !== 'Fixed' && propertyGridCtrl.type !== 'Fluid')">
+            {{'propertyGrid.invalidLayout'|translate}}
+        </div>
+    </form>
+</div>
+

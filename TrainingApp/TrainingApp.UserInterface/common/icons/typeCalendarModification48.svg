@@ -1,0 +1,37 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="3.668" y1="39.168" x2="37.332" y2="5.504" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="7.516" y1="53.596" x2="32.887" y2="28.829" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="22.256" y1="18.653" x2="43.65" y2="-1.303" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="g881">
+    <path id="path25" d="M.5,12V38.5a2,2,0,0,0,2,2h36a2,2,0,0,0,2-2V12Z" fill="url(#linear-gradient)"/>
+    <path id="path27" d="M40.5,12.5V2.5a2,2,0,0,0-2-2H2.5a2,2,0,0,0-2,2v10Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+    <path id="line29" d="M8.5,13V40.5" fill="none" stroke="#6e6e6e"/>
+    <path id="line31" d="M16.5,13V40.5" fill="none" stroke="#6e6e6e"/>
+    <path id="line33" d="M24.5,13V40.5" fill="none" stroke="#6e6e6e"/>
+    <path id="line35" d="M32.5,13V40.5" fill="none" stroke="#6e6e6e"/>
+    <path id="line37" d="M.5,33.5h40" fill="none" stroke="#6e6e6e"/>
+    <path id="line39" d="M.5,26.5h40" fill="none" stroke="#6e6e6e"/>
+    <path id="line41" d="M.5,19.5h40" fill="none" stroke="#6e6e6e"/>
+    <path id="circle43" d="M14.5,5.979a1.5,1.5,0,1,1-1.5-1.5A1.5,1.5,0,0,1,14.5,5.979Z" fill="#fff" stroke="#147391" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.011"/>
+    <path id="circle45" d="M14.5,6A1.5,1.5,0,1,1,13,4.5,1.5,1.5,0,0,1,14.5,6Z" fill="#fff" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="circle47" d="M29.5,6A1.5,1.5,0,1,1,28,4.5,1.5,1.5,0,0,1,29.5,6Z" fill="#fff" stroke="#147391" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="rect49" d="M2.5.5h36a2,2,0,0,1,2,2v36a2,2,0,0,1-2,2H2.5a2,2,0,0,1-2-2V2.5A2,2,0,0,1,2.5.5Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+    <path id="path58" d="M30.725,21.575l-11.9,22a2.663,2.663,0,0,0,2.3,3.9h23.7a2.609,2.609,0,0,0,2.3-3.9l-11.9-22A2.489,2.489,0,0,0,30.725,21.575Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.049" fill="url(#linear-gradient-3)"/>
+    <path id="path60" d="M34.525,26.475h-3v12h3Z" fill="#fff" stroke="#147391" stroke-linejoin="round"/>
+    <path id="circle62" d="M35.025,42.975a2,2,0,1,1-2-2A2,2,0,0,1,35.025,42.975Z" fill="#fff" stroke="#147391" stroke-linejoin="round"/>
+  </g>
+</svg>

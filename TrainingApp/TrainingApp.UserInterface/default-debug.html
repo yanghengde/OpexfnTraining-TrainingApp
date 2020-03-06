@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html ng-class="{touch: $root.isTouchDevice}">
+<head dev>
+    <title>Test UI Application</title>
+    <link rel="shortcut icon" href="common/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link ng-repeat="styleSheet in $root.currentTheme.styleSheets" ng-href="{{styleSheet}}" rel="stylesheet">
+	<link rel="resource" type="application/l10n" href="common/scripts/pdfjs/locale/locale.properties">
+	
+	
+		
+    <style>
+        .mom-modal-overlay.mom-modal-overlay-displayed {
+            opacity: 1;
+            visibility: visible;
+            position: fixed;
+            z-index: 500;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            backdrop-filter: blur(30px);
+            background: rgba(220, 220, 220, 0.75) 50% 50% no-repeat;
+        }
+ 
+        .mom-modal-overlay-spinner {
+            background-image: url(common/icons/grahCircleLoader80R.SVG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: spin 1s infinite linear;
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            z-index: 1500;
+        }
+ 
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+ 
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+ 
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+ 
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    
+</head>
+<body dev ng-keydown="$root.keyDown($event)">
+	
+    <div id="initialBusyIndicator" class="mom-modal-overlay mom-modal-overlay-displayed">
+		<div class="mom-modal-overlay-spinner"></div>
+	</div>
+    
+    <div class="table-layout fullh">
+        <div class="table-row" ng-show="true && $root.layoutMode === 'normal'">
+            <header class="top">
+                <sit-header></sit-header>
+            </header>
+        </div>
+        <div ui-view="FullScreenView" ng-show="$root.layoutMode === 'full'">
+        </div>
+        <div class="table-row fullh" ng-show="$root.layoutMode === 'normal'">
+			
+            <div data-ng-include="'common/layout/shell/shell.tpl.html'" class="canvas-container"></div>
+			
+        </div>
+    </div>
+    <sit-help-window></sit-help-window>
+    <sit-overlay sit-modalid="globalMsgOverlayId" sit-modaltext="$root.globalOverlayData.text" data-sit-title="$root.globalOverlayData.title" sit-buttons="$root.globalOverlayData.buttons"></sit-overlay>
+    <sit-dialog sit-modalid="globalDialogId" sit-title="$root.globalDialogData.title" sit-templatedata="$root.globalDialogData.templatedata" sit-templateuri="$root.globalDialogData.templateuri" sit-buttons="$root.globalDialogData.buttons">
+    </sit-dialog>
+    <sit-busy-indicator ng-show="$root.layoutMode === 'normal'" sit-icon="$root.globalBusyIndicator.icon" sit-message="" sit-delay="$root.globalBusyIndicator.delay" indicatorid="{{$root.globalBusyIndicator.id}}"></sit-busy-indicator>
+    <div data-sit-notification-tile data-sit-tile-title="'Info'" data-sit-tile-content="''" data-sit-tile-type="'info'" data-sit-tile-counter="" data-sit-tile-click="" data-sit-tile-popup="true" data-sit-tile-global="true" data-sit-tile-position="'topRight'" id="appLevelNotificationTile"></div>
+    
+    
+	<script src="common/scripts/jquery.js"></script>
+	<script src="common/scripts/jquery-ui.js"></script>
+	<script src="common/scripts/bootstrap.js"></script>
+	<script src="common/scripts/underscore.js"></script>
+	<script src="common/scripts/moment.js"></script>
+	<script src="common/scripts/moment-with-locales.js"></script>
+	<script src="common/scripts/moment-timezone-with-data.js"></script>
+	<script src="common/scripts/d3.js"></script>
+	<script src="common/scripts/nv.d3.js"></script>
+	<script src="common/scripts/dagre-d3.js"></script>
+	<script src="common/scripts/highlight.pack.js"></script>
+	<script src="common/scripts/angular.js"></script>
+	<script src="common/scripts/angular-animate.js"></script>
+	<script src="common/scripts/angular-route.js"></script>
+	<script src="common/scripts/angular-sanitize.js"></script>
+	<script src="common/scripts/angular-cookies.js"></script>
+	<script src="common/scripts/angular-messages.js"></script>
+	<script src="common/scripts/angular-message-format.js"></script>
+	<script src="common/scripts/angular-mocks.js"></script>
+	<script src="common/scripts/angular-ui-router.js"></script>
+	<script src="common/scripts/angular-resource.js"></script>
+	<script src="common/scripts/angular-translate.js"></script>
+	<script src="common/scripts/angular-translate-loader-partial.js"></script>
+	<script src="common/scripts/sortable.js"></script>
+	<script src="common/scripts/codemirror.js"></script>
+	<script src="common/scripts/codemirror-mode-javascript.js"></script>
+	<script src="common/scripts/codemirror-show-hint.js"></script>
+	<script src="common/scripts/ui-bootstrap-tpls.js"></script>
+	<script src="common/scripts/angular-moment.js"></script>
+	<script src="common/scripts/angular-nvd3.js"></script>
+	<script src="common/scripts/ng-grid-2.0.14.debug.js"></script>
+	<script src="common/scripts/angular-gridster.js"></script>
+	<script src="common/scripts/angular-ui-tree.js"></script>
+	<script src="common/scripts/ui-codemirror.js"></script>
+	<script src="common/scripts/swac-base.js"></script>
+	<script src="common/scripts/swac-boot.js"></script>
+	<script src="common/scripts/swac-container.js"></script>
+	<script src="common/scripts/swac-wiring.js"></script>
+	<script src="common/scripts/swac-utils.js"></script>
+	<script src="common/scripts/swac-service-cycle.js"></script>
+	<script src="common/scripts/swac-umc.svc.js"></script>
+	<script src="common/scripts/sit-signal-manager.js"></script>
+	<script src="common/scripts/polyfill.js"></script>
+	<script src="common/scripts/ckeditor/ckeditor.js"></script>
+	<script src="common/scripts/pdfjs/pdf.js"></script>
+	<script src="common/scripts/pdfjs/pinch-zoom.js"></script>
+	
+	<script src="app.js"></script>
+
+	
+	<script src="common/common.tpls.js"></script>
+	<script src="common/services/services.js"></script>
+	<script src="common/services/administration/administration.js"></script>
+	<script src="common/services/component/component.js"></script>
+	<script src="common/services/documentation/documentation.js"></script>
+	<script src="common/services/electronicSignature/electronicSignature.js"></script>
+	<script src="common/services/engineeringData/engineeringData.js"></script>
+	<script src="common/services/filterPersonalization/filterPersonalization.js"></script>
+	<script src="common/services/globalization/globalization.js"></script>
+	<script src="common/services/governance/governance.js"></script>
+	<script src="common/services/modelDriven/modelDriven.js"></script>
+	<script src="common/services/personalization/personalization.js"></script>
+	<script src="common/services/QoS/QoS.js"></script>
+	<script src="common/services/runtime/runtime.js"></script>
+	<script src="common/services/swac/swac.js"></script>
+	<script src="common/services/tagsManager/tagsManager.js"></script>
+	<script src="common/config/config.js"></script>
+	<script src="common/layout/component/component.js"></script>
+	<script src="common/layout/home/home.js"></script>
+	<script src="common/layout/homeCard/homeCard.js"></script>
+	<script src="common/layout/homeState/homeState.js"></script>
+	<script src="common/layout/homeTile/homeTile.js"></script>
+	<script src="common/layout/settings/settings.js"></script>
+	<script src="common/layout/shell/shell.js"></script>
+	<script src="common/layout/swac/swac.js"></script>
+	<script src="common/layout/unauthorized/unauthorized.js"></script>
+	<script src="common/blueprints/executeCommandTemplate/executeCommandTemplate.js"></script>
+	<script src="common/blueprints/masterDetailsTemplate/masterDetailsTemplate.js"></script>
+	<script src="common/blueprints/overviewTemplate/overviewTemplate.js"></script>
+	<script src="common/blueprints/singleEntityTemplate/singleEntityTemplate.js"></script>
+	<script src="common/components/buttonBox/buttonBox.js"></script>
+	<script src="common/components/documentation/documentation.js"></script>
+	<script src="common/components/header/header.js"></script>
+	<script src="common/components/mashup/mashup.js"></script>
+	<script src="common/components/task/task.js"></script>
+	<script src="common/widgets/accordion/accordion.js"></script>
+	<script src="common/widgets/advancedSelect/advancedSelect.js"></script>
+	<script src="common/widgets/auditTrail/auditTrail.js"></script>
+	<script src="common/widgets/baseWidget/baseWidget.js"></script>
+	<script src="common/widgets/bindDynamicHtml/bindDynamicHtml.js"></script>
+	<script src="common/widgets/breadcrumb/breadcrumb.js"></script>
+	<script src="common/widgets/busyIndicator/busyIndicator.js"></script>
+	<script src="common/widgets/carousel/carousel.js"></script>
+	<script src="common/widgets/characteristicRepr/characteristicRepr.js"></script>
+	<script src="common/widgets/checkbox/checkbox.js"></script>
+	<script src="common/widgets/codeHighlight/codeHighlight.js"></script>
+	<script src="common/widgets/columnConfigurator/columnConfigurator.js"></script>
+	<script src="common/widgets/commandBar/commandBar.js"></script>
+	<script src="common/widgets/component/component.js"></script>
+	<script src="common/widgets/dataSource/dataSource.js"></script>
+	<script src="common/widgets/datePicker/datePicker.js"></script>
+	<script src="common/widgets/dateTimePicker/dateTimePicker.js"></script>
+	<script src="common/widgets/dialog/dialog.js"></script>
+	<script src="common/widgets/dialogButton/dialogButton.js"></script>
+	<script src="common/widgets/documentViewer/documentViewer.js"></script>
+	<script src="common/widgets/electronicSignature/electronicSignature.js"></script>
+	<script src="common/widgets/email/email.js"></script>
+	<script src="common/widgets/entityPicker/entityPicker.js"></script>
+	<script src="common/widgets/fileUpload/fileUpload.js"></script>
+	<script src="common/widgets/filter/filter.js"></script>
+	<script src="common/widgets/filterBar/filterBar.js"></script>
+	<script src="common/widgets/filterPanel/filterPanel.js"></script>
+	<script src="common/widgets/flow/flow.js"></script>
+	<script src="common/widgets/flyMenu/flyMenu.js"></script>
+	<script src="common/widgets/flyout/flyout.js"></script>
+	<script src="common/widgets/fullscreenDialog/fullscreenDialog.js"></script>
+	<script src="common/widgets/graph/graph.js"></script>
+	<script src="common/widgets/grid/grid.js"></script>
+	<script src="common/widgets/headerButton/headerButton.js"></script>
+	<script src="common/widgets/homeCard/homeCard.js"></script>
+	<script src="common/widgets/homeTile/homeTile.js"></script>
+	<script src="common/widgets/iconPicker/iconPicker.js"></script>
+	<script src="common/widgets/iconPreview/iconPreview.js"></script>
+	<script src="common/widgets/itemCollectionViewer/itemCollectionViewer.js"></script>
+	<script src="common/widgets/label/label.js"></script>
+	<script src="common/widgets/mduiBreadcrumb/mduiBreadcrumb.js"></script>
+	<script src="common/widgets/momIcon/momIcon.js"></script>
+	<script src="common/widgets/multiSelect/multiSelect.js"></script>
+	<script src="common/widgets/navigationLink/navigationLink.js"></script>
+	<script src="common/widgets/nervebox/nervebox.js"></script>
+	<script src="common/widgets/notificationTile/notificationTile.js"></script>
+	<script src="common/widgets/numeric/numeric.js"></script>
+	<script src="common/widgets/overlay/overlay.js"></script>
+	<script src="common/widgets/pager/pager.js"></script>
+	<script src="common/widgets/pagination/pagination.js"></script>
+	<script src="common/widgets/password/password.js"></script>
+	<script src="common/widgets/popUpPanel/popUpPanel.js"></script>
+	<script src="common/widgets/propertyGrid/propertyGrid.js"></script>
+	<script src="common/widgets/radio/radio.js"></script>
+	<script src="common/widgets/richRadio/richRadio.js"></script>
+	<script src="common/widgets/select/select.js"></script>
+	<script src="common/widgets/sidebar/sidebar.js"></script>
+	<script src="common/widgets/SidePanel/sidePanel.js"></script>
+	<script src="common/widgets/sortableAccordion/sortableAccordion.js"></script>
+	<script src="common/widgets/status/status.js"></script>
+	<script src="common/widgets/switchButton/switchButton.js"></script>
+	<script src="common/widgets/table/table.js"></script>
+	<script src="common/widgets/tabset/tabset.js"></script>
+	<script src="common/widgets/taglist/taglist.js"></script>
+	<script src="common/widgets/tagsManager/tagsManager.js"></script>
+	<script src="common/widgets/taskContainer/taskContainer.js"></script>
+	<script src="common/widgets/text/text.js"></script>
+	<script src="common/widgets/textarea/textarea.js"></script>
+	<script src="common/widgets/textEditor/textEditor.js"></script>
+	<script src="common/widgets/tileConfigurator/tileConfigurator.js"></script>
+	<script src="common/widgets/tiles/tiles.js"></script>
+	<script src="common/widgets/timePicker/timePicker.js"></script>
+	<script src="common/widgets/toolbox/toolbox.js"></script>
+	<script src="common/widgets/tristateCheckbox/tristateCheckbox.js"></script>
+	<script src="common/widgets/typeahead/typeahead.js"></script>
+	<script src="common/widgets/validator/validator.js"></script>
+	<script src="common/widgets/viewBar/viewBar.js"></script>
+	<script src="common/widgets/workInstructionInstanceViewer/workInstructionInstanceViewer.js"></script>
+
+	
+	
+	
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/module.js"></script>
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/module.js"></script>
+	
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/TeamScreen-add-ctrl.js"></script>
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/TeamScreen-edit-ctrl.js"></script>
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/TeamScreen-list-ctrl.js"></script>
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/TeamScreen-select-ctrl.js"></script>
+	<script src="Siemens.Mom.Presales.Training.TrainingApp/modules/Team/TeamScreen-srv.js"></script>
+	
+    
+</body>
+</html>

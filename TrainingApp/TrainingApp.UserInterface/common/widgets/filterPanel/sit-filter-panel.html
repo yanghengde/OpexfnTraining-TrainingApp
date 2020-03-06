@@ -1,0 +1,48 @@
+<div id="filter-panel" class="simple-filter-panel">
+    <div class="header">
+        <div class="header-text">
+            {{'filterPanel.title' | translate}}
+        </div>
+        <div class="filter-panel-close-btn">
+            <div class="filter-panel-close-img filter-close-button"
+                 sit-class="filter-close-button"
+                 sit-mom-icon="filterPanelCtrl.closeIcon"
+                 ng-click="filterPanelCtrl.close()">
+            </div>
+        </div>
+    </div>
+
+    <div id="filters" class="simple-filter-clauses">
+        <div class="filter-commands-buttons" ng-if="filterPanelCtrl.userPrefId && filterPanelCtrl.userPrefId !== '' && filterPanelCtrl.userPrefId !== undefined">
+            <sit-command-bar sit-commands="filterPanelCtrl.commandButtons" sit-layout="contextual"></sit-command-bar>
+        </div>
+
+        <sit-property-grid sit-id="simple-filter-name" sit-layout="Vertical" sit-type="" sit-mode="view">
+            <sit-property sit-id="filterName" sit-widget="sit-text" sit-value="filterPanelCtrl.filterData.filterName">{{'filterPanel.filterName' | translate}}:</sit-property>
+        </sit-property-grid>
+
+        <sit-property-grid sit-id="simple-filters" sit-layout="Vertical" sit-type="" sit-mode="edit">
+            <sit-property ng-repeat="filter in filterPanelCtrl.filterData.filterClauses" sit-id="{{filter.id}}" ng-if="filter.widget"
+                          sit-widget="{{filter.widget}}"
+                          sit-value="filter.value"
+                          sit-options="filter.options"
+                          sit-to-display="filter.toDisplay"
+                          sit-to-keep="filter.toKeep"
+                          sit-change="filter.onChange"
+                          sit-widget-attributes="filter.widgetAttributes"
+                          sit-selected-string="filter.value">{{filter.displayName}}:</sit-property>
+        </sit-property-grid>
+    </div>
+
+    <div class="action-button-footer">
+        <div class="action-buttons">
+            <button class="bottom-action-button" title="{{'filterPanel.reset' | translate}}" ng-click="filterPanelCtrl.reset()">
+                <span data-internal-type="text-container">{{'filterPanel.reset' | translate}}</span>
+            </button>
+            <button class="bottom-action-button last-action-button" title="{{'filterPanel.apply' | translate}}" ng-click="filterPanelCtrl.apply(filterPanelCtrl.filterData.filterClauses)">
+                <span data-internal-type="text-container">{{'filterPanel.apply' | translate}}</span>
+            </button>
+
+        </div>
+    </div>
+</div>

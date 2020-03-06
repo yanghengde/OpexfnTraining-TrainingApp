@@ -1,0 +1,43 @@
+<sit-side-panel sit-title="{{vm.sidepanelConfig.title}}"
+                sit-messages="vm.sidepanelConfig.messages"
+                sit-actions="vm.sidepanelConfig.actionButtons"
+                sit-close="vm.sidepanelConfig.closeButton">
+
+    <div style="width:100%;height:100%" ng-if="vm.renderComplete">
+
+        <sit-property-grid sit-id="itemPropertyGrid"
+                           sit-layout="Vertical"
+                           sit-type="Fluid"
+                           sit-columns="1"
+                           sit-mode="edit"
+                           sit-form="vm.forms">
+            <div ng-repeat="obj in vm.displayData">
+                <sit-property-group ng-if="obj.container === 'g'"
+                                    sit-id="{{obj.groupDetails.id}}"
+                                    sit-name="obj.groupDetails.heading"
+                                    sit-collapsible="obj.groupDetails.collapsible">
+                    <sit-property ng-repeat="prop in obj.fields track by prop.id"
+                                  sit-id="{{prop.name}}"
+                                  sit-widget="{{prop.widget}}"
+                                  sit-change="vm.DigestEval"
+                                  ng-disabled="prop.readOnly || vm.ngDisableItem[prop.name].value"
+                                  sit-widget-attributes="prop.widgetAttributes"
+                                  sit-value="vm.currentItem[prop.name]"
+                                  sit-validation="vm.allValidations[prop.name]">
+                        {{prop.label}}:
+                    </sit-property>
+                </sit-property-group>
+                <sit-property ng-if="obj.container === 'f'"
+                              sit-id="{{obj.name}}"
+                              sit-widget="{{obj.widget}}"
+                              sit-change="vm.DigestEval"
+                              ng-disabled="obj.readOnly || vm.ngDisableItem[obj.name].value"
+                              sit-widget-attributes="obj.widgetAttributes"
+                              sit-value="vm.currentItem[obj.name]"
+                              sit-validation="vm.allValidations[obj.name]">
+                    {{obj.label}}:
+                </sit-property>
+            </div>
+        </sit-property-grid>
+    </div>
+</sit-side-panel>

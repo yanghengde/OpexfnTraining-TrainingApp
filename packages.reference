@@ -1,0 +1,27 @@
+<referenceManager version="2.3">
+  <integrity projectVersion="01.02.01">
+    <reference>
+      <name>Siemens.Mom.Presales.Training.TrainingLibView</name>
+      <version>01.00.00</version>
+      <type>Library</type>
+    </reference>
+    <reference>
+      <name>Siemens.Mom.Presales.Training.TrainingLib</name>
+      <version>01.02.00</version>
+      <type>Library</type>
+    </reference>
+  </integrity>
+  <functionalblocks projectVersion="01.02.01">
+    <functionalblock>
+      <name>Siemens.Mom.Presales.Training.TrainingLibView</name>
+      <version>01.00.00</version>
+      <type>Library</type>
+    </functionalblock>
+    <functionalblock>
+      <name>Siemens.Mom.Presales.Training.TrainingLib</name>
+      <version>01.02.01</version>
+      <type>Library</type>
+    </functionalblock>
+  </functionalblocks>
+  <projects projectVersion="01.02.01" />
+</referenceManager>

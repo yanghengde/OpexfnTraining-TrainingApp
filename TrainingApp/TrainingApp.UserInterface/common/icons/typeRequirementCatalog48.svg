@@ -1,0 +1,23 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.71" y1="45.846" x2="45.072" y2="7.092" gradientTransform="matrix(1, 0, 0, -1, 0, 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.45" y1="28.45" x2="33.45" y2="8.45" gradientTransform="matrix(1, 0, 0, -1, 1, 47.9)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g842">
+    <path id="path35" d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" fill="url(#linear-gradient)"/>
+    <path id="path37" d="M47,43.5H1V6A2.5,2.5,0,0,1,3.5,3.5H14.43a2.493,2.493,0,0,1,2.08,1.114L19.768,9.5H47Zm-45-1H46v-32H19.232L15.678,5.168A1.5,1.5,0,0,0,14.43,4.5H3.5A1.5,1.5,0,0,0,2,6Z" fill="#4e4a48"/>
+    <path d="M27.1,19.4a3.693,3.693,0,0,0,1.1-2.7,3.7,3.7,0,0,0-7.4,0,3.864,3.864,0,0,0,1.1,2.7H14.5v7.4a3.631,3.631,0,0,1,2.6-1.1,3.7,3.7,0,1,1,0,7.4A3.467,3.467,0,0,1,14.5,32v7.5h20v-20H27.1Z" stroke="#147391" stroke-miterlimit="10" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

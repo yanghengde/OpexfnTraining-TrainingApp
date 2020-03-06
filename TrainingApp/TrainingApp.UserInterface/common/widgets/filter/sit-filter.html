@@ -1,0 +1,146 @@
+<div class="filter-container">
+    <ng-form name="filterForm">
+        <div ng-if="FilterCtrl.userPrefId">
+            <div class="filter-commands-buttons">
+                <sit-command-bar sit-commands="FilterCtrl.commandButtons" sit-layout="contextual"></sit-command-bar>
+            </div>
+            <div>
+                <label>{{'filterPanel.filterName' | translate}} :</label> {{FilterCtrl.filterData.filterName}}
+            </div>
+        </div>
+
+        <table class="sit-filter-table">
+            <thead>
+                <tr>
+                    <td class="add-remove"></td>
+                    <td class="add-remove"></td>
+                    <td class="filter-group" ng-if="FilterCtrl.allowGrouping" ng-class="FilterCtrl.isGroupingEnabled === true ? 'enabled' : 'disabled'" ng-click="FilterCtrl.group()">
+                        <span title="{{'common.group' | translate}}">
+                            <em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.linkIcon" class="link-unlink-icon"></em>
+                        </span>
+                    </td>
+                    <td ng-if="FilterCtrl.lastGrpId !== -1" class="grp"> </td>
+                    <td class="logical-operator">{{'common.and-or' | translate}}</td>
+                    <td class="field">{{'common.field' | translate}}</td>
+                    <td class="operator">{{'common.operator' | translate}}</td>
+                    <td>{{'common.value' | translate}}</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="clause in FilterCtrl.clauses">
+                    <td class="add-remove" ng-click="FilterCtrl.addClause(clause)"><em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.addBtn"></em></td>
+                    <td class="add-remove" ng-click="FilterCtrl.removeClause(clause)"><em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.minusBtn"></em></td>
+                    <td class="filter-group" ng-if="FilterCtrl.allowGrouping" ng-init="clause.index = $index">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" ng-model="clause.selected" ng-change="FilterCtrl.clauseSelectionChange()" />
+                            <span class="checkbox-match"></span>
+                        </div>
+                    </td>
+                    <td ng-if="FilterCtrl.lastGrpId !== -1" class="{{clause.grpClass}}">
+                        <span ng-if="clause.grpClass && clause.grpClass.indexOf('grp-start') !== -1" ng-click="FilterCtrl.unGroup(clause.grpId)" title="{{'common.ungroup' | translate}}" class="ungrp">
+                            <em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.unLinkIcon" class="link-unlink-icon"></em>
+                        </span>
+                    </td>
+                    <td class="logical-operator">
+                        <select ng-model="clause.andOr" ng-hide="$index===0">
+                            <option ng-repeat="option in FilterCtrl.operatorOptions" value="{{option.id}}">{{option.value}}</option>
+                        </select>
+                    </td>
+
+                    <td class="field">
+                        <select ng-model="clause.filterField"
+                                ng-options="filterField.displayName || filterField.field for filterField in FilterCtrl.sitFilterFields"
+                                ng-change="FilterCtrl.fieldChanged('{{clause.filterField.type}}', clause)"></select>
+                    </td>
+                    <td class="operator">
+                        <select ng-model="clause.operator"
+                                ng-change="FilterCtrl.operatorChanged(clause)"
+                                ng-options="operator.id as operator.display for operator in FilterCtrl.getOperators(clause)"></select>
+                    </td>
+
+                    <td class="value-field" ng-switch="clause.widget" ng-if="!(clause.operator==='isnull' || clause.operator==='isnotnull' || clause.operator==='any' || clause.operator==='notany') && !clause.showValueField">
+                        <sit-numeric ng-switch-when="sit-numeric"
+                                     ng-readonly="false"
+                                     data-sit-value="clause.value"
+                                     data-sit-validation="clause.validation"></sit-numeric>
+                        <sit-text ng-switch-when="sit-text"
+                                  ng-readonly="false"
+                                  data-sit-value="clause.value"
+                                  data-sit-validation="clause.validation"></sit-text>
+                        <sit-select ng-switch-when="sit-select"
+                                    ng-readonly="false"
+                                    data-sit-value="clause.selectValue"
+                                    data-sit-options="clause.filterField.selectValues"
+                                    data-sit-to-keep="'id'"
+                                    data-sit-to-display="'name'"
+                                    data-sit-validation="clause.validation"></sit-select>
+                        <sit-entity-picker ng-switch-when="sit-entity-picker"
+                                           ng-readonly="false"
+                                           data-sit-selected-object="clause.selectValue"
+                                           data-sit-datasource="clause.filterField.selectValues"
+                                           data-sit-validation="clause.validation"
+                                           data-sit-placeholder="clause.placeHolder">
+                        </sit-entity-picker>
+                        <sit-multi-select ng-switch-when="sit-multi-select"
+                                          data-sit-options="clause.filterField.selectValues"
+                                          data-sit-selected-string="clause.value"
+                                          data-sit-split-list="true"
+                                          data-sit-placeholder="FilterCtrl.multiSelectPlaceHolder"
+                                          data-sit-validation="clause.validation"></sit-multi-select>
+                        <sit-checkbox ng-switch-when="sit-checkbox"
+                                      ng-readonly="false"
+                                      data-sit-value="clause.checkValue"
+                                      data-sit-validation="clause.validation"></sit-checkbox>
+                        <sit-datepicker ng-switch-when="sit-datepicker"
+                                        ng-readonly="false"
+                                        data-sit-value="clause.value"
+                                        data-sit-append-to-body="true"
+                                        data-sit-format="FilterCtrl.dateFormat"
+                                        data-sit-validation="clause.validation"></sit-datepicker>
+                        <sit-date-time-picker ng-switch-when="sit-date-time-picker"
+                                              ng-readonly="false"
+                                              sit-value="clause.value"
+                                              sit-format="FilterCtrl.dateTimeOptions.format"
+                                              sit-show-seconds="FilterCtrl.dateTimeOptions.showSeconds"
+                                              sit-validation="clause.validation"></sit-date-time-picker>
+                    </td>
+
+
+                    <td class="value-field" ng-if="!(clause.operator==='isnull' || clause.operator==='isnotnull' || clause.operator==='any' || clause.operator==='notany') && clause.showValueField ">
+
+                        <sit-select ng-readonly="false"
+                                    data-sit-value="clause.selectValueColumn"
+                                    data-sit-options="clause.filterField.selectValueColumns"
+                                    data-sit-to-keep="'id'"
+                                    data-sit-to-display="'name'"
+                                    data-sit-validation="clause.validation"></sit-select>
+
+                    </td>
+
+                    <td class="match-case" ng-if="FilterCtrl.isMatchCaseShown">
+                        <div class="custom-checkbox" ng-if="!(clause.operator==='isnull' || clause.operator==='isnotnull' || clause.operator==='any' || clause.operator==='notany') && clause.filterField.type==='string' && clause.filterField.showMatchCase!== false && !FilterCtrl.sitFilterServerSide && FilterCtrl.isMatchCaseShown">
+                            <input type="checkbox" ng-model="clause.matchCase" />
+                            <span class="checkbox-match">{{'common.match-case' | translate}}</span>
+                        </div>
+                    </td>
+                    <td class="value-icon" ng-if="!(clause.operator==='isnull' || clause.operator==='isnotnull' || clause.operator==='any' || clause.operator==='notany') && clause.filterField.selectValueColumns.length > 0" ng-click="FilterCtrl.canShowValueField(clause)">
+                        <em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.constBtn" ng-class="!clause.showValueField === true ? 'switch-button switch-button-select' : 'switch-button'" title="{{'filter.constant' | translate}}"></em>
+                    </td>
+                    <td class="value-icon" ng-if="!(clause.operator==='isnull' || clause.operator==='isnotnull' || clause.operator==='any' || clause.operator==='notany') && clause.filterField.selectValueColumns.length > 0" ng-click="FilterCtrl.canShowValueColumnField(clause)">
+                        <em sit-class="pl-svg-icon" sit-mom-icon="FilterCtrl.listBtn" ng-class="clause.showValueField === true ? 'switch-button switch-button-select' : 'switch-button'" title="{{'filter.field' | translate}}"></em>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+            <div class="pl-icon-link filter-add" ng-click="FilterCtrl.addClause();">
+                <div class="pl-icon-link-container" sit-class="pl-icon-link-svg" sit-mom-icon="FilterCtrl.addBtn"></div>
+                <div><a href="" class="pl-simple-link"> {{'filter.add-new-clause' | translate}}</a></div>
+            </div>       
+
+        <br />
+        <button ng-if="!FilterCtrl.sitHideApplyReset" ng-click="FilterCtrl.reset();" class="sit-filter-button-reset">{{'common.reset' | translate}}</button>
+        <button ng-if="!FilterCtrl.sitHideApplyReset" ng-click="FilterCtrl.apply();" ng-disabled="filterForm.$invalid" class="sit-filter-button-apply">{{'common.apply' | translate}}</button>
+    </ng-form>
+</div>

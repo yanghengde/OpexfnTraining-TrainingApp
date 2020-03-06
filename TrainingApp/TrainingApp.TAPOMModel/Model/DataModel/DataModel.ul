@@ -1,0 +1,21 @@
+VERSION '01.13'
+
+[@Guid(b3064374-82bc-472c-ab3c-74ed67bc4573)]
+[@GuidRef(235e63ba-50fe-4e3e-930c-b2bad6d45568, b206a07f-4182-4b9a-b64e-18ccf4bd3a13)]
+ENTITYLINK Team TO Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.DataModel.Team
+
+[@AddedOnMinorVersion=01.01.00]
+[@Guid(1204d959-90e2-4034-bf1e-50d59cd75d5f)]
+[@GuidRef(38460052-0d01-4f98-be99-1cca0536ba3b, 08040a61-db3a-440c-a37e-2de404a6fd9c)]
+ENTITYLINK vTeam TO Siemens.Mom.Presales.Training.Training.TrainingLibView.TNModel.DataModel.vTeam
+
+[@AddedOnMinorVersion=01.02.00]
+[@Guid(5a10e5db-8c9c-49cc-bb12-5c36a0b06df8)]
+[@GuidRef(235e63ba-50fe-4e3e-930c-b2bad6d45568, 7ebac0e9-cfca-4639-8890-3bd9ebabd773)]
+ENTITYLINK Person TO Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.DataModel.Person
+
+[@AddedOnMinorVersion=01.02.00]
+[@Guid(f8b9f395-d821-4e9a-a0cf-caf6dba0b163)]
+[@GuidRef(235e63ba-50fe-4e3e-930c-b2bad6d45568, 2afba596-4865-4a06-bae5-644f9687bc59)]
+ENTITYLINK TeamGroup TO Siemens.Mom.Presales.Training.MasterData.TrainingLib.MSModel.DataModel.TeamGroup
+

@@ -1,0 +1,67 @@
+<!-- item.templateUrl (e.g. group-template.html) is the intended template url to be loaded inside accordion -->
+<!-- userTemplate.html is the html that holds the item.templateUrl as the content and rendered inside homeTemplate.html.
+    It acts like a wrapper for item.templateUrl -->
+
+<uib-accordion class="sortHead" close-others="sortAccCtrl.closeOthers">
+    <ul class="nestingAccordionCustom" ui-sortable="sortAccCtrl.sortableOptions" ng-model="sortAccCtrl.items">
+        <li ng-repeat="item in sortAccCtrl.items">
+            <script type="text/ng-template" id="userTemplate.html" ng-bind="item.templateUrl">
+                <div ng-include="item.templateUrl" /> <!-- Passing the html template corresponding to heading -->
+            </script>
+            <div uib-accordion-group class="accordion_content" is-disabled="sortAccCtrl.status.isFirstDisabled">
+                <uib-accordion-heading>
+                    <span class="panel_header_text">{{item.headerName}}<em class="accordion_warning fa {{item.warning.icon}}" ng-if="item.warning.show"></em></span>
+                    <span class="accordion_buttons" ng-repeat="btn in item.buttons">
+                        <em ng-class="['fa ', btn.icon, {'disable-button' : sortAccCtrl.readOnly}]" ng-click="btn.callBackMethod(sortAccCtrl.items, btn.callBackParam)" title="{{btn.name}}" />
+                    </span>
+                </uib-accordion-heading>
+                <div ng-include="'userTemplate.html'" init="{{readOnly=sortAccCtrl.readOnly}}"></div>
+            </div>
+        </li>
+    </ul>
+</uib-accordion>
+<style>
+    span[uib-accordion-header] {
+        height: 24px;
+        line-height: 24px;
+    }
+
+    .nestingAccordionCustom {
+        list-style: none;
+        margin-left: -20px;
+        margin-bottom: -15px;
+    }
+
+    nestingAccordionCustom li {
+        padding-top: 5px;
+    }
+
+    .accordion_buttons {
+        float: right;
+    }
+
+        .accordion_buttons i {
+            margin: 0 10px;
+        }
+
+    .accordion_content {
+        margin-left: -20px;
+        margin-top: 4px !important;
+        border-color: #ddd;
+    }
+
+    .accordion_icons {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+
+    .accordion_warning {
+        color: orange;
+        padding-left: 5px;
+    }
+
+    .disable-button {
+        pointer-events: none;
+        opacity: 0.2;
+    }
+</style>

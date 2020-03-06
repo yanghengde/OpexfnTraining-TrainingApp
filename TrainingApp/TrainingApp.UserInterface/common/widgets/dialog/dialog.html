@@ -1,0 +1,98 @@
+    <div class="sit-dialog">
+        <div class="modal dialog-modal" id={{Dialog.modalid}} tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+            <!--[Fix]Bug - 8894. The duplicate template code is the fix for slow dialog rendering in IE.-->
+            <div class="modal-dialog dialog-dialog dialog-dialog-centered" ng-if="Dialog.positioning == 'centered'">
+                <div data-internal-type="input-dialog-border" class="dialog-dialogborder">
+                    <div data-internal-type="input-dialog-content" class="dialog-content">
+
+                        <div data-internal-type="input-dialog-header" class="dialog-header">
+                            <div class="dialog-header-text">{{Dialog.dialogTitle}}</div>
+                            <div class="dialog-close-btn" ng-if="Dialog.isCloseButtonShown" ng-click="Dialog.closeDialog()" title="{{Dialog.closeButtonTooltip}}">
+                                <span class="dialog-button" style="display:none" sit-class="dialog-button" sit-mom-icon="Dialog.closeIcon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div data-internal-type="input-dialog-body" class="dialog-body">
+                            <div class="row">
+                                <div class="dialog-body-overflow">
+                                    <ng-include id="{{Dialog.modalid}}-includeTemplate" ng-if="Dialog.dialogTemplate" src="Dialog.dialogTemplate"> </ng-include>
+                                    <div ng-if="!Dialog.dialogTemplate">
+                                        <div class="dialog-information-{{Dialog.templatedata.layout}}" ng-if="Dialog.templatedata.information">
+                                            <div ng-bind-html="Dialog.templatedata.information"></div>
+                                        </div>
+                                        <div>
+                                            <sit-property-grid sit-id="{{Dialog.modalid}}_dialog_property_grid"
+                                                               sit-data="Dialog.templatedata.data"
+                                                               sit-layout="{{Dialog.templatedata.layout}}"
+                                                               sit-type="Fixed"
+                                                               sit-mode="{{Dialog.templatedata.mode ? Dialog.templatedata.mode : 'edit'}}"
+                                                               sit-columns="1">
+                                            </sit-property-grid>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dialog-alert-container-{{Dialog.templatedata.layout}}" ng-hide="Dialog.isValid.value">
+                                    <div class="alert alert-warning dialog-alert">
+                                        <em class="fa fa-warning "></em>
+                                        <span class="alert-title">{{'dialog.validator.warningTitle'|translate}} </span>
+                                        {{'dialog.validator.warningMessage'|translate}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-internal-type="input-dialog-footer" class="dialog-footer">
+                            <div class="dialog-div-button" ng-if="button.displayName" ng-repeat="button in Dialog.buttons.slice().reverse()" ng-class="{'last-dialog-button':($last && Dialog.buttons.length)}">
+                                <sit-dialog-button sit-button="button" />
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+            <div class="modal-dialog dialog-dialog dialog-dialog-notcentered" ng-if="Dialog.positioning == 'notcentered'">
+                <div data-internal-type="input-dialog-border" class="dialog-dialogborder">
+                    <div data-internal-type="input-dialog-content" class="dialog-content">
+                        <div data-internal-type="input-dialog-header" class="dialog-header">
+                            <div class="dialog-header-text">{{Dialog.dialogTitle}}</div>
+                            <div class="dialog-close-btn" ng-if="Dialog.isCloseButtonShown" ng-click="Dialog.closeDialog()" title="{{Dialog.closeButtonTooltip}}">
+                                <span class="dialog-button" style="display:none" sit-class="dialog-button" sit-mom-icon="Dialog.closeIcon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div data-internal-type="input-dialog-body" class="dialog-body">
+                            <div class="row">
+                                <div class="dialog-body-overflow">
+                                    <ng-include id="{{Dialog.modalid}}-includeTemplate" ng-if="Dialog.dialogTemplate" src="Dialog.dialogTemplate"> </ng-include>
+                                    <div ng-if="!Dialog.dialogTemplate">
+                                        <div class="dialog-information-{{Dialog.templatedata.layout}}" ng-if="Dialog.templatedata.information">
+                                            <div ng-bind-html="Dialog.templatedata.information"></div>
+                                        </div>
+                                        <div>
+                                            <sit-property-grid sit-id="{{Dialog.modalid}}_dialog_property_grid"
+                                                               sit-data="Dialog.templatedata.data"
+                                                               sit-layout="{{Dialog.templatedata.layout}}"
+                                                               sit-type="Fixed"
+                                                               sit-mode="{{Dialog.templatedata.mode ? Dialog.templatedata.mode : 'edit'}}"
+                                                               sit-columns="1">
+                                            </sit-property-grid>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dialog-alert-container-{{Dialog.templatedata.layout}}" ng-hide="Dialog.isValid.value">
+                                    <div class="alert alert-warning dialog-alert">
+                                        <em class="fa fa-warning "></em>
+                                        <span class="alert-title">{{'dialog.validator.warningTitle'|translate}} </span>
+                                        {{'dialog.validator.warningMessage'|translate}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-internal-type="input-dialog-footer" class="dialog-footer">
+                            <div class="dialog-div-button" ng-if="button.displayName" ng-repeat="button in Dialog.buttons.slice().reverse()" ng-class="{'last-dialog-button':($last && Dialog.buttons.length)}">
+                                <sit-dialog-button sit-button="button" />
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+        </div>
+    </div>
+

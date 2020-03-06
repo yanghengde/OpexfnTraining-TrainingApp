@@ -1,0 +1,53 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="13.853" y1="23.524" x2="34.147" y2="3.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f9f9f9"/>
+      <stop offset="0.541" stop-color="#e5e5e4"/>
+      <stop offset="0.92" stop-color="#c7c6c6"/>
+      <stop offset="1" stop-color="#bebdbe"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Dark_gray" data-name="Siemens - Dark gray" x1="1.5" y1="30.625" x2="46.5" y2="30.625" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_12" data-name="Sfumatura senza nome 12" x1="37.129" y1="36.88" x2="41.371" y2="41.122" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_12-2" x1="31.689" y1="37.94" x2="33.811" y2="40.062" xlink:href="#Sfumatura_senza_nome_12"/>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <polyline points="33.899 23.771 33.899 2.983 14.101 2.983 14.101 23.771" fill="url(#Sfumatura_senza_nome_2)"/>
+        <polygon points="34.399 23.771 33.399 23.771 33.399 3.483 14.601 3.483 14.601 23.771 13.601 23.771 13.601 2.483 34.399 2.483 34.399 23.771" fill="#474647"/>
+      </g>
+      <g>
+        <polyline points="16.929 23.771 16.929 5.767 31.115 5.988 31.093 23.771" fill="#fff"/>
+        <polygon points="31.593 23.771 30.593 23.771 30.614 6.48 17.429 6.275 17.429 23.771 16.429 23.771 16.429 5.259 31.616 5.496 31.593 23.771" fill="#6f6f6e"/>
+      </g>
+      <rect x="19.05" y="10.402" width="9.9" height="1" fill="#474647"/>
+      <rect x="19.05" y="8.281" width="9.9" height="1" fill="#474647"/>
+    </g>
+    <g>
+      <path d="M34.917,21.5a2.084,2.084,0,0,1,0,4.167H13.083a2.084,2.084,0,0,1,0-4.167H13.6V17.656H5.5a3.5,3.5,0,0,0-3.5,3.5V40.094a3.5,3.5,0,0,0,3.5,3.5h37a3.5,3.5,0,0,0,3.5-3.5V21.156a3.5,3.5,0,0,0-3.5-3.5H34.4V21.5Z" fill="url(#Siemens_-_Dark_gray)"/>
+      <path d="M42.5,16.656H34.4v.5h8.1a4.012,4.012,0,0,1,4,4V40.094a4.012,4.012,0,0,1-4,4H5.5a4.012,4.012,0,0,1-4-4V21.156a4.012,4.012,0,0,1,4-4h8.1v-.5H5.5a4.505,4.505,0,0,0-4.5,4.5V40.094a4.505,4.505,0,0,0,4.5,4.5h37a4.505,4.505,0,0,0,4.5-4.5V21.156A4.505,4.505,0,0,0,42.5,16.656Z" fill="#464646"/>
+      <path d="M42.5,17.656a3.5,3.5,0,0,1,3.5,3.5V40.094a3.5,3.5,0,0,1-3.5,3.5H5.5a3.5,3.5,0,0,1-3.5-3.5V21.156a3.5,3.5,0,0,1,3.5-3.5h8.1v-.5H5.5a4.012,4.012,0,0,0-4,4V40.094a4.012,4.012,0,0,0,4,4h37a4.012,4.012,0,0,0,4-4V21.156a4.012,4.012,0,0,0-4-4H34.4v.5Z" fill="#464646"/>
+      <path d="M33.4,23.771H13.6V22.5h-.518a1.084,1.084,0,0,0,0,2.167H34.917a1.084,1.084,0,0,0,0-2.167H34.4v1.271Z" fill="#fff"/>
+      <path d="M34.917,22a1.584,1.584,0,0,1,0,3.167H13.083a1.584,1.584,0,0,1,0-3.167H13.6v-.5h-.518a2.084,2.084,0,0,0,0,4.167H34.917a2.084,2.084,0,0,0,0-4.167H34.4V22Z" fill="#464646"/>
+      <path d="M34.917,22.5a1.084,1.084,0,0,1,0,2.167H13.083a1.084,1.084,0,0,1,0-2.167H13.6V22h-.518a1.584,1.584,0,0,0,0,3.167H34.917a1.584,1.584,0,0,0,0-3.167H34.4v.5Z" fill="#464646"/>
+      <polygon points="16.429 23.771 16.429 23.771 17.429 23.771 17.429 23.771 16.929 23.771 16.429 23.771" fill="#6f6f6e"/>
+      <polygon points="31.593 23.771 31.093 23.771 30.905 23.771 31.593 23.771 31.593 23.771" fill="#6f6f6e"/>
+    </g>
+    <path d="M24,39.5H5.625a.5.5,0,0,1,0-1H24a.5.5,0,0,1,0,1Z" fill="#464646"/>
+    <g>
+      <circle cx="39.25" cy="39.001" r="3" fill="url(#Sfumatura_senza_nome_12)"/>
+      <path d="M39.25,42.5a3.5,3.5,0,1,1,3.5-3.5A3.5,3.5,0,0,1,39.25,42.5Zm0-6a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,39.25,36.5Z" fill="#464646"/>
+    </g>
+    <g>
+      <circle cx="32.75" cy="39.001" r="1.5" fill="url(#Sfumatura_senza_nome_12-2)"/>
+      <path d="M32.75,41a2,2,0,1,1,2-2A2,2,0,0,1,32.75,41Zm0-3a1,1,0,1,0,1,1A1,1,0,0,0,32.75,38Z" fill="#464646"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="timePickerCtrl.readOnly || timePickerCtrl.ngReadonly">
+    {{timePickerCtrl.value | date: 'shortTime'}}
+</div>
+
+<ng-form name='timePickerForm' ng-if="!(timePickerCtrl.readOnly || timePickerCtrl.ngReadonly)" ng-class="{'isrequired' : (timePickerCtrl.validation.required) && (timePickerCtrl.value===undefined)}">
+    <div class="sitTimePicker" style="border:none;">
+        <div class="property-grid-input-group">
+            <input style="cursor:pointer;" class="property-grid-control validator-control" type="text" readonly="readonly" ng-model="timePickerCtrl.value" value="{{timePickerCtrl.value | date: timePickerCtrl.format}}"
+                   ng-class="{'validator-control-invalid':((timePickerForm.$invalid && timePickerForm.$dirty) || (timePickerForm.$invalid && timePickerForm.$visited)),
+               'validator-control':!((timePickerForm.$invalid && timePickerForm.$dirty) || (timePickerForm.$invalid && timePickerForm.$visited)),
+               'ng-dirty':timePickerForm.$dirty}"
+                   ng-click="timePickerCtrl.ngDisabled || timePickerCtrl.clicked($event)" ng-required="timePickerCtrl.validation.required" sit-form-input-validator
+                   sit-change="timePickerCtrl.sitChange" ng-disabled="timePickerCtrl.ngDisabled" ng-blur="timePickerCtrl.ngBlur()" ng-focus="timePickerCtrl.ngFocus()" />
+            <div class="btn property-grid-addon-icon" ng-click="timePickerCtrl.ngDisabled || timePickerCtrl.clicked($event)" ng-disabled="timePickerCtrl.ngDisabled">
+                <em class="time-picker-icon" sit-mom-icon="{path: 'common/icons/cmdTime24.svg' , size: '16px'}"></em>
+            </div>
+        </div>
+        <div class="dropdown-menu property-grid-time-picker-popup" ng-style="{display: (timePickerCtrl.isOpen && 'block') || 'none'}" ng-disabled="timePickerCtrl.ngDisabled">
+            <div uib-timepicker ng-if="timePickerCtrl.format==='mediumTime'" ng-model="timePickerCtrl.popupValue" show-seconds=true show-meridian="timePickerCtrl.showMeridian"></div>
+            <div uib-timepicker ng-if="!(timePickerCtrl.format==='mediumTime')" ng-model="timePickerCtrl.popupValue" show-meridian="timePickerCtrl.showMeridian"></div>
+            <button type="button" class="btn btn-primary btn-sm pull-left" ng-click="timePickerCtrl.ngDisabled || timePickerCtrl.setClicked($event)">{{'timePicker.set' | translate}}</button>
+            <button type="button" class="btn btn-default btn-sm pull-right" ng-click="timePickerCtrl.ngDisabled || timePickerCtrl.clearTime($event)">{{'timePicker.clear' | translate}}</button>
+        </div>
+    </div>
+</ng-form>

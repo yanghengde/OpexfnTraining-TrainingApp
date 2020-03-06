@@ -1,0 +1,25 @@
+<div class="context-container">
+    <button data-internal-type="menuButton" class="context-dropdown" ng-click="contextCtrl.toggleContextMenu($event)"  title="{{contextCtrl.tooltip}}">
+        <span>
+            <em class="fa {{contextCtrl.menuIcon}} fa-lg" sit-mom-icon="contextCtrl.svgIcon" ng-class= "{momIcon: contextCtrl.svgIcon}"></em>
+            <em class="caret"></em>
+        </span>
+    </button>
+    <div data-internal-type="contextMenu" class="context-menu-container context-menu-hide">
+        <div data-internal-type="menuDropdownIcon" class="context-menu-icon">
+            <em class="fa fa-caret-up fa-2x"></em>
+        </div>
+        <div data-internal-type="contextMenuPopup" class="context-menu drop-shadow">
+            <ul>
+                <li ng-repeat="context in contextCtrl.contextConfig.contexts">
+                    <div class="context-menu-item">
+                        <div class="context-menu-item-icon">
+                        <em class="fa {{context.icon}}" sit-mom-icon ="{path: context.svgIcon, size: '16px' }" ng-class= "{momIcon: context.svgIcon}"></em>
+                        </div>
+                        <div class="context-menu-item-text" title="{{context.tooltip}}">{{context.label}}{{context.separator}} {{context.value}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="sit-pagination-label-layout sit-pagination-label">
+    <div ng-if="pgLabelCtrl.options.selectedItemsCount !== undefined">
+        {{'pagination.selected-items'|translate}}: {{pgLabelCtrl.options.selectedItemsCount}}
+    </div>
+    <div>
+        <span ng-show="(pgLabelCtrl.options.format !== pgLabelCtrl.FORMAT.SHORT)">{{'pagination.showing'|translate}}</span>
+        {{pgLabelCtrl.startValue}} {{'pagination.to'|translate}} {{pgLabelCtrl.endValue}} {{'pagination.of'|translate}}
+        {{pgLabelCtrl.options.totalDataCount}}
+        <span ng-show="(pgLabelCtrl.options.format !== pgLabelCtrl.FORMAT.SHORT)">{{'pagination.entries'|translate}}</span>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="pdf-canvas" ng-click="$ctrl.showFullScreen()">
+    <div class="pdf-viewer"></div>
+</div>
+
+<div id="document-viewer-full-screen-pdf" ng-if="$ctrl.isFullScreenMode">
+    <div id="pdf-full-screen" ng-include="'common/widgets/documentViewer/plugins/pdf/viewer.html'"></div>
+</div>

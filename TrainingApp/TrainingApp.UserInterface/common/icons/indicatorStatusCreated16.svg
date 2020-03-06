@@ -1,0 +1,17 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="g839">
+    <path id="rect4" d="M1,1H15V15H1Z" fill="#e3faff"/>
+    <path id="rect819" d="M0,0H1V16H0Z" fill="#005f87"/>
+    <path id="rect819-5" d="M15,0h1V16H15Z" fill="#005f87"/>
+    <path id="rect836" d="M1,15H15v1H1Z" fill="#005f87"/>
+    <path id="rect838" d="M1,0H15V1H1Z" fill="#005f87"/>
+    <path id="rect822" d="M7.5,2h1V6h-1Z" fill="#005f87"/>
+    <path id="rect824" d="M7.5,10h1v4h-1Z" fill="#005f87"/>
+    <path id="rect826" d="M2,7.5H6v1H2Z" fill="#005f87"/>
+    <path id="rect826-6" d="M10,7.5h4v1H10Z" fill="#005f87"/>
+    <path id="rect826-8" d="M2.736,3.631l3.5,1.941-.485.874-3.5-1.94Z" fill="#005f87"/>
+    <path id="rect826-8-9" d="M10.245,9.557l3.5,1.941-.485.874-3.5-1.941Z" fill="#005f87"/>
+    <path id="rect826-8-9-6" d="M9.669,5.6l3.047-2.592.648.762L10.317,6.365Z" fill="#005f87"/>
+    <path id="rect826-8-9-6-9" d="M2.629,12.217,5.676,9.625l.648.762L3.277,12.979Z" fill="#005f87"/>
+  </g>
+</svg>

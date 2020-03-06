@@ -1,0 +1,72 @@
+<div class="overlay-look">
+    <script type="text/ng-template" id="PopupContent.html">
+        <div class="doc-popup-modal" id="popupDocCenter" ng-mouseover="modalPopupCtrl.draggable()">
+            <div class="modal-header">
+                <div class="help-window-toolbar row">
+                    <div class="help-window-tb-left">
+                        <div class="header-icon" sit-class="svg-icon" ng-show="modalPopupCtrl.showPrev" sit-mom-icon="modalPopupCtrl.svgIcons.backward" ng-click="modalPopupCtrl.goToPrevState()"></div>
+                        <div class="header-icon-forward" ng-show="modalPopupCtrl.showNext" sit-class="svg-icon" sit-mom-icon="modalPopupCtrl.svgIcons.backward" ng-click="modalPopupCtrl.goToNextState()"></div>
+                        <div class="help-text">{{'common.helpWindow.title'|translate}}</div>
+                    </div>
+                    <div class="help-window-tb-right">
+                        <div class="header-icon" sit-class="svg-icon" sit-mom-icon="modalPopupCtrl.svgIcons.open" ng-click="modalPopupCtrl.openDocCenterTab()"></div>
+                        <div style="width:24px; height:24px" class="header-icon" sit-class="svg-icon" sit-mom-icon="modalPopupCtrl.svgIcons.close" ng-click="modalPopupCtrl.closeDocPopup()"></div>
+                    </div>
+                </div>
+                <div class="help-window-search-bar row">
+                    <div class="quick-search-container" ng-show="true">
+                        <form ng-submit="modalPopupCtrl.doSearchOnPopup()" class="ng-pristine ng-valid">
+                            <div class="input-group">
+                                <input type="text"
+                                       id="quickSearchPopUpTextBox"
+                                       ng-change="modalPopupCtrl.searchTextChanged()"
+                                       ng-model="modalPopupCtrl.searchQuery" autocomplete="off"
+                                       class="form-control filter-quick-search search-input ng-pristine ng-valid ng-touched"
+                                       data-internal-type="quickSearchPopUpTextBox"
+                                       placeholder="{{'common.helpWindow.search'|translate}}" />
+                                <div class="search-icon" ng-click="modalPopupCtrl.doSearchOnPopup()" data-internal-type="quickSearchIcon" id="quickSearchIcon" sit-mom-icon="modalPopupCtrl.svgIcons.search"></div>
+                                <div class="close-icon" ng-if="modalPopupCtrl.showCloseIcon" sit-mom-icon="modalPopupCtrl.svgIcons.close" ng-click="modalPopupCtrl.clearQuery()"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body" ng-hide="modalPopupCtrl.show">
+                <article>
+                    <div class="quick-search-title">
+                        <h4 id="{{modalPopupCtrl.query}}" ng-hide="modalPopupCtrl.show"><strong>{{'common.helpWindow.search-info'|translate}}: <em>{{modalPopupCtrl.query}}</em></strong></h4>
+                    </div>
+                    <div ng-show="modalPopupCtrl.showNoResult">
+                        <span>{{'common.helpWindow.no-items-found'|translate}}</span>
+                    </div>
+                    <section ng-show="!modalPopupCtrl.showNoResult" ng-repeat="result in modalPopupCtrl.data | limitTo : modalPopupCtrl.maxSearchResult">
+                        <h4 id="{{result.PageId}}">
+                            <a href="javascript:void(0);" ng-click="reloadPopUpOnLnkClk(result.Id)"> {{result.Title}} </a>&nbsp;
+                            <a target="_blank" href="{{modalPopupCtrl.docCenterUrl}}#/release/{{result.ReleaseId}}/document/{{result.DocumentId}}/page/{{result.Id}}"><span class="fa fa-external-link"></span></a>
+                        </h4>
+                        <p ng-bind-html="result.HighlightedText">
+                        </p>
+                        <p>
+                            <span>
+                                <strong>{{'common.helpWindow.document'|translate}}:&nbsp;</strong>
+                                <a href="javascript:void(0);" ng-click="modalPopupCtrl.reloadPopUpOnDocumentLnkClk(result.DocumentId)"> {{result.DocumentTitle}} </a>&nbsp;
+                                <a target="_blank" href="{{modalPopupCtrl.docCenterUrl}}#/release/{{result.ReleaseId}}/document/{{result.DocumentId}}/page/"><span class="fa fa-external-link"></span></a>
+                            </span>
+                        </p>
+                        <br />
+                    </section>
+                    <div ng-if="modalPopupCtrl.isShowAllResults">
+                        <a class="show-more-results" ng-click="modalPopupCtrl.showAllResults(modalPopupCtrl.allResultsLength)">Show more results</a>
+                    </div>
+                </article>
+            </div>
+            <div class="doc-center-page modal-body" ng-show="modalPopupCtrl.show">
+                <article>
+                    <p sit-bind-dynamic-html="modalPopupCtrl.pageContent" class="doc-page-layout"></p>
+                    <sit-documentation-anchor-reslove></sit-documentation-anchor-reslove>
+                </article>
+            </div>
+        </div>
+    </script>
+</div>

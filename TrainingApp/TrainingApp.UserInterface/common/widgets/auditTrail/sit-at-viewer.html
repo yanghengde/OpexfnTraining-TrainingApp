@@ -1,0 +1,66 @@
+<div class="at-viewer-container" ng-if="vm.ready">
+    <div class="msg msg-warning" ng-if="!vm.isEnabled">
+        <span>{{'auditTrail.messages.notEnabled' | translate }}</span>
+    </div>
+    <table sit-table="atViewer" sit-config="vm.tableConfig" class="table" ng-if="vm.isEnabled">
+        <thead>
+            <tr>
+                <th style="display:block">
+                    <div class="tool-bar">
+                        <span sit-table-filterbar></span>
+                        <span sit-table-button
+                              sit-icon="fa-refresh"
+                              ng-click="vm.refreshData()"
+                              sit-label="{{'auditTrail.viewer.commands.refresh' | translate }}"></span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th style="width:25px"></th>
+                <th ng-show="vm.showColumn">{{vm.tableConfig.fields.RootEntityId.displayName}}</th>
+                <th>{{vm.tableConfig.fields.UpdatedOn.displayName}}</th>
+                <th>{{vm.tableConfig.fields.UserName.displayName}}</th>
+                <th>{{vm.tableConfig.fields.Action.displayName}}</th>
+                <th>{{vm.tableConfig.fields.RootEntityType.displayName}}</th>
+                <th>{{vm.tableConfig.fields.RootCommand.displayName}}</th>
+                <th>{{vm.tableConfig.fields.Environment.displayName}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat-start="row in vm.tableConfig.data" ng-style="row.expanded ? {'border-bottom':'none'}:{'border-bottom':'1px solid #dcdcdc'}">
+                <td style="width:25px" ng-if="row.expanded" ng-click="row.expanded= false"><em class="fa fa-angle-down"></em></td>
+                <td style="width:25px" ng-if="!row.expanded" ng-click="row.expanded= true"><em class="fa fa-angle-right"></em></td>
+                <td ng-show="vm.showColumn"><em class="fa fa-filter" ng-click="vm.filterbyGUID(row.RootEntityId)"></em> {{row.RootEntityId}}</td>
+                <td>{{row.UpdatedOn | date:'medium'}}</td>
+                <td>{{row.UserName}}</td>
+                <td>{{row.Action}}</td>
+                <td title="{{row.RootEntityType}}">{{row.RootEntityShortType}}</td>
+                <td title="{{row.RootCommand}}">{{row.RootCommandShortName}}</td>
+                <td>{{row.Environment}}</td>
+            </tr>
+            <tr sit-freez ng-show="false"></tr>
+            <tr sit-freez ng-repeat-end ng-show="row.expanded">
+                <td colspan="8">
+                    <div class="record-details-container" ng-if="row.expanded">
+                        <div class="summary">
+                            <div class="message">
+                                {{'auditTrail.summary.message' | translate: row.summary }}
+                            </div>
+                            <div class="action" ng-if="row.isMoreDetailsAvailable" ng-click="vm.showMoreDetails(row);">
+                                {{'auditTrail.summary.viewMore' | translate}}
+                            </div>
+                        </div>
+                        <sit-at-record-details sit-data="row" ng-if="!row.isOnlyPartModified"></sit-at-record-details>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr sit-table-pager></tr>
+        </tfoot>
+    </table>
+</div>
+
+<script type="text/ng-template" id="sit-at-composition-viewer.html">
+    <sit-at-composition-details sit-data="Dialog.templatedata"></sit-at-composition-details>
+</script>

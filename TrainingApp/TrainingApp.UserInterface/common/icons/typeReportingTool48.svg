@@ -1,0 +1,47 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.5" y1="46.5" x2="45.5" y2="2.5" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#f8f8f8"/>
+      <stop offset="0.541" stop-color="#e5e5e5"/>
+      <stop offset="0.92" stop-color="#c6c6c6"/>
+      <stop offset="1" stop-color="#bebebe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.25" y1="24.5" x2="13.25" y2="46" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="34.75" y1="3" x2="34.75" y2="24.5" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="g992">
+    <path id="rect13" d="M2,2H46V46H2Z" stroke="#464646" stroke-miterlimit="3.864" fill="url(#linear-gradient)"/>
+    <path id="rect26" d="M2.5,2.5H24V24H2.5Z" fill="url(#linear-gradient-2)"/>
+    <path id="rect39" d="M24,24H45.5V45.5H24Z" fill="url(#linear-gradient-3)"/>
+    <path id="line50" d="M2.5,24h43" fill="none" stroke="#147391" stroke-miterlimit="3.864"/>
+    <path id="line52" d="M24,2.5v43" fill="none" stroke="#147391" stroke-miterlimit="3.864"/>
+    <path id="path942" d="M18.5,13.5a6,6,0,1,1-6.047-6l.047,6Z" fill="#fff" stroke="#147391" stroke-linecap="square" stroke-width="0.7"/>
+    <path id="path959" d="M14.657,5.327l-.031,6H20.62a5.99,5.99,0,0,0-5.963-6Z" fill="#fff" stroke="#147391" stroke-linecap="square" stroke-width="0.7"/>
+    <path id="polyline28" d="M28.05,37.743l4.225-4.165L36.5,36.354,42.133,31.5" fill="none" stroke="#fff" stroke-width="1.43"/>
+    <path id="circle30" d="M29.458,37.743a1.408,1.408,0,1,1-1.408-1.389A1.4,1.4,0,0,1,29.458,37.743Z" fill="#147391" stroke="#fff" stroke-width="1"/>
+    <path id="circle32" d="M33.683,33.578a1.408,1.408,0,1,1-1.408-1.389A1.4,1.4,0,0,1,33.683,33.578Z" fill="#147391" stroke="#fff" stroke-width="1"/>
+    <path id="circle34" d="M43.542,31.5a1.4,1.4,0,0,1-1.409,1.389h0A1.389,1.389,0,1,1,43.542,31.5Z" fill="#147391" stroke="#fff" stroke-width="1"/>
+    <path id="circle36" d="M37.908,36.354A1.408,1.408,0,1,1,36.5,34.966,1.4,1.4,0,0,1,37.908,36.354Z" fill="#147391" stroke="#fff" stroke-width="1"/>
+    <path id="rect38" d="M4.1,38.579H8.45V43H4.1Z" fill="#3c91af" stroke="#147391" stroke-width="1"/>
+    <path id="rect40" d="M10.625,35.925h4.35V43h-4.35Z" fill="#3c91af" stroke="#147391" stroke-width="1"/>
+    <path id="rect42" d="M17.15,31.5H21.5V43H17.15Z" fill="#3c91af" stroke="#147391" stroke-width="1"/>
+    <path id="path1013" d="M32.58,17.015c-.092-.065-5.552-4.921-5.518-5.027s8.356-6.477,8.469-6.478,4.632,6.857,4.668,6.963-.061,6.556-.152,6.623C37.566,18.368,35.046,17.783,32.58,17.015Z" fill="none" stroke="#3c91af" stroke-linecap="square" stroke-width="0.7"/>
+    <path id="rect992" d="M35.237,3.482h.533v9.964h-.533Z" fill="#147391"/>
+    <path id="rect992-1" d="M25.47,12.225l.06-.544,9.714,1.071-.06.544Z" fill="#147391"/>
+    <path id="rect992-1-4" d="M29.525,21.518l-.5-.374,5.993-8.053.5.373Z" fill="#147391"/>
+    <path id="rect992-1-4-4" d="M41.363,21.32l.5-.369L35.944,13l-.5.369Z" fill="#147391"/>
+    <path id="rect992-1-8" d="M45.045,12.3l-.062-.56L35.127,12.83l.062.559Z" fill="#147391"/>
+    <path id="path1061" d="M36.5,5.577a1,1,0,1,1-1-1A1,1,0,0,1,36.5,5.577Z" fill="#464646"/>
+    <path id="path1061-3" d="M28.142,11.916a1,1,0,1,1-1-1A1,1,0,0,1,28.142,11.916Z" fill="#464646"/>
+    <path id="path1061-3-7" d="M33.518,16.9a1,1,0,1,1-1-1A1,1,0,0,1,33.518,16.9Z" fill="#464646"/>
+    <path id="path1061-3-7-3" d="M41,19.071a1,1,0,1,1-1-1A1,1,0,0,1,41,19.071Z" fill="#464646"/>
+    <path id="path1061-3-7-3-4-7" d="M41.212,12.527a1,1,0,1,1-1-1A1,1,0,0,1,41.212,12.527Z" fill="#464646"/>
+  </g>
+</svg>

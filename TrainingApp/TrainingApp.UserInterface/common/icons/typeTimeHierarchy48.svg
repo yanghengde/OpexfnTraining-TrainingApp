@@ -1,0 +1,36 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="284.005" y1="-303.249" x2="301.315" y2="-320.559" gradientTransform="matrix(1.062, 0, 0, -1.062, -276.335, -296.774)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b5c8"/>
+      <stop offset="0.175" stop-color="#6baec3"/>
+      <stop offset="0.457" stop-color="#539eb5"/>
+      <stop offset="0.809" stop-color="#2f849f"/>
+      <stop offset="1" stop-color="#187491"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="31.248" y1="13.512" x2="45.36" y2="18.717" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="0.391" stop-color="#ccc"/>
+      <stop offset="1" stop-color="#999"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="3.254" y1="13.512" x2="17.366" y2="18.717" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="3.254" y1="26.512" x2="17.366" y2="31.717" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="17.254" y1="1.512" x2="31.366" y2="6.717" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <line x1="24" y1="7.578" x2="24" y2="30.79"  fill="none" stroke="#464646" stroke-miterlimit="10"/>
+  <line x1="18.024" y1="29" x2="23.446" y2="29"  fill="none" stroke="#464620" stroke-miterlimit="10"/>
+  <path id="circle39" d="M47.5,34.5a13,13,0,1,1-13-13,13,13,0,0,1,13,13Z" stroke="#474747" stroke-miterlimit="10" stroke-width="0.942"  fill="url(#linear-gradient)"/>
+  <path id="path64-7" d="M33.985,24.516l-.085,11.2"  fill="none" stroke="#187491" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="path64-7-9" d="M33.256,34.248l7.088,6.818"  fill="none" stroke="#187491" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="polygon47" d="M34.779,25.418v9.026L39.8,39.427l-1.139,1.1-5.4-5.217-.17-.41V25.418"  fill="#fff"/>
+  <rect x="30.494" y="12.5" width="15" height="7" stroke="#464646" stroke-miterlimit="10"  fill="url(#linear-gradient-2)"/>
+  <g>
+    <rect x="2.5" y="12.5" width="15" height="7"  fill="url(#linear-gradient-3)"/>
+    <path d="M18,20H2V12H18ZM3,19H17V13H3Z"  fill="#464646"/>
+  </g>
+  <rect x="2.5" y="25.5" width="15" height="7" stroke="#464646" stroke-miterlimit="10"  fill="url(#linear-gradient-4)"/>
+  <g>
+    <rect x="16.5" y="0.5" width="15" height="7"  fill="url(#linear-gradient-5)"/>
+    <path d="M32,8H16V0H32ZM17,7H31V1H17Z"  fill="#464646"/>
+  </g>
+  <line x1="18.024" y1="16" x2="29.892" y2="16"  fill="none" stroke="#464646" stroke-miterlimit="10"/>
+</svg>

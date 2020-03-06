@@ -1,0 +1,13 @@
+<div class="tagelement" ng-style="vm.style" data-toggle="tooltip" data-placement="top" title="{{vm.tag.Name}}" ng-if="vm.mode === 'select'">
+    <input type="checkbox" class="tagelement" name="tagElementSelected" ng-if="vm.mode === 'select'" ng-model="vm.tag.selected" ng-change="vm.selectionChanged()" ng-disabled="vm.tag.disabled" />
+    <span class="tagelementinside" ng-class="{tagelementinsidewide: vm.mode === 'select'}">{{vm.tag.ShortName}}</span>
+    <i data-internal-type="TagElementAdd" class="fa fa-plus tagelementinside" aria-hidden="true" ng-if="vm.mode === 'add'" ng-click="vm.add();" ng-style="vm.style" style="cursor:pointer"></i>
+    <i data-internal-type="TagElementRemove" class="fa fa-times tagelementinside" aria-hidden="true" ng-if="vm.mode === 'remove'" ng-click="vm.remove();" ng-style="vm.style" style="cursor:pointer"></i>
+</div>
+
+<div class="tagelement" data-toggle="tooltip" data-placement="top" title="{{vm.tag.Name}}" ng-if="vm.mode !== 'select'">
+    <div ng-style="vm.style" class="tagbullet"></div>
+    <span class="tagelementinside">{{vm.tag.ShortName}}</span>
+    <span class="svg-icon-container" sit-class="svg-icon" sit-mom-icon="vm.addIcon" aria-hidden="true" data-internal-type="TagElementAdd"  ng-if="vm.mode === 'add'" ng-click="vm.add()"></span>
+    <span class="svg-icon-container" sit-class="svg-icon" sit-mom-icon="vm.removeIcon" aria-hidden="true" data-internal-type="TagElementRemove"  ng-if="vm.mode === 'remove'" ng-click="vm.remove()"></span>
+</div> 

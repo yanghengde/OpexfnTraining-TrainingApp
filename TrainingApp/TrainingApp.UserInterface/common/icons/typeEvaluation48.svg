@@ -1,0 +1,35 @@
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="16.923" y1="44.098" x2="30.673" y2="5.66" gradientTransform="matrix(0.941, -0.002, 0.002, -0.934, 1.464, 46.206)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="258.679" y1="285.656" x2="267.179" y2="277.406" gradientTransform="translate(-318.757 -402.204) scale(1.467 1.339)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3f3f3"/>
+      <stop offset="0.5" stop-color="#cdcccc"/>
+      <stop offset="0.63" stop-color="#c8c7c7"/>
+      <stop offset="0.779" stop-color="#bababa"/>
+      <stop offset="0.938" stop-color="#a2a2a1"/>
+      <stop offset="0.99" stop-color="#989898"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="19.767" y1="28.72" x2="27.991" y2="19.907" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74b3c7"/>
+      <stop offset="0.177" stop-color="#6badc2"/>
+      <stop offset="0.464" stop-color="#539db4"/>
+      <stop offset="0.822" stop-color="#2d839d"/>
+      <stop offset="1" stop-color="#177490"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="279.894" y1="280.625" x2="288.181" y2="272.437" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="g916">
+    <path id="path1067-6" d="M28.588,4.356c0,1.267-2,2.3-4.479,2.3S19.626,5.629,19.62,4.361s1.993-2.3,4.468-2.3,4.488,1.018,4.5,2.286" fill="#464646"/>
+    <path id="rect1426-6" d="M21.8,39.441h4.578a.335.335,0,0,1,.336.336V46.73a.335.335,0,0,1-.336.336H21.8a.335.335,0,0,1-.336-.336V39.777A.335.335,0,0,1,21.8,39.441Z" fill="#464646"/>
+    <path id="rect1065-1" d="M20.794,4.4h6.338a3.324,3.324,0,0,1,3.331,3.331V38.423a3.324,3.324,0,0,1-3.331,3.331H20.794a3.324,3.324,0,0,1-3.331-3.331V7.729A3.324,3.324,0,0,1,20.794,4.4Z" stroke="#464646" stroke-linecap="square" fill="url(#linear-gradient)"/>
+    <path id="path1022-9-7" d="M27.9,11.588a3.991,3.991,0,1,1,0-.019" fill="#fff" stroke="#464646" stroke-linecap="square" stroke-width="0.5"/>
+    <path id="path1022-95" d="M28,12.8a4.09,4.09,0,1,1,0-.02" stroke="#464646" stroke-linecap="square" stroke-width="0.3" fill="url(#linear-gradient-2)"/>
+    <path id="path1022-9-2-6" d="M27.9,22.5a3.991,3.991,0,1,1,0-.019" fill="#fff" stroke="#464646" stroke-linecap="square" stroke-width="0.5"/>
+    <path id="path1022-2-6" d="M28,23.709a4.091,4.091,0,1,1,0-.019" stroke="#464646" stroke-linecap="square" stroke-width="0.3" fill="url(#linear-gradient-3)"/>
+    <path id="path1022-9-2-7-9" d="M27.9,33.5a3.991,3.991,0,1,1,0-.019" fill="#fff" stroke="#464646" stroke-linecap="square" stroke-width="0.5"/>
+    <path id="path1022-2-3-5" d="M28,34.709a4.091,4.091,0,1,1,0-.019" stroke="#464646" stroke-linecap="square" stroke-width="0.3" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

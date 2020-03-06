@@ -1,0 +1,27 @@
+<div class="sit-simple-paginaton pl-buttons-square-group">
+    <button type="button" class="pl-button-square" ng-disabled="SimplePagerCtrl.options.currentPage === 1" ng-click="SimplePagerCtrl.changePage(SimplePagerCtrl.options.currentPage = 1)" ng-class="{'small' : standardPagerCtrl.options.size === 'small'}">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{path: 'common/icons/miscGoToFirst16.svg'}"></span>
+    </button>
+
+    <button type="button" class="pl-button-square" ng-disabled="SimplePagerCtrl.options.currentPage === 1" ng-click="SimplePagerCtrl.changePage(SimplePagerCtrl.options.currentPage = SimplePagerCtrl.options.currentPage - 1)" ng-class="{'small' : standardPagerCtrl.options.size === 'small'}">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{path: 'common/icons/miscChevronLeft24.svg', size: '16'}"></span>
+    </button>
+
+    <div class="sit-pagination-page-number">
+        <span class="page-size-label">{{'pager.page' | translate}}</span>
+        <sit-select sit-value="SimplePagerCtrl.pagingOptions.currentPageNumber"
+                    sit-options="SimplePagerCtrl.pagingOptions.options"
+                    sit-change="SimplePagerCtrl.selectPage"
+                    sit-to-display="'page'" sit-to-keep="'page'">
+        </sit-select>
+    </div>
+
+    <button type="button" class="pl-button-square" ng-disabled="SimplePagerCtrl.options.currentPage === SimplePagerCtrl.totalPageCount" ng-click="SimplePagerCtrl.changePage(SimplePagerCtrl.options.currentPage =  SimplePagerCtrl.options.currentPage + 1)" ng-class="{'small' : standardPagerCtrl.options.size === 'small'}">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{path: 'common/icons/miscChevronRight16.svg'}"></span>
+    </button>
+
+
+    <button type="button" class="pl-button-square" ng-disabled="SimplePagerCtrl.options.currentPage === SimplePagerCtrl.totalPageCount" ng-click="SimplePagerCtrl.changePage(SimplePagerCtrl.options.currentPage = SimplePagerCtrl.totalPageCount)" ng-class="{'small' : standardPagerCtrl.options.size === 'small'}">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{path: 'common/icons/miscGoToLast16.svg'}"></span>
+    </button>
+</div>

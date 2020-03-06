@@ -1,0 +1,22 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_37" data-name="Sfumatura senza nome 37" x1="8.331" y1="8.331" x2="39.669" y2="39.669" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="12.248" y1="12.248" x2="35.752" y2="35.752" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <circle cx="24" cy="24" r="22.159" fill="url(#Sfumatura_senza_nome_37)"/>
+      <path d="M24,46.75A22.75,22.75,0,1,1,46.75,24,22.776,22.776,0,0,1,24,46.75ZM24,2.432A21.568,21.568,0,1,0,45.568,24,21.592,21.592,0,0,0,24,2.432Z" fill="#474647"/>
+    </g>
+    <g>
+      <circle cx="24" cy="24" r="16.619" fill="url(#Siemens_-_Mid_gray)"/>
+      <path d="M24,41.21A17.21,17.21,0,1,1,41.21,24,17.229,17.229,0,0,1,24,41.21ZM24,7.972A16.028,16.028,0,1,0,40.028,24,16.046,16.046,0,0,0,24,7.972Z" fill="#474647"/>
+    </g>
+  </g>
+</svg>

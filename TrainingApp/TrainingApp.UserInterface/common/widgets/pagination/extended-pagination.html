@@ -1,0 +1,38 @@
+<div class="pl-buttons-square-group">
+
+    <button type="button" id="prev" class="pl-button-square" ng-class="{'small' : extendedPagerCtrl.options.size === 'small'}" ng-click="extendedPagerCtrl.goToPage(extendedPagerCtrl.options.currentPage-1)"  ng-if="extendedPagerCtrl.totalPages >0" ng-disabled="extendedPagerCtrl.options.currentPage === 1 || extendedPagerCtrl.totalPages === 1 ">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscChevronLeft24.svg', size: '16'}"></span>
+    </button>
+
+    <button type="button" id="goToFirst" class="pl-button-square"  ng-if="extendedPagerCtrl.totalPages >0" ng-click="extendedPagerCtrl.goToPage(1)" ng-class="{'selected':extendedPagerCtrl.options.currentPage===1,'small' : extendedPagerCtrl.options.size === 'small'}">1</button>
+
+
+    <button type="button" class="pl-button-square" 
+            ng-class="{'small' : extendedPagerCtrl.options.size === 'small'}" 
+            data-sit-options="extendedPagerCtrl.flyoutOptions.left" 
+            ng-if="extendedPagerCtrl.isLeftMoreBtnVisible" data-sit-pagination-flyout>
+        ...
+    </button>
+    <button ng-repeat="pageButton in extendedPagerCtrl.pageNumbers" 
+            class="pl-button-square" 
+            ng-class="{'selected':pageButton === extendedPagerCtrl.options.currentPage, 'small' : extendedPagerCtrl.options.size === 'small'}"
+            ng-click="extendedPagerCtrl.goToPage(pageButton)">{{pageButton}}</button>
+
+
+    <button type="button" class="pl-button-square" 
+            ng-class="{'small' : extendedPagerCtrl.options.size === 'small'}" 
+            data-sit-options="extendedPagerCtrl.flyoutOptions.right" 
+            ng-if="extendedPagerCtrl.isRightMoreBtnVisible"  data-sit-pagination-flyout>
+        ...
+    </button>
+
+    <button type="button" id="goToLast" ng-if="extendedPagerCtrl.totalPages >1 "class="pl-button-square" ng-click="extendedPagerCtrl.goToPage(extendedPagerCtrl.totalPages)" ng-class="{'selected':extendedPagerCtrl.options.currentPage===extendedPagerCtrl.totalPages,'small' : extendedPagerCtrl.options.size === 'small'}">
+        {{extendedPagerCtrl.totalPages}}
+    </button>
+
+    <button type="button" id="next" ng-class="{'small' : extendedPagerCtrl.options.size === 'small'}"  ng-if="extendedPagerCtrl.totalPages >0" class="pl-button-square" ng-click="extendedPagerCtrl.goToPage(extendedPagerCtrl.options.currentPage+1)" ng-disabled="extendedPagerCtrl.options.currentPage === extendedPagerCtrl.totalPages || extendedPagerCtrl.totalPages === 1 ">
+        <span class="svg-icon" sit-class="svg-icon" sit-mom-icon="{ path: 'common/icons/miscChevronRight16.svg'}"></span>
+    </button>
+
+
+</div>

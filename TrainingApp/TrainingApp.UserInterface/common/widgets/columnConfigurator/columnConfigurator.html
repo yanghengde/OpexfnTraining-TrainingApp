@@ -1,0 +1,72 @@
+<div class="table-column-configuration">
+    <div class="columns">
+        <div class="header">
+            <h2 class="sit-h2">
+                {{ columnConfiguratorCtrl.sitConfig.availableSectionHeader || 'userPrefrences.columnConfigurator.availableSectionHeader'|translate }}
+            </h2>
+        </div>
+        <div class="frame">
+            <ul id="availableColsList" class="sit-list">
+                <li ng-repeat="column in columnConfiguratorCtrl.columnDefs  | orderBy:'index':false track by $index "
+                    ng-click="columnConfiguratorCtrl.onItemSelection(column, true)"
+                    ng-class="{'selected':column.selected}" ng-hide="column.visible">
+                    <div title="{{column.displayName || column.field}}" style="width:100% !important">
+                        {{column.displayName || column.field}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="command-buttons">
+        <button type="button" class="sit-command-icon-button" ng-click="columnConfiguratorCtrl.add()"
+                ng-disabled="columnConfiguratorCtrl.isAvailableSelected()" title="{{columnConfiguratorCtrl.sitConfig.addButtonLabel || 'userPrefrences.columnConfigurator.addButtonLabel'|translate}}">
+            <em sit-class="svg-icon pl-icon-flip-horizontal" sit-mom-icon="columnConfiguratorCtrl.svgIcons.forward"></em>
+        </button>
+        <button type="button" class="sit-command-icon-button" ng-click="columnConfiguratorCtrl.remove()"
+                ng-disabled="columnConfiguratorCtrl.isSelected()" title="{{columnConfiguratorCtrl.sitConfig.removeButtonLabel || 'userPrefrences.columnConfigurator.removeButtonLabel'|translate}}">
+            <em sit-class="svg-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.backward"></em>
+        </button>
+        <button type="button" class="sit-command-icon-button" ng-click="columnConfiguratorCtrl.addAll()"
+                title="{{columnConfiguratorCtrl.sitConfig.addAllButtonLabel || 'userPrefrences.columnConfigurator.addAllButtonLabel'|translate}}">
+            <em sit-class="svg-icon pl-icon-flip-horizontal" class="invert-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.left"></em>
+        </button>
+        <button type="button" class="sit-command-icon-button" ng-click="columnConfiguratorCtrl.removeAll()"
+                title="{{columnConfiguratorCtrl.sitConfig.removeAllButtonLabel || 'userPrefrences.columnConfigurator.removeAllButtonLabel'|translate}}">
+            <em sit-class="svg-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.right"></em>
+        </button>
+        <button type="button" class="sit-command-icon-button" ng-click="columnConfiguratorCtrl.reset()"
+                title="{{columnConfiguratorCtrl.sitConfig.resetButtonLabel || 'userPrefrences.columnConfigurator.resetButtonLabel'|translate}}">
+            <em sit-class="svg-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.reset"></em>
+        </button>
+    </div>
+    <div class="columns">
+        <div class="header">
+            <h2 class="sit-h2">
+                {{ columnConfiguratorCtrl.sitConfig.selectedSectionHeader || 'userPrefrences.columnConfigurator.selectedSectionHeader'|translate }}
+            </h2>
+        </div>
+        <div class="frame">
+            <ul id="selectedColsList" class="sit-list">
+                <li ng-repeat="column in columnConfiguratorCtrl.columnDefs | orderBy:'index':false  track by $index"
+                    ng-click="columnConfiguratorCtrl.onItemSelection(column, false)"
+                    ng-class="{'selected':column.selected}" ng-hide="!column.visible">
+                    <div title="{{column.displayName || column.field}}" style="width:100% !important">
+                        {{column.displayName || column.field}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="command-buttons last">
+        <button type="button" class="sit-command-icon-button"
+            title="{{columnConfiguratorCtrl.sitConfig.moveUpButtonLabel || 'userPrefrences.columnConfigurator.moveUpButtonLabel'|translate}}"
+            ng-click="columnConfiguratorCtrl.moveUp()">
+            <em sit-class="svg-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.up"></em>
+        </button>
+        <button type="button" class="sit-command-icon-button"
+                 title="{{columnConfiguratorCtrl.sitConfig.moveDownButtonLabel || 'userPrefrences.columnConfigurator.moveDownButtonLabel'|translate}}"
+                 ng-click="columnConfiguratorCtrl.moveDown()">
+            <em sit-class="svg-icon" sit-mom-icon="columnConfiguratorCtrl.svgIcons.down"></em>
+        </button>
+    </div>
+</div>

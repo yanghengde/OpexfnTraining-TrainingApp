@@ -1,0 +1,17 @@
+{
+  "name": "Siemens.Mom.Presales.Training.TrainingApp.Team",
+  "type": "standard",
+  "title": "Team",
+  "icon": "fa-folder",
+  "functionalBlock": "Siemens.Mom.Presales.Training.TrainingApp",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_Mom_Presales_Training_TrainingApp_Team_TeamScreen",
+      "title": "TeamScreen",
+      "securable": true,
+      "roles": []
+    }
+  ],
+  "manifestVersion": "01.00.00"
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="5.061" y1="10.927" x2="36.894" y2="42.761" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient" x1="27.872" y1="22.128" x2="44.128" y2="5.872" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#72b0c8"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+  </defs>
+  <g id="Verb_Zone">
+    <g>
+      <path d="M27.228,23.034V21.929a3.287,3.287,0,0,1,3.277-3.277h0a3.287,3.287,0,0,1,3.277,3.277s-.089,3.52,0,3.609v-.7a3.287,3.287,0,0,1,4.082-3.18,3.423,3.423,0,0,1,2.472,3.384v.679a37.841,37.841,0,0,1-2.074,12.618c-3.118,8.824-6.486,8.142-6.486,8.142H18.017a2.952,2.952,0,0,1-2.337-1.148l-1.146-1.484A58.738,58.738,0,0,1,5.39,26.809L4.7,24.763a3.7,3.7,0,0,1,6.5-3.549l2.081,3.413V4.243a3.711,3.711,0,0,1,3.7-3.7h0a3.712,3.712,0,0,1,3.7,3.7v16.29a3.286,3.286,0,0,1,3.277-3.277h0a3.286,3.286,0,0,1,3.277,3.277V23m6.554,2.542" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" fill="url(#Siemens_-_Mid_gray)"/>
+      <g>
+        <circle cx="36" cy="36" r="11.5" fill="url(#linear-gradient)"/>
+        <path d="M36,25A11,11,0,1,1,25,36,11.013,11.013,0,0,1,36,25m0-1A12,12,0,1,0,48,36,12,12,0,0,0,36,24Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M36,27.375a8.625,8.625,0,0,0,0,17.25,8.521,8.521,0,0,0,6.25-2.708v2h.958V40.125H39.417v.958h2.329A7.672,7.672,0,1,1,43.667,36a7.54,7.54,0,0,1-.487,2.788l-.043.111.869.386.046-.127A9.421,9.421,0,0,0,44.625,36,8.635,8.635,0,0,0,36,27.375Z" fill="#fff"/>
+        <polygon points="35.875 35.875 31.625 35.875 31.625 36.833 36.833 36.833 36.833 30.208 35.875 30.208 35.875 35.875" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<div style="height:100%; width:100%">
+    <div id="itemlist" ng-if="vm.isTaskUiListVisible" class="content-area content-area-relative" style="float:left;  height:100%">
+        <sit-item-collection-viewer sit-data="vm.viewerData" sit-options="vm.viewerOptions"></sit-item-collection-viewer>
+    </div>
+
+    <div id="itemContent" ng-class="{largeWidth: vm.isTaskUiListVisible == false, smallWidth: vm.isTaskUiListVisible != false}"
+         style="height: 100%; top: 4px!important;  display:block; padding-top: 16px; padding-left: 16px;" ng-style="{ 'width': vm.widthStyle }">
+        <sit-command-bar sit-type="action" class="commandbar-horizontal" ng-if="vm.taskIdSelected && vm.showCommandBar" sit-layout="contextual">
+            <!--<sit-command sit-icon="sit sit-update-existing-instances" sit-name="migrate" ng-click="vm.migrateTask"
+        sit-label={{'SIT.TSK.commandBar.migrateLabel'|translate}} sit-tooltip={{'SIT.TSK.commandBar.migrateTaskTooltip'|translate}}
+        ng-show="vm.isMigrateVisible"></sit-command>-->
+            <!--sit-label="{{ 'task.activate' | translate }}"-->
+            <sit-command sit-name="activate" ng-click="vm.activateTask" cmd-icon="TaskActivate"
+                         sit-tooltip="{{ 'task.activate' | translate }}"
+                         ng-show="vm.isActivateVisible"></sit-command>
+            <!--sit-label="{{ 'task.suspend' | translate }}"-->
+            <sit-command sit-name="suspend" ng-click="vm.suspend" cmd-icon="Time"
+                         sit-tooltip="{{ 'task.suspend' | translate }}"
+                         ng-show="vm.isSuspendVisible"></sit-command>
+            <!--sit-label="{{ 'task.start' | translate }}"-->
+            <sit-command sit-name="start" ng-click="vm.start" cmd-icon="Start"
+                         sit-tooltip="{{ 'task.start' | translate }}"
+                         ng-show="vm.isStartVisible"></sit-command>
+            <!--sit-label="{{ 'task.pause' | translate }}"-->
+            <sit-command sit-name="pause" ng-click="vm.pause" cmd-icon="Pause"
+                         sit-tooltip="{{ 'task.pause' | translate }}"
+                         ng-show="vm.isPauseCompleteVisible"></sit-command>
+            <!--sit-label="{{ 'task.resume' | translate }}"-->
+            <sit-command sit-name="resume" ng-click="vm.resume" cmd-icon="Forwards"
+                         sit-tooltip="{{ 'task.resume' | translate }}"
+                         ng-show="vm.isResumeVisible"></sit-command>
+            <!--<sit-command sit-name="repeat" ng-click="vm.repeat" cmd-icon="TaskRepeat"
+        sit-tooltip="{{ 'task.repeat' | translate }}" sit-label="{{ 'task.repeat' | translate }}"
+        ng-show="vm.isRepeatVisible"></sit-command>-->
+            <!--sit-label="{{ 'task.complete' | translate }}"-->
+            <sit-command cmd-icon="Validate" sit-name="complete" ng-click="vm.complete"
+                         sit-tooltip="{{ 'task.complete' | translate }}"
+                         ng-show="vm.isPauseCompleteVisible"></sit-command>
+            <!--sit-label="{{ 'task.skip' | translate }}"-->
+            <sit-command sit-name="skip" ng-click="vm.skip" svg-icon="common/icons/miscGoToLast24.svg"
+                         sit-tooltip="{{ 'task.skip' | translate }}"
+                         ng-show="vm.isSkipVisible"></sit-command>
+            <!--sit-label="{{ 'task.cancel' | translate }}"-->
+            <sit-command sit-name="cancel" ng-click="vm.cancel" cmd-icon="ClosePanel"
+                         sit-tooltip="{{ 'task.cancel' | translate }}"
+                         ng-show="vm.isCancelVisible"></sit-command>
+            <!--sit-label="{{ 'task.recover' | translate }}"-->
+            <sit-command sit-name="recover" ng-click="vm.recover" cmd-icon="TaskRecover"
+                         sit-tooltip="{{ 'task.recover' | translate }}"
+                         ng-show="vm.isFailRecoverVisible"></sit-command>
+            <!--sit-label="{{ 'task.fail' | translate }}"-->
+            <sit-command sit-name="fail" ng-click="vm.fail" svg-icon="common/icons/indicatorRedCircle16.svg"
+                         sit-tooltip="{{ 'task.fail' | translate }}"
+                         ng-show="vm.isFailRecoverVisible"></sit-command>
+            <!--sit-label="{{ 'task.abort' | translate }}"-->
+            <sit-command sit-name="abort" ng-click="vm.abort" cmd-icon="Cancel"
+                         sit-tooltip="{{ 'task.abort' | translate }}"
+                         ng-show="vm.isAbortVisible"></sit-command>
+            <!--<sit-command sit-icon="sit sit-freeze" sit-name="freeze" ng-click="vm.freeze"
+                     sit-tooltip="{{ 'SIT.TSK.common.freeze' | translate }}" sit-label="{{ 'SIT.TSK.common.freeze' | translate }}"
+                     ng-show="vm.isTaskCommandsVisible && !vm.isFrozenTask"></sit-command>
+        <sit-command sit-icon="sit sit-unfreeze" sit-name="unfreeze" ng-click="vm.unfreeze"
+                     sit-tooltip="{{ 'SIT.TSK.common.unfreeze' | translate }}" sit-label="{{ 'SIT.TSK.common.unfreeze' | translate }}"
+                     ng-show="vm.isTaskCommandsVisible && vm.isFrozenTask"></sit-command>-->
+            <!--<sit-command sit-name="delete" ng-click="vm.deleteTask" cmd-icon="Trash"
+        sit-label={{'SIT.TSK.commandBar.deleteLabel'|translate}} sit-tooltip={{'SIT.TSK.commandBar.deleteTaskTooltip'|translate}}
+        ng-show="vm.isDeleteVisible"></sit-command>-->
+
+        </sit-command-bar>
+        <!--ng-if="vm.taskIdSelected"  select="vm.getContent($index)" class="tab-animation" heading="{{component.componentName}}"-->
+        <div style="height: 100%; width:100%" ng-show="vm.viewerData.length > 0">
+            <tabset style="width:calc(100% - 2px); height: 100%; margin-top:-8px;" id="taskContainerCanvas">
+                <tab ng-repeat="component in vm.componentInstances" active="component.componentVisible">
+                    <!--<div ng-hide="vm.isLoaded" style="height:700px;width:100%; float:left; background-color:gray"><h3>No Task UI Available</h3></div>-->
+                    <!--ng-hide="!vm.isLoaded"-->
+                <div ng-show="component.componentVisible" style="height:100%; width:calc(100% - 2px);" ng-style="{ 'margin-top': vm.margintop }">
+                        <sit-container sit-isswac="false">
+                            <sit-component sit-id="{{component.componentName}}"
+                                           sit-name="{{component.componentName}}"
+                                           sit-componentname="{{component.componentName}}"
+                                           sit-type="ui"
+                                           sit-source="{{component.componentSource}}"
+                                           size-x="4"
+                                           size-y="4"
+                                           sit-left="0"
+                                           sit-top="0"
+                                           sit-cols="12"
+                                           sit-rows="12"
+                                           sit-flavor="ui"
+                                           sit-dpc="vm.dpc">
+                            </sit-component>
+                        </sit-container>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>

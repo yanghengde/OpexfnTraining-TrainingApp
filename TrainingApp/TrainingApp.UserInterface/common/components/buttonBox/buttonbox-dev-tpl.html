@@ -1,0 +1,11 @@
+<div>
+    <button ng-disabled="buttonBoxCtr.hidePrevTask" class="btn btn-info" style="width:100%;" ng-click="prevTaskCallback()"><i class="fa fa-caret-up fa-3"></i>Previous task</button>
+    <div>
+        <button class="btn btn-success" style="width:25%;float:left;" ng-click="okCallback()">OK</button>
+        <button class="btn btn-danger" style="width:25%;float:left;" ng-click="notOkCallBack()">NOK</button>
+        <button class="btn btn-warning" style="width:25%;float:left;" ng-click="NACallBack()">N/A</button>
+        <button class="btn btn-primary" style="width:25%;float:left;" ng-click="detailsCallBack()">?</button>
+        <span class="label label-default">Title</span>
+        <input type="text" ng-model="buttonBoxCtr.title"/></div>
+    <button ng-disabled="buttonBoxCtr.hideNextTask" class="btn btn-info" style="width:100%;" ng-click="nextTaskCallback()"><i class="fa fa-caret-down fa-3"></i>Next task</button>
+</div>

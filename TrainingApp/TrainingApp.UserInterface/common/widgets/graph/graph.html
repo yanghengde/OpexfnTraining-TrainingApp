@@ -1,0 +1,19 @@
+<div class="graphbackground" ng-show="GraphCtrl.isGraphValid">
+    <div>
+        <div ng-show="GraphCtrl.sitOptions.zooming" class="graphZoomControl">
+            <div class="zoom"><label>Zoom: &nbsp;</label></div>
+            <input class="graphZoomControlInput" type="range" min="1" max="8" ng-model="zoomLevel" step=".1" />
+            <button class="btn btn-info graphAutoFit"> {{'Graph.autoFit'| translate}} </button>
+            <button class="btn btn-info panAndZoom"> {{'Graph.panAndZoom'| translate}} </button>
+        </div>
+    </div>
+    <div data-internal-type="graphwrapper" class="graphWrapperMain">
+        <svg data-internal-type="graphsvg" width="500" height="500"></svg>
+    </div>
+    <div ng-show="GraphCtrl.sitOptions.zooming" class="panZoom" ng-class="GraphCtrl.showPan==1?'pan':'panHidden'">
+        <svg data-internal-type="panWindow">
+            <g></g>
+        </svg>
+    </div>
+</div>
+<label ng-show="!GraphCtrl.isGraphValid">{{graphError}}</label>

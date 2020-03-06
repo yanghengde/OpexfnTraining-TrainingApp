@@ -1,0 +1,9 @@
+<sit-side-panel sit-title="{{vm.title}}" sit-actions="vm.actionButtons" sit-close="vm.closeButton">
+    <sit-manage-tags-editor assigned-tags="vm.originalAssignedTags"
+                           available-tags="vm.availableTags"
+                           on-validity-changed="vm.validityChanged(validity)"
+                           on-register-api="vm.onManageTagsEditorRegisterApi(api)" 
+                           warning-message-visible="vm.warningMessageVisible"
+                           warning-message="vm.warningMessage">
+    </sit-manage-tags-editor>
+</sit-side-panel> 

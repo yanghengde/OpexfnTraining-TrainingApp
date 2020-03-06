@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="6.331" y1="42.186" x2="45.538" y2="1.973" gradientTransform="matrix(1.1, 0, 0, -1.1, -4.898, 47.243)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a5cfdc"/>
+      <stop offset="0.128" stop-color="#9cc9d7"/>
+      <stop offset="0.335" stop-color="#84bacb"/>
+      <stop offset="0.596" stop-color="#5ea2b7"/>
+      <stop offset="0.896" stop-color="#28809b"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g862">
+    <path id="path15" d="M24.252,1.593a22,22,0,1,0,22,22A22.065,22.065,0,0,0,24.252,1.593Z" fill="url(#linear-gradient)"/>
+    <path id="path32" d="M24,2.049A21.951,21.951,0,1,0,45.951,24,22.016,22.016,0,0,0,24,2.049Z" fill="none" stroke="#464646" stroke-miterlimit="10"/>
+    <path id="rect967" d="M2.665,23.983H45.7v.034H2.665Z" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="0.967"/>
+    <path id="rect967-8" d="M5.655,12.481H42.237v.038H5.655Z" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="0.961"/>
+    <path id="rect967-8-4" d="M5.98,35.48H42.114v.04H5.98Z" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="0.961"/>
+    <path id="path999" d="M34.146,24c0,12.127-4.535,21.958-10.129,21.958S13.887,36.129,13.887,24,18.422,2.043,24.017,2.043,34.146,11.874,34.146,24Z" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="0.999"/>
+  </g>
+</svg>

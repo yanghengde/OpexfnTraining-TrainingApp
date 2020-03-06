@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="3.5" y1="6.5" x2="42.5" y2="45.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+  </defs>
+  <g id="Verb_Zone">
+    <g>
+      <g>
+        <rect x="4.5" y="5.5" width="37" height="41" fill="url(#linear-gradient)"/>
+        <path d="M41,6V46H5V6H41m1-1H4V47H42V5Z" fill="#6f6e6e"/>
+      </g>
+      <g>
+        <line x1="7.452" y1="15.558" x2="23.032" y2="15.558" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+        <line x1="7.452" y1="18.526" x2="18.075" y2="18.526" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+      </g>
+      <g>
+        <path d="M30.405,18.047,28.2,15.431l-2.225,1.844,4.407,5.416,7.7-9.5-2.2-1.8" fill="#0e7191"/>
+        <polygon points="30.448 21.267 27.152 17.226 27.96 16.627 30.457 19.658 35.975 12.902 36.776 13.51 30.448 21.267" fill="#3b90b2"/>
+      </g>
+      <g>
+        <line x1="7.452" y1="26.065" x2="23.032" y2="26.065" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+        <line x1="7.452" y1="29.033" x2="18.075" y2="29.033" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+      </g>
+      <g>
+        <path d="M30.405,28.554,28.2,25.937l-2.225,1.845L30.378,33.2l7.7-9.5-2.2-1.8" fill="#0e7191"/>
+        <polygon points="30.448 31.774 27.152 27.733 27.96 27.134 30.457 30.165 35.975 23.409 36.776 24.017 30.448 31.774" fill="#3b90b2"/>
+      </g>
+      <g>
+        <line x1="7.452" y1="36.558" x2="23.032" y2="36.558" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+        <line x1="7.452" y1="39.526" x2="18.075" y2="39.526" fill="none" stroke="#177491" stroke-miterlimit="10"/>
+      </g>
+      <g>
+        <path d="M30.405,39.047,28.2,36.431l-2.225,1.844,4.407,5.416,7.7-9.5-2.2-1.8" fill="#0e7191"/>
+        <polygon points="30.448 42.267 27.152 38.226 27.96 37.627 30.457 40.658 35.975 33.902 36.776 34.51 30.448 42.267" fill="#3b90b2"/>
+      </g>
+      <line x1="7.5" y1="0.5" x2="7.5" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="12.667" y1="0.5" x2="12.667" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="28.167" y1="0.5" x2="28.167" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="17.833" y1="0.5" x2="17.833" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="23" y1="0.5" x2="23" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="33.333" y1="0.5" x2="33.333" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+      <line x1="38.5" y1="0.5" x2="38.5" y2="8" fill="none" stroke="#6f6e6e" stroke-linecap="round" stroke-miterlimit="10"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<div class="sit-table-filterbar">
+    <div id="filterBar" data-internal-type="filterBar" class="filterBar-container">
+        <sit-filter-bar sit-filter-options="sitTableFilterbarCtrl.filterOptions"></sit-filter-bar>
+    </div>
+    <div id="filter" class="filter-container" ng-class="sitTableFilterbarCtrl.showFilter && !sitTableFilterbarCtrl.isFilterPanel? 'open' : 'closed'" data-internal-type="filter">
+        <sit-filter ng-if="!sitTableFilterbarCtrl.isFilterPanel && sitTableFilterbarCtrl.filterOptions.filterFields.length > 0"
+                    sit-clauses="sitTableFilterbarCtrl.filterClauses"
+                    sit-filter-server-side="sitTableFilterbarCtrl.serverData"
+                    sit-filter-fields="sitTableFilterbarCtrl.filterOptions.filterFields"
+                    sit-user-preference="sitTableFilterbarCtrl.tableCtrl.sitConfig.userPrefId"
+                    sit-filter-options="sitTableFilterbarCtrl.filterSearchOptions"
+                    sit-apply-callback="sitTableFilterbarCtrl.applyFilter(clauses)"
+                    sit-reset-callback="sitTableFilterbarCtrl.resetFilter()"></sit-filter>
+
+        <sit-filter-panel ng-if="sitTableFilterbarCtrl.isFilterPanel && sitTableFilterbarCtrl.showFilter"
+                          sit-data="sitTableFilterbarCtrl.filterPanelData"
+                          sit-user-preference="sitTableFilterbarCtrl.tableCtrl.sitConfig.userPrefId">
+        </sit-filter-panel>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="label label-property-grid-control-readonly property-value-ellipsis selection-read-only" ng-if="ctrl.readOnly || ctrl.ngReadonly">
+    {{ ctrl.sitSelectedString || ctrl.sitPlaceholder }}
+</div>
+<ng-form ng-if="!(ctrl.readOnly || ctrl.ngReadonly)" name='multiselectForm'
+         ng-class="{'isrequired' : (ctrl.validation.required) && ! ((ctrl.sitOptions | filter:{selected:true}).length > 0)}">
+    <div class="dropdown multi-select-dropdown multi-selection">
+        <button class="btn btn-default" type="button" id="dropdownMenu1" aria-expanded="true" data-toggle="dropdown"
+                ng-class="{'validator-control-invalid':((multiselectForm.$invalid && multiselectForm.$dirty) || (multiselectForm.$invalid && multiselectForm.$visited)),
+               'validator-control':!((multiselectForm.$invalid && multiselectForm.$dirty) || (multiselectForm.$invalid && multiselectForm.$visited)),
+               'ng-dirty':multiselectForm.$dirty}"
+                ng-blur="ctrl.ngBlur()" ng-disabled="ctrl.ngDisabled" ng-focus="ctrl.ngFocus()">
+            <span class="dropdownButtonLabel">{{ctrl.getSelectedText()}}</span>
+                  <span class="multi-selection-dropdown-icon" sit-class="multi-selection-dropdown-icon" sit-mom-icon='{path: "common/icons/miscDownArrow16.svg", size:"16px"}'> </span> 
+        </button>
+        <input type="hidden" ng-model="ctrl.sitSelectedString" ng-required="ctrl.validation.required" sit-change="ctrl.sitChange" sit-form-input-validator />
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li ng-repeat="selectable in ctrl.sitOptions | filter: ctrl.sitSplitList ? {selected:true} : {}" role="presentation" ng-click="ctrl.toggleSelected($event, selectable)" class="dropdown-item">
+                <input type="checkbox" ng-model="selectable.value" ng-checked="selectable.selected" class="view-text" />
+                <a role="menuitem" tabindex="-1">{{selectable.name}}</a>
+                <!--<i class="fa" ng-class="selectable.direction==='desc' ? 'fa-sort-alpha-desc' : 'fa-sort-alpha-asc'" ng-click="ctrl.toggleDirection($event, selectable)"></i>-->
+            </li>
+            <!--This is VERY inefficient-->
+            <li role="presentation" class="divider" ng-if="ctrl.sitSplitList && (ctrl.sitOptions | filter:ctrl.isFalsy).length > 0 && (ctrl.sitOptions | filter:{selected:true}).length > 0"></li>
+            <li ng-if="ctrl.sitSplitList" ng-repeat="selectable in ctrl.sitOptions | filter:ctrl.isFalsy" role="presentation" ng-click="ctrl.toggleSelected($event, selectable)" class="dropdown-item">
+                <input type="checkbox" ng-checked="selectable.selected" class="view-text" />
+                <a role="menuitem" tabindex="-1">{{selectable.name}}</a>
+            </li>
+        </ul>
+    </div>
+</ng-form>

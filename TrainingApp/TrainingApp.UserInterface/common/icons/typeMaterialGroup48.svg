@@ -1,0 +1,54 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.086" y1="45.414" x2="43.5" y2="4" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="15.578" y1="17.873" x2="32.444" y2="34.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="9.38" y1="24.058" x2="13.947" y2="28.625" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7eb8cd"/>
+      <stop offset="1" stop-color="#097091"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1-2" x1="34.053" y1="24.058" x2="38.62" y2="28.625" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-3" x1="27.884" y1="34.717" x2="32.451" y2="39.283" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-4" x1="15.563" y1="34.717" x2="20.13" y2="39.283" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-5" x1="27.884" y1="13.33" x2="32.451" y2="17.897" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-6" x1="15.562" y1="13.33" x2="20.13" y2="17.897" xlink:href="#New_Gradient_Swatch_1"/>
+  </defs>
+  <g>
+    <path d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <g>
+      <polygon points="30.185 15.614 17.837 15.614 11.664 26.307 17.837 37 30.185 37 36.358 26.307 30.185 15.614" stroke="#177491" stroke-linejoin="round" fill="url(#Siemens_-_Light_gray)"/>
+      <g>
+        <path d="M11.663,29.571a3.23,3.23,0,1,1,2.284-.946A3.2,3.2,0,0,1,11.663,29.571Z" fill="url(#New_Gradient_Swatch_1)"/>
+        <path d="M11.664,23.612a2.73,2.73,0,1,1-1.931.8,2.711,2.711,0,0,1,1.931-.8m0-1A3.73,3.73,0,1,0,14.3,23.705a3.72,3.72,0,0,0-2.637-1.093Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M36.337,29.571a3.23,3.23,0,1,1,2.283-.946A3.207,3.207,0,0,1,36.337,29.571Z" fill="url(#New_Gradient_Swatch_1-2)"/>
+        <path d="M36.336,23.612a2.73,2.73,0,1,1-1.93.8,2.712,2.712,0,0,1,1.93-.8m0-1a3.73,3.73,0,1,0,2.638,1.093,3.719,3.719,0,0,0-2.638-1.093Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M30.168,40.229a3.23,3.23,0,1,1,2.283-.946A3.206,3.206,0,0,1,30.168,40.229Z" fill="url(#New_Gradient_Swatch_1-3)"/>
+        <path d="M30.168,34.271a2.73,2.73,0,1,1-1.93.8,2.71,2.71,0,0,1,1.93-.8m0-1a3.728,3.728,0,1,0,2.637,1.092,3.717,3.717,0,0,0-2.637-1.092Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M17.846,40.229a3.228,3.228,0,1,1,2.284-.946A3.2,3.2,0,0,1,17.846,40.229Z" fill="url(#New_Gradient_Swatch_1-4)"/>
+        <path d="M17.846,34.271a2.728,2.728,0,1,1-1.93.8,2.708,2.708,0,0,1,1.93-.8m0-1a3.73,3.73,0,1,0,2.637,1.092,3.717,3.717,0,0,0-2.637-1.092Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M30.168,18.843a3.23,3.23,0,1,1,2.283-.946A3.21,3.21,0,0,1,30.168,18.843Z" fill="url(#New_Gradient_Swatch_1-5)"/>
+        <path d="M30.168,12.884a2.731,2.731,0,1,1-1.93.8,2.711,2.711,0,0,1,1.93-.8m0-1a3.73,3.73,0,1,0,2.637,1.093,3.718,3.718,0,0,0-2.637-1.093Z" fill="#4e4a48"/>
+      </g>
+      <g>
+        <path d="M17.846,18.843A3.228,3.228,0,1,1,20.13,17.9,3.21,3.21,0,0,1,17.846,18.843Z" fill="url(#New_Gradient_Swatch_1-6)"/>
+        <path d="M17.846,12.884a2.73,2.73,0,1,1-1.93.8,2.709,2.709,0,0,1,1.93-.8m0-1a3.732,3.732,0,1,0,2.637,1.093,3.718,3.718,0,0,0-2.637-1.093Z" fill="#4e4a48"/>
+      </g>
+    </g>
+  </g>
+</svg>

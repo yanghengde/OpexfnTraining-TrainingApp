@@ -1,0 +1,6 @@
+<div ng-repeat="button in switchButtonCtrl.buttons"
+     ng-class="'switch-button' + (button.selected ? ' switch-button-select' : '') + switchButtonCtrl.getMarginClass($index)"
+     ng-click="switchButtonCtrl.buttonClicked($index)"
+     title="{{button.tooltip}}">
+    <em ng-class="{momIcon: button.icon }" class="fa {{button.faIcon}}" sit-class="svg-icon" sit-mom-icon="button.icon" style="vertical-align:top"></em>
+</div>

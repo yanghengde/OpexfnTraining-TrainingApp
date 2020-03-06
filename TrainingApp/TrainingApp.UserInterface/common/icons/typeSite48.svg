@@ -1,0 +1,15 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.5" y1="26" x2="46.686" y2="26" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fb8cd"/>
+      <stop offset="0.175" stop-color="#72b0c8"/>
+      <stop offset="0.457" stop-color="#559eb8"/>
+      <stop offset="0.809" stop-color="#2982a1"/>
+      <stop offset="1" stop-color="#0e7191"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon points="40.652 25.138 40.652 29.227 1.5 16.572 1.5 19.466 20.808 25.69 20.808 29.761 1.525 23.54 1.525 41.25 46.686 41.25 46.686 6.75 40.652 6.75 40.652 22.259 20.808 15.852 20.808 18.779 40.652 25.138" fill="url(#linear-gradient)"/>
+    <path d="M47.186,41.75H1.024v-18.9l19.284,6.221v-3.02L1,19.831V15.885L40.151,28.539V25.5L20.308,19.144V15.166l19.843,6.406V6.25h7.035Zm-45.162-1H46.186V7.25H41.151v15.7L21.308,16.54v1.875l19.843,6.358v5.141L2,17.259V19.1l19.308,6.223v5.122L2.024,24.226Z" fill="#4e4a48"/>
+  </g>
+</svg>

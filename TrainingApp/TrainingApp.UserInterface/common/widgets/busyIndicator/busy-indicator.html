@@ -1,0 +1,17 @@
+<div class="modal sit-busy-indicator" data-backdrop="static" data-internal-type="busy-indicator-div">
+    <div class="busy-indicator-msg">
+        <div class="container-msg">
+            <span data-internal-type="busy-indicator-message">{{busyCtrl.message}}</span>
+        </div>
+    </div>
+
+    <div class="container-icon">
+        <div class="horizontal inner-container">
+            <div class="vertical">
+                <div class="mom-modal-overlay-widget">
+                    <div ng-if="busyCtrl.displayIcon !== null" ng-style="{'background-image': 'url(' + busyCtrl.displayIcon + ')'}" class="mom-modal-overlay-spinner-widget"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

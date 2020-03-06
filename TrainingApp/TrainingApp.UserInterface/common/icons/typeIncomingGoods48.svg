@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="29.677" y1="27.464" x2="52.856" y2="6.464" gradientTransform="matrix(1, 0, 0, -1, 0, 48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g867">
+    <path id="polygon13" d="M23.5,13.5l20-13v47h-20Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" fill="url(#linear-gradient)"/>
+    <path id="line15" d="M27,25.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line17" d="M27,21.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line19" d="M27,17.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line21" d="M27,37.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line23" d="M27,33.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line25" d="M27,29.5H40" fill="none" stroke="#147391" stroke-linejoin="round" stroke-width="3"/>
+    <path id="line27" d="M28,25.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="line29" d="M28,21.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="line31" d="M28,17.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="line33" d="M28,37.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="line35" d="M28,33.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="line37" d="M28,29.5H39" fill="none" stroke="#fff" stroke-linejoin="round"/>
+    <path id="polyline39" d="M31.5,47V43.5h4V47" fill="none" stroke="#147391" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="polyline41" d="M31.5,47V43.5h4V47" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path id="path42" d="M5.741,11.586v3.5a3.516,3.516,0,0,0,3.532,3.5H14.7l-2.819-2.793,2.141-2.121L20.5,20.086,14.023,26.5l-2.141-2.121L14.7,21.586H9.273a6.538,6.538,0,0,1-6.56-6.5v-3.5Z" fill="#fff"/>
+    <path id="path44" d="M13.814,25.586l-1.427-1.414,3.323-3.293H9.064a6.033,6.033,0,0,1-6.055-6v-3H5.027v3a4.019,4.019,0,0,0,4.037,4H15.71l-3.323-3.293,1.427-1.414,5.759,5.707-5.759,5.707m0,1.414.713-.707,5.76-5.707L21,19.879l-.713-.707-5.76-5.707-.713-.707-.714.707-1.426,1.414-.714.707.714.707,1.6,1.586H9.064a3.013,3.013,0,0,1-3.027-3v-4H2v4a7.039,7.039,0,0,0,7.064,7h4.21l-1.6,1.586-.714.707.714.707L13.1,26.293Z" fill="#147391"/>
+  </g>
+</svg>

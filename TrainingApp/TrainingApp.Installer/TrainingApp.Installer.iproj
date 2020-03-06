@@ -1,0 +1,87 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bc66ed9a-6f27-4eaa-bad1-a141ced19cef</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Siemens.Mom.Presales.Training.TrainingApp.Installer</RootNamespace>
+    <AssemblyName>Siemens.Mom.Presales.Training.TrainingApp.Installer</AssemblyName>
+    <Name>TrainingApp.Installer</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.02.01</FunctionalBlockVersion>
+    <FunctionalBlockName>TrainingApp</FunctionalBlockName>
+    <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
+    <FunctionalBlockModels>Siemens.Mom.Presales.Training.TrainingApp.TrainingApp.TAPOMModel</FunctionalBlockModels>
+    <FunctionalBlockDescription>
+    </FunctionalBlockDescription>
+    <SitPlatformVersion>3.1</SitPlatformVersion>
+    <AutoDeployPackage>True</AutoDeployPackage>
+    <CanBeExtended>False</CanBeExtended>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="ExternalDependencies" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.TrainingApp.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.TrainingApp.References.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.TrainingApp.ApplicationLog.en-US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrainingApp.CommandHandler\TrainingApp.CommandHandler.csproj">
+      <Name>TrainingApp.CommandHandler</Name>
+      <Project>{b39850e7-4abb-4296-b851-bf95597f7140}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingApp.EventHandler\TrainingApp.EventHandler.csproj">
+      <Name>TrainingApp.EventHandler</Name>
+      <Project>{9be55440-b0be-439b-ab91-a374362009de}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingApp.ReadingFunctionHandler\TrainingApp.ReadingFunctionHandler.csproj">
+      <Name>TrainingApp.ReadingFunctionHandler</Name>
+      <Project>{3ef55a93-af60-43d6-ab88-ae65252b6a4d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingApp.TAPOMModel\TrainingApp.TAPOMModel.pmproj">
+      <Name>TrainingApp.TAPOMModel</Name>
+      <Project>{c3aa2a9c-460d-4455-a203-8efe6408f391}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingApp.UserInterface\TrainingApp.UserInterface.csproj">
+      <Name>TrainingApp.UserInterface</Name>
+      <Project>{809c36b8-660c-4d28-8f28-c64fbd3c7309}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

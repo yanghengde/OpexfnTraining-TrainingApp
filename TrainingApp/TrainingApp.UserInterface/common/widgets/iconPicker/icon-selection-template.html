@@ -1,0 +1,16 @@
+
+<a class="icon-picker-dropdown">
+    <div class="icon-details">
+        <div ng-if="match.model.text.startsWith('svg ') == false" class="icon-container">
+            <em class="fa {{match.model.icon}} fa-lg"></em>
+        </div>
+        <div ng-if="match.model.text.startsWith('svg ') == true" class="icon-container">
+            <img alt="{{match.model.icon}}" class="svg-icon" ng-src="{{match.model.icon}}" height="24" width="24" />
+        </div>
+        <div class="icon-name-container">
+            <div class="name-container icon-text">
+                <label class="image-name" ng-bind-html="match.model.text"></label>
+            </div>
+        </div>
+    </div>
+</a>

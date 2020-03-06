@@ -1,0 +1,44 @@
+<div class="sit-navigation-tabs" data-internal-type="sit-navigation-tabs" >
+    <ng-transclude ng-show="false"></ng-transclude>
+    <ul class="nav navbar-nav tabset" data-internal-type="sit-navigation-tabs-navbar" sit-navigation-slide="true">
+        <li class="navbar-nav-tab" data-internal-type="sit-navigation-tabs-navbar-tab-item" ng-repeat="tab in tabs" 
+            ng-class="{active: tab.active, disabled: tab.disabled, warning: tab.warning, new: tab.new}" 
+            ng-if="$index<=tabsetCtrl.visibleTabs - 1" ng-style="{'max-width' : tabsetCtrl.maxTabWidth}" 
+            uib-tooltip-html="tab.heading" tooltip-enable="tabsetCtrl.isTabEllipsis(tab)">
+            <a ng-click="tab.select()">
+                <div>
+                    <div class="sit-nav-tab-i" ng-if="tab.warning || tab.new">
+                        <em class="fa fa-warning" ng-if="tab.warning"></em>
+                        <em class="fa fa-asterisk" ng-if="tab.new"></em>
+                    </div>
+                    <div class="sit-nav-tab-label" data-ellipsis-id="sit-nav-tab-span-{{tab.$id}}" ng-bind-html="tab.heading"></div>
+                </div>
+            </a>
+        </li>
+        <li class="navbar-nav-dropdown" data-internal-type="sit-navigation-tabs-navbar-dropdown" ng-show="tabsetCtrl.displayDropdown">
+            <button data-toggle="dropdown" title="Other commands" class="dropdown-toggle" ng-click="tabsetCtrl.setDropdownHeight()">
+                <div style="display:inline-block">
+                    <div class="tab-dropdown-label">{{tabsetCtrl.otherTabs}}</div>
+                </div>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-right"  data-internal-type="sit-navigation-tabs-navbar-dropdown-ul" role="menu" data-toggle="dropdown">
+                <li class="sit-tab-dropdown-menu-items"  data-internal-type="sit-navigation-tabs-navbar-dropdown-ul-li" ng-repeat="tab in tabs" ng-class="{disabled: tab.disabled, warning: tab.warning, new: tab.new}" ng-show="$index>tabsetCtrl.visibleTabs - 1">
+                    <a ng-click="tab.select()">
+                        <span>
+                            <em class="fa fa-warning" ng-show="tab.warning"></em>
+                            <em class="fa fa-asterisk" ng-show="tab.new"></em>
+                            <span ng-bind-html="tab.heading"></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr ng-if="tabsetCtrl.visibleTabs > 0" data-internal-type="slidingLine" class="slider" />
+    <div class="sit-tab-clear-div"></div>
+    <div class="tab-content">
+        <div class="tab-pane" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+        </div>
+    </div>
+</div>

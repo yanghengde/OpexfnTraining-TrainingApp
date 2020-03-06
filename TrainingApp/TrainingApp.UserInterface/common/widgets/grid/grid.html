@@ -1,0 +1,14 @@
+<div id="gridContainerDiv"
+     ng-class="gridCtrl.sitGridOptions.gridContainerClass"
+     data-internal-type="gridContainerDiv"
+     class="grid" ng-style="gridCtrl.gridHeight">
+    <div ng-if="gridCtrl.showGrid" id="showHideGrid">
+        <div class="gridStyle" ng-style="gridCtrl.gridHeight" ng-grid="gridCtrl.gridOptions"></div>
+        <div ng-if="!gridCtrl.grouping && gridCtrl.sitGridOptions.enablePaging && gridCtrl.totalDataItems">
+            <sit-pagination sit-options="gridCtrl.paginationOptions"></sit-pagination>
+        </div>
+        <div class="sit-icv-footer-infinite-scroll" ng-if="!gridCtrl.sitGridOptions.enablePaging">
+            <span class="sit-icv-footer-infinite-scroll-label">{{'pagination.selected-items'|translate}}: {{gridCtrl.paginationOptions.selectedItemsCount}}</span>
+        </div>
+    </div>
+</div>

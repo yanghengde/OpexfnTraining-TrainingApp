@@ -1,0 +1,19 @@
+<div ng-attr-data-internal-type="{{itemTileCtrl.template == 'large'? 'largeItemTile' : itemTileCtrl.template == 'wide'? 'wideItemTile' : 'mediumItemTile'}}" class="tile" ng-click="itemTileCtrl.tileClicked()">
+    <div data-internal-type='custom-template-container' ng-class="{'large large-item' : itemTileCtrl.template == 'large','wide wide-item' : itemTileCtrl.template == 'wide','medium medium-item' : itemTileCtrl.template == 'medium' }" class='{{itemTileCtrl.selectClass}}' ng-style="{'color': itemTileCtrl.color, 'background-color': itemTileCtrl.bgColor}">
+        <div ng-class="{'large-select' : itemTileCtrl.template == 'large','wide-select' : itemTileCtrl.template == 'wide','medium-select' : itemTileCtrl.template == 'medium' }" ng-show="itemTileCtrl.showSelectCheck()"></div>
+        <div ng-show="itemTileCtrl.showSelectCheck()" class="top-right-corner-triangle" data-internal-type="selection-triangle"></div>
+        <span ng-show="itemTileCtrl.showSelectCheck()" class="top-right-select-img fa fa-check fa-lg fa-inverse" data-internal-type="selection-check"></span>
+        <div class="item-tile-tag" ng-if="itemTileCtrl.isTagShown" ng-class="{'wide-item-tag-expand':itemTileCtrl.isTagContainerExpanded && itemTileCtrl.template === 'wide', 'wide-item-tag':!itemTileCtrl.isTagContainerExpanded && itemTileCtrl.template === 'wide', 'large-item-tag-expand':itemTileCtrl.isTagContainerExpanded && itemTileCtrl.template === 'large', 'large-item-tag':!itemTileCtrl.isTagContainerExpanded && itemTileCtrl.template === 'large'}" ng-click="$event.stopPropagation()">
+            <div class="tag-icon" ng-click="itemTileCtrl.toggleTagContainer()" ng-show="itemTileCtrl.showTagExpandIcon">
+                <em ng-if="itemTileCtrl.isTagContainerExpanded" sit-mom-icon="itemTileCtrl.svgIcons.svgDown"></em>
+                <em ng-if="!itemTileCtrl.isTagContainerExpanded" sit-mom-icon="itemTileCtrl.svgIcons.svgUp"></em>
+            </div>
+            <div class="tag-text-container" data-internal-type="tag-text-container">
+                <span ng-repeat="tag in itemTileCtrl.tileContent[itemTileCtrl.tag] track by $index" class="tag-text" ng-show="tag.Name.length >0" title="{{tag.Name}}">
+                    <div ng-style="tag.style" class="tagbullet"></div>
+                    {{tag.ShortName}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

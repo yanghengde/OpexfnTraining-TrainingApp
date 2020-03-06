@@ -1,0 +1,36 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.086" y1="45.414" x2="43.5" y2="4" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="18.016" y1="37.116" x2="30.783" y2="24.348" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cee6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d4"/>
+      <stop offset="1" stop-color="#8dc3d2"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="9.305" y1="28.404" x2="26.728" y2="10.981" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a5d1dc"/>
+      <stop offset="0.706" stop-color="#82bdcf"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" fill="url(#linear-gradient)"/>
+      <path d="M47,43.5H1V6A2.5,2.5,0,0,1,3.5,3.5H14.43a2.493,2.493,0,0,1,2.08,1.114L19.768,9.5H47Zm-45-1H46v-32H19.232L15.678,5.168A1.5,1.5,0,0,0,14.43,4.5H3.5A1.5,1.5,0,0,0,2,6Z" fill="#4e4a48"/>
+    </g>
+    <polygon points="24.4 26.652 37.167 19.268 37.167 33.964 24.4 41.346 24.4 26.652" fill="#3f91af"/>
+    <polygon points="11.633 19.268 24.378 11.885 37.167 19.268 24.4 26.652 11.633 19.268" fill="url(#Sfumatura_senza_nome_3)"/>
+    <polygon points="24.4 26.652 24.4 41.346 11.633 33.963 11.633 19.268 24.4 26.652" fill="url(#Sfumatura_senza_nome_2)"/>
+    <path d="M24.4,27.151a.5.5,0,0,1-.25-.067L11.383,19.7l.5-.865L24.4,26.074l12.518-7.238.5.865L24.649,27.084A.493.493,0,0,1,24.4,27.151Z" fill="#177491"/>
+    <rect x="23.899" y="26.651" width="1" height="14.695" fill="#177491"/>
+    <path d="M24.4,41.847a.5.5,0,0,1-.25-.068L11.383,34.4a.5.5,0,0,1-.25-.433V19.268a.5.5,0,0,1,.249-.433l12.745-7.382a.5.5,0,0,1,.5,0l12.789,7.383a.5.5,0,0,1,.25.434v14.7a.5.5,0,0,1-.25.432L24.649,41.779A.5.5,0,0,1,24.4,41.847ZM12.133,33.675,24.4,40.77l12.268-7.094V19.557L24.378,12.463,12.133,19.556Z" fill="#4e4a48"/>
+  </g>
+</svg>

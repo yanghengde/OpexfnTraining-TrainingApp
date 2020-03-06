@@ -1,0 +1,70 @@
+<div ng-controller="settingsCtrl as sc" class="user-preference-settings">
+    <div class="vertical-cmdbar">
+        <sit-command-bar sit-vertical-autofixed ="true" sit-type="tool" sit-label-align="right" sit-layout="vertical">
+            <sit-command sit-name="settings.reset" ng-click="sc.restoreSettings"
+                         cmd-icon="Import" sit-tooltip="{{'settings.btnReset'|translate}}"
+                         sit-label="{{'settings.btnReset'|translate}}">
+            </sit-command>
+            <sit-command sit-name="settings.save" ng-click="sc.saveSettings"
+                         cmd-icon="Save" sit-tooltip="{{'settings.btnSave'|translate}}"
+                         sit-label="{{'settings.btnSave'|translate}}">
+            </sit-command>
+        </sit-command-bar>
+    </div>
+    <div class="container-fluid">
+        <!-- left column: language  & log -->
+        <div class="settings-log-info">
+            <h3>{{ 'settings.log' | translate }}</h3>
+            <div data-internal-type="settingsLogLevels">
+                <sit-item-tile ng-model="sc.loglevel" ng-repeat="item in sc.loglevel" sit-tile-content="item"></sit-item-tile>
+            </div>
+        </div>
+    </div>
+    <!-- right column: themes -->
+    <div class="col-lg-20 col-md-20 col-sm-40 col-xs-40">
+        <div class="settings-theme-div">
+            <h3>{{ 'settings.theme' | translate }}</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div data-internal-type="tileThemeLight" class="tile tile-theme-light" ng-click="sc.themeSelected(0)">
+                            <div class="select-border" ng-show="sc.isCurrentTheme(0)"></div>
+                            <div ng-show="sc.isCurrentTheme(0)" class="top-right-corner-triangle"></div>
+                            <span ng-show="sc.isCurrentTheme(0)" class="top-right-select-img fa fa-check fa-inverse fa-lg"></span>
+                        </div>
+
+                    </td>
+                    <td class="theme-eye-selector">
+                        <span class="fa fa-eye fa-lg" ng-click="sc.openModal(0)"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div data-internal-type="tileThemeDark" class="tile tile-theme-dark" ng-click="sc.themeSelected(1)">
+                            <div class="select-border" ng-show="sc.isCurrentTheme(1)"></div>
+                            <div ng-show="sc.isCurrentTheme(1)" class="top-right-corner-triangle"></div>
+                            <span ng-show="sc.isCurrentTheme(1)" class="top-right-select-img fa fa-check fa-inverse fa-lg"></span>
+                        </div>
+                    </td>
+                    <td class="theme-eye-selector">
+                        <span class="fa fa-eye fa-lg" ng-click="sc.openModal(1)"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div sit-notification-tile
+         sit-tile-title="sc.notificationTile.title"
+         sit-tile-content="sc.notificationTile.content"
+         sit-tile-type="sc.notificationTile.type"
+         sit-tile-counter=sc.notificationTile.counter
+         sit-tile-callback="sc.notificationTile.clickCallback"
+         sit-tile-position="sc.notificationTile.position"
+         sit-tile-popup="sc.notificationTile.popup"
+         id="{{sc.notificationTile.id}}"></div>
+</div>
+
+
+
+

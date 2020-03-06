@@ -1,0 +1,13 @@
+<div class="pop-up-panel-container" ng-show="popUpPanel.sitPopUpContent.showContent">
+    <div class="pop-up-panel-header">
+        <div class="pop-up-panel-header-text">{{popUpPanel.sitPopUpContent.title}}</div>
+        <div class="pop-up-panel-close-button">
+            <button type="button" class="pop-up-panel-close-btn" ng-click="popUpPanel.closePopUpPanel()" title="{{'sidePanel.close'|translate}}">
+                <span class="fa fa-times pop-up-panel-close-img" sit-class="pop-up-panel-mom-button" sit-mom-icon="popUpPanel.closePanel" aria-hidden="true"
+                      ng-class="{momIcon: popUpPanel.closePanel !== null }"></span>
+            </button>
+        </div>
+    </div>
+    <div class="pop-up-panel-content" ng-transclude>
+    </div>
+</div>

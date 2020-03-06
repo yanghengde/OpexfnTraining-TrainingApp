@@ -1,0 +1,49 @@
+<svg version="1.1" id="Verb_x5F_Zone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px"  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<linearGradient id="polygon36_1_" gradientUnits="userSpaceOnUse" x1="267.8486" y1="355.7393" x2="304.8481" y2="392.7388" gradientTransform="matrix(1 0 0 1 -273.5996 -348.9902)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.232" style="stop-color:#FAFAFA"/>
+	<stop  offset="0.496" style="stop-color:#EDEDED"/>
+	<stop  offset="0.775" style="stop-color:#D7D6D6"/>
+	<stop  offset="1" style="stop-color:#BFBEBE"/>
+</linearGradient>
+<path id="polygon36" fill="url(#polygon36_1_)" stroke="#474747" stroke-miterlimit="10" d="M19.499,0.499h-19v44h30v-33
+	L19.499,0.499z"/>
+<linearGradient id="polygon38_1_" gradientUnits="userSpaceOnUse" x1="290.3496" y1="352.2402" x2="301.3491" y2="363.2397" gradientTransform="matrix(1 0 0 1 -273.5996 -348.9902)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.221" style="stop-color:#F7F8F8"/>
+	<stop  offset="0.541" style="stop-color:#E5E5E5"/>
+	<stop  offset="0.92" style="stop-color:#C7C6C6"/>
+	<stop  offset="1" style="stop-color:#BFBEBE"/>
+</linearGradient>
+<path id="polygon38" fill="url(#polygon38_1_)" stroke="#474747" stroke-linejoin="round" d="M19.499,0.499v11h11L19.499,0.499z"/>
+<path id="rect40" fill="none" stroke="#5B5B5B" d="M3.499,17.499h24v15h-24V17.499z"/>
+<path id="line42" fill="none" stroke="#5B5B5B" d="M7.499,32.498v-15"/>
+<path id="line44" fill="none" stroke="#5B5B5B" d="M17.499,32.498v-15"/>
+<path id="line46" fill="none" stroke="#5B5B5B" d="M3.499,22.499h24"/>
+<path id="line48" fill="none" stroke="#5B5B5B" d="M3.499,27.498h24"/>
+<linearGradient id="circle62_1_" gradientUnits="userSpaceOnUse" x1="3.3867" y1="-413.7046" x2="9.171" y2="-446.9269" gradientTransform="matrix(0.7459 -0.6664 -0.6664 -0.7459 -255.8384 -281.4297)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="0.1747" style="stop-color:#6BAEC3"/>
+	<stop  offset="0.4567" style="stop-color:#539EB5"/>
+	<stop  offset="0.8089" style="stop-color:#2F849F"/>
+	<stop  offset="1" style="stop-color:#187491"/>
+</linearGradient>
+<path id="circle62" fill="url(#circle62_1_)" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M44.195,25.835c4.784,5.355,4.321,13.575-1.034,18.36l0,0c-5.355,4.784-13.575,4.321-18.359-1.034l0,0
+	c-4.785-5.355-4.322-13.575,1.033-18.36l0,0C31.191,20.017,39.41,20.48,44.195,25.835L44.195,25.835z"/>
+<path id="line79" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-miterlimit="10" d="M41.318,29.571l-8.436,7.536"/>
+<path id="path64"  fill="#187491" d="M32.392,37.081l9.048-8.083"/>
+<path id="polyline66" fill="none" stroke="#187491" stroke-width="4.3915" stroke-miterlimit="10" d="M33.662,28.807l7.42,0.098
+	l-0.678,7.449"/>
+<path id="polyline70" fill="none" stroke="#FFFFFF" stroke-width="2.1957" stroke-miterlimit="10" d="M34.635,28.764l6.447,0.141
+	l-0.584,6.422"/>
+<path id="path64-7"  fill="none" stroke="#187491" stroke-width="4" stroke-miterlimit="10" d="
+	M38.256,31.523l-8.852,7.861"/>
+<path id="polyline66-1" fill="none" stroke="#187491" stroke-width="4.3915" stroke-miterlimit="10" d="M35.603,40.404l-7.42-0.1
+	l0.677-7.449"/>
+<path id="polyline70-3" fill="none" stroke="#FFFFFF" stroke-width="2.1957" stroke-miterlimit="10" d="M34.629,40.447l-6.446-0.143
+	l0.583-6.422"/>
+<path id="path68"  fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+	M28.489,40.018l11.759-10.083"/>
+</svg>

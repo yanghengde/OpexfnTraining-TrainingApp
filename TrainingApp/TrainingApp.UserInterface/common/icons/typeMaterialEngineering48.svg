@@ -1,0 +1,29 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="14" y1="47.511" x2="34" y2="27.51" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cee6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d4"/>
+      <stop offset="1" stop-color="#8dc3d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.353" y1="33.864" x2="27.647" y2="6.571" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a5d1dc"/>
+      <stop offset="0.706" stop-color="#82bdcf"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <polygon points="24 24.056 44 12.49 44 35.511 24 47.076 24 24.056" fill="#3f91af"/>
+      <polygon points="4 12.489 23.966 0.924 44 12.49 24 24.056 4 12.489" fill="url(#linear-gradient)"/>
+      <polygon points="24 24.056 24 47.076 4 35.509 4 12.489 24 24.056" fill="url(#linear-gradient-2)"/>
+    </g>
+    <polyline points="44 12.49 24 24.056 4 12.489" fill="none" stroke="#197492" stroke-linejoin="round"/>
+    <line x1="24" y1="24.056" x2="24" y2="47.076" fill="none" stroke="#197492" stroke-linejoin="round"/>
+    <polygon points="23.966 0.924 4 12.489 4 35.509 24 47.076 44 35.511 44 12.49 23.966 0.924" fill="none" stroke="#474647" stroke-linejoin="round"/>
+    <polyline points="36 17.094 24 24.033 12 17.094" fill="none" stroke="#197492" stroke-linejoin="round"/>
+    <line x1="24" y1="24.033" x2="24" y2="37.846" fill="none" stroke="#197492" stroke-linejoin="round"/>
+  </g>
+</svg>

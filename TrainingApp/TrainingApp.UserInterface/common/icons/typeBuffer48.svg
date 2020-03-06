@@ -1,0 +1,21 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="14.422" y1="34.453" x2="23.328" y2="43.359" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray-2" x1="24.757" y1="4.616" x2="33.663" y2="13.522" xlink:href="#Siemens_-_Light_gray"/>
+  </defs>
+  <g>
+    <rect x="14" y="2" width="20" height="44" fill="url(#linear-gradient)"/>
+    <path d="M13,1V47H35V1ZM34,16.25H24.5V2H34Zm-9.5,1H34v13.5H24.5ZM23.5,2V16.25H14V2Zm0,28.75H14V17.25h9.5Zm-9.5,1h9.5V46H14ZM24.5,46V31.75H34V46Z" fill="#177491"/>
+    <rect x="15.438" y="33.438" width="6.875" height="10.938" fill="url(#Siemens_-_Light_gray)"/>
+    <path d="M22.812,44.875H14.938V32.938h7.874Zm-6.874-1h5.874V33.938H15.938Z" fill="#6f6e6e"/>
+    <rect x="25.773" y="3.6" width="6.875" height="10.938" fill="url(#Siemens_-_Light_gray-2)"/>
+    <path d="M33.147,15.038H25.272V3.1h7.875Zm-6.875-1h5.875V4.1H26.272Z" fill="#6f6e6e"/>
+  </g>
+</svg>

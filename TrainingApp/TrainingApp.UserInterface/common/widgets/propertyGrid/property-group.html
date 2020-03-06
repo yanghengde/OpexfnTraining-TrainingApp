@@ -1,0 +1,30 @@
+<div class="property-grid-group" ng-if="propertyGroupCtrl.accordion">
+    <div ng-if="propertyGroupCtrl.isCollapsible" class="group-header" ng-click="propertyGroupCtrl.toggle()">
+        <div class="group-toggle collapsed" ng-class="{collapsed: propertyGroupCtrl.singleSelection && propertyGroupCtrl.isCollapsed}" aria-controls="#{{propertyGroupCtrl.sitId}}AccordionBody" data-toggle="collapse" data-target="#{{propertyGroupCtrl.sitId}}AccordionBody"
+             aria-expanded="false" data-parent="#accordionExample">
+            <span class="group-header-arrow-button" sit-mom-icon="propertyGroupCtrl.svgIcon" sit-class="svg-icon"></span>
+            <span class="group-header-label"> {{propertyGroupCtrl.name}}</span>
+        </div>
+    </div>
+    <div ng-if="!propertyGroupCtrl.isCollapsible" class="group-header">
+        <div>{{propertyGroupCtrl.name}}</div>
+    </div>
+    <div id="{{propertyGroupCtrl.sitId}}AccordionBody" class="group-body collapse" ng-class="{'show': !propertyGroupCtrl.isCollapsible, 'in' : propertyGroupCtrl.singleSelection && !propertyGroupCtrl.isCollapsed }">
+        <div class="cf">
+            <div ng-if="propertyGroupCtrl.parentScope.layout === 'Vertical'"
+                 class="property-grid-vertical-layout" ng-transclude>
+            </div>
+            <div ng-if="propertyGroupCtrl.parentScope.layout === 'Horizontal' && propertyGroupCtrl.parentScope.type === 'Fixed'"
+                 ng-attr-class="{{propertyGroupCtrl.parentScope.columns !== 0 ? 'property-grid-horizontal-fixed-layout x' + propertyGroupCtrl.parentScope.columns : 'property-grid-horizontal-fixed-layout'}}"
+                 ng-class="{'pl-property-grid-group-list': (propertyGroupCtrl.parentScope.mode == 'list' && propertyGroupCtrl.parentScope.columns)}"
+                 ng-transclude>
+            </div>
+            <div ng-if="propertyGroupCtrl.parentScope.layout === 'Horizontal' && propertyGroupCtrl.parentScope.type === 'Fluid'"
+                 class="property-grid-horizontal-fluid-layout" ng-transclude>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="propertyGroupCtrl.parentScope.layout == 'Vertical' && !propertyGroupCtrl.accordion" class="property-grid-vertical-list-layout">
+    <div ng-transclude></div>
+</div>

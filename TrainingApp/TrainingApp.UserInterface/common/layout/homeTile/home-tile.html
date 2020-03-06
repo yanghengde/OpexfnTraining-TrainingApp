@@ -1,0 +1,10 @@
+<div ng-repeat="config in homeTileCtrl.tileConfig" class="home-tile-screen">
+    <div>
+        <span class="home-tile-heading">{{config.title}}</span>
+    </div>
+    <div class="home-tile-screen-container">
+        <div class="home-tile" ng-repeat="tile in config.tiles">
+            <sit-home-tile options="tile"></sit-home-tile>
+        </div>
+    </div>
+</div>

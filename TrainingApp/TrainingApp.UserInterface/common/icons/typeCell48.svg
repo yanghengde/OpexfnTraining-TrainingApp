@@ -1,0 +1,13 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Dark_blue" data-name="Siemens - Dark blue" x1="1.5" y1="11.5" x2="36.5" y2="46.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="1.5" y="11.5" width="35" height="35" fill="url(#Siemens_-_Dark_blue)"/>
+    <path d="M36,12V46H2V12H36m1-1H1V47H37V11Z" fill="#464646"/>
+  </g>
+  <path d="M47,33H39V25h8ZM23,1H15V9h8Z" fill="#bebdbd"/>
+</svg>

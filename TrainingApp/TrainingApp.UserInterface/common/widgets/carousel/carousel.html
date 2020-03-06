@@ -1,0 +1,21 @@
+<div class="carousel-inner">
+    <div class="carousel-chevron" ng-click="carouselCtrl.prev()" ng-class="carouselCtrl.firstImage !== 1 ? '':'hide-icons'">
+        <a ng-show="carouselCtrl.sitItems.length > 1">
+            <em class="rotate" sit-class="command-mom-icon" sit-mom-icon="{path: 'common/icons/miscChevronRight16.svg', size : '16px'}"></em>
+        </a>
+    </div>
+    <div class="inner">
+        <ul>
+            <li ng-repeat="slide in carouselCtrl.sitItems">
+                <img ng-class="carouselCtrl.sitValue === slide.id ? 'home-card-selected' : ''" ng-click="carouselCtrl.selectHomeCard(slide)" ng-src="{{slide.image}}" alt="Left Arrow" />
+                <p ng-show="slide.title">{{slide.title}}</p>              
+                <p ng-show="!slide.title">&nbsp;</p>              
+            </li>
+        </ul>
+    </div>
+    <div class="carousel-chevron" ng-click="carouselCtrl.next()" ng-class="carouselCtrl.lastImage !== carouselCtrl.sitItems.length ? '' : 'hide-icons'">
+        <a ng-if="carouselCtrl.sitItems.length > 1">
+            <em sit-class="command-mom-icon" sit-mom-icon="{path: 'common/icons/miscChevronRight16.svg', size : '16px'}"></em>
+        </a>
+    </div>
+</div>

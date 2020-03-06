@@ -1,0 +1,23 @@
+<div id="tagsViewerFilter" class="tag-viwer-filter">
+    <div id="quickSearchContainer" class="quick-search-container">
+        <input id="quickSearchTextBox" type="text" ng-focus="vm.focus()" ng-blur="vm.blur()" ng-change="vm.filterChanged()" placeholder="{{vm.quickSearchText}}" class="form-control filter-quick-search" ng-model="vm.filterValue">
+        <span class="filter-close-icon" sit-class="svg-icon" sit-mom-icon="vm.svgIcons.close" ng-show="vm.showIcon" ng-click="vm.clearFilter()"></span>
+        <span id="quickSearchIcon" class="filter-search-icon" sit-class="svg-icon" sit-mom-icon="vm.svgIcons.search"></span>
+    </div>
+</div>
+
+<div class="tagcontainer">
+    <sit-tag-element ng-repeat="tag in vm.currentPageTags" class="animate-repeat" tag="tag" mode="vm.mode" on-add="vm.onTagAdd(tag)" on-remove="vm.onTagRemove(tag)" on-selection-changed="vm.onTagSelectionChanged(tag)"></sit-tag-element>
+</div>
+<div id="tagsViewerPager" ng-show="vm.pagerNumberTotalItems > vm.pageSize">
+    <div class="row">
+        <div class="col-xs-40 col-sm-40 col-md-40 col-lg-40 totalItemsLabel">
+            {{ 'tagsManager.totalItems' | translate }}: {{vm.pagerNumberTotalItems}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-40 col-sm-40 col-md-40 col-lg-40">
+            <ul uib-pagination total-items="vm.pagerNumberTotalItems" ng-model="vm.currentPage" ng-change="vm.pageChanged()"></ul>
+        </div>
+    </div>
+</div>

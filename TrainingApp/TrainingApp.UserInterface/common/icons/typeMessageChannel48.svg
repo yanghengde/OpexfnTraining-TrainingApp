@@ -1,0 +1,55 @@
+<svg version="1.1" id="Livello_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	
+		<linearGradient id="rect13-9-3_1_" gradientUnits="userSpaceOnUse" x1="117.2383" y1="-171.4077" x2="141.7701" y2="-192.0753" gradientTransform="matrix(1.8895 0 0 -1.7403 -218.5186 -300.2041)">
+		<stop  offset="0" style="stop-color:#F3F3F3"/>
+		<stop  offset="0.5" style="stop-color:#CDCCCC"/>
+		<stop  offset="0.63" style="stop-color:#C8C7C7"/>
+		<stop  offset="0.779" style="stop-color:#BABABA"/>
+		<stop  offset="0.938" style="stop-color:#A2A2A1"/>
+		<stop  offset="0.99" style="stop-color:#989898"/>
+	</linearGradient>
+	<rect id="rect13-9-3" x="1" y="1" fill="url(#rect13-9-3_1_)" stroke="#474747" stroke-miterlimit="10" width="45" height="26"/>
+	<path id="path15-5"  fill="none" stroke="#6F6F6F" stroke-width="1" stroke-miterlimit="10" d="
+		M4.183,3.959l15.004,9.824c2.452,1.606,5.904,1.571,8.309-0.085l14.148-9.739"/>
+	
+		<line id="line17-6" fill="none" stroke="#6F6F6F" stroke-width="1" stroke-miterlimit="10" x1="19.259" y1="13.873" x2="4.183" y2="22.822"/>
+	
+		<line id="line19-5" fill="none" stroke="#6F6F6F" stroke-width="1" stroke-miterlimit="10" x1="41.645" y1="22.822" x2="27.338" y2="13.895"/>
+	
+		<line id="line79" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-miterlimit="10" x1="40.161" y1="29.247" x2="28.849" y2="29.247"/>
+	
+		<linearGradient id="circle62_1_" gradientUnits="userSpaceOnUse" x1="298.4092" y1="-325.7974" x2="316.7938" y2="-344.182" gradientTransform="matrix(1 0 0 -1 -273.5996 -300.9902)">
+		<stop  offset="0" style="stop-color:#74B5C8"/>
+		<stop  offset="0.1747" style="stop-color:#6BAEC3"/>
+		<stop  offset="0.4567" style="stop-color:#539EB5"/>
+		<stop  offset="0.8089" style="stop-color:#2F849F"/>
+		<stop  offset="1" style="stop-color:#187491"/>
+	</linearGradient>
+	
+		<circle id="circle62" fill="url(#circle62_1_)" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="34" cy="34" r="13"/>
+	
+		<path id="path64"  fill="none" stroke="#187491" stroke-width="4" stroke-miterlimit="10" d="
+		M28.5,28.899h12.133"/>
+	<polyline id="polyline66" fill="none" stroke="#187491" stroke-width="4.3915" stroke-miterlimit="10" points="35.637,23.883 
+		41.104,28.899 35.637,34.004 	"/>
+	
+		<path id="path68"  fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+		M29.791,28.826l10.842,0.073"/>
+	<polyline id="polyline70" fill="none" stroke="#FFFFFF" stroke-width="2.1957" stroke-miterlimit="10" points="36.391,24.499 
+		41.104,28.899 36.391,33.301 	"/>
+	
+		<line id="line79-4" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-miterlimit="10" x1="27.572" y1="39.363" x2="38.885" y2="39.363"/>
+	
+		<path id="path64-7"  fill="none" stroke="#187491" stroke-width="4" stroke-miterlimit="10" d="
+		M39.233,39.016H27.102"/>
+	<polyline id="polyline66-6" fill="none" stroke="#187491" stroke-width="4.3915" stroke-miterlimit="10" points="32.098,33.999 
+		26.629,39.016 32.098,44.12 	"/>
+	
+		<path id="path68-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+		M37.941,38.941l-10.84,0.074"/>
+	<polyline id="polyline70-5" fill="none" stroke="#FFFFFF" stroke-width="2.1957" stroke-miterlimit="10" points="31.344,34.615 
+		26.629,39.016 31.344,43.416 	"/>
+</g>
+</svg>

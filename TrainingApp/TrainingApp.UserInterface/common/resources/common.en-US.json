@@ -1,0 +1,875 @@
+{
+  "common": {
+    "and": "And",
+    "and-or": "And/Or",
+    "apply": "Apply",
+    "busy-message": {
+      "loading": "Loading...",
+      "please-wait": "Please wait...",
+      "working": "Working..."
+    },
+    "redirectInProgress": "You are now being redirected to the login page...",
+    "cancel": "Cancel",
+    "selectAll": "Select All",
+    "configure": "Configure",
+    "contains": "Contains",
+    "delete": "Delete",
+    "description": "Description",
+    "done": "Done",
+    "edit": "Edit",
+    "ends-with": "Ends With",
+    "error": "Error",
+    "error-code-message": "Error Code({{code}}): {{message}}",
+    "error-text-code-message": "{{text}}\nError Code({{code}}): {{message}}",
+    "field": "Field",
+    "imageUpload": "Image Upload",
+    "in": "in",
+    "invalid-parameter-value": "Invalid value for parameter({{name}}): {{message}}",
+    "isNull": "Is Null",
+    "isNotNull": "Is Not Null",
+    "any": "Any",
+    "notany": "Not Any",
+    "load": "Load",
+    "match-case": "Match case",
+    "group": "Group selected clauses",
+    "ungroup": "Ungroup clauses",
+    "name": "Name",
+    "no": "No",
+    "no-data": "No Data",
+    "none": "None",
+    "ok": "OK",
+    "operator": "Operator",
+    "or": "Or",
+    "param-msg-exceed-max-string-length": "Value exceeds maximum length of {{length}} characters.",
+    "param-msg-invalid-format": "Value is not in format {{format}}.",
+    "remove": "Remove",
+    "reset": "Reset",
+    "save": "Save",
+    "saveAll": "Save All",
+    "selected": "selected",
+    "starts-with": "Starts With",
+    "success": "Success",
+    "update": "Update",
+    "value": "Value",
+    "version": "Version",
+    "yes": "Yes",
+    "confirmation": "Confirmation",
+    "authentication": {
+      "overlayLogoutErrorTitle": "Error",
+      "overlayLogoutErrorMsg": "Logout Error",
+      "overlaySessionExpireWarning": "User session is expiring...",
+      "overlaySessionExpireMessage": "Your session will expire in ",
+      "overlaySesionExpiredMessage": "Your session may have expired unless you have performed activities in other tabs.",
+      "renewSession": "Renew Session"
+    },
+    "header": {
+      "actions": {
+        "home": "Home",
+        "settings": "Settings",
+        "about": "About",
+        "logout": "Logout"
+      },
+      "about": {
+        "title": "About",
+        "version": "Opcenter Execution Foundation 3.1",
+        "copyright": "© Siemens AG, 2019"
+      }
+    },
+    "helpWindow": {
+      "title": "Help",
+      "search": "Enter your search word here...",
+      "no-items-found": "No results were found. Please broaden your search criteria.",
+      "search-info": "You searched for",
+      "document": "Document",
+      "unknown-page": "The page does not exist.",
+      "no-help-code": "No help page available",
+      "no-documents": "No help page available for "
+    },
+    "viewbar": {
+      "grid": "Grid",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "gridster": {
+      "dragresize": "Drag and Resize",
+      "dragresizeTitle": "Drag and resize components"
+    },
+    "unauthorize": {
+      "title": "Authorization error",
+      "message": "You do not have permission to access this page."
+    },
+    "undefinedHome": {
+      "title": "Home state undefined",
+      "text": "Home state is not configured"
+    },
+    "serviceLayerError": {
+      "title": "Service Unavailable"
+    },
+    "nerveBox": {
+      "generic": {
+        "title": "License Check",
+        "body": "The license check failed. \n Contact your System Administrator."
+      }
+    }
+  },
+  "dateTimePicker": {
+    "clear": "Clear",
+    "close": "Close",
+    "now": "Now",
+    "today": "Today",
+    "ok": "Ok"
+  },
+  "dialog": {
+    "close": "Close",
+    "validator": {
+      "warningTitle": "Warning: ",
+      "warningMessage": "At least one field does not meet its validation rule."
+    }
+  },
+  "entityPicker": {
+    "defaultPlaceHolder": "Find an Entity",
+    "cancel": "Cancel",
+    "select": "Select",
+    "selectItem": "Select Item"
+  },
+  "fileUploader": {
+    "noFile": "No file specified.",
+    "error": {
+      "fileType": "Invalid file type.",
+      "fileSize": "Invalid file size.",
+      "readError": "An error occurred while reading the file."
+    },
+    "tooltip": {
+      "browse": "Browse",
+      "remove": "Remove"
+    }
+  },
+  "iconPicker": {
+    "defaultPlaceHolder": "Start typing fa or sit to find an icon"
+  },
+  "textEditor": {
+    "browse": "Browse",
+    "tabHeading": "Upload from File System"
+  },
+  "commandBar": {
+    "moreCommandsAvailable": "More",
+    "lessCommands": "Less",
+    "clearToolTip": "Clear",
+    "saveAsToolTip": "Save As",
+    "saveToolTip": "Save",
+    "unknownCommandSep": "Unknown sub command type: Allowed values are 'Command' or 'Sep'",
+    "unknownCommand": "Unknown sub command type: Allowed values are 'Command', 'Group' or 'Sep'"
+  },
+  "contextInfo": {
+    "title": "Context Info"
+  },
+  "filter": {
+    "add-new-clause": "Add New Clause",
+    "constant": "Constant",
+    "field": "Field",
+    "unknownType": "UNKNOWN TYPE",
+    "optionalDescription": "Type here an optional description"
+  },
+  "filterPanel": {
+    "title": "Filters",
+    "reset": "Reset",
+    "apply": "Apply",
+    "save": "Save",
+    "cancel": "Cancel",
+    "saveFilterAs": "Save Filter As",
+    "name": "Name",
+    "description": "Description",
+    "optionalDescription": "Type here an optional description",
+    "nameInfo": "should start with character or number, within 3 to 25 characters.",
+    "descInfo": "should have length of maximum 200 characters.",
+    "filterName": "Filter Name",
+    "newFilter": "New Filter",
+    "openFilter": "Open Filter",
+    "delete": "Delete",
+    "overlay": {
+      "text": "Error: Filter already exists with the same name.",
+      "title": "Filter already exists",
+      "displayName": "OK"
+    }
+  },
+  "filterBar": {
+    "none": "None",
+    "quick-search": "Quick Search",
+    "sortby": "Sort By",
+    "userPreferenceTitle": "User Preference",
+    "filterTitle": "Filter",
+    "groupTitle": "Group By",
+    "ascending": "Ascending",
+    "descending": "Descending",
+    "ascendingTitle": "Sort Ascending",
+    "descendingTitle": "Sort Descending",
+    "segregationTagsTitle": "Segregation Tags",
+    "mode": "Mode",
+    "table": "Table",
+    "list": "List",
+    "selectAll": "Select-all",
+    "multiSelection": "Multi-select"
+
+  },
+  "contextual": {
+    "search": "Enter your search word here..."
+  },
+  "Graph": {
+    "error": {
+      "graphUndefined": "Nodes and edges have not been defined for the graph.",
+      "uniqueNodeId": "Node ID must be unique.",
+      "uniqueEdgeId": "Edge ID must be unique.",
+      "emptyGraph": "The graph is empty"
+    },
+    "name": "Name",
+    "description": "Description",
+    "autoFit": "Auto Fit",
+    "panAndZoom": "Pan and Zoom"
+  },
+  "Notification": {
+    "tileNull": "[Controller.notificationTileShow] tileContent is null \n'",
+    "tileContentGt120": "[Controller.notificationTileShow] tileContent is bigger than 120 characters \n",
+    "tileTitleGt120": "[Controller.notificationTileShow] tileTitle is bigger than 22 characters \n",
+    "infoTitle": "Info",
+    "warningTitle": "Warning"
+  },
+  "pager": {
+    "page-size": "Page Size",
+    "total-items": "Total Items",
+    "filtered-items": "Filtered Items",
+    "selected-items": "Selected Items",
+    "page": "Page",
+    "page-first": "First Page",
+    "page-prev": "Previous Page",
+    "page-next": "Next Page",
+    "page-last": "Last Page"
+
+  },
+  "pagination": {
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "entries": "entries",
+    "selected-items": "Selected Items"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Language and Culture",
+    "select": "Select the language and culture.",
+    "theme": "Theme",
+    "log": "UI Logging",
+    "message": "Activating Debug or Verbose logging may affect overall UI performance.",
+    "btnReset": "Reset to Default",
+    "btnSave": "Save Changes",
+    "notificationTile": {
+      "title": "Success",
+      "saveText": "The settings have been saved correctly.",
+      "restoreText": "The settings have been restored correctly."
+    }
+  },
+  "sidebar": {
+    "title": "Sidebar",
+    "open": "Open",
+    "back": "Back",
+    "error": {
+      "configMissing": "There is no data available.",
+      "homeMissing": "Home Page has not been configured.",
+      "invalidNavigationButtons": "Navigation button has not been configured correctly.",
+      "iconMissing": "Icon has not been not configured."
+    }
+  },
+  "sidePanel": {
+    "close": "Close",
+    "labelErrorMsg": "label is mandatory",
+    "tooltipErrorMsg": "tooltip is mandatory",
+    "minimize": "Minimize",
+    "maximize": "Maximize"
+  },
+  "timePicker": {
+    "clear": "Clear",
+    "set": "Set"
+  },
+  "validator": {
+    "errors": {
+      "noLabel": "The field",
+      "required": "{{field}} is mandatory.",
+      "pattern": "{{field}} {{ value }}",
+      "min": "{{field}} is below the minimum value ({{value}}).",
+      "max": "{{field}} maximum value has been exceeded ({{value}}).",
+      "minlength": "{{field}} is below the minimum value ({{value}}).",
+      "maxlength": "{{field}} maximum length has been exceeded ({{value}}).",
+      "number": "{{field}} must be a number.",
+      "editable": "{{field}} value must be selected from the values available.",
+      "custom": "{{field}} {{value}}"
+    }
+  },
+  "propertyGrid": {
+    "property": {
+      "addNew": "Add New",
+      "remove": "Remove",
+      "canNotAdd": "Cannot add",
+      "canNotRemove": "Cannot remove",
+      "addItem": "Add Item"
+    },
+    "invalidLayout": "Unknown property grid type: Allowed values are 'Fixed' or 'Fluid'"
+  },
+  "taskContainer": {
+    "taskList": {
+      "name-sort-by": "Name",
+      "default-sort-by": "Status",
+      "created-sort-by": "Created On",
+      "lastupdated-sort-by": "Last Updated On"
+    },
+    "tile": {
+      "status": "Status",
+      "created": "Created",
+      "lastUpdated": "Updated",
+      "taskDefinitionId": "Definition"
+    },
+    "parameters": {
+      "parameter": "Parameter",
+      "description": "Description",
+      "direction": "Direction",
+      "id": "Id",
+      "isReadOnly": "Read Only",
+      "name": "Name",
+      "type": "Type",
+      "uom": "Unit of Measure",
+      "value": "Value",
+      "noData": "No Data"
+    },
+    "details": {
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "taskDefinitionNId": "Task Definition Id",
+      "taskDefinitionRevision": "Revision",
+      "equipment": "Equipment",
+      "taskFlow": "Task Flow",
+      "taskOverview": "Task Overview",
+      "taskDetails": "Task Details",
+      "properties": "Details",
+      "status": "Status"
+    },
+    "context": {
+      "noData": "No Data",
+      "context": "Context",
+      "contextEntityType": "Context Entity Type",
+      "description": "Description",
+      "direction": "Direction",
+      "id": "Id",
+      "isReadOnly": "Read Only",
+      "name": "Name",
+      "noUserFieldAvailable": "No User Fields Available",
+      "type": "Type",
+      "uom": "Unit of Measure",
+      "value": "Value"
+    }
+  },
+  "ERRORS": {
+    "404": "Requested resource is not found.",
+    "503": "Service Layer Engineering is under maintenance.",
+    "400": "The syntax of the request is not well formed or could not be satisfied.",
+    "403": "The request is forbidden. Authorization will not help.",
+    "500": "The server encountered an unexpected condition which prevented it from fulfilling the request.",
+    "502": "The connection failed. Unable to retrieve the response.",
+    "4XX": "The server failed to fulfill an invalid request by client.",
+    "5XX": "The server failed to fulfill an apparently valid request."
+  },
+  "svcErrors": {
+    "documentation": {
+      "noID": "Command Error : cannot execute command with no Id",
+      "noQuery": "Command Error : cannot execute command with no Query",
+      "noNames": "Command Error : cannot execute command with no Names",
+      "noEntityName": "Command Error : cannot execute command with no Entity Name"
+
+    },
+    "engineering": {
+      "noConfig": "Command Error : cannot execute command with no Config",
+      "noEntityName": "Command Error : cannot execute command with no Entity Name",
+      "generic": "Unable to connect to engineering data service",
+      "wrongEntityName": "Wrong Entity name"
+    },
+    "databaseInfo": {
+      "createNoMsg": "Command Error : cannot create Database Info with no (' {{msg}} ')",
+      "createWrongInput": "Command Error : cannot create a databaseInfo with wrong input type",
+      "updateNoMsg": "Command Error : cannot update a databaseInfo with no ",
+      "updateWrongInput": "Command Error : cannot update a databaseInfo with wrong input type",
+      "deleteNoMsg": "Command Error : cannot delete a databaseInfo with no ",
+      "deleteWrongInput": "Command Error : cannot delete a databaseInfo with wrong input type",
+      "associateNoMsg": "Command Error : cannot associate a databaseInfo with no ",
+      "associateWrongInput": "Command Error : cannot associate a databaseInfo with wrong input type"
+    },
+    "eventSubscription": {
+      "addNoWRName": "Command Error : cannot add subscription with no Worker Role Name",
+      "addNoSubscriptionName": "Command Error : cannot add subscription with no Subscription Name",
+      "remNoWRName": "Command Error : cannot remove subscription with no Worker Role Name",
+      "remNoSubscriptionName": "Command Error : cannot remove subscription with no Subscription Name",
+      "createNoSubsEventName": "Command Error : cannot create subscription with no Subscribed Event Name",
+      "createNoEventHandlerName": "Command Error : cannot create subscription with no Event Handler Name",
+      "createNoName": "Command Error : cannot create subscription with no Name",
+      "updateNoSubsEventName": "Command Error : cannot update subscription with no Subscribed Event Name",
+      "updateNoEventHandlerName": "Command Error : cannot update subscription with no Event Handler Name",
+      "updateNoName": "Command Error : cannot update subscription with no Name",
+      "deleteNoName": "Command Error : cannot delete subscription with no Event Subscription Name",
+      "renameSameName": "Command Error : cannot rename event subscription with the same name",
+      "renameNoOldName": "Command Error : cannot rename event subscription with no Old Name",
+      "renameNoNewName": "Command Error : cannot rename subscription with no New Name",
+      "addFilterNoName": "Command Error : cannot add filter to event subscription with no Event Subscription Name",
+      "updateFilterNoName": "Command Error : cannot update filter in event subscription with no Event Subscription Name",
+      "removeFilterNoName": "Command Error : cannot remove filter from event subscription with no Event Subscription Name"
+    },
+    "project": {
+      "loadNoVersion": "Command Error : cannot load a project with no Version",
+      "loadNoName": "Command Error : cannot load a project with no Name",
+      "loadWrongInput": "Command Error : cannot load a project with wrong input type",
+      "unloadNoName": "Command Error : cannot unload a project with no Name",
+      "unloadWrongInput": "Command Error : cannot unload a project with wrong input type",
+      "deployNoVersion": "Command Error : cannot load a project with no Version",
+      "deployNoName": "Command Error : cannot load a project with no Name",
+      "deployWrongInput": "Command Error : cannot load a project with wrong input type"
+    },
+    "systemEvents": {
+      "startupNoMsg": "Command Error : cannot startup the runtime service because you have not specified (' {{msg}} ')",
+      "startupWrongInput": "Command Error : cannot startup the runtime service because you specified the wrong input type",
+      "shutdownNoMsg": "Command Error : cannot shutdown the runtime service because you have not specified  (' {{msg}} ')",
+      "shutdownWrongInput": "Command Error : cannot shutdown runtime service because you specified the wrong input type"
+    },
+    "workerRole": {
+      "createNoName": "Command Error : cannot create a worker role with no Name",
+      "updateNoName": "Command Error : cannot update a worker role with no Name",
+      "deleteNoName": "Command Error : cannot delete a worker role with no Name",
+      "addUndefWR": "Command Error : cannot add commands to an undefined Worker Role Name",
+      "addUndefCommands": "Command Error : cannot add an undefined array of commands",
+      "addEmptyCommands": "Command Error : cannot add an empty array of commands",
+      "remUndefWR": "Command Error : cannot remove commands from an undefined Worker Role Name",
+      "remUndefCommands": "Command Error : cannot remove an undefined array of commands",
+      "remEmptyCommands": "Command Error : cannot remove an empty array of commands",
+      "addNoCommandName": "Command Error : cannot add a command with no Command Name",
+      "addNoWRName": "Command Error : cannot add a command with no Worker Role Name",
+      "remNoCommandName": "Command Error : cannot remove a command with no Command Name",
+      "remNoWRName": "Command Error : cannot remove a command with no Worker Role Name",
+      "addWRNoWRName": "Command Error : cannot add Worker Role to host role command with no Worker Role Name",
+      "addWRNoHRName": "Command Error : cannot add Worker Role to host role command with no Host Role Name",
+      "remWRNoWRName": "Command Error : cannot remove a Worker Role from host role command with no Worker Role Name",
+      "remWRNoHRName": "Command Error : cannot remove a Worker Role from host role command with no Host Role Name"
+    },
+    "business": {
+      "noConfig": "Command Error : cannot execute a command with no Config",
+      "noEntityName": "Command Error : cannot execute a command with no Entity Name",
+      "executeNoInput": "Command Error : cannot execute a command with no input",
+      "noFunctionName": "Reading Error : function to invoke not specified",
+      "defaultErrorMessage": "Unable to retrieve the response."
+    },
+    "businessCommand": {
+      "executeInvalidInput": "Command Error : cannot execute a runtime command with invalid input",
+      "executeInvalidCommand": "Command Error : cannot execute a runtime command- commandname is not valid"
+    }
+  },
+  "auditTrail": {
+    "viewer": {
+      "headers": {
+        "RootEntityId": "Entity Element",
+        "UpdatedOn": "Timestamp",
+        "UserName": "User",
+        "Action": "Action",
+        "RootEntityType": "Entity Type",
+        "RootCommand": "Command",
+        "Environment": "Environment",
+        "Domain": "Domain",
+        "ExecutionInstance": "ExecutionInstance"
+      },
+      "commands": {
+        "refresh": "Refresh"
+      }
+    },
+    "messages": {
+      "notEnabled": "Audit trail data cannot be displayed because you must first install and deploy the Audit Trail App."
+    },
+    "summary": {
+      "message": "At {{timestamp | date:'medium'}}, {{username}} has {{'auditTrail.summary.actions.' + action | translate}} the {{entity}} in {{environment}}.",
+      "actions": {
+        "Added": "added",
+        "Modified": "modified",
+        "Deleted": "deleted",
+        "SignatureApproved": "approved",
+        "SignatureRejected": "rejected"
+      },
+      "viewMore": "View more"
+    },
+    "properties": {
+      "title": "Properties",
+      "old": "old",
+      "new": "new",
+      "bigdata": "the value has changed"
+    },
+    "complex": {
+      "title": "Complex Properties",
+      "propName": "Prop Name",
+      "old": "old",
+      "new": "new"
+    },
+    "relationships": {
+      "title": "Relationships",
+      "backwardNavigation": "{{entity}} {{logicalKey}} has {{'auditTrail.relationships.actions.' + action | translate}}",
+      "forwardNavigation": {
+        "Added": "{{entity}} {{newLogicalKey}} has {{'auditTrail.relationships.actions.' + action | translate}}",
+        "Modified": "{{entity}} {{newLogicalKey}} has {{'auditTrail.relationships.actions.' + action | translate}}",
+        "Removed": "{{entity}} {{oldLogicalKey}} has {{'auditTrail.relationships.actions.' + action | translate}}"
+      },
+      "actions": {
+        "Added": "added",
+        "Modified": "modified",
+        "Removed": "removed"
+      }
+    },
+    "composition": {
+      "title": "Composition Details",
+      "partTitle": "{{entityName}} has been {{'auditTrail.summary.actions.' + action | translate}}"
+    },
+    "electronicSignature": {
+      "title": "Electronic Signature Details"
+    }
+  },
+  "userPrefrences": {
+    "defaultViewModeHeading": "Default view mode",
+    "table": "Table",
+    "list": "List",
+    "columnConfigurator": {
+      "heading": "Table Columns",
+      "availableSectionHeader": "Available Columns",
+      "selectedSectionHeader": "Selected Columns",
+      "addButtonLabel": "Add",
+      "removeButtonLabel": "Remove",
+      "addAllButtonLabel": "Add All",
+      "removeAllButtonLabel": "Remove All",
+      "resetButtonLabel": "Reset",
+      "moveUpButtonLabel": "Move up",
+      "moveDownButtonLabel": "Move down",
+      "columnConfiguration": "Column Configuration"
+    },
+    "tileConfigurator": {
+      "heading": "List Properties",
+      "inputFieldsHeader": "Properties",
+      "liveTilePreviewHeader": "Preview",
+      "selectSize": "Size",
+      "resetButtonLabel": "Reset",
+      "title": "Title",
+      "description": "Description",
+      "property1": "Property1",
+      "property2": "Property2",
+      "property3": "Property3",
+      "property4": "Property4"
+    },
+    "overlayMessage": {
+      "title": "Confirm Reset",
+      "bothText": "This will reset the user preferences of both Grid and Tile. Are you sure you want to reset the both?",
+      "text": "This will reset the user preferences. Are you sure you want to reset?",
+      "tileText": "This will reset the user preferences. Are you sure you want to reset?"
+    },
+    "title": {
+      "tile": "Customize List Properties",
+      "grid": "Customize Table Columns",
+      "tileGrid": "Customize {{moduleName}} View Mode"
+    }
+  },
+  "tagsManager": {
+    "title": "Tags Management",
+    "assignedTags": "Assigned Tags",
+    "availableTags": "Available Tags",
+    "totalItems": "Total Items",
+    "warning": "Warning",
+    "canModifyWarning": "Modifications made to tags may not be effective due to entity inheritance limitations",
+    "inputPlaceholderText": "Enter your search word here...",
+    "sidePanel": {
+      "closeToolTip": "Close"
+    },
+    "cantAssignTagToFrozen": "Segregation Tags cannot be assigned to {{EntityType}} {{EntityId}} because it is Frozen",
+    "cantAssignTagToLocked": "Segregation Tags cannot be assigned to {{EntityType}} {{EntityId}} because it is Locked",
+    "cantAssignTagToMarkedForCleaning": "Segregation Tags cannot be assigned to {{EntityType}} {{EntityId}} because it is Marked For Cleaning"
+  },
+  "characteristicRepr": {
+    "valueinside": "Value inserted must be inside",
+    "and": "and",
+    "CanBeSkipped": "Can Be Skipped",
+    "NId": "Specification NId",
+    "Id": "Char Repr Id",
+    "Revision": "Specification Revision",
+    "samplesaved": "Sample Saved",
+    "sampleupdated": "Sample Updated",
+    "Description": "Description",
+    "Criticality": "Criticality",
+    "Name": "Name",
+    "NominalValue": "Nominal Value",
+    "UoM": "Unit of Measure",
+    "UpperTolerance": "Upper Tolerance",
+    "LowerTolerance": "Lower Tolerance",
+    "PotentialFailures": "Failures",
+    "SpecifictionName": "Specification Name",
+    "SpecifictionDescription": "Specification Description",
+    "Details": "Details",
+    "EquipmentNId": "Equipment Id",
+    "MTU": "MTU",
+    "MaterialNId": "Material Id",
+    "MaterialRevision": "Material Revision",
+    "LegendaMessage": "Inserted value is outside the given tolerance values.",
+    "LegendaMessage2": "An initial valid option has not yet been selected.",
+    "FailureNotMigrated": "The failure with NId {{FailureNId}} is not yet migrated",
+    "GridRows": "Grid Rows",
+    "GridColumns": "Grid Columns",
+    "popupTitle": "Browse Failures",
+    "attachmentlist": "Attachments list",
+    "document": "Document",
+    "BrowseForMore": "Browse for more...",
+    "failureassociated": "Failure has been assigned",
+    "failuredisassociated": "Failure has been disassociated",
+    "NoAssociatedFailures": "No failures have been associated",
+    "Legenda": "Legenda",
+    "FailureRevision": "Revision",
+    "OpenChildrenFailures": "Open children failures",
+    "Defect": "Defect",
+    "showAttachments":  "Show Attachments"
+  },
+  "instanceViewer": {
+    "acknowledge": {
+      "button": "Acknowledge",
+      "text": "Acknowledged by {{CompletedBy}} on {{AcknowledgeOn}}"
+    },
+    "dataCollection": {
+      "button": "Confirm",
+      "text": "Confirmed by {{CompletedBy}} on {{AcknowledgeOn}}",
+      "lowLimit": "Low Limit",
+      "highLimit": "High Limit",
+      "target": "Target",
+      "outOfSpecMessage": "with values not in specified limits.",
+      "lowLimitMessage": "The value entered is lesser than the specified low limit ({{lowLimit}}).",
+      "highLimitMessage": "The value entered is greater than the specified high limit ({{highLimit}}).",
+      "rangeMessage": "The value entered is not in specified limits ({{lowLimit}} - {{highLimit}}).",
+      "targetMessage": "The value entered does not match the specified target value."
+    },
+    "reEdit": {
+      "button": "Re - Edit"
+    },
+    "acquire": {
+      "button": "Acquire"
+    }
+  },
+  "documentViewer": {
+    "defaultTitle": "Documents",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "maximizeDocument": "Maximize Document",
+    "maximizeDetails": "Maximize Details",
+    "minimizeDetails": "Minimize Details",
+    "documentCarousel": {
+      "noData": "No Data"
+    }
+  },
+  "navigationLink": {
+    "moreTabsAvailable": "More..."
+  },
+  "esSigners": {
+    "buttontext": "SIGN",
+    "buttontext_completed": "View Signature",
+    "title": "Signature Required",
+    "description": "You need all these signatures of approval to proceed:",
+    "close": "Close",
+    "only": "Only",
+    "leftsigns": "signatures left",
+    "SpecificUser": "User",
+    "Role": "Role",
+    "Meaning": "Reason",
+    "UserID": "User ID",
+    "FullName": "Full Name",
+    "DateAndTime": "Date & Time",
+    "Comment": "Comment",
+    "Sign": "Sign",
+    "Approve": "Approve",
+    "Reject": "Reject",
+    "TooLongComment": "The maximum length allowed for a comment is 255 characters.",
+    "ScenarioInRejectStatus": "Scenario is in Rejected Status.",
+    "ErrorPrepareSignature-3": "Scenario instance or specified step doesn't exists.",
+    "ErrorPrepareSignature-5": "Cannot create an ES ticket: the scenario step is not valid.",
+    "ErrorAddSignature-3": "Signature instance or Ticket doesn't exists.",
+    "ErrorAddSignature-901": "A signature configuration for the logged user is already exists.",
+    "ErrorAddSignature-902": "A signature configuration for specific user is already exists.",
+    "ErrorAddSignature-903": "The signer is not valid.",
+    "ErrorAddSignature-904": "Cannot modify signature configuration of a frozen scenario.",
+    "ErrorAddSignature-905": "Signer is not in a valid status.",
+    "ErrorAddSignature-906": "The signature configuration of scenario configuration doesn't exists.",
+    "ErrorAddSignature-907": "The signature configuration does not belong to scenario configuration.",
+    "ErrorAddSignature-908": "The comment of signature instance is mandatory.",
+    "ErrorAddSignature-909": "The scenario instance status is not valid to add the signature instance.",
+    "ErrorAddSignature-910": "Signature instance is already signed.",
+    "ErrorAddSignature-911": "The status of ticket for the Signature Instance is not valid.",
+    "ErrorAddSignature-912": "The format of ticket is not valid.",
+    "ErrorAddSignature-913": "The authentication token of signer is not valid.",
+    "ErrorAddSignature-914": "The authentication token is not related to the ticket.",
+    "ErrorAddSignature-915": "The user authenticated is not valid.",
+    "ErrorAddSignature-916": "The role of the user who tried to sign is incorrect.",
+    "ErrorAddSignature-917": "The authentication token does not reference a UMC user.",
+    "ErrorAddSignature-919": "The ESTicket doesn't exists.",
+    "ErrorAddSignature-920": "The ticket is invalid for this User",
+    "ErrorAddSignature-921": "The ticket is about to be deleted"
+  },
+  "electronicSignature": {
+    "messages": {
+      "notEnabled": "Electronic Signature component cannot be displayed because you must first install and deploy the Audit Trail App."
+    },
+    "cancel": "Cancel",
+    "select": "Select",
+    "selectSignatureScenario": "Select Scenario",
+    "pickerPlaceHolder": "Select a Scenario",
+    "scenarioConfiguration": "Signature Scenario",
+    "scenarioName": "Name",
+    "user": "User",
+    "role": "Role",
+    "scenarioDescription": "Description",
+    "refresh": "Refresh",
+    "theLoggerUser": "The Logger User",
+    "reason": "Reason"
+  },
+  "homeCards": {
+    "accessControlManagement": {
+      "title": "Access Control Management",
+      "description": "Access Control Management description",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "adapterConfiguration": {
+      "title": "Adapter Configuration",
+      "description": "Adapter Configuration description",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "archiving": {
+      "title": "Archiving",
+      "description": "To access archived data.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "equipmentEngineering": {
+      "title": "Equipment Engineering",
+      "description": "To create and configure role-based equipment and physical assets.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "interoperability": {
+      "title": "Interoperability",
+      "description": "To manage the exchange of data with external systems. ",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "manufacturing": {
+      "title": "Manufacturing",
+      "description": "To configure common manufacturing data (for example, materials and plant models).",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "materialEngineering": {
+      "title": "Material Engineering",
+      "description": "To create and configure materials and products required for production.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "materialRuntime": {
+      "title": "Material Runtime",
+      "description": "To manage Material Tracking Units, Material Lots, stock, contribution and genealogy.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "operationalDashboards": {
+      "title": "Operational Dashboards",
+      "description": "Operational Dashboards description",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "process": {
+      "title": "Process",
+      "description": "To manage engineering and production-related activities specific to Process Industries.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "processActivities": {
+      "title": "Process Activities",
+      "description": "To design and configure the details of the manufacturing process.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "productandProductionConfiguration": {
+      "title": "Product and Production Configuration",
+      "description": "To manage entities representing the engineering elements required for production.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "productionCoordination": {
+      "title": "Production Coordination",
+      "description": "To assist Production Coordinators in managing and monitoring work in progress in their area.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "To manage common system-wide configurations and data",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "shopfloor": {
+      "title": "Shopfloor",
+      "description": "To perform the execution of Work Orders, operations and tasks.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "shopfloorExecution": {
+      "title": "Shopfloor Execution",
+      "description": "To manage the execution of orders, operations and tasks: progress and traceability.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "siteManagement": {
+      "title": "Site Management",
+      "description": "Site Management description",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "system": {
+      "title": "System",
+      "description": "To manage common system-wide configurations and data.",
+      "action": {
+        "title": "Open"
+      }
+    },
+    "workOrder": {
+      "title": "Work Order",
+      "description": "To manage Work Orders, their operations and production requirements.",
+      "action": {
+        "title": "Open"
+      }
+    }
+  },
+  "status": {
+    "total": "TOTAL"
+  },
+  "tiles": {
+    "notificationTiles": "Notification tiles",
+    "unknownTileType": "Unknown tile type"
+  }
+}

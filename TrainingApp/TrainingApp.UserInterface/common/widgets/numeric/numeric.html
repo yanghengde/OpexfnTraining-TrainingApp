@@ -1,0 +1,24 @@
+<div ng-if="numericCtrl.readOnly || numericCtrl.ngReadonly" class="label-property-grid-control-readonly property-value-ellipsis"> {{numericCtrl.value}} </div>
+
+<ng-form ng-if="!(numericCtrl.readOnly || numericCtrl.ngReadonly)" name='numericForm' ng-class="{'isrequired' : (numericCtrl.validation.required) && numericCtrl.value===undefined}">
+    <div class='property-grid-input-group'>
+        <input type='number'
+               step="any"
+               name='{{numericCtrl.value}}'
+                ng-class="{'validator-control-invalid':((numericForm.$invalid && numericForm.$dirty) || (numericForm.$invalid && numericForm.$visited)),
+               'validator-control':!((numericForm.$invalid && numericForm.$dirty) || (numericForm.$invalid && numericForm.$visited)),
+               'ng-dirty':numericForm.$dirty}"
+               ng-model='numericCtrl.value'
+               ng-required='numericCtrl.validation.required'
+               ng-minlength='numericCtrl.validation.minlength'
+               ng-maxlength='numericCtrl.validation.maxlength'
+               ng-pattern='numericCtrl.validation.pattern'
+               ng-min='numericCtrl.validation.min'
+               ng-max='numericCtrl.validation.max'
+               ng-blur="numericCtrl.ngBlur()"
+               sit-change="numericCtrl.sitChange"
+               ng-disabled="numericCtrl.ngDisabled"
+               ng-focus="numericCtrl.ngFocus()"
+               sit-form-input-validator />
+    </div>
+</ng-form>

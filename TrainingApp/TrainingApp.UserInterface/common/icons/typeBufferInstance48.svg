@@ -1,0 +1,27 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="12.642" y1="21.736" x2="35.358" y2="44.453" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dadada"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="11.196" y1="6.196" x2="36.804" y2="31.804" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="16.588" y1="27.14" x2="23.496" y2="34.048" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray-2" x1="24.57" y1="3.933" x2="31.478" y2="10.841" xlink:href="#Siemens_-_Light_gray"/>
+  </defs>
+  <g id="Livello_3" data-name="Livello 3">
+    <path d="M24.012,46.5a.672.672,0,0,1-.357-.1L1.767,33.557A.542.542,0,0,1,1.5,33.1a.549.549,0,0,1,.272-.468L23.643,19.607a.687.687,0,0,1,.369-.107.68.68,0,0,1,.362.1L46.236,32.635a.539.539,0,0,1,.264.462.548.548,0,0,1-.276.465L24.378,46.4A.689.689,0,0,1,24.012,46.5Z" fill="url(#linear-gradient)"/>
+    <path d="M24.012,20a.207.207,0,0,1,.114.036L45.964,33.054c.013.009.036.025.036.041s-.022.031-.021.031h0L24.108,45.975a.191.191,0,0,1-.1.025.206.206,0,0,1-.113-.036L2.037,33.136C2.023,33.127,2,33.11,2,33.1s.02-.03.02-.03h0l21.9-13.039a.179.179,0,0,1,.1-.026m0-1a1.184,1.184,0,0,0-.625.177L1.508,32.205a1.033,1.033,0,0,0,.006,1.783L23.393,46.827a1.194,1.194,0,0,0,1.238,0L46.486,33.988a1.033,1.033,0,0,0,.006-1.783L24.638,19.177A1.187,1.187,0,0,0,24.012,19Z" fill="#4f4b49"/>
+  </g>
+  <g>
+    <rect x="15.892" y="1.5" width="16.217" height="35" fill="url(#Siemens_-_Light_blue)"/>
+    <path d="M15.392,1V37H32.608V1ZM31.608,12.861H24.5V2h7.108Zm-7.108,1h7.108V24.139H24.5ZM23.5,2V12.861H16.392V2Zm0,22.139H16.392V13.861H23.5Zm-7.108,1H23.5V36H16.392ZM24.5,36V25.139h7.108V36Z" fill="#177491"/>
+    <rect x="17.388" y="26.34" width="5.309" height="8.507" stroke="#6f6e6e" stroke-miterlimit="10" fill="url(#Siemens_-_Light_gray)"/>
+    <rect x="25.369" y="3.133" width="5.309" height="8.507" stroke="#6f6e6e" stroke-miterlimit="10" fill="url(#Siemens_-_Light_gray-2)"/>
+  </g>
+</svg>

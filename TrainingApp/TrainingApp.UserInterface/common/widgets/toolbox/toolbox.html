@@ -1,0 +1,33 @@
+<div class="toolbox-main-container" style="width:100%">
+
+    <div ng-show="toolboxCtrl.isCollapsible">
+        <div class="toolbox-collapsible-icon" ng-if="toolboxCtrl.align==='left'"
+             ng-class="toolboxCtrl.isCollapsed ? 'fa fa-angle-right toolbox-collapsible-icon-left-align ' :
+             {'fa fa-angle-left': (!toolboxCtrl.isCollapsed),
+              'toolbox-collapsible-icon-left-sm': (toolboxCtrl.size === 'sm'),
+              'toolbox-collapsible-icon-left-md': (toolboxCtrl.size === 'md'),
+              'toolbox-collapsible-icon-left-lg': (toolboxCtrl.size === 'lg')}"
+             ng-style="toolboxCtrl.isCollapsed ? {} : {'float':'left','position':'absolute','min-height':(toolboxCtrl.isTitleShown ? '40px':'34px')}"
+             ng-click="toolboxCtrl.toggleSection()">
+        </div>
+
+        <div class="toolbox-collapsible-icon" ng-if="toolboxCtrl.align==='right'"
+             ng-class="toolboxCtrl.isCollapsed ? 'fa fa-angle-left toolbox-collapsible-icon-right-align ' :
+             {'fa fa-angle-right': (!toolboxCtrl.isCollapsed),
+              'toolbox-collapsible-icon-right-sm': (toolboxCtrl.size === 'sm'),
+              'toolbox-collapsible-icon-right-md': (toolboxCtrl.size === 'md'),
+              'toolbox-collapsible-icon-right-lg': (toolboxCtrl.size === 'lg')}"
+             ng-style="toolboxCtrl.isCollapsed ? {} : {'float':'right','position':'absolute','min-height':(toolboxCtrl.isTitleShown ? '40px':'34px')} "
+             ng-click="toolboxCtrl.toggleSection()">
+        </div>
+    </div>
+
+    <div class="toolbox-container" ng-class="{'toolBox-right-align':(toolboxCtrl.align === 'right'),'toolBox-left-align':!(toolboxCtrl.align === 'right'),
+    'toolbox-width-sm':(toolboxCtrl.size === 'sm'), 'toolbox-width-md':(toolboxCtrl.size === 'md'), 'toolbox-width-lg':(toolboxCtrl.size === 'lg')}" 
+         ng-hide="toolboxCtrl.isCollapsed">
+        <div class="toolbox-header" ng-if="toolboxCtrl.isTitleShown">
+            <label>{{toolboxCtrl.config.title}}</label>
+        </div>
+        <div class="toolbox-section-container" ng-class="{'toolbox-section-container-scroll':!toolboxCtrl.closeOthers}" ng-transclude> </div>
+    </div>
+</div>

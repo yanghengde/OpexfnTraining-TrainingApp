@@ -1,0 +1,15 @@
+<ul class="at-menu-items">
+    <li class="menu-item-li" ng-repeat="menuItem in vm.data">
+        <div class="menu-item" ng-class="menuItem.selected ? 'highlight-selected-menu' : '' " ng-click="vm.onSelectedChanged(menuItem);">
+            <div class="content">
+                <span>{{"auditTrail.composition.partTitle" | translate: {entityName: menuItem.data.ChangedEntityShortType, action: menuItem.action} }}</span>
+                <ul>
+                    <li ng-repeat="logicalKey in menuItem.data.ChangedEntityName">{{logicalKey.Name}}:&nbsp; {{logicalKey.Value}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-item-children" ng-if="menuItem.opened">
+            <sit-cutom-tree sit-data="menuItem.items" sit-config="vm.config"></sit-cutom-tree>
+        </div>
+    </li>
+</ul>

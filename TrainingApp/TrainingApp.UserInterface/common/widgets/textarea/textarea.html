@@ -1,0 +1,21 @@
+<div class="label-property-grid-control-readonly textarea-control-readonly" ng-if="textareaCtrl.readOnly || textareaCtrl.ngReadonly"> {{textareaCtrl.value}} </div>
+
+<ng-form name='textForm' ng-if="!(textareaCtrl.readOnly || textareaCtrl.ngReadonly)" ng-class="{'isrequired' :(textareaCtrl.validation.required) && textareaCtrl.value===undefined}">
+    <div class='property-grid-input-group'>
+        <textarea name='{{textareaCtrl.value}}'
+                  ng-class="{'validator-control-invalid':((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+               'validator-control':!((textForm.$invalid && textForm.$dirty) || (textForm.$invalid && textForm.$visited)),
+               'ng-dirty':textForm.$dirty}"
+                  ng-model='textareaCtrl.value'
+                  ng-required='textareaCtrl.validation.required'
+                  ng-minlength='textareaCtrl.validation.minlength'
+                  ng-maxlength='textareaCtrl.validation.maxlength'
+                  ng-pattern='textareaCtrl.validation.pattern'
+                  ng-blur="textareaCtrl.ngBlur()"
+                  sit-change="textareaCtrl.sitChange"
+                  ng-disabled="textareaCtrl.ngDisabled"
+                  ng-focus="textareaCtrl.ngFocus()"
+                  placeholder={{textareaCtrl.placeholder}}
+                  sit-form-input-validator></textarea>
+    </div>
+</ng-form>

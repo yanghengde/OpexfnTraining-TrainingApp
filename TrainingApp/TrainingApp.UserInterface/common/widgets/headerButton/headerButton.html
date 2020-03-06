@@ -1,0 +1,10 @@
+<div class="dropdown dropdown-toggle header-container" id="hdrbtn_{{vm.id}}" ng-click="vm.onButtonClick()" data-internal-type="headerButtonContainer">
+    <span data-toggle="dropdown" class="header-button" data-internal-type="headerButton">
+        <em class="fa fa-lg {{vm.icon}}" sit-mom-icon="vm.displayIcon" ng-class="{momIcon: vm.displayIcon !== null }"></em><span ng-if="vm.title.length > 0"  class="header-button-text">
+            {{vm.title}}
+        </span>
+    </span>
+    <div class="dropdown-menu header-dropdown" ng-if="vm.showDropdown">
+        <div ng-include="vm.templateuri"></div>
+    </div>
+</div>

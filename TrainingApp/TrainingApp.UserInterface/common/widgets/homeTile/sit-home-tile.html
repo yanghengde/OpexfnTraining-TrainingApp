@@ -1,0 +1,11 @@
+<section class="sit-home-tile" 
+         title="{{homeTileCtrl.options.title}}" 
+         ng-click="homeTileCtrl.options.callback(homeTileCtrl.options)">
+    <div class="icon">
+        <em ng-if="!homeTileCtrl.isSvgIcon" class="fa" ng-class="homeTileCtrl.options.icon"></em>
+        <div ng-if="homeTileCtrl.isSvgIcon" sit-mom-icon="homeTileCtrl.options.icon"></div>
+    </div>
+    <div class="title">
+        {{homeTileCtrl.options.title}}
+    </div>
+</section>

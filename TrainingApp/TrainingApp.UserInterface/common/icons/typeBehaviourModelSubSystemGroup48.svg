@@ -1,0 +1,24 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.668" y1="4.209" x2="45.132" y2="42.877" gradientTransform="translate(0 2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="9.489" y1="21.915" x2="41.345" y2="21.987" gradientTransform="matrix(0.707, 0.707, 0.707, -0.707, -9.088, 23.94)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g857">
+    <path id="path30" d="M1.5,43h45V10h-27L16.094,4.891A2,2,0,0,0,14.43,4H3.5a2,2,0,0,0-2,2Z" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <path id="line13" d="M10.017,26.5h29" fill="none" stroke="#969696" stroke-linejoin="round" stroke-width="2"/>
+    <path id="line15" d="M24.517,12V41" fill="none" stroke="#969696" stroke-linejoin="round" stroke-width="2"/>
+    <path id="rect17" d="M13.642,26.5,24.517,15.625,35.392,26.5,24.517,37.375Z" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.073" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="14.921" y1="46.874" x2="33.08" y2="28.715" gradientTransform="matrix(1, 0, 0, -1, 0, 49.795)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cee6eb"/>
+      <stop offset="0.221" stop-color="#c6e2e8"/>
+      <stop offset="0.542" stop-color="#b3d8e1"/>
+      <stop offset="0.921" stop-color="#93c7d4"/>
+      <stop offset="1" stop-color="#8dc3d2"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="2.531" y1="34.484" x2="27.311" y2="9.704" gradientTransform="matrix(1, 0, 0, -1, 0, 49.795)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="0.159" stop-color="#a5d1dc"/>
+      <stop offset="0.706" stop-color="#82bdcf"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray_5" data-name="Siemens - Light gray 5" x1="12.288" y1="21.383" x2="35.712" y2="44.807" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dadada"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3-2" x1="11.335" y1="43.289" x2="29.494" y2="25.13" xlink:href="#Sfumatura_senza_nome_3"/>
+  </defs>
+  <g id="Verb_Zone">
+    <g id="Cube">
+      <polygon points="24.001 22.502 42.159 12.001 42.159 32.902 24.001 43.403 24.001 22.502" fill="#3f91af"/>
+      <polygon points="5.842 12 23.97 1.5 42.159 12.001 24.001 22.502 5.842 12" fill="url(#Sfumatura_senza_nome_3)"/>
+      <polygon points="24.001 22.502 24.001 43.403 5.842 32.901 5.842 12 24.001 22.502" fill="url(#Sfumatura_senza_nome_2)"/>
+      <polygon points="42.387 12.394 41.932 11.608 34.677 15.803 34.668 15.788 24.001 21.957 13.333 15.788 13.324 15.803 6.069 11.607 5.614 12.393 23.547 22.764 23.547 35.022 23.547 43.402 24.455 43.402 24.455 35.022 24.455 22.764 42.387 12.394" fill="#197492"/>
+      <path d="M42.386,11.608,24.2,1.107a.454.454,0,0,0-.454,0L5.614,11.607A.454.454,0,0,0,5.388,12V32.9a.456.456,0,0,0,.226.393L23.773,43.8a.457.457,0,0,0,.456,0L42.387,33.3a.456.456,0,0,0,.226-.393V12A.455.455,0,0,0,42.386,11.608Zm-.681,21.033L24,42.878,6.3,32.639V12.262L23.97,2.024,41.705,12.263Z" fill="#474647"/>
+    </g>
+    <g>
+      <path d="M42.387,33.3,24.229,43.8a.457.457,0,0,1-.456,0L5.614,33.293a.456.456,0,0,1-.226-.393V31.059L2.02,33.065S2,33.08,2,33.1s.023.032.037.041L23.9,45.964a.206.206,0,0,0,.113.036.191.191,0,0,0,.1-.025L45.979,33.126S46,33.11,46,33.1s-.023-.032-.036-.041l-3.351-2V32.9A.456.456,0,0,1,42.387,33.3Z" fill="url(#Siemens_-_Light_gray_5)"/>
+      <path d="M23.393,46.827a1.194,1.194,0,0,0,1.238,0A1.192,1.192,0,0,1,23.393,46.827Z" fill="#4f4b49"/>
+      <path d="M24.012,19a1.215,1.215,0,0,0-.323.044A1.215,1.215,0,0,1,24.012,19Z" fill="#4f4b49"/>
+      <path d="M24.012,19a1.215,1.215,0,0,0-.323.044A1.215,1.215,0,0,1,24.012,19Z" fill="url(#Sfumatura_senza_nome_3-2)"/>
+      <path d="M46.492,32.206l-3.879-2.313v1.164l3.351,2c.013.009.036.025.036.041s-.021.031-.021.031L24.108,45.975a.191.191,0,0,1-.1.025.206.206,0,0,1-.113-.036L2.037,33.136C2.023,33.127,2,33.11,2,33.1s.02-.03.02-.03l3.368-2.006V29.9l-3.88,2.311a1.032,1.032,0,0,0,.006,1.782L23.393,46.827a1.192,1.192,0,0,0,1.238,0L46.486,33.988A1.032,1.032,0,0,0,46.492,32.206Z" fill="#474647"/>
+    </g>
+  </g>
+</svg>

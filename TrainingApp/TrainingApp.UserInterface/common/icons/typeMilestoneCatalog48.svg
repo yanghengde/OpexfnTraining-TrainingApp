@@ -1,0 +1,20 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="4.437" y1="48" x2="48.437" y2="4" gradientTransform="matrix(1, 0, 0, -1, 0, 50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="120.374" y1="-105.264" x2="141.374" y2="-126.264" gradientTransform="matrix(0.724, 0, 0, -0.724, -67.715, -59.178)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="0.175" stop-color="#6aaec3"/>
+      <stop offset="0.457" stop-color="#529eb5"/>
+      <stop offset="0.809" stop-color="#2c839f"/>
+      <stop offset="1" stop-color="#147391"/>
+    </linearGradient>
+  </defs>
+  <g id="g878">
+    <path id="rect16" d="M5.437,1h42V47h-42Z" fill="url(#linear-gradient)"/>
+    <path id="path18" d="M5.438,1V11.062H1.5a.5.5,0,0,0,0,1H5.438v24H1.5a.5.5,0,0,0,0,1H5.438V47h42V1Zm41,45h-40V37.062h4.874a.5.5,0,0,0,0-1H6.438v-24h4.874a.5.5,0,0,0,0-1H6.438V2h40Z" fill="#464646"/>
+    <path id="polygon13" d="M40,24.581,26.976,39.775,13.953,24.581,26.976,9.386Z" stroke="#464646" stroke-miterlimit="7.235" stroke-width="1" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

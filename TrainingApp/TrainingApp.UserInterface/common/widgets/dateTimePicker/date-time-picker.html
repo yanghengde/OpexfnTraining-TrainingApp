@@ -1,0 +1,64 @@
+<div class="property-grid-input-group">
+    <div class="label label-property-grid-control-readonly property-value-ellipsis" ng-if="dateTimePickerCtrl.readOnly || dateTimePickerCtrl.ngReadonly">
+        {{dateTimePickerCtrl.value | date: 'medium'}}
+    </div>
+</div>
+
+<ng-form name='dateTimePickerForm' class="sit-date-time-picker" ng-if="!(dateTimePickerCtrl.readOnly || dateTimePickerCtrl.ngReadonly)"
+         ng-class="{'isrequired' : (dateTimePickerCtrl.validation.required) && (dateTimePickerCtrl.value===undefined)}">
+    <div class="property-grid-input-group">
+        <div class="property-grid-input-group">
+            <input type="text"
+                   class="property-grid-control validator-control date-time-input-hover"
+                   ng-model="dateTimePickerCtrl.value"
+                   uib-datepicker-popup="{{dateTimePickerCtrl.format}}"
+                   ng-class="{'validator-control-invalid':((dateTimePickerForm.$invalid && dateTimePickerForm.$dirty) || (dateTimePickerForm.$invalid && dateTimePickerForm.$visited)),
+               'validator-control':!((dateTimePickerForm.$invalid && dateTimePickerForm.$dirty) || (dateTimePickerForm.$invalid && dateTimePickerForm.$visited)),
+               'ng-dirty':dateTimePickerForm.$dirty}"
+                   ng-click="dateTimePickerCtrl.clicked()"
+                   ng-keydown="dateTimePickerCtrl.keydownPressed($event)"
+                   ng-disabled="dateTimePickerCtrl.ngDisabled"
+                   ng-required="dateTimePickerCtrl.validation.required"
+                   sit-change="dateTimePickerCtrl.sitChange"
+                   sit-form-input-validator
+                   readonly="readonly" />
+            <div class="btn property-grid-addon-icon" ng-click="dateTimePickerCtrl.ngDisabled || dateTimePickerCtrl.clicked()" ng-disabled="dateTimePickerCtrl.ngDisabled">
+                <em class="date-time-picker-calendar-icon" sit-mom-icon="{path: 'common/icons/cmdCalendar16.svg'}"></em>
+            </div>
+        </div>
+
+        <div class="dropdown-menu" ng-style="{display: (dateTimePickerCtrl.isOpen && 'block') || 'none'}">
+
+            <div class="datetime-panel-group" >
+                <div class="panel">
+                    <div class="datetime-accordion-button"  ng-click="dateTimePickerCtrl.disableAccordion('date')" ng-class="dateTimePickerCtrl.isDateShown ? 'date-time-selected-background' : 'date-time-default-background'">
+                        <span sit-mom-icon="{path: 'common/icons/miscRightArrow16.svg'}" sit-class="rotate-right-arrow-icon" ng-show="dateTimePickerCtrl.isDateShown"></span>
+                        <span sit-mom-icon="{path: 'common/icons/miscRightArrow16.svg'}" sit-class="right-arrow-icon" ng-show="!dateTimePickerCtrl.isDateShown"></span>
+                        <span class="datetime-accordion-label">Date: {{dateTimePickerCtrl.datevalue}}</span>
+                        <span class="date-time-current-icon" sit-class="today-icon" sit-mom-icon="{path: 'common/icons/cmdCalendar16.svg'}" ng-click="dateTimePickerCtrl.today('date')" title="Set Date as Today"></span>
+                    </div>
+                    <div id="datepicker" ng-if="dateTimePickerCtrl.isDateShown">
+                        <div uib-datepicker ng-model="dateTimePickerCtrl.value" datepicker-options="dateTimePickerCtrl.dateOptions">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel timepicker-bottom">
+                    <div class="datetime-accordion-button" ng-click="dateTimePickerCtrl.disableAccordion('time')" ng-class="!dateTimePickerCtrl.isDateShown ? 'date-time-selected-background' : 'date-time-default-background'">
+                        <span sit-mom-icon="{path: 'common/icons/miscRightArrow16.svg'}" sit-class="right-arrow-icon" ng-show="dateTimePickerCtrl.isDateShown"></span>
+                        <span sit-mom-icon="{path: 'common/icons/miscRightArrow16.svg'}" sit-class="rotate-right-arrow-icon" ng-show="!dateTimePickerCtrl.isDateShown"></span>
+                        <span class="datetime-accordion-label">Time: {{dateTimePickerCtrl.timevalue}}</span>
+                        <span class="date-time-current-icon" sit-class="now-icon" sit-mom-icon="{path: 'common/icons/cmdTime24.svg'}" ng-click="dateTimePickerCtrl.today('time')" title="Set Time as Now"></span>
+                    </div>
+                    <div id="timepicker" ng-if="!dateTimePickerCtrl.isDateShown">
+                        <div uib-timepicker ng-model="dateTimePickerCtrl.value" show-seconds="dateTimePickerCtrl.showSeconds" show-meridian="dateTimePickerCtrl.showMeridian" class="time-picker-centered">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-sm pull-right" ng-click="dateTimePickerCtrl.close()">{{dateTimePickerCtrl.okLabel}}</button>
+            <button type="button" class="btn btn-default btn-sm pull-right" ng-click="dateTimePickerCtrl.clear()">{{dateTimePickerCtrl.clearLabel}}</button>
+
+        </div>
+    </div>
+</ng-form>

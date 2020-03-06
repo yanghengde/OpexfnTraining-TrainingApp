@@ -1,0 +1,27 @@
+<svg version="1.1" id="Livello_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<path id="rect78" fill="none" d="M6.544,11.115h34.913V36.89H6.544V11.115z"/>
+<linearGradient id="path80_1_" gradientUnits="userSpaceOnUse" x1="140.792" y1="-129.9468" x2="154.8864" y2="-144.0412" gradientTransform="matrix(2.182 0 0 -2.3431 -298.5762 -295.6055)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="0.175" style="stop-color:#6BAEC3"/>
+	<stop  offset="0.457" style="stop-color:#539EB5"/>
+	<stop  offset="0.809" style="stop-color:#2F849F"/>
+	<stop  offset="1" style="stop-color:#187491"/>
+</linearGradient>
+<path id="path80"  fill="url(#path80_1_)" d="M6.544,11.113v25.775l0,0
+	c0.013,2.701,1.73,5.405,5.154,7.465c7.783,4.108,16.901,4.103,24.681-0.015c3.397-2.062,5.078-4.752,5.078-7.451l0,0V11.113H6.544z
+	"/>
+<linearGradient id="path82_1_" gradientUnits="userSpaceOnUse" x1="143.2383" y1="-126.3081" x2="152.4291" y2="-135.4989" gradientTransform="matrix(2.182 0 0 -2.3431 -298.5762 -295.6055)">
+	<stop  offset="0" style="stop-color:#B0D8E1"/>
+	<stop  offset="1" style="stop-color:#74B5C8"/>
+</linearGradient>
+<path id="path82"  fill="url(#path82_1_)" d="M36.32,3.66c6.818,4.105,6.855,10.778,0.059,14.907
+	c-7.779,4.117-16.897,4.123-24.681,0.014C4.855,14.461,4.82,7.779,11.617,3.66C19.405-0.46,28.533-0.46,36.32,3.66L36.32,3.66z"/>
+<path id="path84"  fill="none" stroke="#187491" stroke-miterlimit="10" d="M36.32,3.66
+	c6.818,4.105,6.855,10.778,0.059,14.907c-7.779,4.117-16.897,4.123-24.681,0.014C4.855,14.461,4.82,7.779,11.617,3.66
+	C19.405-0.46,28.533-0.46,36.32,3.66L36.32,3.66z"/>
+<path id="path86"  fill="none" stroke="#474747" stroke-miterlimit="10" d="M36.32,3.66
+	c-7.787-4.12-16.916-4.12-24.703,0c-3.395,2.064-5.084,4.756-5.073,7.453l0,0v25.775l0,0c0.013,2.701,1.73,5.405,5.154,7.465
+	c7.783,4.108,16.901,4.103,24.681-0.015c3.397-2.062,5.078-4.752,5.078-7.451l0,0V11.113l0,0C41.457,8.414,39.732,5.724,36.32,3.66
+	L36.32,3.66z"/>
+</svg>

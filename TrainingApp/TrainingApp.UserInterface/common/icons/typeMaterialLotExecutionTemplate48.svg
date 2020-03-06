@@ -1,0 +1,100 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Siemens_-_Light_blue" data-name="Siemens - Light blue" x1="33.29" y1="109.692" x2="46.081" y2="96.9" gradientTransform="matrix(1, 0, 0, -1, 0, 108)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cde6eb"/>
+      <stop offset="1" stop-color="#8cc3d2"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_blue-2" x1="29.431" y1="8" x2="42.431" y2="8" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#Siemens_-_Light_blue"/>
+    <linearGradient id="linear-gradient" x1="0.818" y1="1470.962" x2="41.394" y2="1511.538" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.232" stop-color="#fdfdfe"/>
+      <stop offset="0.496" stop-color="#f3f3f4"/>
+      <stop offset="0.775" stop-color="#dfdede"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="26.181" y1="1468.906" x2="39.181" y2="1481.906" gradientTransform="translate(0 -1464)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.221" stop-color="#fbfbfc"/>
+      <stop offset="0.541" stop-color="#ececec"/>
+      <stop offset="0.92" stop-color="#d0cecd"/>
+      <stop offset="1" stop-color="#c9c6c5"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="24.399" y1="22.378" x2="32.504" y2="30.484" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="33.461" y1="25.534" x2="35.288" y2="27.362" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7eb8cd"/>
+      <stop offset="1" stop-color="#097091"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1-2" x1="30.496" y1="30.656" x2="32.324" y2="32.484" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-3" x1="30.496" y1="20.378" x2="32.324" y2="22.206" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-4" x1="24.575" y1="20.379" x2="26.402" y2="22.206" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="Siemens_-_Light_gray-2" x1="15.507" y1="27.517" x2="23.612" y2="35.622" xlink:href="#Siemens_-_Light_gray"/>
+    <linearGradient id="New_Gradient_Swatch_1-5" x1="12.712" y1="30.672" x2="14.539" y2="32.5" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-6" x1="24.568" y1="30.672" x2="26.396" y2="32.5" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-7" x1="21.604" y1="35.794" x2="23.432" y2="37.621" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-8" x1="15.683" y1="35.794" x2="17.51" y2="37.622" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-9" x1="21.604" y1="25.518" x2="23.432" y2="27.345" xlink:href="#New_Gradient_Swatch_1"/>
+    <linearGradient id="New_Gradient_Swatch_1-10" x1="15.683" y1="25.517" x2="17.511" y2="27.345" xlink:href="#New_Gradient_Swatch_1"/>
+  </defs>
+  <g>
+    <g id="Layer_3" data-name="Layer 3">
+      <polygon points="42.931 14.3 42.931 1.5 30.031 1.5 42.931 14.3" fill="url(#Siemens_-_Light_blue)"/>
+      <rect x="29.431" y="1.5" width="13" height="13" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#Siemens_-_Light_blue-2)"/>
+    </g>
+    <polygon points="29.377 1.5 6.281 1.5 6.281 46.5 42.431 46.5 42.431 14.5 29.377 1.5" stroke="#4e4a48" stroke-miterlimit="10" fill="url(#linear-gradient)"/>
+    <polygon points="29.431 1.656 29.431 14.656 42.431 14.656 29.431 1.656" stroke="#4e4a48" stroke-linejoin="round" fill="url(#linear-gradient-2)"/>
+    <g id="Plane">
+      <path d="M24.009,26.606l15.357,9.155L24.009,44.782,8.634,35.761l15.375-9.155m0-1.023a.86.86,0,0,0-.452.128L7.756,35.12a.746.746,0,0,0,0,1.287l15.8,9.273a.862.862,0,0,0,.894,0L40.24,36.407a.746.746,0,0,0,0-1.287L24.461,25.711a.86.86,0,0,0-.452-.128Z" fill="#474647"/>
+    </g>
+    <g>
+      <g>
+        <polygon points="31.418 21.293 25.485 21.293 22.518 26.431 25.485 31.57 31.418 31.57 34.385 26.431 31.418 21.293" stroke="#177491" stroke-linejoin="round" fill="url(#Siemens_-_Light_gray)"/>
+        <g>
+          <path d="M34.374,27.74a1.291,1.291,0,1,1,.914-.378A1.282,1.282,0,0,1,34.374,27.74Z" fill="url(#New_Gradient_Swatch_1)"/>
+          <path d="M34.374,25.656a.792.792,0,1,1-.56.232.783.783,0,0,1,.56-.232m0-1a1.791,1.791,0,1,0,1.268.525,1.782,1.782,0,0,0-1.268-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M31.41,32.862a1.291,1.291,0,1,1,.914-.378A1.283,1.283,0,0,1,31.41,32.862Z" fill="url(#New_Gradient_Swatch_1-2)"/>
+          <path d="M31.41,30.777a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.787,1.787,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M31.41,22.585a1.292,1.292,0,1,1,.914-.379A1.279,1.279,0,0,1,31.41,22.585Z" fill="url(#New_Gradient_Swatch_1-3)"/>
+          <path d="M31.41,20.5a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525A1.787,1.787,0,0,0,31.41,19.5Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M25.489,22.585a1.294,1.294,0,1,1,.913-.379A1.281,1.281,0,0,1,25.489,22.585Z" fill="url(#New_Gradient_Swatch_1-4)"/>
+          <path d="M25.489,20.5a.792.792,0,1,1-.56.232.791.791,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.787,1.787,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+      </g>
+      <g>
+        <polygon points="22.526 26.431 16.592 26.431 13.626 31.57 16.592 36.708 22.526 36.708 25.493 31.57 22.526 26.431" stroke="#177491" stroke-linejoin="round" fill="url(#Siemens_-_Light_gray-2)"/>
+        <g>
+          <path d="M13.626,32.878a1.292,1.292,0,1,1,.914-.379A1.283,1.283,0,0,1,13.626,32.878Z" fill="url(#New_Gradient_Swatch_1-5)"/>
+          <path d="M13.626,30.794a.792.792,0,1,1-.56.232.791.791,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.791,1.791,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M25.482,32.878A1.291,1.291,0,1,1,26.4,32.5,1.284,1.284,0,0,1,25.482,32.878Z" fill="url(#New_Gradient_Swatch_1-6)"/>
+          <path d="M25.482,30.794a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.787,1.787,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M22.518,38a1.292,1.292,0,1,1,.914-.379A1.282,1.282,0,0,1,22.518,38Z" fill="url(#New_Gradient_Swatch_1-7)"/>
+          <path d="M22.518,35.916a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.787,1.787,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M16.6,38a1.292,1.292,0,1,1,.914-.379A1.279,1.279,0,0,1,16.6,38Z" fill="url(#New_Gradient_Swatch_1-8)"/>
+          <path d="M16.6,35.916a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.791,1.791,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M22.518,27.723a1.291,1.291,0,1,1,.914-.378A1.286,1.286,0,0,1,22.518,27.723Z" fill="url(#New_Gradient_Swatch_1-9)"/>
+          <path d="M22.518,25.639a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.782,1.782,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+        <g>
+          <path d="M16.6,27.723a1.291,1.291,0,1,1,.914-.378A1.283,1.283,0,0,1,16.6,27.723Z" fill="url(#New_Gradient_Swatch_1-10)"/>
+          <path d="M16.6,25.639a.792.792,0,1,1-.56.232.787.787,0,0,1,.56-.232m0-1a1.792,1.792,0,1,0,1.267.525,1.787,1.787,0,0,0-1.267-.525Z" fill="#4e4a48"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

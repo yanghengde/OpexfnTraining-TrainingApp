@@ -1,0 +1,44 @@
+<div class="sit-radio">
+    <div class="label label-property-grid-control-readonly" ng-if="radioCtrl.readOnly || radioCtrl.ngReadonly || radioCtrl.ngDisabled">
+        <ng-form name="radioForm" ng-class="{'isrequired' :(radioCtrl.validation.required) && radioCtrl.value===undefined}">
+            <div class="property-grid-span-group-block" ng-model="radioCtrl.value">
+                <div class="radiogroup group-control" ng-repeat="val in radioCtrl.options" ng-checked="radioCtrl.value === val.value" ng-class="radioCtrl.layout === 'horizontal' ? 'horizontal-layout':'vertical-layout'">
+                    <div class="group-control-data radio-button" ng-class="!(radioCtrl.readOnly || radioCtrl.ngReadonly || radioCtrl.ngDisabled) ? 'radio-enabled' : 'radio-disabled'">
+                        <input type='radio'
+                               name='{{radioCtrl.name}}'
+                               ng-model='radioCtrl.value'
+                               ng-required="radioCtrl.validation.required"
+                               ng-value='val.value'
+                               sit-change="radioCtrl.sitChange"
+                               ng-disabled="radioCtrl.ngDisabled"
+                               ng-readonly="radioCtrl.ngReadOnly"
+                               shared-model="true"
+                               sit-form-input-validator />
+                        <span class="radio-text">{{val.label}}</span>
+                    </div>
+                </div>
+            </div>
+        </ng-form>
+
+    </div>
+
+    <ng-form ng-if="!(radioCtrl.readOnly || radioCtrl.ngReadonly || radioCtrl.ngDisabled)" name="radioForm" ng-class="{'isrequired' :(radioCtrl.validation.required) && radioCtrl.value===undefined}">
+        <div class="property-grid-span-group-block validator-control" ng-model="radioCtrl.value">
+            <div class="radiogroup group-control" ng-repeat="val in radioCtrl.options" ng-checked="radioCtrl.value === val.value" ng-class="radioCtrl.layout === 'horizontal' ? 'horizontal-layout':'vertical-layout'">
+                <div class="group-control-data radio-button" ng-class="!radioCtrl.ngDisabled ? 'radio-enabled' : 'radio-disabled'">
+                    <input type='radio'
+                           name='{{radioCtrl.name}}'
+                           ng-model='radioCtrl.value'
+                           ng-required="radioCtrl.validation.required"
+                           ng-value='val.value'
+                           sit-change="radioCtrl.sitChange"
+                           ng-disabled="radioCtrl.ngDisabled"
+                           ng-readonly="radioCtrl.ngReadOnly"
+                           shared-model="true"
+                           sit-form-input-validator />
+                    <span class="radio-text">{{val.label}}</span>
+                </div>
+            </div>
+        </div>
+    </ng-form>
+</div>

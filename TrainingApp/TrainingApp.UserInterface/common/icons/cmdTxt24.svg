@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g id="g829">
+    <path id="path909" d="M3,0V8.551h.977V.977H14.156l5.867,6.076L20,16.4h.977L21,6.66,14.57,0ZM3,17.133V24H20.988V20.3h-.976v2.72H3.977V17.133Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect947" d="M14,.641h1V7H14Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect947-3" d="M14.041,7V6h6.225V7Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect847" d="M20,16.305l.974.023.012,4.032-.975-.015Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <path id="rect834" d="M0,8V18H19V8ZM1.118,9H17.882v8H1.118Z" class="aw-theme-iconOutline" fill="#464646"/>
+    <g id="text823">
+      <path id="path845" d="M6.447,11.053H4.86v4.574H3.6V11.053H2.023V10.026H6.447Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="path847" d="M11.725,15.627H10.239L9.28,13.8a1.634,1.634,0,0,1-.113-.375H9.152a2.893,2.893,0,0,1-.128.391l-.963,1.808H6.567l1.774-2.8-1.622-2.8H8.244l.8,1.679a2.929,2.929,0,0,1,.167.473h.016q.046-.163.174-.488l.885-1.664h1.4L10.01,12.8Z" class="aw-theme-iconOutline" fill="#464646"/>
+      <path id="path849" d="M16.459,11.053H14.872v4.574H13.615V11.053h-1.58V10.026h4.424Z" class="aw-theme-iconOutline" fill="#464646"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<sit-tags-warning-panel visible="vm.warningMessageVisible" message="vm.warningMessage"></sit-tags-warning-panel>
+<div class="tagEditorPanel">
+    <div id="assignedTagsContainer" ng-if="vm.assignedTags.length > 0">
+        <div class="sidePanelLabel" ng-if="vm.assignedTags.length > 0">{{ 'tagsManager.assignedTags' | translate }}</div>
+        <sit-tags-viewer tags="vm.assignedTags" mode="vm.assignedTagViewerMode" 
+                        on-register-api="vm.onAssignedTagsViewerRegisterApi(api)" 
+                        on-remove="vm.tagViewerRemoveAssignedTag(tag)"
+                        ng-if="vm.assignedTags.length > 0"></sit-tags-viewer>
+    </div>
+
+    <div id="availableTagsContainer" ng-if="vm.availableTags.length > 0">
+        <div class="sidePanelLabel" ng-if="vm.availableTags.length > 0">{{ 'tagsManager.availableTags' | translate }}</div>
+        <sit-tags-viewer tags="vm.availableTags" mode="vm.availableTagViewerMode" 
+                        on-register-api="vm.onAvailableTagsViewerRegisterApi(api)" 
+                        on-add="vm.tagViewerAddAvailableTag(tag)" ng-if="vm.availableTags.length > 0"></sit-tags-viewer>
+    </div>
+</div>

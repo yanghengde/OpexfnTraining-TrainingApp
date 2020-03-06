@@ -1,0 +1,27 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="3.019" y1="26.952" x2="14.981" y2="38.914" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#afd7e1"/>
+      <stop offset="1" stop-color="#73b4c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="18.019" y1="7.056" x2="29.981" y2="19.019" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="33.019" y1="26.952" x2="44.981" y2="38.914" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <g>
+      <rect x="1.5" y="28.471" width="15" height="8.924" fill="url(#linear-gradient)"/>
+      <path d="M16,28.971V36.9H2V28.971H16m1-1H1V37.9H17V27.971Z" fill="#177491"/>
+    </g>
+    <g>
+      <rect x="16.5" y="8.575" width="15" height="8.925" fill="url(#linear-gradient-2)"/>
+      <path d="M31,9.075V17H17V9.075H31m1-1H16V18H32V8.075Z" fill="#177491"/>
+    </g>
+    <g>
+      <rect x="31.5" y="28.471" width="15" height="8.924" fill="url(#linear-gradient-3)"/>
+      <path d="M46,28.971V36.9H32V28.971H46m1-1H31V37.9H47V27.971Z" fill="#177491"/>
+    </g>
+    <path d="M36.694,23.249l-.02-2.683h-1l.019,1.476L33.382,19.7l-.708.707,2.312,2.345L33.568,22.7v1l2.626.051A.5.5,0,0,0,36.694,23.249Z" fill="#474647"/>
+    <path d="M14.655,20.145l-.02,2.683h-1l.019-1.476L11.342,23.7l-.707-.707,2.312-2.345-1.418.052v-1l2.625-.051A.5.5,0,0,1,14.655,20.145Z" fill="#474647"/>
+    <path d="M21.941,32.612l1.911-1.884.707.707L23.5,32.466l3.293-.024v1l-3.293.024,1.039.966-.707.707-1.892-1.82A.5.5,0,0,1,21.941,32.612Z" fill="#474647"/>
+  </g>
+</svg>

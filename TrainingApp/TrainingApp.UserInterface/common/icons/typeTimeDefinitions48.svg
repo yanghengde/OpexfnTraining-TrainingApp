@@ -1,0 +1,28 @@
+<svg version="1.1" id="Livello_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<path id="rect40" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.5,17.072h33V33.5h-33V17.072z"/>
+<path id="line42" fill="none" stroke="#5B5B5B" stroke-width="1" d="M6.056,33.5V17.072"/>
+<path id="line44" fill="none" stroke="#5B5B5B" stroke-width="1" d="M19.75,33.5V17.072"/>
+<path id="line46" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.5,22.548h33"/>
+<path id="line48" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.5,28.023h33"/>
+<path id="rect40-7" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.501,0.5h32.973v16.504H0.501V0.5z"/>
+<path id="line42-7" fill="none" stroke="#5B5B5B" stroke-width="1" d="M6.056,16.953V0.525"/>
+<path id="line44-3" fill="none" stroke="#5B5B5B" stroke-width="1" d="M19.75,16.953V0.525"/>
+<path id="line46-9" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.556,6.001h33"/>
+<path id="line48-1" fill="none" stroke="#5B5B5B" stroke-width="1" d="M0.556,11.478h33"/>
+<linearGradient id="circle39_1_" gradientUnits="userSpaceOnUse" x1="283.9561" y1="353.1865" x2="301.2657" y2="370.4961" gradientTransform="matrix(1.0621 0 0 1.0621 -276.2725 -349.8164)">
+	<stop  offset="0" style="stop-color:#74B5C8"/>
+	<stop  offset="0.1747" style="stop-color:#6BAEC3"/>
+	<stop  offset="0.4567" style="stop-color:#539EB5"/>
+	<stop  offset="0.8089" style="stop-color:#2F849F"/>
+	<stop  offset="1" style="stop-color:#187491"/>
+</linearGradient>
+<path id="circle39" fill="url(#circle39_1_)" stroke="#474747" stroke-width="0.9415" stroke-miterlimit="10" d="M47.5,34.5
+	c0,7.18-5.82,13-13,13s-13-5.82-13-13s5.82-13,13-13S47.5,27.32,47.5,34.5L47.5,34.5z"/>
+<path id="path64-7"  fill="none" stroke="#187491" stroke-width="4" stroke-miterlimit="10" d="
+	M33.985,24.516L33.9,35.715"/>
+<path id="path64-7-9"  fill="none" stroke="#187491" stroke-width="4" stroke-miterlimit="10" d="
+	M33.256,34.248l7.088,6.818"/>
+<path id="polygon47" fill="#FFFFFF" d="M33.092,34.903v-9.485
+	h1.687v9.026l5.024,4.983l-1.139,1.103l-5.402-5.217L33.092,34.903z"/>
+</svg>

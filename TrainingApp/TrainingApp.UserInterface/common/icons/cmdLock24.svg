@@ -1,0 +1,7 @@
+<svg version="1.1" id="Artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path class="aw-theme-iconOutline" fill="#464646" d="M18,9V6.5C18,2.9,15.1,0,11.5,0S5,2.9,5,6.5V9H2v13.5C2,23.3,2.7,24,3.5,24h16c0.8,0,1.5-0.7,1.5-1.5V9H18z
+	 M6,6.5C6,3.5,8.5,1,11.5,1S17,3.5,17,6.5V9H6V6.5z M20,22.5c0,0.3-0.2,0.5-0.5,0.5h-16C3.2,23,3,22.8,3,22.5V10h17V22.5z"/>
+<path class="aw-theme-iconOutline" fill="#464646" d="M13,15.2c0-0.8-0.7-1.5-1.5-1.5S10,14.4,10,15.2c0,0.7,0.4,1.2,1,1.4V19h1v-2.4C12.6,16.4,13,15.9,13,15.2z
+	 M11.5,15.7c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5S12,15,12,15.2S11.8,15.7,11.5,15.7z"/>
+</svg>

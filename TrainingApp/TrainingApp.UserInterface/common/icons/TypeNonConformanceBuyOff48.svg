@@ -1,0 +1,40 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_9" data-name="Sfumatura senza nome 9" x1="6.741" y1="14.812" x2="29.846" y2="37.917" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73b4c8"/>
+      <stop offset="1" stop-color="#177491"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray" data-name="Siemens - Mid gray" x1="14.685" y1="15.3" x2="21.901" y2="22.516" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bebdbd"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Mid_gray-2" x1="17.029" y1="27.338" x2="19.557" y2="29.867" xlink:href="#Siemens_-_Mid_gray"/>
+    <linearGradient id="linear-gradient" x1="36.831" y1="32.982" x2="43.887" y2="40.037" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="Siemens_-_Light_gray" data-name="Siemens - Light gray" x1="23.614" y1="32.982" x2="30.669" y2="40.037" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <g>
+      <path d="M16.561,5.09,1.719,30.8a2,2,0,0,0,1.732,3H33.136a2,2,0,0,0,1.732-3L20.025,5.09A2,2,0,0,0,16.561,5.09Z" stroke="#177491" stroke-linecap="round" stroke-linejoin="round" fill="url(#Sfumatura_senza_nome_9)"/>
+      <g>
+        <g>
+          <path d="M16.5,24.335V13.73a.6.6,0,0,1,.6-.6h2.372a.6.6,0,0,1,.6.6V24.335Z" fill="url(#Siemens_-_Mid_gray)"/>
+          <path d="M19.48,13.627a.1.1,0,0,1,.1.1V23.835H17V13.73a.1.1,0,0,1,.1-.1H19.48m0-1H17.107a1.1,1.1,0,0,0-1.1,1.1V24.835h4.578V13.73a1.1,1.1,0,0,0-1.1-1.1Z" fill="#6f6e6e"/>
+        </g>
+        <g>
+          <circle cx="18.293" cy="28.603" r="1.789" fill="url(#Siemens_-_Mid_gray-2)"/>
+          <path d="M18.293,27.314A1.289,1.289,0,1,1,17,28.6a1.29,1.29,0,0,1,1.289-1.289m0-1A2.289,2.289,0,1,0,20.582,28.6a2.289,2.289,0,0,0-2.289-2.289Z" fill="#6f6e6e"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <circle cx="40.359" cy="36.51" r="4.989" fill="url(#linear-gradient)"/>
+      <circle cx="27.142" cy="36.51" r="4.989" fill="url(#Siemens_-_Light_gray)"/>
+      <path d="M25.042,37.917a.5.5,0,0,1-.329-.876l3.333-2.917a.5.5,0,0,1,.658.752l-3.333,2.917A.5.5,0,0,1,25.042,37.917Z" fill="#6f6e6e"/>
+      <path d="M38.192,37.917a.5.5,0,0,1-.329-.876L41.2,34.124a.5.5,0,1,1,.658.752l-3.333,2.917A.494.494,0,0,1,38.192,37.917Z" fill="#6f6e6e"/>
+      <path d="M46.908,36.51a.49.49,0,0,0-.076-.25l-2.88-11.529v0a1.313,1.313,0,0,0-1.324-1.034c-.587.064-1.287.611-1.287,2.849a.5.5,0,1,0,1,0c0-1.648.392-1.854.4-1.855a.456.456,0,0,1,.239.257l0,.005v.012l2.259,9.046A5.482,5.482,0,0,0,34.97,35.485a2.941,2.941,0,0,0-1.22-.235,2.508,2.508,0,0,0-1.2.344A5.476,5.476,0,0,0,22.7,33.3a5.573,5.573,0,0,0-.521.887l2.3-9.228V24.95l0-.006c.032-.146.166-.287.238-.263,0,0,.4.216.4,1.861a.5.5,0,0,0,1,0c0-2.243-.7-2.791-1.288-2.855a1.306,1.306,0,0,0-1.317,1.02l0,.007L20.6,36.389a.5.5,0,0,0,.485.621h.595a5.484,5.484,0,0,0,10.94-.263,1.952,1.952,0,0,1,1.131-.5c.818,0,1.07.3,1.126.381a5.485,5.485,0,0,0,10.946.379h.544c.005,0,.009.005.014.005A.507.507,0,0,0,46.5,37c.012,0,.021-.012.032-.015A.493.493,0,0,0,46.908,36.51ZM27.142,41a4.494,4.494,0,0,1-4.489-4.489,4.489,4.489,0,0,1,8.978,0A4.494,4.494,0,0,1,27.142,41Zm13.217,0a4.489,4.489,0,1,1,4.489-4.489A4.494,4.494,0,0,1,40.359,41Z" fill="#464646"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+
+<div class="taglist-container">
+    <ul class="tags-list">
+        <li class="tag-list-item" ng-repeat="tag in taglistCtrl.tags track by $index" ng-show="$index<=taglistCtrl.visibleTags - 1 && tag && tag.Name.length!== 0">
+            <div ng-style="tag.style" class="tagbullet"></div>
+            <span class="taglabel" title="{{tag.Name}}">
+                {{tag.ShortName}}
+            </span>
+        </li>
+        <li class="btn-group tag-list-menu" ng-if="taglistCtrl.displayDropdownTags">
+
+            <button class="dropdown-toggle tag-list-button" type="button" data-toggle="dropdown" ng-click="taglistCtrl.dropDownFixPosition($event)">
+                <span class="fa fa-ellipsis-v"></span>
+            </button>
+
+            <ul class="dropdown-menu tag-menu" role="menu" data-toggle="dropdown">
+                <li class="dropdown-item tag-list-item" ng-repeat="tag in taglistCtrl.tags track by $index" ng-show="$index>taglistCtrl.visibleTags - 1  && tag && tag.Name.length!== 0">
+                    <div ng-style="tag.style" class="tagbullet"></div>
+                    <span class="taglabel" title="{{tag.Name}}">
+                        {{tag.ShortName}}
+                    </span>
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</div>

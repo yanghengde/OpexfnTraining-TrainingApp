@@ -1,0 +1,29 @@
+<!-- header -->
+<div ng-if="!tileGrpCtrl.group.isDummy" ng-style="rowStyle(row)" style="overflow:hidden;" class="tile-group-header">
+    <div style="display:inline-block; float:left;" ng-click="tileGrpCtrl.toggleGroup(tileGrpCtrl.group)">
+        <div class="{{tileGrpCtrl.group.arrowClass()}}" ng-style="{height: tileGrpCtrl.group.rowheight}"></div>
+    </div>
+
+    <div ng-style="{height: tileGrpCtrl.group.rowheight}" class="tile-group-text" ng-click="tileGrpCtrl.toggleGroup(tileGrpCtrl.group)">
+        <div style="display:table-cell; vertical-align:middle; height:inherit;">{{tileGrpCtrl.group.name}} ({{tileGrpCtrl.group.childCount()}})</div>
+    </div>
+
+    <div ng-style="{height: tileGrpCtrl.group.rowheight}" class="tile-group-select" ng-show="tileGrpCtrl.selectionMode === 'multi' && tileGrpCtrl.multiSelect">
+        <div style="display:table-cell; vertical-align:middle; height:inherit;">
+            <input type="checkbox" style="margin-left:10px; cursor: pointer" ng-model="tileGrpCtrl.groupSelected" ng-checked="tileGrpCtrl.groupSelected" ng-click="tileGrpCtrl.selectGroup()" />
+        </div>
+    </div>
+    <div class="tile-group-line-container" ng-style="{height: tileGrpCtrl.group.rowheight}">
+        <div class="tile-group-line"></div>
+    </div>
+</div>
+
+<!-- tiles container -->
+<!-- Do not change whitespace here.  Needed to remove space between multiple inline-block elements -->
+<div data-internal-type="itemTileContainer" ng-if="tileGrpCtrl.group.expanded || (tileGrpCtrl.groupsLength <= 1 && tileGrpCtrl.group.isDummy)" class="tile-group-block">
+    <!--
+    -->
+    <sit-item-tile sit-format="tileGrpCtrl.sitFormat" ng-repeat="tile in tileGrpCtrl.group.tiles" sit-tile-content="tile" sit-tile-options="tileGrpCtrl.tileOptions" sit-tile-template="tileGrpCtrl.tileOptions.tileTemplate" sit-last-tile></sit-item-tile>
+    <!--
+    -->
+</div>

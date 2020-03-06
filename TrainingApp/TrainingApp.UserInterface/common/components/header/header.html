@@ -1,0 +1,44 @@
+<div class="container-fluid navbar-header header-fluid header-color">
+    <div id="headerNavBar" class="col-xs-20 col-sm-20 col-md-25 col-lg-25 pull-left header-nav-bar" role="navigation">
+
+        <div data-internal-type="headerBarHamburger"
+             class="header-navbar-button header-navbar-item-noborder header-navbar-item-button pull-left"
+             style="margin-right: 0;"
+             sit-flymenu="vm.primaryFlymenuOptions"></div>
+
+        <div class="header-navbar-item-noborder header-navbar-item-button pull-left">
+            <em class="fa fa-home fa-lg" ng-click="vm.navigateToHome()"></em>
+        </div>
+
+        <div class="header-navbar-item-noborder header-navbar-item-button pull-left">
+            <em class="fa fa-info-circle fa-lg" ng-click="vm.showAboutDialog()"></em>
+        </div>
+
+        <div data-internal-type="headerBarHelp" class="header-navbar-item-noborder header-navbar-item-button pull-left" ng-if="vm.isHelpAvailable && !vm.isRuntime">
+            <em class="fa fa-question-circle fa-lg help-icon" ng-click="vm.showHelpWindow()"></em>
+        </div>
+
+        <div data-internal-type="headerActionButton" class="header-action-height pull-left">
+            <sit-header-button ng-repeat="(id, actionButton) in vm.actionButtons" 
+                               sit-id="id"
+                               sit-icon="actionButton.icon" 
+                               sit-title="actionButton.title" 
+                               sit-on-click="actionButton.onClick" 
+                               sit-api="actionButton.api"></sit-header-button>
+        </div>
+
+        <div data-internal-type="headerBarUser" 
+             class="header-navbar-item-noborder header-navbar-item-button pull-left" 
+             sit-flymenu="vm.userFlymenuOptions"></div>
+    </div>
+
+    <div data-internal-type="headerBarLogo" ng-if="vm.logoImage" class="logo-container navbar-brand pull-right">
+        <img alt="" ng-src="{{vm.logoImage}}" />
+    </div>
+
+    <div data-internal-type="headerBarLogo" ng-if="!vm.logoImage" class="default-logo-container navbar-brand pull-right">
+        <svg width="82" height="16" viewBox="0 0 82 16">
+            <path fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" d="M2.2,13.8v-2.4C3.6,11.8,4.8,12,5.8,12c1.4,0,2.1-0.4,2.1-1.1 c0-0.3-0.1-0.5-0.3-0.7C7.4,10,6.9,9.7,6,9.4C4.4,8.7,3.4,8.2,2.9,7.7C2.3,7.1,2,6.3,2,5.4c0-1.2,0.5-2.1,1.4-2.7 c0.9-0.6,2-0.9,3.5-0.9c0.8,0,1.9,0.1,3.4,0.4v2.3C9.1,4.1,8.1,3.8,7.2,3.8c-1.3,0-2,0.4-2,1.1c0,0.3,0.1,0.5,0.4,0.7 c0.2,0.1,0.8,0.4,1.9,0.9c1.5,0.6,2.4,1.2,2.9,1.7c0.6,0.6,0.9,1.3,0.9,2.2c0,1.3-0.6,2.3-1.7,3c-0.9,0.6-2.1,0.8-3.5,0.8 C4.7,14.2,3.5,14.1,2.2,13.8"></path><rect x="13.1" y="2" class="icon-logo-color" fill="#009999" width="3.3" height="12"></rect><polygon fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" points="19.5,14 19.5,2 28,2 28,4.2 22.7,4.2 22.7,6.9 27.3,6.9 27.3,8.8 22.7,8.8 22.7,11.7 28.2,11.7 28.2,14 "></polygon><polygon fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" points="30.3,14 30.3,2 34.7,2 37.7,9.6 40.8,2 44.9,2 44.9,14 41.7,14 41.7,5.5 38.2,14.1 36.1,14.1 32.7,5.5 32.7,14 "></polygon><polygon fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" points="47.9,14 47.9,2 56.5,2 56.5,4.2 51.2,4.2 51.2,6.9 55.8,6.9 55.8,8.8 51.2,8.8 51.2,11.7 56.6,11.7 56.6,14 "></polygon><polygon fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" points="58.8,14 58.8,2 62.7,2 66.8,10 66.8,2 69.2,2 69.2,14 65.4,14 61.2,5.9 61.2,14 "></polygon><path fill-rule="evenodd" clip-rule="evenodd" class="icon-logo-color" fill="#009999" d="M71.5,13.8v-2.4c1.3,0.4,2.5,0.6,3.6,0.6c1.4,0,2.1-0.4,2.1-1.1 c0-0.3-0.1-0.5-0.3-0.7c-0.2-0.2-0.8-0.5-1.6-0.8c-1.6-0.6-2.6-1.2-3.1-1.7c-0.6-0.6-0.9-1.4-0.9-2.3c0-1.2,0.4-2.1,1.4-2.7 c0.9-0.6,2-0.9,3.5-0.9c0.8,0,1.8,0.1,3.1,0.4l0.3,0.1v2.3c-1.1-0.4-2.1-0.7-3.1-0.7c-1.3,0-2,0.4-2,1.1c0,0.3,0.1,0.5,0.4,0.7 c0.2,0.1,0.8,0.4,1.9,0.9c1.4,0.6,2.4,1.2,2.9,1.7c0.6,0.6,0.9,1.3,0.9,2.2c0,1.3-0.6,2.3-1.7,3c-0.9,0.6-2.1,0.8-3.6,0.8 C74,14.2,72.8,14.1,71.5,13.8"></path>
+        </svg>
+    </div>
+</div>
