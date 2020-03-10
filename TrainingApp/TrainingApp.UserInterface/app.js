@@ -14,13 +14,15 @@
 
         // Local modules
         ,'siemens.simaticit.common',
-		,'Siemens.Mom.Presales.Training.TrainingApp.Team'
+		,'Siemens.Mom.Presales.Training.TrainingApp.PassStation'
+        ,'Siemens.Mom.Presales.Training.TrainingApp.Team'
         
 		,'Siemens.Mom.Presales.Training.TrainingApp'
 		
     ]);
 
 	var modules = [
+		 'Siemens.Mom.Presales.Training.TrainingApp.PassStation',
 		 'Siemens.Mom.Presales.Training.TrainingApp.Team',
 		
 	];

@@ -1,0 +1,17 @@
+{
+  "name": "Siemens.Mom.Presales.Training.TrainingApp.PassStation",
+  "type": "standard",
+  "title": "PassStation",
+  "icon": "fa-folder",
+  "functionalBlock": "Siemens.Mom.Presales.Training.TrainingApp",
+  "dependencies": [],
+  "states": [
+    {
+      "id": "home.Siemens_Mom_Presales_Training_TrainingApp_PassStation_PassStationScreen",
+      "title": "PassStationScreen",
+      "securable": true,
+      "roles": []
+    }
+  ],
+  "manifestVersion": "01.00.00"
+}

@@ -1,0 +1,17 @@
+﻿<div class="command-bar-side-panel">
+    <button ng-click="vm.cancel()" class="btn side-panel-button">Cancel</button>
+    <button ng-click="vm.save()" class="btn side-panel-button" ng-show="vm.validInputs">Save</button>
+</div>
+<div class="side-panel-property-area-body">
+    <sit-property-grid sit-id="add_form"
+                       sit-layout="Vertical"
+                       sit-type="Fluid"
+                       sit-mode="edit"
+                       sit-columns="1">
+        <!-- TODO: Put here the properties of the entity managed by the service -->
+        <sit-property sit-widget="sit-text"
+                      sit-value="vm.currentItem.Id"
+                      sit-validation="{required: true}"
+                      sit-read-only="false">ID:</sit-property>
+    </sit-property-grid>
+</div>

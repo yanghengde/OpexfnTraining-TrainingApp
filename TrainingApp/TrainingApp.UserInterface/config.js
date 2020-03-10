@@ -10,12 +10,19 @@
   "languages": [
     "en-US"
   ],
-  "home": "home.Siemens_Mom_Presales_Training_TrainingApp_Team_TeamScreen",
+  "home": "home.Siemens_Mom_Presales_Training_TrainingApp_PassStation_PassStationScreen",
   "masterApp": "Siemens.Mom.Presales.Training.TrainingApp",
   "dependencies": [
     "Siemens.Mom.Presales.Training.TrainingApp"
   ],
   "menu": [
+    {
+      "id": "home.Siemens_Mom_Presales_Training_TrainingApp_PassStation_PassStationScreen",
+      "title": "PassStationScreen",
+      "icon": "fa-folder",
+      "display": true,
+      "securable": false
+    },
     {
       "id": "home.Siemens_Mom_Presales_Training_TrainingApp_Team_TeamScreen",
       "title": "TeamScreen",

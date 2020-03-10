@@ -1,0 +1,137 @@
+﻿<div id="itemlist" class="content-area content-area-relative" style="height: calc(100%) !important">
+        <div style="display: inline-block; vertical-align: top;width: calc(100%)">
+            <div style="background-color:transparent;border:1px solid #969696;border-radius: 6px;margin-top: 10px;width: 100%;height: 120px;box-shadow: 0.2em -0.2em 0.3em darkgrey;">
+                <div class="panel-heading ngTopPanel icon icon1" id="pr-accordion-heading-yg" style="background-color: transparent;font-weight: bold;">&#xe60a;<font style="color: #0077a1;font-size: 15px;">&nbsp;&nbsp;基础信息</font></div>
+                <div id='pt'>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th style="width:50%">
+                                <sit-property sit-widget="sit-select"
+                                              sit-value="vm.currentItem.Id"
+                                              sit-validation="{required: true}"
+                                              sit-read-only="false">工位:</sit-property>
+                            </th>
+                            <th style="width:50%">
+                                <sit-property sit-widget="sit-select"
+                                              sit-value="vm.currentItem.Id"
+                                              sit-validation="{required: true}"
+                                              sit-read-only="false">工艺:</sit-property>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: inline-block; vertical-align: top;width: calc(100%)">
+            <div style="background-color:transparent;border:1px solid #969696;border-radius: 6px;margin-top: 10px;width: 100%;height: 270px;box-shadow: 0.2em -0.2em 0.3em darkgrey;">
+                <div class="panel-heading ngTopPanel icon icon1" id="pr-accordion-heading-yg" style="background-color: transparent;font-weight: bold;">&#xe60a;<font style="color: #0077a1;font-size: 15px;">&nbsp;&nbsp;扫描信息</font></div>
+                <div id='pt'>
+                    <table style="width:100%">
+                         <tr>
+                            <td width="50%"><table style="width: 100%;">
+    <tr>
+        <th style="width:100%" colspan="2">
+            <sit-property sit-widget="sit-text"
+                          sit-value="vm.currentItem.Id"
+                          sit-validation="{required: false}"
+                          sit-read-only="false">序列号:</sit-property>
+        </th>
+    </tr>
+    <tr>
+        <th style="width:100%" colspan="2">
+            <sit-property sit-widget="sit-text"
+                          sit-value="vm.currentItem.Id"
+                          sit-validation="{required: false}"
+                          sit-read-only="false">子序列号:</sit-property>
+        </th>
+    </tr>
+    <tr>
+        <th style="width:100%" colspan="2">
+            <sit-property sit-widget="sit-label"
+                          sit-value="vm.currentItem.Id"
+                          sit-validation="{required: false}"
+                          sit-read-only="false">已扫描:</sit-property>
+        </th>
+    </tr>
+    <tr>
+        <th style="width:50%">
+            <sit-property sit-widget="sit-label"
+                          sit-value="vm.currentItem.Id"
+                          sit-validation="{required: false}"
+                          sit-read-only="false">工单:</sit-property>
+        </th>
+        <th style="width:50%">
+            <sit-property sit-widget="sit-label"
+                          sit-value="vm.currentItem.Id"
+                          sit-validation="{required: false}"
+                          sit-read-only="false">产品:</sit-property>
+        </th>
+    </tr>
+    </table>
+                             </td>
+                            <td width="50%" align="center">
+                                <label style="font-size:80px; color:darkcyan">80</label>&nbsp;<label style="font-size:40px;">/</label><label style="font-size:40px;">100</label>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="part1">
+            <div style="display: inline-block; vertical-align: top;width: calc(100%)">
+                <div style="background-color:transparent;border:1px solid #969696;border-radius: 6px;margin-top: 10px;width: 100%;height: 400px;box-shadow: 0.2em -0.2em 0.3em darkgrey;">
+                    <div class="panel-heading ngTopPanel icon icon1" id="pr-accordion-heading-yg" style="background-color: transparent;font-weight: bold;">&#xe60a;<font style="color: #0077a1;font-size: 15px;">&nbsp;&nbsp;扫描日志</font></div>
+                    <div id='pt'>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th style="width:50%">
+                                    <sit-textarea style="grid-template-rows:max-content" sit-value="value" sit-validation="validation" ng-readonly="ngReadonly" ng-blur="ngBlur" sit-change="sitChange"
+                                                  ng-disabled="ngDisabled" ng-focus="ngFocus">
+                                    </sit-textarea>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="part2">
+            <div style="display: inline-block; vertical-align: top;width: calc(100%)">
+                <div style="background-color:transparent;border:1px solid #969696;border-radius: 6px;margin-top: 10px;width: 100%;height: 400px;box-shadow: 0.2em -0.2em 0.3em darkgrey;">
+                    <div class="panel-heading ngTopPanel icon icon1" id="pr-accordion-heading-yg" style="background-color: transparent;font-weight: bold;">&#xe60a;<font style="color: #0077a1;font-size: 15px;">&nbsp;&nbsp;显示图片</font></div>
+                    <div id='pt'>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th style="width:50%">
+                                    <sit-textarea style="grid-template-rows:max-content" sit-value="value" sit-validation="validation" ng-readonly="ngReadonly" ng-blur="ngBlur" sit-change="sitChange"
+                                                  ng-disabled="ngDisabled" ng-focus="ngFocus">
+                                    </sit-textarea>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+    <style>
+        #part1 {
+            width: 50%;
+            height: 200px;
+            float: left;
+            clear: left;
+        }
+
+        #part2 {
+            width: 50%;
+            height: 200px;
+            float: left;
+        }
+    </style>

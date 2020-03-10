@@ -79,6 +79,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\module.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-add-ctrl.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-add.html" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-edit-ctrl.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-edit.html" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-list-ctrl.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-list.html" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-select-ctrl.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-select.html" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\PassStation\PassStationScreen-srv.js" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\module.js" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-add-ctrl.js" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-add.html" />
@@ -89,12 +99,15 @@
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-select-ctrl.js" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-select.html" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-srv.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-upload-ctrl.js" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Team\TeamScreen-upload.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Siemens.Mom.Presales.Training.TrainingApp.Team.json" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\resources\resources.json" />
     <Content Include="Siemens.Mom.Presales.Training.TrainingApp\resources\Siemens.Modules.TrainingApp.en-US.json" />
+    <Content Include="Siemens.Mom.Presales.Training.TrainingApp\modules\Siemens.Mom.Presales.Training.TrainingApp.PassStation.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
